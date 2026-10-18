@@ -9,7 +9,7 @@ test('onboarding guides desktop/mobile users through verified examples, download
  const env={...process.env,PORT:'4324'};let child,browser,output='';
  try{
   child=spawn(process.execPath,['server/index.mjs'],{env,stdio:'pipe'});child.stdout.on('data',d=>output+=d);child.stderr.on('data',d=>output+=d);
-  let ready=false;for(let n=0;n<100;n++){try{ready=(await fetch(origin+'/api/status')).ok;}catch{}if(ready)break;await new Promise(r=>setTimeout(r,50));}assert.ok(ready,output);
+  let ready=false;for(let n=0;n<100;n++){assert.equal(child.exitCode,null,output);if(output.includes('Local evidence inspector: '+origin+';'))try{const response=await fetch(origin+'/api/status');ready=response.ok&&(await response.json()).origin===origin;}catch{}if(ready)break;await new Promise(r=>setTimeout(r,50));}assert.ok(ready,output);assert.equal(child.exitCode,null,output);
   browser=await chromium.launch({headless:true,...(process.env.TACITUS_TEST_BROWSER?{executablePath:process.env.TACITUS_TEST_BROWSER}:{})});
   const facts=JSON.parse(await readFile('public/examples/onboarding-facts.json','utf8'));const expected=await readFile('public/examples/peace.context.json','utf8');
   for(const width of [1440,390]){

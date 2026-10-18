@@ -410,8 +410,8 @@
     {
       "path": "tests/collection-browser.test.mjs",
       "origin": "Independently authored local collection explorer; existing application rights boundary applies",
-      "sha256": "94be93f9bea7bc02aa2dab1b2ffacab233363ec5b70c98306479afbb0e451f1d",
-      "bytes": 9764
+      "sha256": "9c72f930336002baef0d7f0c0f332e98f5989bcac420655373c8f2a5ff04e18d",
+      "bytes": 10118
     },
     {
       "path": "tests/collection-fixtures.mjs",
@@ -433,8 +433,8 @@
     },
     {
       "path": "tests/interface.test.mjs",
-      "sha256": "7eec88da0251987dadcd7024b69b16026faf8a4a2fcf10a5ab479a4e8a44f21e",
-      "bytes": 10672,
+      "sha256": "415b2856edfa15a6898b8fe9744aafc0ae6bd2742c79490d4bd095e12cd13a23",
+      "bytes": 10877,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "4991e0548041aec9f1e46d9d730c8d9dae6cea73100d0ef8daa4d60ea1d8de23",
       "pr3_sha256": "475e55733a336b98c33cb032bc8bbf293896c6a0a8d1417ab6df46d5814afdc1",
@@ -444,8 +444,8 @@
     },
     {
       "path": "tests/live-comparison-browser.test.mjs",
-      "sha256": "4078c4eb3d61c6f9feace561dd54100ab798b1b31c7706dadac3f801603a94bf",
-      "bytes": 6581,
+      "sha256": "78794acf183520601bdc882a0392b58c7b1f47d30cdaa0ff2ab75b4dfe67b1e1",
+      "bytes": 6980,
       "origin": "Independently authored local checkpoint comparison; original application reserved-rights boundary unchanged"
     },
     {
@@ -469,8 +469,8 @@
     {
       "path": "tests/native-source-browser.test.mjs",
       "origin": "Independently authored public workbench release regression test; existing reserved application rights",
-      "sha256": "131808504ae2d53b702435d07a8283edbe575d48e4fdad420babbc85e90eb98e",
-      "bytes": 3845
+      "sha256": "7070a1c82cdd9ebd0f3247755960634a55a667ee78c70054c1bf3ddf94129d34",
+      "bytes": 4203
     },
     {
       "path": "tests/native-source-projection.test.mjs",
@@ -481,8 +481,8 @@
     {
       "path": "tests/onboarding-browser.test.mjs",
       "origin": "Independently authored onboarding component or regression test; existing reserved-rights boundary retained",
-      "sha256": "1aa12748ea19da779cc65f24f489f99ee1b78b539916220d492acd8276595646",
-      "bytes": 5192
+      "sha256": "d55a54996db7f6a4d8a0b985316d86828e2658d612859342a1947f4a7d2c73d6",
+      "bytes": 5397
     },
     {
       "path": "tests/onboarding-data.test.mjs",

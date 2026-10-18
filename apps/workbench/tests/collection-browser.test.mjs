@@ -6,9 +6,9 @@ import {join} from 'node:path';
 import {chromium,expect} from '@playwright/test';
 const root=process.env.TACITUS_TEST_IMPORTED_COLLECTIONS;
 test('local collection explorer: real 128/256 and FRUS imports, exact query exports, keyboard/mobile and stale-worker isolation',{skip:!root&&process.env.TACITUS_ACCEPTANCE!=='1'},async()=>{
- assert.ok(root,'Full acceptance requires TACITUS_TEST_IMPORTED_COLLECTIONS');const facts=JSON.parse(await readFile(join(root,'fixtures.json'))),origin='http://127.0.0.1:4341',child=spawn(process.execPath,['server/index.mjs'],{env:{...process.env,PORT:'4341'},stdio:'ignore'});let browser;
+ assert.ok(root,'Full acceptance requires TACITUS_TEST_IMPORTED_COLLECTIONS');const facts=JSON.parse(await readFile(join(root,'fixtures.json'))),origin='http://127.0.0.1:4341',child=spawn(process.execPath,['server/index.mjs'],{env:{...process.env,PORT:'4341'},stdio:['ignore','pipe','pipe']});let browser,serverOutput='';child.stdout.on('data',d=>serverOutput+=d);child.stderr.on('data',d=>serverOutput+=d);
  try{
-  let ready=false;for(let n=0;n<100;n++){try{ready=(await fetch(origin+'/api/status')).ok;}catch{}if(ready)break;await new Promise(r=>setTimeout(r,50));}assert.ok(ready);
+  let ready=false;for(let n=0;n<100;n++){assert.equal(child.exitCode,null,serverOutput);if(serverOutput.includes('Local evidence inspector: '+origin+';'))try{const response=await fetch(origin+'/api/status');ready=response.ok&&(await response.json()).origin===origin;}catch{}if(ready)break;await new Promise(r=>setTimeout(r,50));}assert.ok(ready,serverOutput);assert.equal(child.exitCode,null,serverOutput);
   browser=await chromium.launch({headless:true,...(process.env.TACITUS_TEST_BROWSER?{executablePath:process.env.TACITUS_TEST_BROWSER}:{})});
   for(const width of[1440,390]){
    const context=await browser.newContext({viewport:{width,height:1000},reducedMotion:'reduce',acceptDownloads:true}),page=await context.newPage(),errors=[],external=[],posts=[];page.on('pageerror',e=>errors.push(String(e)));page.on('request',r=>{if(!r.url().startsWith(origin))external.push(r.url());if(r.method()!=='GET')posts.push(r.url());});

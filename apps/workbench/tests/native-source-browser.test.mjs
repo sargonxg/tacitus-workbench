@@ -4,9 +4,9 @@ import {spawn} from 'node:child_process';
 import {readFile} from 'node:fs/promises';
 import {chromium} from '@playwright/test';
 test('native evidence links and visible omission-only status preserve exact exports on desktop/mobile',async()=>{
- const origin='http://127.0.0.1:4340',server=spawn(process.execPath,['server/index.mjs'],{env:{...process.env,PORT:'4340'},stdio:'ignore'});let browser;
+ const origin='http://127.0.0.1:4340',server=spawn(process.execPath,['server/index.mjs'],{env:{...process.env,PORT:'4340'},stdio:['ignore','pipe','pipe']});let browser,serverOutput='';server.stdout.on('data',d=>serverOutput+=d);server.stderr.on('data',d=>serverOutput+=d);
  try{
-  let ready=false;for(let n=0;n<100;n++){try{ready=(await fetch(origin+'/api/status')).ok;}catch{}if(ready)break;await new Promise(r=>setTimeout(r,50));}assert.ok(ready);
+  let ready=false;for(let n=0;n<100;n++){assert.equal(server.exitCode,null,serverOutput);if(serverOutput.includes('Local evidence inspector: '+origin+';'))try{const response=await fetch(origin+'/api/status');ready=response.ok&&(await response.json()).origin===origin;}catch{}if(ready)break;await new Promise(r=>setTimeout(r,50));}assert.ok(ready,serverOutput);assert.equal(server.exitCode,null,serverOutput);
   browser=await chromium.launch({headless:true,...(process.env.TACITUS_TEST_BROWSER?{executablePath:process.env.TACITUS_TEST_BROWSER}:{})});
   const recorded=await readFile('public/examples/peace.context.json','utf8'),context=JSON.parse(recorded),layer=Object.values(context.context.claims)[0];
   for(const width of[1440,390]){

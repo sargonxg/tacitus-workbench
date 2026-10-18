@@ -15,7 +15,7 @@ test('standalone HTTP boundary and desktop/mobile recorded and live flows',async
   const child=spawn(process.execPath,['server/index.mjs'],{cwd:process.cwd(),env:{...process.env,PORT:'4318'},stdio:'pipe',windowsHide:true});
   let browser;let output='';child.stdout.on('data',d=>output+=d);child.stderr.on('data',d=>output+=d);
   try{
-    let ready=false;for(let n=0;n<100;n++){try{ready=(await fetch(origin+'/api/status')).ok;}catch{}if(ready)break;await new Promise(r=>setTimeout(r,100));}assert.ok(ready,output);
+    let ready=false;for(let n=0;n<100;n++){assert.equal(child.exitCode,null,output);if(output.includes('Local evidence inspector: '+origin+';'))try{const response=await fetch(origin+'/api/status');ready=response.ok&&(await response.json()).origin===origin;}catch{}if(ready)break;await new Promise(r=>setTimeout(r,100));}assert.ok(ready,output);assert.equal(child.exitCode,null,output);
     const denied=await fetch(origin+'/api/inspect',{method:'POST',headers:{'Content-Type':'application/json',Origin:'https://example.invalid'},body:'{}'});assert.equal(denied.status,enabled?403:404);
     const escape=await fetch(origin+'/%2e%2e%2fpackage.json');assert.equal(escape.status,404);
     browser=await chromium.launch({headless:true,...(process.env.TACITUS_TEST_BROWSER?{executablePath:process.env.TACITUS_TEST_BROWSER}:{})});
