@@ -57,6 +57,10 @@ The separate `expanded-cases.native-v2.zip` can also be imported into the live n
 
 [Local text authoring](docs/LOCAL_TEXT_AUTHORING.md) creates a native capsule from one bounded UTF-8 text/Markdown source, two explicit unreviewed reported-statement annotations and one user-declared relation. The helper is built by the same core script. Enable it with `TACITUS_LOCAL_AUTHORING=1`, `TACITUS_CAPTURE_AUTHOR_BIN` and its verified `TACITUS_CAPTURE_AUTHOR_SHA256` alongside the existing live configuration. No extraction model, URL fetching or upload service is involved. Read the guide for exact quotes, rights declarations, persistence and unsupported inputs.
 
+## Import a local manifest collection
+
+The optional [Linux CLI manifest importer](tools/local-import/README.md) indexes all declared local text/Markdown sources, including source-only documents without annotations. Explicitly authored sources also produce separate bounded native capsules. It supports deterministic identities, exact bytes, atomic complete output and verified incremental artifact reuse. The tested 128-document case contains 100 authored sources and 28 source-only records; no combined cross-capsule query or automatic extraction is provided.
+
 ## Compare live retrieval checkpoints
 
 Save one successful live query as run A, change only native checkpoints and query again for run B. Inspect citation-linked selected claims/sources, qualifications, temporal disclosures and omissions. Both exact Context exports retain their original bytes. Refusals remain explicit; these modern retrieval checkpoints do not establish what an actor knew in 1914. See [comparison instructions and limits](docs/LIVE_CHECKPOINT_COMPARISON.md).
