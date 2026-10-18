@@ -28,4 +28,4 @@ fn run()->Result<(),String>{
  options.open(&args[2]).map_err(|e|e.to_string())?.write_all(&archive).map_err(|e|e.to_string())?;
  let out=serde_json::to_vec(&inspection).map_err(|e|e.to_string())?;std::io::stdout().write_all(&out).map_err(|e|e.to_string())?;Ok(())
 }
-fn main(){if run().is_err(){eprintln!("local authoring validation failed");std::process::exit(1)}}
+fn main(){if let Err(error)=run(){if error=="author archive limit"{eprintln!("batch_archive_limit");std::process::exit(75)}eprintln!("local authoring validation failed");std::process::exit(1)}}

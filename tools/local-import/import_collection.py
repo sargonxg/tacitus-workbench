@@ -99,6 +99,16 @@ def field(value, name, maximum=2000):
     return value
 
 
+class ChildRefusal(ValueError):
+    def __init__(self, name, reason='subprocess_refused'):
+        self.reason=reason
+        super().__init__('subprocess refused ('+name+')')
+
+
+class NativeArchiveLimit(ValueError):
+    pass
+
+
 def run(args, input_raw=b'', limit=65536, timeout=10):
     """No shell/inherited credentials; bounded combined output, deadline and cancellation."""
     with tempfile.TemporaryFile() as stdin:
@@ -128,8 +138,16 @@ def run(args, input_raw=b'', limit=65536, timeout=10):
                         chunks[key.data].append(raw)
             code = p.wait(timeout=max(.001, end - time.monotonic()))
             if code:
+                if code == 75 and b''.join(chunks['err']) == b'batch_archive_limit\n' and not chunks['out']:
+                    raise NativeArchiveLimit('native archive exceeds 1 MiB')
                 # Never echo source-containing child diagnostics.
-                raise ValueError('subprocess refused (' + pathlib.Path(args[0]).name + ')')
+                message=b''.join(chunks['err']).lower()
+                reason='subprocess_refused'
+                for pattern,label in [(b'unknown validity','unknown_validity'),(b'strict date request','unknown_validity'),(b'graph revision unavailable','historical_revision_required'),(b'revoked source','revoked_source'),(b'capsule validity expired','capsule_expired'),(b'budget cannot hold','native_budget_insufficient')]:
+                    if pattern in message:
+                        reason=label
+                        break
+                raise ChildRefusal(pathlib.Path(args[0]).name,reason)
             return b''.join(chunks['out'])
         finally:
             if p.poll() is None:
@@ -410,7 +428,9 @@ def build(args):
         (stage/'native').mkdir(mode=0o700)
         native, reused = [], 0
         old_caps = {x['input_sha256']:x for x in old.get('native_capsules',[]) } if old else {}
-        for chunk in chunks:
+        pending=list(chunks)
+        while pending:
+            chunk=pending.pop(0)
             payload = combine(chunk,manifest['author'],manifest['collection'])
             input_raw = enc(payload)
             digest = sha(input_raw)
@@ -428,6 +448,15 @@ def build(args):
                 temp.write_bytes(input_raw)
                 try:
                     run([helper,temp,target])
+                except NativeArchiveLimit:
+                    if target.exists() or target.is_symlink():
+                        raise ValueError('unexpected archive output on native resource refusal')
+                    temp.unlink()
+                    if len(chunk)==1:
+                        raise ValueError('single authored source exceeds native archive bound: '+chunk[0]['id'])
+                    middle=len(chunk)//2
+                    pending[0:0]=[chunk[:middle],chunk[middle:]]
+                    continue
                 except ValueError as error:
                     raise ValueError('native shard refused for source IDs '+','.join(x['id'] for x in chunk)+': '+str(error)) from error
                 temp.unlink()

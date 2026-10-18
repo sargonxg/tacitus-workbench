@@ -59,7 +59,7 @@ The separate `expanded-cases.native-v2.zip` can also be imported into the live n
 
 ## Import a local manifest collection
 
-The optional [Linux CLI manifest importer](tools/local-import/README.md) indexes all declared local text/Markdown sources, including source-only documents without annotations. Explicitly authored sources also produce separate bounded native capsules. It supports deterministic identities, exact bytes, atomic complete output and verified incremental artifact reuse. The tested 128-document case contains 100 authored sources and 28 source-only records; no combined cross-capsule query or automatic extraction is provided.
+The optional [Linux CLI manifest importer](tools/local-import/README.md) indexes all declared local text/Markdown sources, including source-only documents without annotations. Explicitly authored sources also produce separate bounded native capsules. It supports deterministic identities, exact bytes, atomic complete output and verified incremental artifact reuse. The tested 128-document case contains 100 authored sources and 28 source-only records; maximum 256-document and combined-near-limit cases are also verified. The [collection query command](tools/local-import/COLLECTION_QUERY.md) preserves separate native packets under one global byte budget, with explicit omissions and no semantic conflict resolution or automatic extraction.
 
 ## Compare live retrieval checkpoints
 
