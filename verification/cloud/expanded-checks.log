@@ -1,0 +1,17 @@
+test_all_graph_references_and_fingerprints (__main__.ExtendedIntegrity.test_all_graph_references_and_fingerprints) ... ok
+test_all_span_bytes_and_metadata (__main__.ExtendedIntegrity.test_all_span_bytes_and_metadata) ... ok
+test_authorization_comparison_cannot_leak_future_record (__main__.ExtendedIntegrity.test_authorization_comparison_cannot_leak_future_record) ... ok
+test_casebook_references_resolve (__main__.ExtendedIntegrity.test_casebook_references_resolve) ... ok
+test_composite_case_withheld_on_affected_clock (__main__.ExtendedIntegrity.test_composite_case_withheld_on_affected_clock) ... ok
+test_current_rights_scope_is_not_baseline_count (__main__.ExtendedIntegrity.test_current_rights_scope_is_not_baseline_count) ... ok
+test_exact_sources (__main__.ExtendedIntegrity.test_exact_sources) ... ok
+test_fingerprinting_preserves_proposal_content (__main__.ExtendedIntegrity.test_fingerprinting_preserves_proposal_content) ... ok
+test_important_qualifications_not_lost (__main__.ExtendedIntegrity.test_important_qualifications_not_lost) ... ok
+test_method_proposals_are_not_claimed_as_ingested (__main__.ExtendedIntegrity.test_method_proposals_are_not_claimed_as_ingested) ... ok
+test_native_limits_and_actual_counts (__main__.ExtendedIntegrity.test_native_limits_and_actual_counts) ... ok
+test_native_method_proposals_are_scoped_and_unreviewed (__main__.ExtendedIntegrity.test_native_method_proposals_are_scoped_and_unreviewed) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.005s
+
+OK

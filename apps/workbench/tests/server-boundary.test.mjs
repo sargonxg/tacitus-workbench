@@ -14,7 +14,7 @@ async function stop(child){child.kill();if(child.exitCode===null)await new Promi
 test('default disabled server serves recorded data and refuses API before origin checks',async()=>{
  const {child,origin}=await start(4320,false);
  try{assert.equal((await(await fetch(origin+'/api/status')).json()).live,false);assert.equal((await fetch(origin+'/examples/peace.context.json')).status,200);
- for(const from of [origin,'https://example.invalid']){const res=await fetch(origin+'/api/inspect',{method:'POST',headers:{Origin:from,'Content-Type':'application/json'},body:'{}'});assert.equal(res.status,404);assert.equal((await res.json()).error,'inspector_disabled');}
+ for(const from of [origin,'https://example.invalid'])for(const route of ['/api/inspect','/api/collection']){const res=await fetch(origin+route,{method:'POST',headers:{Origin:from,'Content-Type':'application/json'},body:'{}'});assert.equal(res.status,404);assert.equal((await res.json()).error,'inspector_disabled');}
  }finally{await stop(child);}
 });
 test('enabled outer lock rejects concurrent headers before body and releases on errors and disconnect',async()=>{

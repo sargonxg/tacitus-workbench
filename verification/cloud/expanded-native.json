@@ -1,0 +1,67 @@
+{
+  "archive_sha256": "7ad38b4d6db8269b1a642d400183230e78bddc0a89e77ca7585e92f23fcf1608",
+  "binary_sha256": "5b1e05276784f8e460054b718535809f3dc2eaa265dc861ddbc954710167e420",
+  "checks": [
+    {
+      "case": "censorship.request",
+      "exact_reproduction": true,
+      "claims": 9,
+      "bytes": 47096
+    },
+    {
+      "case": "hospitals.request",
+      "exact_reproduction": true,
+      "claims": 11,
+      "bytes": 58578
+    },
+    {
+      "case": "mediation.request",
+      "exact_reproduction": true,
+      "claims": 11,
+      "bytes": 55671
+    },
+    {
+      "case": "protection.request",
+      "exact_reproduction": true,
+      "claims": 4,
+      "bytes": 27550
+    },
+    {
+      "case": "relief.request",
+      "exact_reproduction": true,
+      "claims": 9,
+      "bytes": 44161
+    },
+    {
+      "case": "treaty.request",
+      "exact_reproduction": true,
+      "claims": 14,
+      "bytes": 62939
+    },
+    {
+      "case": "strict",
+      "rejected_empty_stdout": true
+    },
+    {
+      "case": "pre_ingestion",
+      "rejected_empty_stdout": true
+    },
+    {
+      "case": "historical_1914",
+      "rejected_empty_stdout": true
+    },
+    {
+      "case": "revoked",
+      "rejected_empty_stdout": true
+    },
+    {
+      "case": "deterministic_repack",
+      "exact_bytes": true
+    },
+    {
+      "case": "evidence_tamper",
+      "rejected_empty_stdout": true
+    }
+  ],
+  "scope": "Structural local validation only; annotations unreviewed; modern ingestion checkpoint is not historical knowledge."
+}

@@ -5,6 +5,7 @@ import {graphFromContext} from './graph/evidenceGraph';
 import type {NativeContext} from './graph/evidenceGraph';
 import {createRequestEpoch,wholeContextBlob} from './local-inspector-client.mjs';
 import './style.css';
+import CollectionSearch from './CollectionSearch';
 import type {WalkthroughData} from './graph/julyWalkthroughModel';
 const GuidedWalkthrough=lazy(()=>import('./graph/July1914Walkthrough'));
 
@@ -44,6 +45,6 @@ function App(){
     {inspection&&<details><summary>Exact archive inspection</summary><pre>{inspection}</pre></details>}
     {raw&&<section aria-label="Returned Context"><h2>{mode==='recorded'?'Recorded':'Live'} Context</h2><button onClick={exportContext}>Export exact Context JSON</button>{projection?<><p>Known as of {projection.context.context.known_as_of}; valid at {projection.context.context.valid_at}.</p><Explorer key={raw} graph={projection.graph} initialPerspective={projection.july?'contemporary':'all'}/></>:<p role="alert">Graph projection refused. Unchanged JSON remains available for export.</p>}<details><summary>Full unchanged Context, including omissions</summary><pre>{raw}</pre></details></section>}
     <section aria-label="Optional recorded walkthrough"><h2>Guided evidence walkthrough</h2><p>A separate fixed example explores historical clocks, source qualifications and mixed retrieval measurements. It is not connected to the uploaded archive or live graph selection.</p><button onClick={()=>void loadGuided()}>Load optional recorded walkthrough</button>{guided&&<Suspense fallback={<p>Loading walkthrough…</p>}><GuidedWalkthrough data={guided}/></Suspense>}</section>
-    <footer>Local-only review candidate. Application-source license remains an owner decision; no publication grant is inferred.</footer></main>;
+    <CollectionSearch/><footer>Local-only review candidate. Application-source license remains an owner decision; no publication grant is inferred.</footer></main>;
 }
 createRoot(document.getElementById('root')!).render(<App/>);

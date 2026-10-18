@@ -1,3 +1,5 @@
+> Historical PR3 evidence below. The current cloud integration installs fresh dependencies, adds a lockfile and separately tests PR2; see ../../docs/CLOUD_VERIFICATION.md.
+
 # Standalone candidate verification
 
 This is independent of private website PR47's release gates. No package was

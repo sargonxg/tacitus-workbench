@@ -1,0 +1,3620 @@
+{
+  "format": "tacitus-diplomacy-expanded-example-data/1",
+  "archive": "example-data.zip",
+  "archive_sha256": "a5dd21b2edc4850b0c155c5fb33c803e838c3c47edeae148379af4e227cac0aa",
+  "archive_bytes": 3206084,
+  "root": "diplomacy-1914-expanded/",
+  "counts": {
+    "source_works": 2,
+    "records": 622,
+    "frus_documents": 618,
+    "retrospective_memoir_sections": 4,
+    "normalized_text_bytes": 910023,
+    "structural_blocks": 4452,
+    "paragraph_blocks": 2574,
+    "assistant_authored_unreviewed_claims": 85,
+    "baseline_claims": 39,
+    "expanded_claims": 46,
+    "native_typed_unreviewed_methods": 10
+  },
+  "source_works": [
+    {
+      "title": "Papers Relating to the Foreign Relations of the United States, 1914, Supplement, The World War",
+      "edition": "U.S. Government Printing Office, 1928",
+      "url": "https://history.state.gov/historicaldocuments/frus1914Supp",
+      "rights": "Official publisher declares files public domain",
+      "rights_url": "https://github.com/HistoryAtState/frus/blob/6170e4b32c1224002db2fe0c5d8d910597cddc2e/README.md#license",
+      "immutable_source_url": "https://raw.githubusercontent.com/HistoryAtState/frus/6170e4b32c1224002db2fe0c5d8d910597cddc2e/volumes/frus1914Supp.xml",
+      "selection": "618 records in complete chapters ch1–ch9, ch19–ch22, ch37–ch38, ch42–ch44; see corpus manifest"
+    },
+    {
+      "title": "My Mission to London, 1912–1914",
+      "author": "Karl Max Lichnowsky",
+      "edition": "George H. Doran, New York; undated historical English translation, unnamed translator; preface by Gilbert Murray",
+      "url": "https://www.gutenberg.org/ebooks/39457",
+      "rights": "Gutenberg edition declared public domain in the USA; separate trademark/distribution conditions; other jurisdictions unverified",
+      "rights_url": "https://www.gutenberg.org/policy/license.html",
+      "composition_date": "1916-08",
+      "retrospective": true
+    }
+  ],
+  "core": {
+    "repository": "https://github.com/sargonxg/tacitus-political-policy-second-brain",
+    "base_commit": "0d47eafd93f2b4a5e4a926d3c761410b1c319cd6",
+    "patch_sha256": "5dbf6a9c000b7a381601063115c9b08d4b509d239b7edd9d2c4b0067f3856611",
+    "license": "Apache-2.0"
+  },
+  "native_archive": {
+    "path": "expanded-cases.native-v2.zip",
+    "sha256": "7ad38b4d6db8269b1a642d400183230e78bddc0a89e77ca7585e92f23fcf1608",
+    "sources": 31,
+    "assertions": 46
+  },
+  "files": [
+    {
+      "path": "EXPANDED_CASEBOOK.json",
+      "bytes": 9693,
+      "sha256": "0a86a24eb86eaa5c4fd277298b100dce3aab1acb0c7e258d3275068826330a32"
+    },
+    {
+      "path": "FILES.json",
+      "bytes": 116317,
+      "sha256": "1ae275c839c59cc0e025b1b4f3e643ea6142ed341b6c9bc7ad7a434e1175bb84"
+    },
+    {
+      "path": "LICENSE-GUTENBERG.txt",
+      "bytes": 17530,
+      "sha256": "18bc5c6f86b23ade32c4d711e765328b0c642c383a993c8d7f11c7ee21da4bf1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12540,
+      "sha256": "2956b47abd4efbea978fd89f77f96e74675ec33d225590d5d8fd879e7663aef3"
+    },
+    {
+      "path": "RIGHTS.md",
+      "bytes": 6988,
+      "sha256": "922177b0b45f3ed1c78fb333fa744810274745594bc546a3dad12a6a084badbe"
+    },
+    {
+      "path": "STATISTICS.json",
+      "bytes": 14840,
+      "sha256": "b5a9be1c4ab92fda3d9cd8de25f1105e6cedfc41ab28394230acd8705f31fb58"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 4553,
+      "sha256": "fac8817a711f72f3c60991b2681e1cec54d8f5725e12b41014d6a6b11875814b"
+    },
+    {
+      "path": "annotations/capture.json",
+      "bytes": 147319,
+      "sha256": "238f7a2afa951bcc0638549c618689f6d546597d6a66c67a6a8be7e4d894d316"
+    },
+    {
+      "path": "annotations/capture.unfingerprinted.json",
+      "bytes": 143255,
+      "sha256": "481d54f9305e9dfd8df03dc545170a2cf85f4a0675bf55fcdd338d7b8c8b7080"
+    },
+    {
+      "path": "annotations/documents.json",
+      "bytes": 64250,
+      "sha256": "1455926ae4c3710f2f6cf3efbfceffadc99a459ec48823b4f0684d501a01bfb9"
+    },
+    {
+      "path": "annotations/expanded/capture.json",
+      "bytes": 204470,
+      "sha256": "e91b865a10c509229987448f57b99e53bacaaf153e459376a70708445cc9d52e"
+    },
+    {
+      "path": "annotations/expanded/capture.unfingerprinted.json",
+      "bytes": 199503,
+      "sha256": "2aa7a147eb8fcf54bd14d992dafe2daa2fe0ff5f91021042d97b6db0a2331a2e"
+    },
+    {
+      "path": "annotations/expanded/cognitive-methods.json",
+      "bytes": 29542,
+      "sha256": "9510337d09ec214f1a9d1df8a4c4fc7af09a52431665d2ca205d48ed186fa99a"
+    },
+    {
+      "path": "annotations/expanded/historical-view.json",
+      "bytes": 33160,
+      "sha256": "48e909d2625deaa53b29bd8e691b30522aeb5f8e0c67bf1144cae74fe3786d3e"
+    },
+    {
+      "path": "annotations/historical-view.json",
+      "bytes": 28577,
+      "sha256": "66aa4761650e09fd9e670f791dadecc3895e7b7ac558aa0f7131d711ab4ae524"
+    },
+    {
+      "path": "annotations/phrase-occurrences.json",
+      "bytes": 152702,
+      "sha256": "ea0e81936216ae0a3bb9c1b86dc3edbb15e503e53f2604f87ceb67e5a9c89e16"
+    },
+    {
+      "path": "baseline/DEMO_QUERIES.json",
+      "bytes": 4980,
+      "sha256": "3ab1c0bb4b17d5b43e408ec2fe8f623c4c3e90988f594ea7a2aaf1fb82a8bb41"
+    },
+    {
+      "path": "baseline/README.md",
+      "bytes": 11682,
+      "sha256": "a4df63ea7f23d69d0007587e7841ddee14b6b8e4ded50cc2c702adf25d2b683f"
+    },
+    {
+      "path": "baseline/capture.json",
+      "bytes": 147319,
+      "sha256": "238f7a2afa951bcc0638549c618689f6d546597d6a66c67a6a8be7e4d894d316"
+    },
+    {
+      "path": "baseline/capture.unfingerprinted.json",
+      "bytes": 143255,
+      "sha256": "481d54f9305e9dfd8df03dc545170a2cf85f4a0675bf55fcdd338d7b8c8b7080"
+    },
+    {
+      "path": "baseline/corpus-index.json",
+      "bytes": 1200667,
+      "sha256": "8fd1fdd681102055f50f832b44ffb65cf42c2561831ce1df97307f9fec119507"
+    },
+    {
+      "path": "baseline/corpus-manifest.json",
+      "bytes": 370029,
+      "sha256": "225abab89ec8f4b0fdf5521e338421a4b77e43627ea34e28aadb329c5205c254"
+    },
+    {
+      "path": "baseline/historical-view.json",
+      "bytes": 28577,
+      "sha256": "66aa4761650e09fd9e670f791dadecc3895e7b7ac558aa0f7131d711ab4ae524"
+    },
+    {
+      "path": "baseline/july-1914.native-v2.zip",
+      "bytes": 138303,
+      "sha256": "c7268bef3b19ff9b93458a64e476dd52df1c76f074e77fe149d2983268a66e5f"
+    },
+    {
+      "path": "collection-adapter/FILES.json",
+      "bytes": 2369,
+      "sha256": "bf31a2a29e82fba4f849b0034d3811885a19ac24ea88859551dcdf237977f5be"
+    },
+    {
+      "path": "collection-adapter/README.md",
+      "bytes": 4825,
+      "sha256": "bc1533ce09a3907aa4da3f9ca43400a440224f93eff78d1504b2fe09f5971fcf"
+    },
+    {
+      "path": "collection-adapter/collection.py",
+      "bytes": 10670,
+      "sha256": "77cc6af3ff7671b08643ccc4ddb9af2d0e5fcccbb34f2a9968b3e66a6cf4105f"
+    },
+    {
+      "path": "collection-adapter/lexical_reference.py",
+      "bytes": 8442,
+      "sha256": "239d15dbe4efc8308f4541541b31f3b0c59b3286c8c0de4d39a2f453987b1f25"
+    },
+    {
+      "path": "collection-adapter/notices/APACHE-2.0.txt",
+      "bytes": 10997,
+      "sha256": "265938465000a6bc19a4815edeafb8bc501d248846baece955e9618ff31c6453"
+    },
+    {
+      "path": "collection-adapter/notices/NOTICE-TACITUS.md",
+      "bytes": 842,
+      "sha256": "0a2968cc82a7f98deddefb8a00c846b518e106c55a70c12bee9000f049e56f84"
+    },
+    {
+      "path": "collection-adapter/results/broad.context.json",
+      "bytes": 32251,
+      "sha256": "bdcb705083e7c4b40297beb71ae89c891590f800cd77372c04b662cee59a6181"
+    },
+    {
+      "path": "collection-adapter/results/broad.request.json",
+      "bytes": 52,
+      "sha256": "f4f3ac79e9ffe8151f76dc3778b9c69b659964c18d6f67b9b7fa8e9bc9420bd1"
+    },
+    {
+      "path": "collection-adapter/results/mobilization.context.json",
+      "bytes": 28643,
+      "sha256": "0e8969cdf008ab70181db8aebf3161dc0aee1422fdbde6b649cf45d52431ac69"
+    },
+    {
+      "path": "collection-adapter/results/mobilization.request.json",
+      "bytes": 45,
+      "sha256": "90243a4802f4a4be6f2cdb8ef4361c284820887ef9207409adf7acfa579477b6"
+    },
+    {
+      "path": "collection-adapter/results/receipt_clock.context.json",
+      "bytes": 15035,
+      "sha256": "a982131f01b88a47457e1c14a3504bd80662a7ffd9ff24be46a37165b4e9872c"
+    },
+    {
+      "path": "collection-adapter/results/receipt_clock.request.json",
+      "bytes": 98,
+      "sha256": "bf3fb6ead177aa46290f1806c3c1cf567cc927728dd9b09e52591fc26e574ee5"
+    },
+    {
+      "path": "collection-adapter/results/report.json",
+      "bytes": 31946,
+      "sha256": "8397e9223688277bafbcb3a0cc550352bed7b45f06ad22380fb6c480eb217545"
+    },
+    {
+      "path": "collection-adapter/results/shipping.context.json",
+      "bytes": 31902,
+      "sha256": "9434be6fd43ef96998972176b0e335b1dfd3178128a9fcd4cf00a1df8ba351cb"
+    },
+    {
+      "path": "collection-adapter/results/shipping.request.json",
+      "bytes": 52,
+      "sha256": "4e62c1f05762e393da5552e7156158091a173d901992da158e5bf0a800ab189f"
+    },
+    {
+      "path": "collection-adapter/results/source_clock.context.json",
+      "bytes": 31271,
+      "sha256": "0b9c288ffd0d4502a2ee40f6bde042252d107db7bfa5bda719aafcdc18f5660f"
+    },
+    {
+      "path": "collection-adapter/results/source_clock.request.json",
+      "bytes": 94,
+      "sha256": "3759d31470fe0857fd8d232624bd912cda9ebbc78c7c2ee6b4ffcf96e407d961"
+    },
+    {
+      "path": "collection-adapter/run_collection_check.py",
+      "bytes": 2850,
+      "sha256": "4c4195fce3c8605f47eacbee84a63a311896ea966efbf9d438a7da2cf56bf142"
+    },
+    {
+      "path": "collection-adapter/test_collection.py",
+      "bytes": 5606,
+      "sha256": "dc4d9406d532eef8192337b724c81483be261bc1115b95b783847c5f1ddcdd54"
+    },
+    {
+      "path": "corpus-index.json",
+      "bytes": 5575682,
+      "sha256": "75e17341a7c78203ea31526863fdd3ec2b0a2ed272b9c6b9e4f6f900312c993c"
+    },
+    {
+      "path": "corpus-manifest.json",
+      "bytes": 2083612,
+      "sha256": "1529018685099712be83b044839436bd67948290323341af132e790efcb69d47"
+    },
+    {
+      "path": "expanded-cases.native-v2.zip",
+      "bytes": 190289,
+      "sha256": "7ad38b4d6db8269b1a642d400183230e78bddc0a89e77ca7585e92f23fcf1608"
+    },
+    {
+      "path": "integration/CORE_INTEGRATION.md",
+      "bytes": 3755,
+      "sha256": "8d7f790b53d813b6a03c71946eb9e445bbc57fb373fa4ac90e887f32766b41af"
+    },
+    {
+      "path": "integration/LICENSE-APACHE-2.0.txt",
+      "bytes": 10997,
+      "sha256": "265938465000a6bc19a4815edeafb8bc501d248846baece955e9618ff31c6453"
+    },
+    {
+      "path": "integration/NOTICE-TACITUS.md",
+      "bytes": 842,
+      "sha256": "0a2968cc82a7f98deddefb8a00c846b518e106c55a70c12bee9000f049e56f84"
+    },
+    {
+      "path": "integration/README.md",
+      "bytes": 1735,
+      "sha256": "28b2106f3d4580a66c8c3dacd8c18cce9b421178acd4a47099f3e4e6904e0e15"
+    },
+    {
+      "path": "integration/source-span-recall.patch",
+      "bytes": 8194,
+      "sha256": "5dbf6a9c000b7a381601063115c9b08d4b509d239b7edd9d2c4b0067f3856611"
+    },
+    {
+      "path": "scripts/build_annotations.py",
+      "bytes": 32934,
+      "sha256": "055018792e682a164ea1af34037b9d591272d571e0ee41a1c7319e38de159c0e"
+    },
+    {
+      "path": "scripts/build_corpus.py",
+      "bytes": 15398,
+      "sha256": "e58801c8c9e443ef7d2f8d7dcb247d9483b216140a77fa7e710cf973f6696ce0"
+    },
+    {
+      "path": "scripts/build_extended_annotations.py",
+      "bytes": 41073,
+      "sha256": "0650b4893c948a5945997ecd728306cb169321e5af1b9bce963e967b197d6528"
+    },
+    {
+      "path": "scripts/build_stats.py",
+      "bytes": 3658,
+      "sha256": "8067f22a94f5d6670c353b88805311a285892d5af4438786ae29069b02ca526a"
+    },
+    {
+      "path": "scripts/fingerprint_capture.rs",
+      "bytes": 680,
+      "sha256": "dd069182f5c9cb74527b7b24a91393aa39ba4a587f9213a5dd1ea0ce95b764cb"
+    },
+    {
+      "path": "scripts/historical_snapshot.py",
+      "bytes": 2869,
+      "sha256": "3ed294450e34957e673e2cc3d3f2f4dd7d0788b97303d8598e1ac5335fc1f79f"
+    },
+    {
+      "path": "scripts/validate_cognitive_methods.rs",
+      "bytes": 1525,
+      "sha256": "143d1a95671ab30ba354cf805c9bbb3a7b7abbdf8d691273d22a8f2e11821474"
+    },
+    {
+      "path": "scripts/verify_corpus.py",
+      "bytes": 9704,
+      "sha256": "9b6b088b0eea5c08070e0bb9848d641aa2d8837ebe0f4c3936708da3cf48de2b"
+    },
+    {
+      "path": "scripts/verify_expanded_native.py",
+      "bytes": 4406,
+      "sha256": "c0ba71df008593b3ab43371c82000c139f448e057b36ce40264cc4eb792871b9"
+    },
+    {
+      "path": "scripts/verify_extended.py",
+      "bytes": 5032,
+      "sha256": "73b46b96022b85b58d1f4965e3744ba55687613e36d663b7b0799e01de3298c0"
+    },
+    {
+      "path": "texts/frus1914Supp-d1.txt",
+      "bytes": 1111,
+      "sha256": "b9cfdf4c0bd3b072c14cdd4b26a5212a0f48711784683e90437832fc65368fc3"
+    },
+    {
+      "path": "texts/frus1914Supp-d10.txt",
+      "bytes": 305,
+      "sha256": "b7087b984661770e650e8ace3e22f9e7de4521590c235603faa3d1c2216ec4b5"
+    },
+    {
+      "path": "texts/frus1914Supp-d100.txt",
+      "bytes": 217,
+      "sha256": "3771b0002ea5bc98b17eea0b28a5c8767dda55ba388305e10f7a7612a72491f2"
+    },
+    {
+      "path": "texts/frus1914Supp-d101.txt",
+      "bytes": 536,
+      "sha256": "6fd7514c956b128cdce411beeddd4fbebbf03be86097beccfef04d3a92d70b9b"
+    },
+    {
+      "path": "texts/frus1914Supp-d102.txt",
+      "bytes": 673,
+      "sha256": "57727351ed412473cc56db2bd963a32aa7a384eaac1ac51ddc70b51bbcd027b1"
+    },
+    {
+      "path": "texts/frus1914Supp-d103.txt",
+      "bytes": 1055,
+      "sha256": "1e2083284ec88cf353248a9db1a63944adc8ee6be18e77ae24289fa53e4b8a50"
+    },
+    {
+      "path": "texts/frus1914Supp-d104.txt",
+      "bytes": 191,
+      "sha256": "0cc025bb7ad8b1cfebfd9c646d2012a65af4c6a1fd1925e29a6b95937019d9e7"
+    },
+    {
+      "path": "texts/frus1914Supp-d105.txt",
+      "bytes": 445,
+      "sha256": "2e74b20a6b3e135f3bb1a132608785c9b9a646a1bb573a78611095c2730040ed"
+    },
+    {
+      "path": "texts/frus1914Supp-d106.txt",
+      "bytes": 1063,
+      "sha256": "968a900c915b97c0d2b0d3bb1952dea7bbe4a6ef335ad93612402a0f18f94e50"
+    },
+    {
+      "path": "texts/frus1914Supp-d107.txt",
+      "bytes": 269,
+      "sha256": "f4e7a7dc7284eec18e532e7834ea704f6197b2d58e1d93970a6f9aa6774c2e13"
+    },
+    {
+      "path": "texts/frus1914Supp-d108.txt",
+      "bytes": 1169,
+      "sha256": "7a170c6e33ec3d56338453dac20c82b51087cbb89013a1df5f9fb45f6b0cdff0"
+    },
+    {
+      "path": "texts/frus1914Supp-d109.txt",
+      "bytes": 263,
+      "sha256": "33725040061fcf725dbf1dac7eca0ce733c9ceec0b381ba148f69d2e41554cad"
+    },
+    {
+      "path": "texts/frus1914Supp-d11.txt",
+      "bytes": 567,
+      "sha256": "ee4727e6913021b93f99abc86838b9d37c3edd0a29df11551fa91421694035d0"
+    },
+    {
+      "path": "texts/frus1914Supp-d110.txt",
+      "bytes": 1101,
+      "sha256": "bf3e67fd66f0ba4d5d01e37c4d9dcb4d2eb17c4c8d98c9a6fb90a622678adb20"
+    },
+    {
+      "path": "texts/frus1914Supp-d111.txt",
+      "bytes": 200,
+      "sha256": "38f018fa5925e2cbe3a308ed15d93799e8069a65acf7f79e0b5164eb2fdf1d1a"
+    },
+    {
+      "path": "texts/frus1914Supp-d112.txt",
+      "bytes": 591,
+      "sha256": "4114abff58389eb0fa9bc311927bf7bc924f9486c684895bb377c7a3dc66f149"
+    },
+    {
+      "path": "texts/frus1914Supp-d113.txt",
+      "bytes": 937,
+      "sha256": "a46c4c31c47cfccabe8255b031ebfdaab3368967bb084526cbf456f4fa6154f2"
+    },
+    {
+      "path": "texts/frus1914Supp-d114.txt",
+      "bytes": 738,
+      "sha256": "9ed5f3640df7b459bed8cf05a39cd40a575f63ed10ebc5e0f06c762effc99e62"
+    },
+    {
+      "path": "texts/frus1914Supp-d115.txt",
+      "bytes": 506,
+      "sha256": "4cc6585053b59802e404bcd381189932dce7aa606b547700e50c1251f88e121d"
+    },
+    {
+      "path": "texts/frus1914Supp-d1153.txt",
+      "bytes": 513,
+      "sha256": "55d189d4cc040005038b22a90d9b45852d04c58a9cf4d6688bbb35a597676ce3"
+    },
+    {
+      "path": "texts/frus1914Supp-d1154.txt",
+      "bytes": 619,
+      "sha256": "835405d40b1e36f9dd90deeec6ad8983a34ba16f5003beca08dd3cab7f1a8e8d"
+    },
+    {
+      "path": "texts/frus1914Supp-d1155.txt",
+      "bytes": 1365,
+      "sha256": "7ab070f1359760bc596e777b8afc0272d80022df59bf5e53cd854dcd0dd86619"
+    },
+    {
+      "path": "texts/frus1914Supp-d1156.txt",
+      "bytes": 616,
+      "sha256": "9b74d75358710b221406d36fca2cd7f57dd07df6745fe9f7fcaf9a523c8c63ad"
+    },
+    {
+      "path": "texts/frus1914Supp-d1157.txt",
+      "bytes": 1251,
+      "sha256": "28fdf3cd9809d52ba4daf2366147f3598f8ad1e8dff0133ca39dd4fc0a4d1f1c"
+    },
+    {
+      "path": "texts/frus1914Supp-d1158.txt",
+      "bytes": 1648,
+      "sha256": "c77a5616e4bf868d3550a07a25949907f0e7968fd456d8bbbf91278cda650484"
+    },
+    {
+      "path": "texts/frus1914Supp-d1159.txt",
+      "bytes": 3623,
+      "sha256": "ffd4ee2c29e87b9fb527fe44b00f5e9d2107e89ae0849e6ff7cd8b381ff58b68"
+    },
+    {
+      "path": "texts/frus1914Supp-d116.txt",
+      "bytes": 460,
+      "sha256": "711fee7a8dfff2306e0456e817861e71951177f69bcc6ff0780aa0b1a796b15f"
+    },
+    {
+      "path": "texts/frus1914Supp-d1160.txt",
+      "bytes": 410,
+      "sha256": "a9a4a068e3db30b1ffbcf45cc09fef221c690ff1f61f221f8337678ce8582218"
+    },
+    {
+      "path": "texts/frus1914Supp-d1161.txt",
+      "bytes": 231,
+      "sha256": "23a9ce26c0256bdde13acaa90a26a11a4e05551f29bd87d5337c98a1396c1369"
+    },
+    {
+      "path": "texts/frus1914Supp-d1162.txt",
+      "bytes": 596,
+      "sha256": "f8f20aa606d54164f046115f207040bf1efe1ad7bbc31daac45cf1bfe1427c3f"
+    },
+    {
+      "path": "texts/frus1914Supp-d1163.txt",
+      "bytes": 1131,
+      "sha256": "c74630b4b0df0327e2963d8a1d2c8fff8aa78b99cc23dc40aa6250fedf3ce956"
+    },
+    {
+      "path": "texts/frus1914Supp-d1164.txt",
+      "bytes": 524,
+      "sha256": "2797eca6b1e0725c3d56066ae54a5a358d6574b2ba63ffde10f19f80ca9a1096"
+    },
+    {
+      "path": "texts/frus1914Supp-d1165.txt",
+      "bytes": 683,
+      "sha256": "028c446b2b7491b0a011b9794d25d4147c81434ffd97d72b610e6bfafa9b351f"
+    },
+    {
+      "path": "texts/frus1914Supp-d1166.txt",
+      "bytes": 777,
+      "sha256": "c002e0a1fa6837ef7b8e0c3c601b8f4279f91d8bf78c34e98f7fe0dfe1ade7e2"
+    },
+    {
+      "path": "texts/frus1914Supp-d1167.txt",
+      "bytes": 1443,
+      "sha256": "8fb6c7e417414b6aee42f1735d3769f73efe8d799012b620ec9e8f82220e1775"
+    },
+    {
+      "path": "texts/frus1914Supp-d1168.txt",
+      "bytes": 1210,
+      "sha256": "baedfb9d15865d44e88915d657b52c262e1268c488a40e450d80bbd66c272d26"
+    },
+    {
+      "path": "texts/frus1914Supp-d1169.txt",
+      "bytes": 4597,
+      "sha256": "42ea034a1f64d41ae81ba2fdbb627a2f23acc9a633c85f71076ee2a965088284"
+    },
+    {
+      "path": "texts/frus1914Supp-d117.txt",
+      "bytes": 2509,
+      "sha256": "10b5d7727b99bbe3b6051bf679d8832467ce22546763fcdca5e3946a94dda03d"
+    },
+    {
+      "path": "texts/frus1914Supp-d1170.txt",
+      "bytes": 916,
+      "sha256": "824f319cf101654d798b8cb1c1ef873862ea0ac18143141a41ee3ac63822d99c"
+    },
+    {
+      "path": "texts/frus1914Supp-d1171.txt",
+      "bytes": 3033,
+      "sha256": "4b1cef54df73eb5bd640584354f3b30ae70abbd20101731aa9eabb1b4274b1df"
+    },
+    {
+      "path": "texts/frus1914Supp-d1172.txt",
+      "bytes": 1176,
+      "sha256": "0f3b968036abe54fcbcb5a4cebd7556bb10e6b50a72759b842ce209d546a3834"
+    },
+    {
+      "path": "texts/frus1914Supp-d1173.txt",
+      "bytes": 629,
+      "sha256": "beb681c9a64c5ecb4cc498ad9b0ba5f8ebce221ffd0ab829567e2624c6b3d984"
+    },
+    {
+      "path": "texts/frus1914Supp-d1174.txt",
+      "bytes": 618,
+      "sha256": "78786295758853d156cf2a6f7f837422e672408ff82325eab80e210b5b1a655f"
+    },
+    {
+      "path": "texts/frus1914Supp-d1175.txt",
+      "bytes": 1846,
+      "sha256": "906207a6e05a13812f60cc0c5f3ee34cb9cafdc601ce55bbcdca4f8dbed73812"
+    },
+    {
+      "path": "texts/frus1914Supp-d1176.txt",
+      "bytes": 1076,
+      "sha256": "6ebfefaf6e3e349855f34a939e041ffb3310398596373aea8444e80359c5f3b7"
+    },
+    {
+      "path": "texts/frus1914Supp-d1177.txt",
+      "bytes": 824,
+      "sha256": "a654ef7fe898b0ef43a39d44be4163c74995cfab490107b797af72b2c52a8eec"
+    },
+    {
+      "path": "texts/frus1914Supp-d1178.txt",
+      "bytes": 624,
+      "sha256": "43fc821ea439855e3093cccff439e35f21273cc070f0744cd9aed0cf1880fcef"
+    },
+    {
+      "path": "texts/frus1914Supp-d1179.txt",
+      "bytes": 2193,
+      "sha256": "aa8e5fb2e945b1a1347f7ecfae11ad3cc59bff8afc5fd202862ec9266313d529"
+    },
+    {
+      "path": "texts/frus1914Supp-d118.txt",
+      "bytes": 305,
+      "sha256": "7038433625f63d7cb987d26fa3f3ea22e2bf31b1ab58b39dceea16fb7eba32a4"
+    },
+    {
+      "path": "texts/frus1914Supp-d1180.txt",
+      "bytes": 538,
+      "sha256": "e21b88c1cad281d1b7e964fba90facac615b00fdc527aad2105c0e22df547783"
+    },
+    {
+      "path": "texts/frus1914Supp-d1181.txt",
+      "bytes": 244,
+      "sha256": "cb4a0d7127ba1a38e666b839a07229e3baab41fa91ddd8a23aa7dba019c1f86b"
+    },
+    {
+      "path": "texts/frus1914Supp-d1182.txt",
+      "bytes": 1338,
+      "sha256": "19e454e85c2a7a88f330a52ee0f2763fe712929cd4e8afe1c1b2a23001a01961"
+    },
+    {
+      "path": "texts/frus1914Supp-d1183.txt",
+      "bytes": 1753,
+      "sha256": "816804227cd0322d55e20898c36f6c6483335434265d1dbcfd7c5d64f67922d6"
+    },
+    {
+      "path": "texts/frus1914Supp-d1184.txt",
+      "bytes": 418,
+      "sha256": "6fa9ca6f1bcbbfdf52067855468922330d38fdeab23a538cccb0457a26a05e83"
+    },
+    {
+      "path": "texts/frus1914Supp-d1185.txt",
+      "bytes": 932,
+      "sha256": "e5d756a099c5dcce33708727fd226d608df16f4405571c7a10c387e7d4849d3c"
+    },
+    {
+      "path": "texts/frus1914Supp-d1186.txt",
+      "bytes": 1093,
+      "sha256": "1a7d9ba1bf32fb6ada3ba8b0e51488c56a2d7c3dfc20a3ffa0b121308cb53802"
+    },
+    {
+      "path": "texts/frus1914Supp-d1187.txt",
+      "bytes": 492,
+      "sha256": "e57ad8b116068a4bd8bba22fde9b526a3e58cc6da64935561a2dfcec76b93153"
+    },
+    {
+      "path": "texts/frus1914Supp-d1188.txt",
+      "bytes": 993,
+      "sha256": "9720a0b258b362380afea4968082c4335b5257b3cc99f30dd02d8f13ba2a4906"
+    },
+    {
+      "path": "texts/frus1914Supp-d1189.txt",
+      "bytes": 1248,
+      "sha256": "cfdf95544d5937c774cc359ff14889dfb3c752a905f2f3f8120fffac1ecf7cb7"
+    },
+    {
+      "path": "texts/frus1914Supp-d119.txt",
+      "bytes": 760,
+      "sha256": "a1ab3d443e66e17c22aac9cb4994f794b018ac0cd486046d56c816d141618dac"
+    },
+    {
+      "path": "texts/frus1914Supp-d1190.txt",
+      "bytes": 1277,
+      "sha256": "5d3612b15f41f7251e3994a21a69c4fd93bed142b2903f3c5445b7bbe4428448"
+    },
+    {
+      "path": "texts/frus1914Supp-d1191.txt",
+      "bytes": 3621,
+      "sha256": "5b06d24427c09f0b1e1fd12259797367ba762c4d89962e2bf530e8eff4efb880"
+    },
+    {
+      "path": "texts/frus1914Supp-d1192.txt",
+      "bytes": 3434,
+      "sha256": "197d1b387a7ce4ed4e2f6948269a82f29edc35f39424f61a9bcb2910b6629b38"
+    },
+    {
+      "path": "texts/frus1914Supp-d1193.txt",
+      "bytes": 845,
+      "sha256": "dfc82ac4dcdf20e6edcdc284af6ccaedb74c3b7db43455fa5ede41fc3d6ce84a"
+    },
+    {
+      "path": "texts/frus1914Supp-d1194.txt",
+      "bytes": 427,
+      "sha256": "f69b23f6ca17d7c5c22ef1e3fe10f22c55c40e49fcb181444ad433bde9f82f13"
+    },
+    {
+      "path": "texts/frus1914Supp-d12.txt",
+      "bytes": 682,
+      "sha256": "7a5ab6440f800f9c6e54b101dcfc13029af8634f13374dad878c0e6c40f3bb26"
+    },
+    {
+      "path": "texts/frus1914Supp-d120.txt",
+      "bytes": 218,
+      "sha256": "e3179f20b0e6cd17b44ad619da53608f0667003279024022bead6c7cdb79446f"
+    },
+    {
+      "path": "texts/frus1914Supp-d121.txt",
+      "bytes": 607,
+      "sha256": "88dd589e6a5f5b248f3287a614385089b3b5ea9333b0080e0c2469ac1f5168db"
+    },
+    {
+      "path": "texts/frus1914Supp-d122.txt",
+      "bytes": 1180,
+      "sha256": "e3302b81a7f60f05afc09f040ac872110b861088cc80a2b59951c02c0bc8c862"
+    },
+    {
+      "path": "texts/frus1914Supp-d123.txt",
+      "bytes": 234,
+      "sha256": "31595d7521bcb5662ef03c29ba536bfc0b80ac2971ec83952f86376a8917dbdb"
+    },
+    {
+      "path": "texts/frus1914Supp-d124.txt",
+      "bytes": 694,
+      "sha256": "125a9d8af5465289804ad37ed62055bd2d9b8574c6f9fb35d3f7a0f0fa9ce267"
+    },
+    {
+      "path": "texts/frus1914Supp-d125.txt",
+      "bytes": 3184,
+      "sha256": "b436580087ef3edec5ef9636fc836329e34c088f2ad0bb252c4bbfbc921b2940"
+    },
+    {
+      "path": "texts/frus1914Supp-d126.txt",
+      "bytes": 1087,
+      "sha256": "f051e19268c04c2f425a6494a416fe271f12978a0274ee54bef43ea207d50d96"
+    },
+    {
+      "path": "texts/frus1914Supp-d127.txt",
+      "bytes": 357,
+      "sha256": "e9d587e13562b896aa6176bb5e3c89371c607cdae399bd506408ed100cddca22"
+    },
+    {
+      "path": "texts/frus1914Supp-d128.txt",
+      "bytes": 518,
+      "sha256": "deebd8f25b5c081a80de20c083beeacb3ff8c82badea4b2106c8b4eb12482d44"
+    },
+    {
+      "path": "texts/frus1914Supp-d1286.txt",
+      "bytes": 1039,
+      "sha256": "51b4f020c5764235bd810c1cb219503d6b26b8fae500cdd8a396aa5fd75c278b"
+    },
+    {
+      "path": "texts/frus1914Supp-d1287.txt",
+      "bytes": 413,
+      "sha256": "ff0542836a82c0bc01daf75bdac5454ef7e41e773cec0c69d18e35dbbecc3389"
+    },
+    {
+      "path": "texts/frus1914Supp-d1288.txt",
+      "bytes": 255,
+      "sha256": "bee92b427c5a24609f5dcbfe4ab753e1961e7ea6a4ecde796871b3347c175eda"
+    },
+    {
+      "path": "texts/frus1914Supp-d1289.txt",
+      "bytes": 605,
+      "sha256": "da339db1a99383b26f998fcb241cb3e06198ac095576e2fd798a65e0bdeb351e"
+    },
+    {
+      "path": "texts/frus1914Supp-d129.txt",
+      "bytes": 259,
+      "sha256": "bc38fd2bcf1962ee18b12cbc471aeb191d3d530173913eb8e537dc1311929dc1"
+    },
+    {
+      "path": "texts/frus1914Supp-d1290.txt",
+      "bytes": 2663,
+      "sha256": "69ef0090feca5440d143bc2dc9c6caa7ff8552da889d550fc38ffa7375151454"
+    },
+    {
+      "path": "texts/frus1914Supp-d1291.txt",
+      "bytes": 366,
+      "sha256": "e60abde71ad588aad44b98b37a4b4fb60b49ffeae90a0dc9c4457adf0c2ccf2e"
+    },
+    {
+      "path": "texts/frus1914Supp-d1292.txt",
+      "bytes": 345,
+      "sha256": "f96c464f1b37fdc324efc4145a6251c27989cdcf808f7852956c8be5bf7ce3a0"
+    },
+    {
+      "path": "texts/frus1914Supp-d1293.txt",
+      "bytes": 548,
+      "sha256": "498c281f55d4c68555a66c32739704768f6e39aed3ea434477b2ab73085f7dab"
+    },
+    {
+      "path": "texts/frus1914Supp-d1294.txt",
+      "bytes": 384,
+      "sha256": "ac28bdc7449731936f994fea1411ca3bcdf4ee09e19a1c1027b9ecefad438df8"
+    },
+    {
+      "path": "texts/frus1914Supp-d1295.txt",
+      "bytes": 1225,
+      "sha256": "7a003702aa78db12f26d08c077915830c63226ea1ef0ee073abd0015697295d5"
+    },
+    {
+      "path": "texts/frus1914Supp-d1296.txt",
+      "bytes": 346,
+      "sha256": "27bf1e3d16ec52e55f408ab81b071ecec229fa87da3894e2cba873b6920bc2eb"
+    },
+    {
+      "path": "texts/frus1914Supp-d1297.txt",
+      "bytes": 405,
+      "sha256": "fbb5b0c78392dd91e55b0da651d2f0d9d60c8cf0522bb389064d7bbd66aeb476"
+    },
+    {
+      "path": "texts/frus1914Supp-d1298.txt",
+      "bytes": 1629,
+      "sha256": "4a7ea28ac3f5a50c086c58f3994b02280ab211863ebdbe6849a018e60c467681"
+    },
+    {
+      "path": "texts/frus1914Supp-d1299.txt",
+      "bytes": 520,
+      "sha256": "6ffebf96ca2159bd452f4db4f18d74a4c34fe94a3d05f9aa6c3224c6e770b142"
+    },
+    {
+      "path": "texts/frus1914Supp-d13.txt",
+      "bytes": 453,
+      "sha256": "b2b940cd43afed6322a1e8f5613847912685a2e94a8a40e0b32f497c6dbfed70"
+    },
+    {
+      "path": "texts/frus1914Supp-d130.txt",
+      "bytes": 2056,
+      "sha256": "60e6bb02565f1f1c902efd2a2eeb58efc37dbaf7596e503bc41eb81b48fa8b86"
+    },
+    {
+      "path": "texts/frus1914Supp-d1300.txt",
+      "bytes": 475,
+      "sha256": "a821d39d310e1963bc0d81a915e13494b4ded1be10ce9d1b8971e874144b878e"
+    },
+    {
+      "path": "texts/frus1914Supp-d1301.txt",
+      "bytes": 517,
+      "sha256": "ce99559c59e264c9c466526a0e6a63023873502c66bf30f8205dbf86f39f4c2e"
+    },
+    {
+      "path": "texts/frus1914Supp-d1302.txt",
+      "bytes": 497,
+      "sha256": "5e77edf70c93a3c2aac68b9c4ece88dc2bc31d9d779d82fa718282cc0b8b9c1d"
+    },
+    {
+      "path": "texts/frus1914Supp-d1303.txt",
+      "bytes": 473,
+      "sha256": "7bcaa3f2f8c7744a479629abc902821f510a8ea4fee48dd802f312a10976730d"
+    },
+    {
+      "path": "texts/frus1914Supp-d1304.txt",
+      "bytes": 462,
+      "sha256": "f488a8a15fa6b5dd3a34bcad79282087863c7cd04de670c168aa5c499f6a00a3"
+    },
+    {
+      "path": "texts/frus1914Supp-d1305.txt",
+      "bytes": 492,
+      "sha256": "a77e8d514abedb30a6811321741ba0347c3887226cfff179b65bdaf1dd38ed5b"
+    },
+    {
+      "path": "texts/frus1914Supp-d1306.txt",
+      "bytes": 1395,
+      "sha256": "47195e1a710bed14f35256fae43c3b82eeb0eec8d4c1e3207415d3cc3c83c4d0"
+    },
+    {
+      "path": "texts/frus1914Supp-d1307.txt",
+      "bytes": 965,
+      "sha256": "8727e6051efbd3f323125c735df53f504a2fae85c466e84756f815dc32d91617"
+    },
+    {
+      "path": "texts/frus1914Supp-d1308.txt",
+      "bytes": 2357,
+      "sha256": "12b2a4a8af3a3bcbd19cb2f871a59843ba5579e5763470995506edfe240fc261"
+    },
+    {
+      "path": "texts/frus1914Supp-d1309.txt",
+      "bytes": 493,
+      "sha256": "14a8c52c21e9e9e8ce499134c4983dc61ca46ec904ee8cc23f889adbe880afdc"
+    },
+    {
+      "path": "texts/frus1914Supp-d131.txt",
+      "bytes": 1259,
+      "sha256": "3d93fd63be5571a37e8ef29e2624e4530a06fb0f7108d901d4079d8f95c1afc8"
+    },
+    {
+      "path": "texts/frus1914Supp-d1310.txt",
+      "bytes": 774,
+      "sha256": "ef909ae00d709361cc41d7e9c021f234a2dcd040fda0eab17056baffe507c2ea"
+    },
+    {
+      "path": "texts/frus1914Supp-d1311.txt",
+      "bytes": 1218,
+      "sha256": "bec4d85e9215fab22e1f7337c9a23f3e5ed36c456c54eb3d50c604447e7b46a1"
+    },
+    {
+      "path": "texts/frus1914Supp-d1312.txt",
+      "bytes": 439,
+      "sha256": "9be82a0b659445c36a29ed671aaf247088c61526b7d578379c0d61d3f26f6f5c"
+    },
+    {
+      "path": "texts/frus1914Supp-d1313.txt",
+      "bytes": 385,
+      "sha256": "ed3cbd1a90c64c2910aa16fcdc51887fc268cb8edf49103c8a30e8a3521b8ddd"
+    },
+    {
+      "path": "texts/frus1914Supp-d1314.txt",
+      "bytes": 438,
+      "sha256": "49f816a2263944fc709f9568227caff9be04b38272f7767d167eac03f09086f8"
+    },
+    {
+      "path": "texts/frus1914Supp-d1315.txt",
+      "bytes": 8612,
+      "sha256": "63691eaa5bd8e1e946a553c5fe233aa9cc9f1d69dde953fa10183a4f7cbb840b"
+    },
+    {
+      "path": "texts/frus1914Supp-d1316.txt",
+      "bytes": 703,
+      "sha256": "e6e774fec79ee4c10dac8322ce2167879a39ac508e2614c7c6eecf1187486e33"
+    },
+    {
+      "path": "texts/frus1914Supp-d1317.txt",
+      "bytes": 873,
+      "sha256": "2bb8e8efa6150f8fb54873cdc844fb2f7d0bb88232d5eacf2a7adf68b0a0fc49"
+    },
+    {
+      "path": "texts/frus1914Supp-d1318.txt",
+      "bytes": 1419,
+      "sha256": "b324faaa6d1997a26973ecb90bbd0c0a06ac341f1b72d0298c3e8557401c9225"
+    },
+    {
+      "path": "texts/frus1914Supp-d1319.txt",
+      "bytes": 984,
+      "sha256": "5a2a38f4c274aef86a543297dab56384f996030e14e51ffa1cf6738efc089c86"
+    },
+    {
+      "path": "texts/frus1914Supp-d132.txt",
+      "bytes": 7960,
+      "sha256": "6d8463217576f0a2824a57e0f5fbe4fd8e2b7ed09131eda37adba0bd4fcb45d1"
+    },
+    {
+      "path": "texts/frus1914Supp-d1320.txt",
+      "bytes": 2202,
+      "sha256": "48f7a980f9dcc46b48e6e3c4e9c6afd0d3d89a9c4fdddcf930de48f8ef607f66"
+    },
+    {
+      "path": "texts/frus1914Supp-d1321.txt",
+      "bytes": 455,
+      "sha256": "633430268f434bb2efa992fddd6478d85ff694482632d4de8c7fecab73a77303"
+    },
+    {
+      "path": "texts/frus1914Supp-d1322.txt",
+      "bytes": 1257,
+      "sha256": "cd24066e142d7f7d80cdbe1530a407a197d8ebebd1cf95549bb22514a8376ec6"
+    },
+    {
+      "path": "texts/frus1914Supp-d1323.txt",
+      "bytes": 959,
+      "sha256": "739e04beed1e452bfddfe42fb2e9711c6ca54e997be4205125ca070faf2634f0"
+    },
+    {
+      "path": "texts/frus1914Supp-d1324.txt",
+      "bytes": 262,
+      "sha256": "7c655022a9d6d781b48d3ab8848ded8c18b9b00d946bc6dd181d6ac8deb75c50"
+    },
+    {
+      "path": "texts/frus1914Supp-d1325.txt",
+      "bytes": 278,
+      "sha256": "d372da4298472c3c3e7e5380d6bf2ee6c5b99bdc459f4981db078448af665f65"
+    },
+    {
+      "path": "texts/frus1914Supp-d1326.txt",
+      "bytes": 1302,
+      "sha256": "af07d102f0861bf95ec1942520811823d206721f3634dddf6b987cc584feec33"
+    },
+    {
+      "path": "texts/frus1914Supp-d1327.txt",
+      "bytes": 862,
+      "sha256": "62778461ad4f6e5156366af58bb5ba6056a3d326fdb2fa3f600f588a12efc6ad"
+    },
+    {
+      "path": "texts/frus1914Supp-d1328.txt",
+      "bytes": 383,
+      "sha256": "e48847ada05c3896f19e5c387bd8a70e1bf9d9eaa36711ecae64210e619fa5e5"
+    },
+    {
+      "path": "texts/frus1914Supp-d1329.txt",
+      "bytes": 275,
+      "sha256": "ef739c461d0e912865572845f6b59c1f20a0d59a986b9cbec776f239968a3d3e"
+    },
+    {
+      "path": "texts/frus1914Supp-d133.txt",
+      "bytes": 1472,
+      "sha256": "4dc3273c1de582f2886fecaa23aec08b8f4a584b88319b6fd56fb04da7291147"
+    },
+    {
+      "path": "texts/frus1914Supp-d1330.txt",
+      "bytes": 518,
+      "sha256": "152db725518932825f04704fd4c84c4f8602a706e1d487e15e91240bb1f3de9e"
+    },
+    {
+      "path": "texts/frus1914Supp-d1331.txt",
+      "bytes": 763,
+      "sha256": "580e6d27ed979caee887b7310ebf44edd851389bf7ae15bae0e932847cf1f4c8"
+    },
+    {
+      "path": "texts/frus1914Supp-d1332.txt",
+      "bytes": 448,
+      "sha256": "f0e5384538a76e77a5dc14c2ebd9c22001c73dca7637ffd20d75e5fecfa55bd6"
+    },
+    {
+      "path": "texts/frus1914Supp-d1333.txt",
+      "bytes": 454,
+      "sha256": "9e76a97640670e50ccddf6efacfafd5114259364f8168f89fcc28e326bf3273b"
+    },
+    {
+      "path": "texts/frus1914Supp-d1334.txt",
+      "bytes": 1672,
+      "sha256": "f0bf9d70fb908f3a90a08e4aaaed0608de78d6fb65d35a5dc9c3052c9cd1701f"
+    },
+    {
+      "path": "texts/frus1914Supp-d1335.txt",
+      "bytes": 518,
+      "sha256": "d1ec43e7f3001aefe93f14b70aa1649ef118ff630e025a79fbbe6d81ccf7030f"
+    },
+    {
+      "path": "texts/frus1914Supp-d1336.txt",
+      "bytes": 977,
+      "sha256": "5f4317cd5c6ca083c92d7c29977ff2d1faccebad7cfdbd3b1b3bbc7cc172fc5c"
+    },
+    {
+      "path": "texts/frus1914Supp-d1337.txt",
+      "bytes": 882,
+      "sha256": "43239928ade35799d32132acf6063c9591c6c68a1a7342d2ffd6b2acc5d4ec73"
+    },
+    {
+      "path": "texts/frus1914Supp-d1338.txt",
+      "bytes": 737,
+      "sha256": "4b6f3bee2fd3c394b58b07e29c1bd85c6a034bd0e34b9a591e32c8920786de6d"
+    },
+    {
+      "path": "texts/frus1914Supp-d1339.txt",
+      "bytes": 766,
+      "sha256": "8179e836027364dca2b32079766c9b1e5b05db94cefa7174a6bbfbb9427ca7ad"
+    },
+    {
+      "path": "texts/frus1914Supp-d134.txt",
+      "bytes": 4042,
+      "sha256": "45060af561d96a2b05f7cd5773647c0608abf3c5a13333ee2d608937e0f5f46e"
+    },
+    {
+      "path": "texts/frus1914Supp-d1340.txt",
+      "bytes": 3204,
+      "sha256": "5eb279e7e0f688a60962f5c8bc322cedc5252c68e664fa75f12a81a1865abdcd"
+    },
+    {
+      "path": "texts/frus1914Supp-d1341.txt",
+      "bytes": 1557,
+      "sha256": "7d17427852c1e0ddd9fca393755057c1fa7c192c0633e9f58c85148cf77ff806"
+    },
+    {
+      "path": "texts/frus1914Supp-d1342.txt",
+      "bytes": 626,
+      "sha256": "cc0dc9831ecdc09212728f034fefcfd3758179e7fa224a2303435b649f93ef19"
+    },
+    {
+      "path": "texts/frus1914Supp-d1343.txt",
+      "bytes": 489,
+      "sha256": "f5e58beb7e5ba1ab5069504677ddd4e7eba60b46ec86a8c721477dae83de9565"
+    },
+    {
+      "path": "texts/frus1914Supp-d1344.txt",
+      "bytes": 397,
+      "sha256": "643d6ec1b27eb1151612c4539cc2bbbaad77421ca2b3d70b1e1e17b26c2d4ba2"
+    },
+    {
+      "path": "texts/frus1914Supp-d1345.txt",
+      "bytes": 665,
+      "sha256": "b6a4f854b6c21f84fbd18d01b9b6de9cb24c29a3313402ff037aa270745b16e3"
+    },
+    {
+      "path": "texts/frus1914Supp-d1346.txt",
+      "bytes": 1557,
+      "sha256": "ed234556c336563da584ddd91317d787710a01a06d95f4ff124ebb1f9ed9569f"
+    },
+    {
+      "path": "texts/frus1914Supp-d135.txt",
+      "bytes": 398,
+      "sha256": "b6adf2aaf07e0f14b03e95b48b9fe5fe04a8edcb749a39fc124be125bf84dcdb"
+    },
+    {
+      "path": "texts/frus1914Supp-d136.txt",
+      "bytes": 553,
+      "sha256": "91595e535e302b8e2b6117931f3126bf6fcf0a55eed950da6fc6443c537bf316"
+    },
+    {
+      "path": "texts/frus1914Supp-d137.txt",
+      "bytes": 1162,
+      "sha256": "fd14e960d818fb3007d28b8af2328274b7119b74711b2b45fa9708eb21666248"
+    },
+    {
+      "path": "texts/frus1914Supp-d138.txt",
+      "bytes": 760,
+      "sha256": "18de4cb560935cd2ad68944e2893678903dcec011311a6ed0d72aef4613881ab"
+    },
+    {
+      "path": "texts/frus1914Supp-d139.txt",
+      "bytes": 533,
+      "sha256": "548627e99e6ebe40c6c77ed7960dc4c951a4a00b075f5cb2c659036d422bfeb5"
+    },
+    {
+      "path": "texts/frus1914Supp-d14.txt",
+      "bytes": 653,
+      "sha256": "376b8996b607cc65a3a43c3ec7814b2813e62ad405970935049c7e73cd1a677a"
+    },
+    {
+      "path": "texts/frus1914Supp-d140.txt",
+      "bytes": 483,
+      "sha256": "0894f91d92be0b91d384351b5c308e907c72e9026902cb195a145a8566b70537"
+    },
+    {
+      "path": "texts/frus1914Supp-d141.txt",
+      "bytes": 2225,
+      "sha256": "e9c9a2bf011d626519682e4d9f648f532c52870afbdc699e30a04cf40b27cd37"
+    },
+    {
+      "path": "texts/frus1914Supp-d142.txt",
+      "bytes": 798,
+      "sha256": "209c146c018183160c6c507a26c7980779d76399d5eb8dcbdcd963d36e2a31df"
+    },
+    {
+      "path": "texts/frus1914Supp-d143.txt",
+      "bytes": 1639,
+      "sha256": "32bf2850b27a9a58035953fc05543b6346b126eba2408dac6d0cd6acb1ee02d8"
+    },
+    {
+      "path": "texts/frus1914Supp-d144.txt",
+      "bytes": 723,
+      "sha256": "774effe43c4e812d7b03e249b8c49ded67c26a52319e2dbae31a7627b9bdd093"
+    },
+    {
+      "path": "texts/frus1914Supp-d145.txt",
+      "bytes": 1247,
+      "sha256": "b4754d4b2935da9ec79ce41ad728506f49acdc9361010be3ae819e50099c01dd"
+    },
+    {
+      "path": "texts/frus1914Supp-d146.txt",
+      "bytes": 863,
+      "sha256": "c1477d72f03155773b32b929ebd72168817fdeef38897cee3f924b8200dbde2a"
+    },
+    {
+      "path": "texts/frus1914Supp-d147.txt",
+      "bytes": 1632,
+      "sha256": "735b590d11429bcba49570c121712253e7d6a05b246d214a8683cdefd849f9c6"
+    },
+    {
+      "path": "texts/frus1914Supp-d148.txt",
+      "bytes": 198,
+      "sha256": "989bb57a9f7ea3fb3e7958a9e81eaf2231564255f4b818a243bdbfb7d81c7d2b"
+    },
+    {
+      "path": "texts/frus1914Supp-d149.txt",
+      "bytes": 275,
+      "sha256": "4346c0185f73fc767f909eae8fa91780507b2b79836a03a88cc9e90d5bf51771"
+    },
+    {
+      "path": "texts/frus1914Supp-d15.txt",
+      "bytes": 1020,
+      "sha256": "e43bfbdf44875a45fa5abae5ef05a9d96a0d552da883ea60756e8fa865fd213b"
+    },
+    {
+      "path": "texts/frus1914Supp-d150.txt",
+      "bytes": 2604,
+      "sha256": "150885724676a25aff4d18ab6e7272a6af13838ff125d8efc92759b87edf0ff8"
+    },
+    {
+      "path": "texts/frus1914Supp-d151.txt",
+      "bytes": 1132,
+      "sha256": "d71998decf7456306bfc10650e5f4f0338e623a9d02127f36db44da1d6e5e3b0"
+    },
+    {
+      "path": "texts/frus1914Supp-d152.txt",
+      "bytes": 319,
+      "sha256": "bc8a8a342d0a989902b6dd71952dbb091d113b908bd30ad491521f3f1a59c848"
+    },
+    {
+      "path": "texts/frus1914Supp-d153.txt",
+      "bytes": 394,
+      "sha256": "b24b468d03746737ce5954cba804678327d5012016f23023f92376968d46acf0"
+    },
+    {
+      "path": "texts/frus1914Supp-d154.txt",
+      "bytes": 1279,
+      "sha256": "8aaf5d6ab40cf6b62b50b0befd1c678b7e47d0f7ebec41f06aff2c466ccfe81e"
+    },
+    {
+      "path": "texts/frus1914Supp-d155.txt",
+      "bytes": 493,
+      "sha256": "96704cdcf224e2b75e8a5fb6fbbef7039499a5c7a7bf349f46f11514331f123b"
+    },
+    {
+      "path": "texts/frus1914Supp-d156.txt",
+      "bytes": 3519,
+      "sha256": "c73f9156352a15e9d88c09ebe28a8b9baa90057eeb579e74a0387632ef105377"
+    },
+    {
+      "path": "texts/frus1914Supp-d157.txt",
+      "bytes": 1636,
+      "sha256": "a88f328260788366bbf69641a41ff7fff1ed6e3a6613233b7b89ce3f6fcd9755"
+    },
+    {
+      "path": "texts/frus1914Supp-d158.txt",
+      "bytes": 3830,
+      "sha256": "427dd10a4005d542e7a9eeef30af64453861aa6d69044fdc101d1483fdecbbf9"
+    },
+    {
+      "path": "texts/frus1914Supp-d159.txt",
+      "bytes": 3854,
+      "sha256": "c6c5cc235eeab939931f064b87d5dd5d8afc2b07d10c4798cfcab3e16944b4b7"
+    },
+    {
+      "path": "texts/frus1914Supp-d16.txt",
+      "bytes": 331,
+      "sha256": "66bac966ffb05c6bc682e34e85ce862fae3c09cbdcc985952d0429145b058e58"
+    },
+    {
+      "path": "texts/frus1914Supp-d160.txt",
+      "bytes": 2642,
+      "sha256": "42a2db3919e81e202f6806c86b9ce58501e47c102f3fc054108e187038c5510a"
+    },
+    {
+      "path": "texts/frus1914Supp-d161.txt",
+      "bytes": 278,
+      "sha256": "ccb8b19353c9c39dfdafc93a4ce200c54922537d460bc935d59447b3ad9e9e42"
+    },
+    {
+      "path": "texts/frus1914Supp-d162.txt",
+      "bytes": 3447,
+      "sha256": "48a2db1a75b27f52efd9004a3230a28eed4a164bfa9aaef4d239f46095fc032f"
+    },
+    {
+      "path": "texts/frus1914Supp-d163.txt",
+      "bytes": 820,
+      "sha256": "0fe64477229598d99b1d38c7073079bf60d752d31511fac9161b9bbdef9982eb"
+    },
+    {
+      "path": "texts/frus1914Supp-d164.txt",
+      "bytes": 1160,
+      "sha256": "ae1f8c7f362477ab911fe7d2cceb6f930203832d5b21e4c6f0fc13c9592a1c94"
+    },
+    {
+      "path": "texts/frus1914Supp-d165.txt",
+      "bytes": 939,
+      "sha256": "b1bbde0418a001120d97de2755a719cb78885ae7d7e210cafe3d659a4affd577"
+    },
+    {
+      "path": "texts/frus1914Supp-d166.txt",
+      "bytes": 871,
+      "sha256": "d5baa71353188cf3f37ac49c0fbd229d362bb21a34dfeafee9b84e3bd02e6e32"
+    },
+    {
+      "path": "texts/frus1914Supp-d167.txt",
+      "bytes": 1065,
+      "sha256": "088c6195d7a8395c800b409eefd5ce3c42ff0a00464185da97835b3ff9efe558"
+    },
+    {
+      "path": "texts/frus1914Supp-d168.txt",
+      "bytes": 2216,
+      "sha256": "2af46e47327d0e81ff5e80d0fe8fe61b6994168b2c5bc07e3274d1ac8e0e6990"
+    },
+    {
+      "path": "texts/frus1914Supp-d169.txt",
+      "bytes": 474,
+      "sha256": "b7c66738e9bd074e53b0d6bb1a6c8b073b4e1394b2e326b46c3fd5130b80f4d6"
+    },
+    {
+      "path": "texts/frus1914Supp-d17.txt",
+      "bytes": 506,
+      "sha256": "dd39fd21ef43d76bd7a63eb07c8973d1ba4cc61b14b98adb4d89f98ad27a5968"
+    },
+    {
+      "path": "texts/frus1914Supp-d170.txt",
+      "bytes": 8995,
+      "sha256": "ac448906dc2ddb840e031f2159bf568b6b79b58fc6bac35838933e8403325360"
+    },
+    {
+      "path": "texts/frus1914Supp-d171.txt",
+      "bytes": 343,
+      "sha256": "5c20b96f4fb57c2c0844ffeebef74109f70e7d73f0c2b8c5fbe8d5a5be1ead7f"
+    },
+    {
+      "path": "texts/frus1914Supp-d172.txt",
+      "bytes": 362,
+      "sha256": "32a09faba20cdb6346ffc9754f83fa6231a616d313da4a0dfb9fd6819f11ca70"
+    },
+    {
+      "path": "texts/frus1914Supp-d173.txt",
+      "bytes": 502,
+      "sha256": "bb778332e915cb7f7756637dca98ab57735065cbdf801fd4172783355084894c"
+    },
+    {
+      "path": "texts/frus1914Supp-d174.txt",
+      "bytes": 1031,
+      "sha256": "f3e7b9f0818e9557aab999478f5bdc6593bcd635fdd9fda01cd9cc40c72fad73"
+    },
+    {
+      "path": "texts/frus1914Supp-d175.txt",
+      "bytes": 3634,
+      "sha256": "382b5cd65aa511e9ec9e50ef3f83c45072437d05722d2490f0f8d22604f83d16"
+    },
+    {
+      "path": "texts/frus1914Supp-d176.txt",
+      "bytes": 1044,
+      "sha256": "07d3e2cb2119d18628c9b9cb6220df7556637e29809d510d758ce427804778f2"
+    },
+    {
+      "path": "texts/frus1914Supp-d177.txt",
+      "bytes": 1253,
+      "sha256": "e51c43804ede63238457b8300baab317067afda86441a62186719233dd5f5148"
+    },
+    {
+      "path": "texts/frus1914Supp-d178.txt",
+      "bytes": 2244,
+      "sha256": "444d75ac8d9187cee0a67ef04606e02c01a7c1ad4b1d59eefc4391b6e69fee03"
+    },
+    {
+      "path": "texts/frus1914Supp-d179.txt",
+      "bytes": 479,
+      "sha256": "39b8bdbeccdf5f1340c45072ae843ebfcb257775c8a4421b7a2f6366e090a6de"
+    },
+    {
+      "path": "texts/frus1914Supp-d18.txt",
+      "bytes": 1424,
+      "sha256": "408626c4f5febaec61492568cae9bf2b630e56fb684633ddced93912a8a12577"
+    },
+    {
+      "path": "texts/frus1914Supp-d180.txt",
+      "bytes": 371,
+      "sha256": "2f81f65fa282a9811489e9ec709df64e22f3e8ed3503c5bf7f593e04aec10825"
+    },
+    {
+      "path": "texts/frus1914Supp-d181.txt",
+      "bytes": 582,
+      "sha256": "502604136258a4960a0390ed74cda241b12c7ca378aaa3b2a7e7c5d462901683"
+    },
+    {
+      "path": "texts/frus1914Supp-d182.txt",
+      "bytes": 9276,
+      "sha256": "d6c945ec427cd46d42f3bd8de19bbdf8f5f2e1bacaf436df7a65fcd4e18fe79c"
+    },
+    {
+      "path": "texts/frus1914Supp-d183.txt",
+      "bytes": 363,
+      "sha256": "addaa9893a46e0683310c286c0ec38b0db081d4b05b115f71448d1c00f7fc01f"
+    },
+    {
+      "path": "texts/frus1914Supp-d184.txt",
+      "bytes": 19351,
+      "sha256": "e02e6d3a67318134e2233241d068af34563aab2bc6417fca720c6793c5c64a28"
+    },
+    {
+      "path": "texts/frus1914Supp-d185.txt",
+      "bytes": 2090,
+      "sha256": "876eb8815bc5082b1f4daf69be3df97f4586ce2b3a99fe70260bbc69fd1c1d36"
+    },
+    {
+      "path": "texts/frus1914Supp-d186.txt",
+      "bytes": 1364,
+      "sha256": "07d60764fc44b8853ceb9351526acfe348cc0fe6df0deca370c5e0b86c01030c"
+    },
+    {
+      "path": "texts/frus1914Supp-d187.txt",
+      "bytes": 533,
+      "sha256": "c4c3310ba0bdac47fedbcd3a2fb6233ac4be7d8876821ec9d9622dda9efd8810"
+    },
+    {
+      "path": "texts/frus1914Supp-d188.txt",
+      "bytes": 1959,
+      "sha256": "a8448f4bf207608631bf8d8c4dd6cdbcede836b72b6c32af8994a97ce8da04f4"
+    },
+    {
+      "path": "texts/frus1914Supp-d189.txt",
+      "bytes": 947,
+      "sha256": "9d9fbc625dee7e2b3b948b8a29372ea110ca51f903186c55be644c47125aaf5e"
+    },
+    {
+      "path": "texts/frus1914Supp-d19.txt",
+      "bytes": 459,
+      "sha256": "23e00ccb104c1d2fffacce830215af35c286c99040ff3dab925d88eac19e30cc"
+    },
+    {
+      "path": "texts/frus1914Supp-d190.txt",
+      "bytes": 2514,
+      "sha256": "43432913146e16b10e02c77194db2c112b5ce3346a159343ccc570ab2709c088"
+    },
+    {
+      "path": "texts/frus1914Supp-d191.txt",
+      "bytes": 1132,
+      "sha256": "c6d0f3aa9054faf4eba2c33467e5f8bea45467e97b0dd88289cbabbb71db5376"
+    },
+    {
+      "path": "texts/frus1914Supp-d192.txt",
+      "bytes": 322,
+      "sha256": "18fdfab66b36a6e4ba84086e1d92a3940906d4ead7d9f39ec22046aba387ad40"
+    },
+    {
+      "path": "texts/frus1914Supp-d193.txt",
+      "bytes": 643,
+      "sha256": "7f0695a6d6fb6a0d82d04386c395cb548425abeed1eedce51704c4da02cc318c"
+    },
+    {
+      "path": "texts/frus1914Supp-d194.txt",
+      "bytes": 4400,
+      "sha256": "b64267bfe2ec771141452aa675b57d9c56f6b01aec80fc27ac4704e8d6d754b0"
+    },
+    {
+      "path": "texts/frus1914Supp-d195.txt",
+      "bytes": 1147,
+      "sha256": "ec396ea5d2bb146e457abc2b2651026aede8b31f124c717d72e35ab3e15717f6"
+    },
+    {
+      "path": "texts/frus1914Supp-d196.txt",
+      "bytes": 1346,
+      "sha256": "b8758ddb1fd12f172f208abeaa7e959307f8ce11c36b23feefed0461a43dee11"
+    },
+    {
+      "path": "texts/frus1914Supp-d197.txt",
+      "bytes": 2902,
+      "sha256": "901ed77c478e52f2e761c5cfd6773c0c389b8e24024157178bde01f01ff552af"
+    },
+    {
+      "path": "texts/frus1914Supp-d198.txt",
+      "bytes": 1769,
+      "sha256": "8c97360e060c9576942fda9d4f9eecc29aceb51947a35271d8844c4438c3f2d6"
+    },
+    {
+      "path": "texts/frus1914Supp-d199.txt",
+      "bytes": 425,
+      "sha256": "e34361263cda5ba004f41b46ba757feb5baeebf78738a096023d106e2e4e79d8"
+    },
+    {
+      "path": "texts/frus1914Supp-d2.txt",
+      "bytes": 1313,
+      "sha256": "94e7e3d2f3c5ec4f4f57002158fd034ccae7351c15fd34ad3cf65037708cb527"
+    },
+    {
+      "path": "texts/frus1914Supp-d20.txt",
+      "bytes": 634,
+      "sha256": "df96391af56007a8c26ba344d2b6b28301bca9df20631e16cb82baaabfcff02d"
+    },
+    {
+      "path": "texts/frus1914Supp-d200.txt",
+      "bytes": 863,
+      "sha256": "c7f7a38c7d74581eeae48bd9b31d89fa52a4ec302c00532ae88e0f7a9f49d72f"
+    },
+    {
+      "path": "texts/frus1914Supp-d201.txt",
+      "bytes": 5494,
+      "sha256": "ffeef2756b0e937aceca5c4107cc92682c7751ff2ef22b62504f0f172d0c4b74"
+    },
+    {
+      "path": "texts/frus1914Supp-d202.txt",
+      "bytes": 3983,
+      "sha256": "cfb81fdf70b6ffac0ee5f724d2229205cfc82ce6c91c8934e013e99c31eb1b5f"
+    },
+    {
+      "path": "texts/frus1914Supp-d203.txt",
+      "bytes": 1282,
+      "sha256": "6f9aa9578dfc898c8dd8e7018f993c93751d2c84280d5b584b618ea90f5fa25c"
+    },
+    {
+      "path": "texts/frus1914Supp-d204.txt",
+      "bytes": 247,
+      "sha256": "54b45f1d0cc4f52cb79eb92758417526c9f7b8b2667d123c74fcacbda4268f85"
+    },
+    {
+      "path": "texts/frus1914Supp-d205.txt",
+      "bytes": 807,
+      "sha256": "4465a15e2834a8db95b4ba55e98387e8341592eef91cb387aedba41739f688a1"
+    },
+    {
+      "path": "texts/frus1914Supp-d206.txt",
+      "bytes": 440,
+      "sha256": "88e624fb2fc6002131a2ff3b76965336c20837b8044b76cb1822fe23706b8a3d"
+    },
+    {
+      "path": "texts/frus1914Supp-d207.txt",
+      "bytes": 845,
+      "sha256": "cf1b2173e7fdda11198b0957bd38643516f8d8538e1e361cf2fc9d2b63f11235"
+    },
+    {
+      "path": "texts/frus1914Supp-d208.txt",
+      "bytes": 355,
+      "sha256": "326686251c997e0c47c5ee7a226ee29f8de1051f1677c312caecfafab307ca50"
+    },
+    {
+      "path": "texts/frus1914Supp-d209.txt",
+      "bytes": 2761,
+      "sha256": "81bbeb7f1ecb5d0a66ecdc6ceb302ef4fe223e4a7df074c3b5a94079997f0f9f"
+    },
+    {
+      "path": "texts/frus1914Supp-d21.txt",
+      "bytes": 731,
+      "sha256": "21e3716d4a4c9ce92a5ad695bdaec4e4ee609c38663e1f6cc2d815b4016f6495"
+    },
+    {
+      "path": "texts/frus1914Supp-d210.txt",
+      "bytes": 1148,
+      "sha256": "42543c7b72af69f8b6199903227c69216555895eb8ccc052e22310dec4333754"
+    },
+    {
+      "path": "texts/frus1914Supp-d211.txt",
+      "bytes": 824,
+      "sha256": "f812212f78abb8d7f7c32d40bd09ca54373700a3d26664b3b80650bd57916596"
+    },
+    {
+      "path": "texts/frus1914Supp-d212.txt",
+      "bytes": 442,
+      "sha256": "94ec657b855f8a1bcb2e6511e424a13e71d20f1fa59fea35ec5be134adcc83c0"
+    },
+    {
+      "path": "texts/frus1914Supp-d213.txt",
+      "bytes": 305,
+      "sha256": "976700c40cfd31ec5f897bd24c238a54957b3ad441ff6c09192753cf1cdea3f2"
+    },
+    {
+      "path": "texts/frus1914Supp-d214.txt",
+      "bytes": 1324,
+      "sha256": "4526eaf1843e0708982e11566774efd43b04948e67029e83b496564c54e438f8"
+    },
+    {
+      "path": "texts/frus1914Supp-d215.txt",
+      "bytes": 783,
+      "sha256": "43048cf8ecf2d0f0e5653d67f466e101b27181874f4cf8da77fbc0efd057510a"
+    },
+    {
+      "path": "texts/frus1914Supp-d216.txt",
+      "bytes": 391,
+      "sha256": "887babf2efe32dbce94f3f4e46382eb50dc6e54342860f53921110b106dc87dc"
+    },
+    {
+      "path": "texts/frus1914Supp-d217.txt",
+      "bytes": 914,
+      "sha256": "ecf679aa3b76dedf256a0dc606307bc85c80f41980acf1191deec43304339b73"
+    },
+    {
+      "path": "texts/frus1914Supp-d218.txt",
+      "bytes": 555,
+      "sha256": "5d8e48599fca2f4a30ea6d94575a7fcc1efcfb38f24aa283d9de659d6c4dc66f"
+    },
+    {
+      "path": "texts/frus1914Supp-d219.txt",
+      "bytes": 1049,
+      "sha256": "603e9228eaab139414b84f7f41a98a09d3979272ee6f48203fb0064b04bcb67f"
+    },
+    {
+      "path": "texts/frus1914Supp-d22.txt",
+      "bytes": 743,
+      "sha256": "b7b99405c3d04ab2562e104228ad6577be3f3ca3d9e803a995f0a7d8d24ffc5a"
+    },
+    {
+      "path": "texts/frus1914Supp-d220.txt",
+      "bytes": 827,
+      "sha256": "813ce97a6ef3743125d11b1c5a460097868d2ab55ca124e2519cd267e13cc691"
+    },
+    {
+      "path": "texts/frus1914Supp-d221.txt",
+      "bytes": 782,
+      "sha256": "071c5a37b7aba6701d8ad5db1d2d1bde5fca11ea11a40429644625a1f3a2b7b9"
+    },
+    {
+      "path": "texts/frus1914Supp-d222.txt",
+      "bytes": 393,
+      "sha256": "19a98456fb5883fba64c6329248274d6e3a61f6b269250dbb95bc60b2730dd2c"
+    },
+    {
+      "path": "texts/frus1914Supp-d223.txt",
+      "bytes": 1087,
+      "sha256": "2c367c043391f3fba2c77f942cecd12bfafd5ef84a08e8ec89ed3a3e94537a75"
+    },
+    {
+      "path": "texts/frus1914Supp-d224.txt",
+      "bytes": 1791,
+      "sha256": "d343d8fefce1cb06126a94b7cfd07362c15434c4e9f89c212535f6665aaf8c37"
+    },
+    {
+      "path": "texts/frus1914Supp-d225.txt",
+      "bytes": 2090,
+      "sha256": "bdce67f426d5156f68de0cd50f47752e5c489a8eb1f476d79f3b3f5d50f63d7d"
+    },
+    {
+      "path": "texts/frus1914Supp-d226.txt",
+      "bytes": 311,
+      "sha256": "6ded0f8b07fa0fbbeeb1577130c0300eadecc60fd1b424c8ca3b8e3b0ad465fa"
+    },
+    {
+      "path": "texts/frus1914Supp-d227.txt",
+      "bytes": 1383,
+      "sha256": "a6e24543077a55c1e5e7108f8109a237f98e3b1e82a0d2cae7a8f05fe0d759f7"
+    },
+    {
+      "path": "texts/frus1914Supp-d228.txt",
+      "bytes": 3407,
+      "sha256": "7ab295e60c0c2428e9070c0940f1219a1742e5c860df46ffa973c7f55083daaa"
+    },
+    {
+      "path": "texts/frus1914Supp-d229.txt",
+      "bytes": 1858,
+      "sha256": "518b2918abba53e32359cbb93434bc173ae811282ef5c437c7af6a050d2ee6fd"
+    },
+    {
+      "path": "texts/frus1914Supp-d23.txt",
+      "bytes": 1038,
+      "sha256": "ec1de3a5e5fbca85764f9cf95d2d2ecc4c890170dad587814b2b7f91d0a200ac"
+    },
+    {
+      "path": "texts/frus1914Supp-d230.txt",
+      "bytes": 906,
+      "sha256": "e789a8aa644e660c6e33099bc53b5dd8b9119047081928a2b30b8751c4f6d6f3"
+    },
+    {
+      "path": "texts/frus1914Supp-d231.txt",
+      "bytes": 314,
+      "sha256": "9776ca9883bd899f1e73ed6d6717c75680d911cfa94bf835b18bee425f0e6282"
+    },
+    {
+      "path": "texts/frus1914Supp-d232.txt",
+      "bytes": 3571,
+      "sha256": "6be49cc0524c28ffff313769693b7144ad88a0365d952b9cd79b537c43f898e8"
+    },
+    {
+      "path": "texts/frus1914Supp-d233.txt",
+      "bytes": 422,
+      "sha256": "f2fd3c44328e245fceeed2bbfcea09bbeebce97bc7fd5cb52438a7ffc66e80a5"
+    },
+    {
+      "path": "texts/frus1914Supp-d234.txt",
+      "bytes": 447,
+      "sha256": "9b671e4f18e931df15cea0befbcbbe53675a9f940c8f9f99e2b17c682348e539"
+    },
+    {
+      "path": "texts/frus1914Supp-d235.txt",
+      "bytes": 1174,
+      "sha256": "2c11308c053a82496e7be8eae706f6a6f3f542ddb54a6cd9224a27f2d2e4a3f7"
+    },
+    {
+      "path": "texts/frus1914Supp-d236.txt",
+      "bytes": 847,
+      "sha256": "6e34ccfd41fa980b996202e06fba1098814c0139c6ef76c85922b1469003d0c2"
+    },
+    {
+      "path": "texts/frus1914Supp-d237.txt",
+      "bytes": 304,
+      "sha256": "40ed5055fba0dafb9b7c0e780ba564de4520f0fb9ecf1cf668ff97534a7897e5"
+    },
+    {
+      "path": "texts/frus1914Supp-d238.txt",
+      "bytes": 912,
+      "sha256": "0394409c42b1d0f1f9170697cfd600840e2bebdde1c794b9b1dd2a4b603243a6"
+    },
+    {
+      "path": "texts/frus1914Supp-d239.txt",
+      "bytes": 1008,
+      "sha256": "77850976686c918380f8e5f6e4ef4532e60095dff0e06640bfe65851353ca482"
+    },
+    {
+      "path": "texts/frus1914Supp-d24.txt",
+      "bytes": 541,
+      "sha256": "02b7efde4ac9634de946613bff9a8c5e8bb689f87fd0e8ca7074e05c5c2f888f"
+    },
+    {
+      "path": "texts/frus1914Supp-d240.txt",
+      "bytes": 1297,
+      "sha256": "4a6c1b870c6f88471e1d5e2b667b715870f3c4bb56394df380563d1507b42aed"
+    },
+    {
+      "path": "texts/frus1914Supp-d241.txt",
+      "bytes": 533,
+      "sha256": "5b7bfc42f677f2c48fd7d57c8feaf5196d70eb5f4fa377477f258a8588484f69"
+    },
+    {
+      "path": "texts/frus1914Supp-d242.txt",
+      "bytes": 732,
+      "sha256": "5a9e5a376673eae9e82f64afbb3c480d4609cc0fd96c90f53322b41ebfb37a01"
+    },
+    {
+      "path": "texts/frus1914Supp-d243.txt",
+      "bytes": 464,
+      "sha256": "da72a0abac19409fd51d83171cd8116c2b8a789531737418e596a6476233a129"
+    },
+    {
+      "path": "texts/frus1914Supp-d244.txt",
+      "bytes": 408,
+      "sha256": "f92e2a2440e816a556fb1a8ad18470936c18eb031e3195adfbb214f433c0214b"
+    },
+    {
+      "path": "texts/frus1914Supp-d245.txt",
+      "bytes": 1138,
+      "sha256": "25ed9110d6ea8c2b0f8fc7b7c64e418c57113ec60e7c0ed778eca522baf2c467"
+    },
+    {
+      "path": "texts/frus1914Supp-d246.txt",
+      "bytes": 763,
+      "sha256": "2b7a61f52831b0453079a024786b199e8e40b1dab73d40edc6bef0767b830117"
+    },
+    {
+      "path": "texts/frus1914Supp-d247.txt",
+      "bytes": 1307,
+      "sha256": "7545352ac8b6f325a2103cac8ff87619c72aa14d5a289be31139618325264cc7"
+    },
+    {
+      "path": "texts/frus1914Supp-d248.txt",
+      "bytes": 633,
+      "sha256": "4b1bd39ac57ba9863d742688a65dddecb40b1357877750f5550846d3d7a1726d"
+    },
+    {
+      "path": "texts/frus1914Supp-d249.txt",
+      "bytes": 1672,
+      "sha256": "85db2eed4988468aece06ea775185bfba9929f1db7c0299b1927dd13f9558f9f"
+    },
+    {
+      "path": "texts/frus1914Supp-d25.txt",
+      "bytes": 397,
+      "sha256": "b2950693d23d599deb9a68f129a91f748b9e27976a29c0d2a3de9c857f876068"
+    },
+    {
+      "path": "texts/frus1914Supp-d250.txt",
+      "bytes": 1689,
+      "sha256": "0380612b6d3e1ea9ae025aaf1a6cfab7d72593a2c11fdeb38aa2f61bd4697423"
+    },
+    {
+      "path": "texts/frus1914Supp-d251.txt",
+      "bytes": 1795,
+      "sha256": "f2252e6121fdc2494203bd84daefb163adf22dfeaf85e3c630accb0d3e767518"
+    },
+    {
+      "path": "texts/frus1914Supp-d252.txt",
+      "bytes": 1415,
+      "sha256": "c648c58ce1adf4c2b8392c652188c9bf7939a93c29304017e9d3eb34f78093bc"
+    },
+    {
+      "path": "texts/frus1914Supp-d253.txt",
+      "bytes": 596,
+      "sha256": "37d7ab5d2f672cf4c44047acc4bb434cac8cd4ac5e9da876a69b4328da853c91"
+    },
+    {
+      "path": "texts/frus1914Supp-d254.txt",
+      "bytes": 589,
+      "sha256": "0561f6361c5b200649d2daa43f2ff9fa48f37bb381ff26eec089f74848604bba"
+    },
+    {
+      "path": "texts/frus1914Supp-d255.txt",
+      "bytes": 687,
+      "sha256": "2ee555ce4c12ab594e5abe3cb17e871ef8947149b54092c35beee04923a88674"
+    },
+    {
+      "path": "texts/frus1914Supp-d256.txt",
+      "bytes": 1184,
+      "sha256": "e9b3e190b5e80490e1dfb814d5d5408aed31b137a33034230cf6a8ed7de5d08e"
+    },
+    {
+      "path": "texts/frus1914Supp-d257.txt",
+      "bytes": 2601,
+      "sha256": "0444cca42f5a98adf76867fed83dc4d3d4f2b838624014320cee9e489b515aae"
+    },
+    {
+      "path": "texts/frus1914Supp-d258.txt",
+      "bytes": 17563,
+      "sha256": "82aaa9cfb855f58258e502dfedf921a23409ddf6df4b08ba730b10fec548be3c"
+    },
+    {
+      "path": "texts/frus1914Supp-d259.txt",
+      "bytes": 531,
+      "sha256": "c133b83ed8f59e1fdb3ec076643dbf26773a813506f2f8b918e54d0a97842f9a"
+    },
+    {
+      "path": "texts/frus1914Supp-d26.txt",
+      "bytes": 284,
+      "sha256": "4d5e9cf3c15c7fa9770be02cb2d35190eefaa8268ff82549308de950bb5b442e"
+    },
+    {
+      "path": "texts/frus1914Supp-d260.txt",
+      "bytes": 3755,
+      "sha256": "7e9dd1000720f471f095ab72c4c96bda52d62f6e0aa5a3e3c23046ed0172048d"
+    },
+    {
+      "path": "texts/frus1914Supp-d261.txt",
+      "bytes": 3560,
+      "sha256": "c2d2004e32c3a939fae070249308870f6374fe0697a3d925f008890c93f3fad6"
+    },
+    {
+      "path": "texts/frus1914Supp-d262.txt",
+      "bytes": 2709,
+      "sha256": "471f1027d978396e17651fd1624e5418f7bf62eabb9da2d0a9adcc551c07fa71"
+    },
+    {
+      "path": "texts/frus1914Supp-d263.txt",
+      "bytes": 2269,
+      "sha256": "f8865fda745754d52565030ab1737f4cd85fcf58d694d8848f38a7aac6ea3f13"
+    },
+    {
+      "path": "texts/frus1914Supp-d264.txt",
+      "bytes": 1314,
+      "sha256": "ef6a8e2aebf9d55607e5ddc66246ff91a1e80b75df0fe74ef4b9ba3e4e2a1545"
+    },
+    {
+      "path": "texts/frus1914Supp-d265.txt",
+      "bytes": 692,
+      "sha256": "65a92ed1b9d61b048c6de845f056ccbb26f29a9d8e78f2280344a43aebb38a9b"
+    },
+    {
+      "path": "texts/frus1914Supp-d266.txt",
+      "bytes": 643,
+      "sha256": "af096a9fa9ea5debd3ef3a3703342a271b74fffa7fb8126886576fdca340bb11"
+    },
+    {
+      "path": "texts/frus1914Supp-d267.txt",
+      "bytes": 5318,
+      "sha256": "6c7dd696847ca3fd8f973fe86508c5e3246a4c4fac775b8dce91131b6dd82eff"
+    },
+    {
+      "path": "texts/frus1914Supp-d268.txt",
+      "bytes": 2506,
+      "sha256": "3c903eeab8eec47ffff57ed6ae87abae918ed0e7966d61d64f88d81617ad1e5d"
+    },
+    {
+      "path": "texts/frus1914Supp-d269.txt",
+      "bytes": 431,
+      "sha256": "1faba676b939ef64c28d5e797dbe21e76a3f3c140fab3c0fbf9cedb603038300"
+    },
+    {
+      "path": "texts/frus1914Supp-d27.txt",
+      "bytes": 283,
+      "sha256": "3eaf99741d018d91e34db69c90b9f9d4f309733818749e7b73086871c31df3ea"
+    },
+    {
+      "path": "texts/frus1914Supp-d270.txt",
+      "bytes": 399,
+      "sha256": "dc451766bc2d18bf33195396983ae3be4d4cf7bfbaa1f3c7dabf9cff7236e778"
+    },
+    {
+      "path": "texts/frus1914Supp-d271.txt",
+      "bytes": 868,
+      "sha256": "e98374a3809ca6473c4ea35d25f3d4f08571e9a4b69cd48378a582a3eb12c2a0"
+    },
+    {
+      "path": "texts/frus1914Supp-d272.txt",
+      "bytes": 2750,
+      "sha256": "f3c3a6dd6026db027ed2dbc95d5d125b23ee1daeea13bf5f782bb29bc8f070ee"
+    },
+    {
+      "path": "texts/frus1914Supp-d273.txt",
+      "bytes": 769,
+      "sha256": "79ca158aa41d59c043c6daa1f57afc93b05be38b865d5dc768f480187c6a35e6"
+    },
+    {
+      "path": "texts/frus1914Supp-d274.txt",
+      "bytes": 2344,
+      "sha256": "c2c3b7e237a967619497c391e69d818d3f76b13688ea25f267eaa4bb501459b1"
+    },
+    {
+      "path": "texts/frus1914Supp-d275.txt",
+      "bytes": 977,
+      "sha256": "ee289654d921161f1db66373266735ec5a8e7e59ba3be7f7e678250ec127b67d"
+    },
+    {
+      "path": "texts/frus1914Supp-d276.txt",
+      "bytes": 2315,
+      "sha256": "708f72c4a5c8a84dbeaf7de159222f21d356de61f1e6b7697184021010a43754"
+    },
+    {
+      "path": "texts/frus1914Supp-d277.txt",
+      "bytes": 1348,
+      "sha256": "c3f397f29ccbdb657f3327649f61266c5147339086a812bb9ceffaa688e97e3c"
+    },
+    {
+      "path": "texts/frus1914Supp-d278.txt",
+      "bytes": 2842,
+      "sha256": "61524d354d22b29ba4ec6ad21f513cbba7a2047278993edce81e93f71c062273"
+    },
+    {
+      "path": "texts/frus1914Supp-d279.txt",
+      "bytes": 864,
+      "sha256": "78be7c229cfcc40ddd29a4286aa1df2214eb43ef4edcb31fafab5ed7432822dd"
+    },
+    {
+      "path": "texts/frus1914Supp-d28.txt",
+      "bytes": 1097,
+      "sha256": "ae94fcf1c6c2c67e755a95527d92c5267f886f8547f483731c08b8a8bb005298"
+    },
+    {
+      "path": "texts/frus1914Supp-d280.txt",
+      "bytes": 753,
+      "sha256": "5ef615b7f6985c2cb5f7772912d02b6bb5c96dc261f3d92975daea50d327e116"
+    },
+    {
+      "path": "texts/frus1914Supp-d281.txt",
+      "bytes": 8274,
+      "sha256": "a082c19113849541e60e59693a7d6067f1fa28a4a35de928bd6dadff7a93422f"
+    },
+    {
+      "path": "texts/frus1914Supp-d282.txt",
+      "bytes": 5373,
+      "sha256": "76db8b3899424b95fbd9af57e2a21bbd81b85e3e5ea1595bb6256d97eb454b7a"
+    },
+    {
+      "path": "texts/frus1914Supp-d283.txt",
+      "bytes": 1706,
+      "sha256": "d22c729358c2d5744a5188cdaf39947086298035fa59f33ea0f1b390e65a41a9"
+    },
+    {
+      "path": "texts/frus1914Supp-d284.txt",
+      "bytes": 671,
+      "sha256": "fc57fb454f77e6a5042199981a52feaa921af24e273fba380fcd4f9aab34c619"
+    },
+    {
+      "path": "texts/frus1914Supp-d285.txt",
+      "bytes": 1130,
+      "sha256": "0c519a083a4da4e8b6e4b87fdbce0cc9d36b7d7c6bf597dce614741d7693eac2"
+    },
+    {
+      "path": "texts/frus1914Supp-d286.txt",
+      "bytes": 332,
+      "sha256": "d1e18be6ff3d813193d73c71b9008cada4211022e7f675cb8d98da8574b2b56e"
+    },
+    {
+      "path": "texts/frus1914Supp-d287.txt",
+      "bytes": 444,
+      "sha256": "18ebf8afabdb99abc44e5c2c3da9b43f73b0d53ebb51839473307025bd7e22d8"
+    },
+    {
+      "path": "texts/frus1914Supp-d288.txt",
+      "bytes": 429,
+      "sha256": "3b0724c2f9bc5e916e5069433c395d15105cb95a47fb6ac4ae4e0ad3db6b6f92"
+    },
+    {
+      "path": "texts/frus1914Supp-d289.txt",
+      "bytes": 1060,
+      "sha256": "b32417dcfd567833a0b601630bde148c7d187765a8387d5d9dd91e4650ecae51"
+    },
+    {
+      "path": "texts/frus1914Supp-d29.txt",
+      "bytes": 989,
+      "sha256": "75d5bc8b8cb5c9b00e54185ba5e0ddc14c1618f20df11a3cbe6c1cd94256e50c"
+    },
+    {
+      "path": "texts/frus1914Supp-d290.txt",
+      "bytes": 1092,
+      "sha256": "cbc47383739cc305ca45659e409334841700e44cb893f8a3d9b432ee9bbea2f3"
+    },
+    {
+      "path": "texts/frus1914Supp-d291.txt",
+      "bytes": 321,
+      "sha256": "42d4e2bc0a034f67e23ebb38d6c46220e859925e906d4ae10bec6bd3c5ad462d"
+    },
+    {
+      "path": "texts/frus1914Supp-d292.txt",
+      "bytes": 1571,
+      "sha256": "6acfef8169ca21e11303f33151ffb96edaf6c2cf6b49d2ce62735747eb445894"
+    },
+    {
+      "path": "texts/frus1914Supp-d293.txt",
+      "bytes": 930,
+      "sha256": "ba3ae346ee625c354cefaf351ab72953cb03d93bd3711218c405d2b7bd45ceca"
+    },
+    {
+      "path": "texts/frus1914Supp-d294.txt",
+      "bytes": 697,
+      "sha256": "77ceb0b160a4a52e63cef01496a5b84288039999cf7a32ed0e452335bfed5823"
+    },
+    {
+      "path": "texts/frus1914Supp-d295.txt",
+      "bytes": 389,
+      "sha256": "ff41a16330bf7aea669b7138d931707b2e814ee3f9ebccb4398dd07d9a1f237d"
+    },
+    {
+      "path": "texts/frus1914Supp-d296.txt",
+      "bytes": 951,
+      "sha256": "0c731faf172e9991438a5aacd1889e335acc691f3a2ef650fdf3604854cc3837"
+    },
+    {
+      "path": "texts/frus1914Supp-d297.txt",
+      "bytes": 560,
+      "sha256": "07bab06215d9f7284a3c84bc9ef4840fc10d0a5b94418509afd799e2abb18b46"
+    },
+    {
+      "path": "texts/frus1914Supp-d298.txt",
+      "bytes": 572,
+      "sha256": "33768a63a84420355d6a16e143166e5d868386ea88735607a23f651bf68b15c1"
+    },
+    {
+      "path": "texts/frus1914Supp-d299.txt",
+      "bytes": 514,
+      "sha256": "30aef4b72c02e994f22adb4e09fa480d971a328c32e5d5141e1fbf1c54b3fe52"
+    },
+    {
+      "path": "texts/frus1914Supp-d3.txt",
+      "bytes": 623,
+      "sha256": "b7bee56181532095a476996e982930cec3bb20f432eab25d29cb1d744956b6e6"
+    },
+    {
+      "path": "texts/frus1914Supp-d30.txt",
+      "bytes": 803,
+      "sha256": "ebecf910c150505f6b1d30e670d5d5c0bd07552f6a366ca4fb545ba05490500e"
+    },
+    {
+      "path": "texts/frus1914Supp-d300.txt",
+      "bytes": 502,
+      "sha256": "f56aaec252e725850c8cbf35d33cefdc6dd6758eec6e8f479d31f0cf7267d47d"
+    },
+    {
+      "path": "texts/frus1914Supp-d301.txt",
+      "bytes": 260,
+      "sha256": "2a69a7c5931872026f6a70ca16eca331f0192459c08b1bcd587169cf277a42d4"
+    },
+    {
+      "path": "texts/frus1914Supp-d302.txt",
+      "bytes": 608,
+      "sha256": "8b171424964c996cda0644b343a9dfef2d8e6117a2fea060b2a3f5587b11282d"
+    },
+    {
+      "path": "texts/frus1914Supp-d303.txt",
+      "bytes": 1417,
+      "sha256": "a0782b650f6af11fce18638a02724f574c53896cac0315cee3ac0e85816ed1c8"
+    },
+    {
+      "path": "texts/frus1914Supp-d304.txt",
+      "bytes": 1008,
+      "sha256": "9e1f9695ce855974278d5f47b2def24b2e767765052d5693c8a1fe9ad7e6df49"
+    },
+    {
+      "path": "texts/frus1914Supp-d305.txt",
+      "bytes": 260,
+      "sha256": "a3b7f5bfa4c4fb7512daff3b7ef1f8b0d3db3c4db876b90bc10a103997e4044f"
+    },
+    {
+      "path": "texts/frus1914Supp-d306.txt",
+      "bytes": 3222,
+      "sha256": "7e966a8a9ac5888d4d36ece735ef20a56603c9d8062e3d2eb2111ecf58f54733"
+    },
+    {
+      "path": "texts/frus1914Supp-d307.txt",
+      "bytes": 1022,
+      "sha256": "b5cb0381750664e9ee4429ef5197a506d4b62e30d6d7df4fc15797aa5776e89d"
+    },
+    {
+      "path": "texts/frus1914Supp-d308.txt",
+      "bytes": 1900,
+      "sha256": "8fdbb5a9f0adee0250abe58c166ac6b4814f5ebd54caf03eff2d28fdb74480a8"
+    },
+    {
+      "path": "texts/frus1914Supp-d309.txt",
+      "bytes": 1225,
+      "sha256": "adadb817f271b88e8ff481d81d2edb1d64556546b8f9ea9107212a049c9183cb"
+    },
+    {
+      "path": "texts/frus1914Supp-d31.txt",
+      "bytes": 861,
+      "sha256": "d223fb208e2bb485e8c0f1c55b78f904fd49e06ffd0bb7dbea8ec797c498b35a"
+    },
+    {
+      "path": "texts/frus1914Supp-d310.txt",
+      "bytes": 581,
+      "sha256": "06822f863e3f48b914d52d625c9137d40b51c8dc9f035fa742cb0f3947fcc5ef"
+    },
+    {
+      "path": "texts/frus1914Supp-d311.txt",
+      "bytes": 1706,
+      "sha256": "b4e141c3aa5b3c44b3c11befbca769ff3e3067a4de086c7de7ff0fb4d0e2d7f2"
+    },
+    {
+      "path": "texts/frus1914Supp-d312.txt",
+      "bytes": 379,
+      "sha256": "0bdcfc3c18d768c9e13bbe9c02eef3dc38bb0712bc2d0292823edb02f8390653"
+    },
+    {
+      "path": "texts/frus1914Supp-d313.txt",
+      "bytes": 478,
+      "sha256": "d6b339d9172f4d65e2d089e3897c0d4a4879c905e12d23f8179743266bad8f13"
+    },
+    {
+      "path": "texts/frus1914Supp-d314.txt",
+      "bytes": 815,
+      "sha256": "ce7d752c83b8ed8fa97f2bfc9a4eda462b1e9990f8e4e2abfdeccca9c3d2fef0"
+    },
+    {
+      "path": "texts/frus1914Supp-d315.txt",
+      "bytes": 2182,
+      "sha256": "5b86e7c616396a0c7a001e12bcfd4b93ac8862e374a18007b22ea22ad7bae68e"
+    },
+    {
+      "path": "texts/frus1914Supp-d316.txt",
+      "bytes": 412,
+      "sha256": "a8e4185bd5cddf169c723b365921c4fb1d3adbc64f1832f14f56ba79768bf120"
+    },
+    {
+      "path": "texts/frus1914Supp-d317.txt",
+      "bytes": 270,
+      "sha256": "c35864a2a143ceb85e8c01603e7f24bb72f304f3a2f950479f2ecc7eba986912"
+    },
+    {
+      "path": "texts/frus1914Supp-d318.txt",
+      "bytes": 401,
+      "sha256": "22fced4e4bd2e29cdcf55a31ccea7b0728af4a56d6f1ba8c05936c14b9d5764e"
+    },
+    {
+      "path": "texts/frus1914Supp-d319.txt",
+      "bytes": 255,
+      "sha256": "908fa5abc850115b98a160f5e68adb3955c52871535be51468a75fe34a73d6bc"
+    },
+    {
+      "path": "texts/frus1914Supp-d32.txt",
+      "bytes": 559,
+      "sha256": "e5ad812312ea62eb2ade1f7d3062affe446ddfd35b95862fb56a1ccf7ff996bb"
+    },
+    {
+      "path": "texts/frus1914Supp-d320.txt",
+      "bytes": 403,
+      "sha256": "153ff335d68a5a34712a8c76e98fe37470e13c823293b7b25ba1300bb5342aba"
+    },
+    {
+      "path": "texts/frus1914Supp-d321.txt",
+      "bytes": 610,
+      "sha256": "5934a70a6bd5b8449d752ce2556a73b047a8382447514ab31d0ec76fa1700589"
+    },
+    {
+      "path": "texts/frus1914Supp-d322.txt",
+      "bytes": 673,
+      "sha256": "04d436dda9f523ba8ab189e948fdd48072342ff7d893395a3c06d0c31463e60e"
+    },
+    {
+      "path": "texts/frus1914Supp-d323.txt",
+      "bytes": 440,
+      "sha256": "8003b6c14895922177200587769fbe2caeab365e419bddcf469116c247bf6af9"
+    },
+    {
+      "path": "texts/frus1914Supp-d324.txt",
+      "bytes": 619,
+      "sha256": "2ca7ae095109dc2676164d9385755840258995150d58baaf80fa1d115e1c00cd"
+    },
+    {
+      "path": "texts/frus1914Supp-d325.txt",
+      "bytes": 315,
+      "sha256": "24faa66691bc44f1a62e09d42f53a811c66346fec0cb99ac63c8c3a30129d260"
+    },
+    {
+      "path": "texts/frus1914Supp-d326.txt",
+      "bytes": 531,
+      "sha256": "48bcd4bec8e17cff6068b6f761b2768fad261634e17774313dd70015007bda44"
+    },
+    {
+      "path": "texts/frus1914Supp-d327.txt",
+      "bytes": 2212,
+      "sha256": "1defe628e320017e87fc6b2b9b525ae1071b5b869055dd6d2c3222455dc93bef"
+    },
+    {
+      "path": "texts/frus1914Supp-d328.txt",
+      "bytes": 2567,
+      "sha256": "122380ed9605e60a65e6f5758532f349682adec007004fafac9a7b5a78276195"
+    },
+    {
+      "path": "texts/frus1914Supp-d329.txt",
+      "bytes": 545,
+      "sha256": "6051f6f9f6c4e49979cc4dc0ac5f606b5d2f84751815b168663831cc9cf26310"
+    },
+    {
+      "path": "texts/frus1914Supp-d33.txt",
+      "bytes": 1287,
+      "sha256": "301f8b2a47a16d62162a2ff04c08388ddff42fb69a8ca74d46922cf16d67ff45"
+    },
+    {
+      "path": "texts/frus1914Supp-d330.txt",
+      "bytes": 551,
+      "sha256": "bcb764bfd0c8940b5a45d6915de15a809df2acd51753d14363c5939e837638a5"
+    },
+    {
+      "path": "texts/frus1914Supp-d331.txt",
+      "bytes": 723,
+      "sha256": "aacd5db0bd14c913fac8791eb0d489d22de6049ec779b67189dbaf4320c7c4d8"
+    },
+    {
+      "path": "texts/frus1914Supp-d332.txt",
+      "bytes": 558,
+      "sha256": "189b9d070980ad791a3709345cb3956681ba9f12a5b6977959319426f777914b"
+    },
+    {
+      "path": "texts/frus1914Supp-d333.txt",
+      "bytes": 2293,
+      "sha256": "28ae07e381a03578aa1bc2ad86a34a65086ec7dbd1d1b81b81ccbb172ad46508"
+    },
+    {
+      "path": "texts/frus1914Supp-d334.txt",
+      "bytes": 949,
+      "sha256": "799be4d258334c83f24239aa977566e8b42830cec28947464571f483bef9d623"
+    },
+    {
+      "path": "texts/frus1914Supp-d335.txt",
+      "bytes": 742,
+      "sha256": "4b4914b0bf9b1c89fc0bb3926d0c6a83f526aeb16c4cd694e6c72f547720fb51"
+    },
+    {
+      "path": "texts/frus1914Supp-d336.txt",
+      "bytes": 4558,
+      "sha256": "763e085ae8689285471a75fbc8bf07e8d8ec466a6af5f137367eae3feed2e374"
+    },
+    {
+      "path": "texts/frus1914Supp-d337.txt",
+      "bytes": 1289,
+      "sha256": "562ecb1d96fe79fe14006ac0f8b5c00e98231c88a5194d76a71de3aff80a654a"
+    },
+    {
+      "path": "texts/frus1914Supp-d338.txt",
+      "bytes": 9640,
+      "sha256": "57f352f6f7ae33f49536276f3daf01c6c96ab4caff2cf32510e661030606bbc5"
+    },
+    {
+      "path": "texts/frus1914Supp-d339.txt",
+      "bytes": 4355,
+      "sha256": "16f196aec2b9eea9bdf96b15e62e99354b974b38602a37602f46eee51e4a06cb"
+    },
+    {
+      "path": "texts/frus1914Supp-d34.txt",
+      "bytes": 348,
+      "sha256": "03fba0a51f588638a03516371da7d77ae2ed9e3cc74a3602f0d41c207a5495eb"
+    },
+    {
+      "path": "texts/frus1914Supp-d340.txt",
+      "bytes": 174,
+      "sha256": "429b74a7ba033d04a0db416686b728c06a46e715f3ab16e7dd4a148b9405a966"
+    },
+    {
+      "path": "texts/frus1914Supp-d341.txt",
+      "bytes": 2835,
+      "sha256": "492020c9db17028340c28f9e4cac7cfbbf1c025ba1def402f5c5ca0298df8ba4"
+    },
+    {
+      "path": "texts/frus1914Supp-d342.txt",
+      "bytes": 43631,
+      "sha256": "0f7b800b26b364342c3a14293938e623a0d757c4ed4207cc9dbc84e8ffe98b9d"
+    },
+    {
+      "path": "texts/frus1914Supp-d343.txt",
+      "bytes": 1487,
+      "sha256": "00d215072aecceaa7355efce5fcf79cc945830ebe66b64493c8aeedbaf4f6d38"
+    },
+    {
+      "path": "texts/frus1914Supp-d344.txt",
+      "bytes": 575,
+      "sha256": "9157d62e3464129dbe47c110e210b7622eb42afbe67f3108c642665fc88b9ef0"
+    },
+    {
+      "path": "texts/frus1914Supp-d345.txt",
+      "bytes": 1332,
+      "sha256": "b2e0120b3a2fe44721f80dfc47701a441fc57d8efe173e904242a77c2cfdcb5d"
+    },
+    {
+      "path": "texts/frus1914Supp-d346.txt",
+      "bytes": 2486,
+      "sha256": "3d3ad075e9b5c50694a0d2e8f78fe7c214bc4c97be13460c012ed3b2bf5c3b1e"
+    },
+    {
+      "path": "texts/frus1914Supp-d347.txt",
+      "bytes": 759,
+      "sha256": "8b54fce82cc1030110854293ac4acf9b223152d291a728d0b6300e9a9ce04c5c"
+    },
+    {
+      "path": "texts/frus1914Supp-d348.txt",
+      "bytes": 407,
+      "sha256": "3c0c799aeba677dd33ce9c8a7571f720cebcc7667a8020049696be6a6f63f8ef"
+    },
+    {
+      "path": "texts/frus1914Supp-d349.txt",
+      "bytes": 229,
+      "sha256": "4425e1d2c439f2f2f6e4766bfd8913d783ca0c2eeeb30ba40192b41346589c5f"
+    },
+    {
+      "path": "texts/frus1914Supp-d35.txt",
+      "bytes": 1248,
+      "sha256": "f9967d6d74ad72e688b39fe2404d1fd6e18bec63523eb57b353ba4070cad3826"
+    },
+    {
+      "path": "texts/frus1914Supp-d350.txt",
+      "bytes": 2309,
+      "sha256": "1a43137b8b17bb19e4637e3dcd410e4cbdb8990fc4ddc45a592d55732758c234"
+    },
+    {
+      "path": "texts/frus1914Supp-d351.txt",
+      "bytes": 286,
+      "sha256": "21968e5a479878096b507b2aadbe4e23b17102f20df203943983572acbf7163b"
+    },
+    {
+      "path": "texts/frus1914Supp-d352.txt",
+      "bytes": 7378,
+      "sha256": "1c7da2971cd49c9ad7ab97e2be2778164dd4f8b628d16d3cf952f2733d183975"
+    },
+    {
+      "path": "texts/frus1914Supp-d353.txt",
+      "bytes": 8350,
+      "sha256": "3ae4f44c56d540ed4cde69c67e08b16ee35d52e07588d79b733e4f527a71eda8"
+    },
+    {
+      "path": "texts/frus1914Supp-d354.txt",
+      "bytes": 4443,
+      "sha256": "26041016322ec003ca24c70b48f71c0153f98e77d23d177d8ef78afff9e4670c"
+    },
+    {
+      "path": "texts/frus1914Supp-d355.txt",
+      "bytes": 2463,
+      "sha256": "df296b0ce7d4fbba3798cd3b9953f68bdeb52ad5cfc3fccab2814458f636a28e"
+    },
+    {
+      "path": "texts/frus1914Supp-d356.txt",
+      "bytes": 795,
+      "sha256": "93c78bc668517203070212bf64971cc304eb1f02df26986d7f22ad1cd1143c6b"
+    },
+    {
+      "path": "texts/frus1914Supp-d357.txt",
+      "bytes": 855,
+      "sha256": "9557eb123486a66dc46d4cfe3da5220fe2cfb9cc6a1ab53902cb6f82a4955bdb"
+    },
+    {
+      "path": "texts/frus1914Supp-d358.txt",
+      "bytes": 419,
+      "sha256": "899e3ce5ee178d26376391fdc53c42fe4447511872a04c101b89e3579fc9d80b"
+    },
+    {
+      "path": "texts/frus1914Supp-d359.txt",
+      "bytes": 378,
+      "sha256": "67c1cce72ba0d9a1ebbdbfd54ec89916d7a167572b52b98f29ec599384c519bd"
+    },
+    {
+      "path": "texts/frus1914Supp-d36.txt",
+      "bytes": 462,
+      "sha256": "fe18701a4ad322d0fa65b6dfb6f645cf592fe3d48f7ceb44fefd72df4c34eb1a"
+    },
+    {
+      "path": "texts/frus1914Supp-d360.txt",
+      "bytes": 385,
+      "sha256": "43c99811be03cb98a349e52e36128e9e0eb676854f5dbe0b676299573b6aa9e6"
+    },
+    {
+      "path": "texts/frus1914Supp-d361.txt",
+      "bytes": 410,
+      "sha256": "4192411813873f8fa9e4be62bdd1d86a417c2cee857b745dfb32c06f7b07dce4"
+    },
+    {
+      "path": "texts/frus1914Supp-d362.txt",
+      "bytes": 329,
+      "sha256": "dd5fc226e515f0bee1369fa358ec63bad44956827fb48b8ce2d2b574238edffd"
+    },
+    {
+      "path": "texts/frus1914Supp-d363.txt",
+      "bytes": 394,
+      "sha256": "5f81556695dca9b0cd4176c3e6ba447c117f9559ffa7954fd60388291c771d0b"
+    },
+    {
+      "path": "texts/frus1914Supp-d364.txt",
+      "bytes": 7659,
+      "sha256": "8bd7a9bf60ccd4495faed4d1fd6f7c0ed9abb47eb3f48352d61f660bb487b723"
+    },
+    {
+      "path": "texts/frus1914Supp-d365.txt",
+      "bytes": 279,
+      "sha256": "aa41bae864a28bb1fb681bbc88d1fe1f807ace08065a508faa78bdebb311b348"
+    },
+    {
+      "path": "texts/frus1914Supp-d366.txt",
+      "bytes": 416,
+      "sha256": "231c78b58786c9d5d848a296f7156bf45265268d424b9dda08bc6c857fd02313"
+    },
+    {
+      "path": "texts/frus1914Supp-d367.txt",
+      "bytes": 1621,
+      "sha256": "4868c333736f6b0df4a16e58be54c344ef1c449c5fec62ae5a86477b9b08d20c"
+    },
+    {
+      "path": "texts/frus1914Supp-d368.txt",
+      "bytes": 465,
+      "sha256": "f972cc8c6b939927af8db37958f85cba81fb14a011d23ad977cc82ea70814f4a"
+    },
+    {
+      "path": "texts/frus1914Supp-d369.txt",
+      "bytes": 2446,
+      "sha256": "1da35bbbe216f415d6fbb481699747a575ac0fbc968977fb9bfb04918dfdd069"
+    },
+    {
+      "path": "texts/frus1914Supp-d37.txt",
+      "bytes": 497,
+      "sha256": "edf56724114265e6376c368399aa1e8a61fb19d9808417a97b3d491381c0f8f7"
+    },
+    {
+      "path": "texts/frus1914Supp-d370.txt",
+      "bytes": 420,
+      "sha256": "fef4aa37cc5f0ffbbb906ebaa68145fc64fbe5264da485b2fb6dfc163ea853f9"
+    },
+    {
+      "path": "texts/frus1914Supp-d371.txt",
+      "bytes": 408,
+      "sha256": "e4f910930552e5c88259ec0c7e40dd478cb353df2fe6f50e9d893c4b2de0dcd0"
+    },
+    {
+      "path": "texts/frus1914Supp-d372.txt",
+      "bytes": 596,
+      "sha256": "abb56c76ed3e6aee4d44e6e0056bfdaca912a2b487a189ff504f808c4f655d12"
+    },
+    {
+      "path": "texts/frus1914Supp-d373.txt",
+      "bytes": 1753,
+      "sha256": "918e6f200212d1edbe89eb40930c7648494343327173bf58ec27ff09644c761d"
+    },
+    {
+      "path": "texts/frus1914Supp-d374.txt",
+      "bytes": 4818,
+      "sha256": "3dcf6304e67188e9ea31b7a3088229e5d86c68ef274eacf17585cb421ba1e2e4"
+    },
+    {
+      "path": "texts/frus1914Supp-d375.txt",
+      "bytes": 21982,
+      "sha256": "a881b35113c8076e542c3ef3b3d96808b64d2ab221ca21a9a2425ea2b92a636d"
+    },
+    {
+      "path": "texts/frus1914Supp-d376.txt",
+      "bytes": 2278,
+      "sha256": "3667773f851970344f27e5cc2892d2cb8b7f083bb528c643ce0dd888e439d926"
+    },
+    {
+      "path": "texts/frus1914Supp-d377.txt",
+      "bytes": 1406,
+      "sha256": "95bfd0e628516601eaa0c82c786ad87efcf5fd27b7378b3b61be0067bf848746"
+    },
+    {
+      "path": "texts/frus1914Supp-d378.txt",
+      "bytes": 4417,
+      "sha256": "4248e227cc5684da6d406e2506b7a8d167003887c81febccb0f66536a0e81a9f"
+    },
+    {
+      "path": "texts/frus1914Supp-d379.txt",
+      "bytes": 1612,
+      "sha256": "e77fe92cf6b0ee4e88471c355061878e2e11e189738e10efb520567929d8367d"
+    },
+    {
+      "path": "texts/frus1914Supp-d38.txt",
+      "bytes": 389,
+      "sha256": "7478e0649475f64fad551c863fde76621aee38b6cb58fc1b298069245d4330a4"
+    },
+    {
+      "path": "texts/frus1914Supp-d380.txt",
+      "bytes": 1993,
+      "sha256": "1374195e137d2ae4aaa4970056ed00326be56868c3fc77acacd9decb711a6b59"
+    },
+    {
+      "path": "texts/frus1914Supp-d381.txt",
+      "bytes": 2829,
+      "sha256": "73cde7bbc88c5fddc0ef8b65751f84b8026b0fb62a404ae72a6a7aa015d1e5b7"
+    },
+    {
+      "path": "texts/frus1914Supp-d382.txt",
+      "bytes": 1605,
+      "sha256": "a2d78ce4746a4cad8cba4d814c49865312f75060995a63c439cb15a279261b81"
+    },
+    {
+      "path": "texts/frus1914Supp-d383.txt",
+      "bytes": 2044,
+      "sha256": "fc64f3d8baeb56f5341d63d5a1aec7ce7e2d2c8581122020b4e3e564f56b9583"
+    },
+    {
+      "path": "texts/frus1914Supp-d384.txt",
+      "bytes": 1245,
+      "sha256": "7a14e5bebecd16906d2c19b56d69601dfbcbcdea6dc58aaf3d8e7fe2a5dba402"
+    },
+    {
+      "path": "texts/frus1914Supp-d385.txt",
+      "bytes": 877,
+      "sha256": "1c74ead3acd8cad42e713f44393ecb792e3e870f365fcda7995be0664782f5bb"
+    },
+    {
+      "path": "texts/frus1914Supp-d386.txt",
+      "bytes": 3815,
+      "sha256": "e711c3958baf555df2e1df703716f2770f9bf57d991419a8d17cf0e11b2abc28"
+    },
+    {
+      "path": "texts/frus1914Supp-d387.txt",
+      "bytes": 1736,
+      "sha256": "6be5f748171f7d47b8449938e92e4a2aeb1c5235c9c48a8e225f0564e372d9b3"
+    },
+    {
+      "path": "texts/frus1914Supp-d388.txt",
+      "bytes": 2213,
+      "sha256": "a3285030cb145f80420d0986dedd4b414da8b5b62650b0446d3133b4fbd9a787"
+    },
+    {
+      "path": "texts/frus1914Supp-d389.txt",
+      "bytes": 1425,
+      "sha256": "d9975750a09b8c9149d44c65cad20f81f41bb0ca10c2a1c4b5075e1e854cf1ff"
+    },
+    {
+      "path": "texts/frus1914Supp-d39.txt",
+      "bytes": 179,
+      "sha256": "277f323c50c2fab133007d82a03b22b28c014c60efc944638eaf85934578d0cc"
+    },
+    {
+      "path": "texts/frus1914Supp-d390.txt",
+      "bytes": 2334,
+      "sha256": "ec11f3e76a02ebb9cc0fdee9c13bc2645b009f5da75cbbb9766d4846288dcf58"
+    },
+    {
+      "path": "texts/frus1914Supp-d391.txt",
+      "bytes": 8326,
+      "sha256": "ffbeec54e78503c1e2060400fac6febb65abe7f67b9fda5641580707ca123bb6"
+    },
+    {
+      "path": "texts/frus1914Supp-d392.txt",
+      "bytes": 1436,
+      "sha256": "37ec6388d3c24c789d852a6f749bca146c4dd5e7fe6771fbc063f56b232dd0e8"
+    },
+    {
+      "path": "texts/frus1914Supp-d393.txt",
+      "bytes": 633,
+      "sha256": "4d56b74a61bc7a6caaf92a59df29201e61bd43e4d3b8fe9d3774812f69a92394"
+    },
+    {
+      "path": "texts/frus1914Supp-d394.txt",
+      "bytes": 4281,
+      "sha256": "b2b2d5b46e5f2f9ba981f6e96b1d84d000abf439e902e5f69546279ad2394925"
+    },
+    {
+      "path": "texts/frus1914Supp-d395.txt",
+      "bytes": 4178,
+      "sha256": "ad41d38f78302a45866d333b721700a169ab865006ddc8eccd6e41a09a3ba9d4"
+    },
+    {
+      "path": "texts/frus1914Supp-d396.txt",
+      "bytes": 5857,
+      "sha256": "1eacb37ac3428a53ff6f0fec123a0661dcdafa8dc427324a860f60680cc965c0"
+    },
+    {
+      "path": "texts/frus1914Supp-d397.txt",
+      "bytes": 900,
+      "sha256": "2ac787808d68ab3664a0f4081b1719922682ef1ba698ebcdee04ba225dd47052"
+    },
+    {
+      "path": "texts/frus1914Supp-d398.txt",
+      "bytes": 3363,
+      "sha256": "a8d299eb1ecaf6fc634cd3f746f85b41b2bb336797194c6a310cdf82ebba8a3a"
+    },
+    {
+      "path": "texts/frus1914Supp-d399.txt",
+      "bytes": 2208,
+      "sha256": "1089f5c68a741cc6d77767294bea22bda7be588116a3690a952f6ae2c2b4f1d4"
+    },
+    {
+      "path": "texts/frus1914Supp-d4.txt",
+      "bytes": 539,
+      "sha256": "9b4943121bccea370b7406a89f646ef26c8116e67d1d347d2b9dc8a2cd48f71c"
+    },
+    {
+      "path": "texts/frus1914Supp-d40.txt",
+      "bytes": 447,
+      "sha256": "9cffe931a26ca0eb6fb45a8f57895407551572ad38f450af147b2437a383baf4"
+    },
+    {
+      "path": "texts/frus1914Supp-d400.txt",
+      "bytes": 1469,
+      "sha256": "edf1d3cf94178bac765729c938b5cf401b07c33fa075d3d80ee3a3fb1e2e6df1"
+    },
+    {
+      "path": "texts/frus1914Supp-d401.txt",
+      "bytes": 2980,
+      "sha256": "f9e9412298b55649a90e99ecf5538823188e310bf111b8dd198f1619a3fb0c10"
+    },
+    {
+      "path": "texts/frus1914Supp-d402.txt",
+      "bytes": 2513,
+      "sha256": "b9eb3a04378087bfb4066c8736f7d608963ce01da8a3dba26f8c69d6695beee7"
+    },
+    {
+      "path": "texts/frus1914Supp-d403.txt",
+      "bytes": 1230,
+      "sha256": "8b9a3383b04eb0a0b67ddc3e33a366f189a4bd74ab50c6d13e2c2c82ddc7fc0d"
+    },
+    {
+      "path": "texts/frus1914Supp-d404.txt",
+      "bytes": 946,
+      "sha256": "869cf91fd645958cbfa15625023cb9673ce6e24f6364b8cb34dc530a63bbea66"
+    },
+    {
+      "path": "texts/frus1914Supp-d405.txt",
+      "bytes": 646,
+      "sha256": "b6d927d2217aa98fdb8eeedf8bfa5c60f2847ca5beda96895d92840811b435fd"
+    },
+    {
+      "path": "texts/frus1914Supp-d406.txt",
+      "bytes": 1104,
+      "sha256": "91f096b79bfe14786a351cb2d47b18b505264fdab5895bac4fe3e91be8541c38"
+    },
+    {
+      "path": "texts/frus1914Supp-d407.txt",
+      "bytes": 1877,
+      "sha256": "c0aaf30eef147697e99ff4217d62c4d690088c38c837e63734cfc8cd061f3a90"
+    },
+    {
+      "path": "texts/frus1914Supp-d408.txt",
+      "bytes": 632,
+      "sha256": "2242dab39d2fcc9c6b5f512c1a345f04ea6453530f70c634cc42df24bce65097"
+    },
+    {
+      "path": "texts/frus1914Supp-d409.txt",
+      "bytes": 8347,
+      "sha256": "3391b7b83ab27a056a8254ac0f959ee36363b92d99522217d07e80ed42d1a87e"
+    },
+    {
+      "path": "texts/frus1914Supp-d41.txt",
+      "bytes": 235,
+      "sha256": "3cf5a82dfb1e80b2378e2ec46d27796cad2556f19a0142e1e35f34449221fa15"
+    },
+    {
+      "path": "texts/frus1914Supp-d410.txt",
+      "bytes": 10177,
+      "sha256": "992d6254620815a8cef803cfa33a003296dc15f80a15d9f5f2cd406aee102bb3"
+    },
+    {
+      "path": "texts/frus1914Supp-d411.txt",
+      "bytes": 1896,
+      "sha256": "f8c8f5737bc7fbc35d88793cd95c7203b0321115bdcece4ec48ef5091411dfbb"
+    },
+    {
+      "path": "texts/frus1914Supp-d412.txt",
+      "bytes": 3385,
+      "sha256": "86dde9bff82ff6acf0fe18d6e07b3f16c0e8c3ef33cd7b5c117f6af1eae5522c"
+    },
+    {
+      "path": "texts/frus1914Supp-d413.txt",
+      "bytes": 320,
+      "sha256": "975908312febc70f1848201689abd62364e5e95ae382e9886203a9e1a223a570"
+    },
+    {
+      "path": "texts/frus1914Supp-d414.txt",
+      "bytes": 910,
+      "sha256": "62d1c1a7364242edc79c31e387dfce990c25c44ff9ea41ef75491266fa810f30"
+    },
+    {
+      "path": "texts/frus1914Supp-d415.txt",
+      "bytes": 479,
+      "sha256": "35e3185852df21b013558c0e8653c1069adf28e26805b40e02850270d34d59b5"
+    },
+    {
+      "path": "texts/frus1914Supp-d416.txt",
+      "bytes": 4345,
+      "sha256": "9264a98528d6ade553cc2011d2fef3ec91bda9e54b0fd95a101da581d81e943a"
+    },
+    {
+      "path": "texts/frus1914Supp-d417.txt",
+      "bytes": 264,
+      "sha256": "c6897c71f103c54df576a719ab6ee9f2a29933640871a93f79ad26d5e24d20f3"
+    },
+    {
+      "path": "texts/frus1914Supp-d42.txt",
+      "bytes": 385,
+      "sha256": "e380f6df1584569c43837f8a840aabc445f75267d1657b3ab582a570191d5e23"
+    },
+    {
+      "path": "texts/frus1914Supp-d43.txt",
+      "bytes": 4983,
+      "sha256": "2d6ba4a1bc8744914b25f6afa09ce38cff7874478eae3e9b73124c979bc6c2a8"
+    },
+    {
+      "path": "texts/frus1914Supp-d44.txt",
+      "bytes": 194,
+      "sha256": "5a4fc05f00adeb08bacd121ed2a4c951ef271b0df989e5dcd84e11201804536a"
+    },
+    {
+      "path": "texts/frus1914Supp-d45.txt",
+      "bytes": 726,
+      "sha256": "55bb7e32b2f7293c7579d7398b2eccef94e417555430eb0b6581fd21943545d5"
+    },
+    {
+      "path": "texts/frus1914Supp-d46.txt",
+      "bytes": 382,
+      "sha256": "25678ad043e573516cec36f0faa676db5b1fd46b6cb57346f673329c5299b7e1"
+    },
+    {
+      "path": "texts/frus1914Supp-d47.txt",
+      "bytes": 347,
+      "sha256": "dbd336135d19f384b69dbe1388cfa6078e8fc6ed7e7550785bf7ae904be3b9df"
+    },
+    {
+      "path": "texts/frus1914Supp-d48.txt",
+      "bytes": 949,
+      "sha256": "cfe5a9ffcf5591633b5ecc338a92a4e1760334dfb3c18fa11b6decf8d89dee35"
+    },
+    {
+      "path": "texts/frus1914Supp-d49.txt",
+      "bytes": 815,
+      "sha256": "8b4566dc934e594c5f572c2279276af7baccfd3df422151d3948ab531eee8337"
+    },
+    {
+      "path": "texts/frus1914Supp-d5.txt",
+      "bytes": 599,
+      "sha256": "204dae605c47f36953f364edce46d3d99315c54d63ebf1ff5879658ede6c539e"
+    },
+    {
+      "path": "texts/frus1914Supp-d50.txt",
+      "bytes": 705,
+      "sha256": "fcaf9587723bd1857a466dff48dc741b040f5ed0065f19af736dfe53e9f51b1a"
+    },
+    {
+      "path": "texts/frus1914Supp-d51.txt",
+      "bytes": 412,
+      "sha256": "dc206398b42c4209aa587b808d9f0e975fc46fb8ad1162f5f5a65c10e4fe45ae"
+    },
+    {
+      "path": "texts/frus1914Supp-d52.txt",
+      "bytes": 928,
+      "sha256": "cfe303625c789cc6840c74c7f32090c36eff09a5f217ec54092136bf20c8e29a"
+    },
+    {
+      "path": "texts/frus1914Supp-d53.txt",
+      "bytes": 1094,
+      "sha256": "2a4b336c6f05363d43e40bf925b8ab665f9c0f5c60b2633c456ef0fc1cbbf22d"
+    },
+    {
+      "path": "texts/frus1914Supp-d54.txt",
+      "bytes": 1366,
+      "sha256": "d6b67897eed52ffb0d94e9b9465844c4c3bb320842079a7789a184f6dfcaf084"
+    },
+    {
+      "path": "texts/frus1914Supp-d55.txt",
+      "bytes": 326,
+      "sha256": "ad049df73cb5237d29fc68c48ce8a3d488a77d42f77e6a2309cc5bbb16216920"
+    },
+    {
+      "path": "texts/frus1914Supp-d56.txt",
+      "bytes": 297,
+      "sha256": "c2db0ea7c222b68f3dc7c61c1b800d9d2e34b375ae5f3548817f0835022bda57"
+    },
+    {
+      "path": "texts/frus1914Supp-d57.txt",
+      "bytes": 887,
+      "sha256": "e249c2664d6df76bf82a0c0ec2abe1ca28c93bc85d6cbd1a01d3f802da1be3eb"
+    },
+    {
+      "path": "texts/frus1914Supp-d58.txt",
+      "bytes": 923,
+      "sha256": "30f41d4fb3ecda50c85517adf11af38531ef3fc1df67118310f98f3ea70176e5"
+    },
+    {
+      "path": "texts/frus1914Supp-d59.txt",
+      "bytes": 438,
+      "sha256": "e8998d357e46b1a5913382ef0ca65a0a660c9851290a744c30567c84054a1d95"
+    },
+    {
+      "path": "texts/frus1914Supp-d6.txt",
+      "bytes": 477,
+      "sha256": "e04251e3022c2a65750b97f019088b83902cb8cf38cad4c2e3b9bafca8612411"
+    },
+    {
+      "path": "texts/frus1914Supp-d60.txt",
+      "bytes": 210,
+      "sha256": "4b76f95a7f10c93de49d5c8e3c836e2acd74c82adad0a59b3e612c1614248ca9"
+    },
+    {
+      "path": "texts/frus1914Supp-d61.txt",
+      "bytes": 768,
+      "sha256": "116a2d0e5d1ed5a3755633ffcb59767ba6dc35c2f4cb4b9bccb6549cd9a511c2"
+    },
+    {
+      "path": "texts/frus1914Supp-d62.txt",
+      "bytes": 865,
+      "sha256": "07a92f5a94776c5d989fdfa8c049a092f3d2173f54247ad163c200c5813001de"
+    },
+    {
+      "path": "texts/frus1914Supp-d63.txt",
+      "bytes": 893,
+      "sha256": "d078cf380b3cc2135e06ea7b4650aa1ae5f27ca8cf2efac9d753f8d9871f4a2c"
+    },
+    {
+      "path": "texts/frus1914Supp-d64.txt",
+      "bytes": 1050,
+      "sha256": "d397a8685322f481ab6b37b632845caade3fc719491946ba7c73ab73ee26aded"
+    },
+    {
+      "path": "texts/frus1914Supp-d65.txt",
+      "bytes": 207,
+      "sha256": "922b584380a7ba9e754d8d02850b8573b0e8ac818409dfaadf176d6ebf9f8ed0"
+    },
+    {
+      "path": "texts/frus1914Supp-d66.txt",
+      "bytes": 1038,
+      "sha256": "3ba0ca6403032f5366df6ae310077eaa5ca4743201be9135704e2bcf0f87f50e"
+    },
+    {
+      "path": "texts/frus1914Supp-d67.txt",
+      "bytes": 310,
+      "sha256": "d1375ad53a8dcf7fbc4dab284cb4e80ef2b589cddc2101f587892799fb75af0f"
+    },
+    {
+      "path": "texts/frus1914Supp-d68.txt",
+      "bytes": 244,
+      "sha256": "d390ea9de293a8aea2e9195191f847f586812af777fbdd46766ab050b2a9af22"
+    },
+    {
+      "path": "texts/frus1914Supp-d69.txt",
+      "bytes": 734,
+      "sha256": "3afd3708f0edf826dab35a179ffb749c01ab8f7973931c820c27ccd4297bdcad"
+    },
+    {
+      "path": "texts/frus1914Supp-d7.txt",
+      "bytes": 1358,
+      "sha256": "f988cbd346ca5ec37656d1ac092939493b33f801676a1d62c1a4f10cd2ef23fe"
+    },
+    {
+      "path": "texts/frus1914Supp-d70.txt",
+      "bytes": 280,
+      "sha256": "38cf02d2c39bce0789d14d56af6e9768c7ec994df55fc89632d7109158c923e7"
+    },
+    {
+      "path": "texts/frus1914Supp-d71.txt",
+      "bytes": 603,
+      "sha256": "a5a0df4ae9fde1adfd147949e58a1fc4b7be66b4e33d6fa52e0530a91c241436"
+    },
+    {
+      "path": "texts/frus1914Supp-d72.txt",
+      "bytes": 893,
+      "sha256": "e60ebc874170ec199ed801b934045e4169d98700044b5fd17f2c4cfc92643654"
+    },
+    {
+      "path": "texts/frus1914Supp-d73.txt",
+      "bytes": 2080,
+      "sha256": "78fbc004c607ac860365c09fdf25093f796c0014bdf6f01e6e1d92f03750596f"
+    },
+    {
+      "path": "texts/frus1914Supp-d74.txt",
+      "bytes": 548,
+      "sha256": "b40ece4f64f6d7e994cff98bb0b053faf2a099d83b803f7e5e916755cfcabf8f"
+    },
+    {
+      "path": "texts/frus1914Supp-d75.txt",
+      "bytes": 445,
+      "sha256": "bdf92f27b1d25af060583f3652babda24460e823377f5e82c99901085def7773"
+    },
+    {
+      "path": "texts/frus1914Supp-d76.txt",
+      "bytes": 474,
+      "sha256": "3edeba98748530b1e6a70204029df791afe93cbc0fb5f72d43497116bdfa9a07"
+    },
+    {
+      "path": "texts/frus1914Supp-d77.txt",
+      "bytes": 971,
+      "sha256": "8c8810f4b2b46935f684e26cc185a2c05a16ce57fc86e8fe5639d018c6fe1968"
+    },
+    {
+      "path": "texts/frus1914Supp-d78.txt",
+      "bytes": 702,
+      "sha256": "589a2e6daa8856725cd401548caf430da094848379e778b62a03fe8dd7580d48"
+    },
+    {
+      "path": "texts/frus1914Supp-d79.txt",
+      "bytes": 893,
+      "sha256": "c08607d6fd25d4a0f9c564784af59080b523693d9f78603aca94dfb9dcf1eaec"
+    },
+    {
+      "path": "texts/frus1914Supp-d790.txt",
+      "bytes": 264,
+      "sha256": "57e8d56c03f749e0971cae33f0598d875ba89b2623320ba4b9185e6d18b1691a"
+    },
+    {
+      "path": "texts/frus1914Supp-d791.txt",
+      "bytes": 537,
+      "sha256": "60842462878f63d5dfac038443ba5f44dac4ba6a578e276d37acca371477d158"
+    },
+    {
+      "path": "texts/frus1914Supp-d792.txt",
+      "bytes": 473,
+      "sha256": "56925841321b875353c8d3e59f6278a47ef6e24d96c0e1eac1a2a8bcf5f94c5f"
+    },
+    {
+      "path": "texts/frus1914Supp-d793.txt",
+      "bytes": 362,
+      "sha256": "70e7da2235db8a89f7781dd473a33bc3f913121875ac40f48aeac5ee92d89109"
+    },
+    {
+      "path": "texts/frus1914Supp-d794.txt",
+      "bytes": 3648,
+      "sha256": "718b70ba377be637dc5dd0f16dbb7e5a31923fa1df35fa77f32e896b60d38796"
+    },
+    {
+      "path": "texts/frus1914Supp-d795.txt",
+      "bytes": 518,
+      "sha256": "e12aca81a1174a4a10e716fa0d0256ea5d24dc5bb668a03da5ab8714fbb193e7"
+    },
+    {
+      "path": "texts/frus1914Supp-d796.txt",
+      "bytes": 1339,
+      "sha256": "6680bdf37aef039e0c482d6ef80eb99ff8b4a4128646f9f0ceb6baa9d0cbb2ec"
+    },
+    {
+      "path": "texts/frus1914Supp-d797.txt",
+      "bytes": 796,
+      "sha256": "9cb1c772ef36e9d1e5c976420b6d03d5f3606bbcad79eeefc863d5ce21ece818"
+    },
+    {
+      "path": "texts/frus1914Supp-d798.txt",
+      "bytes": 374,
+      "sha256": "37eebee596dd2f5e334839ee3fa9dee7800991c14fdd8a04e44b75fef7ef6440"
+    },
+    {
+      "path": "texts/frus1914Supp-d799.txt",
+      "bytes": 1252,
+      "sha256": "a6ed1afd5563ab2fd3e52df7e83a4d1b56ca9ad096593167425844c50b2152d6"
+    },
+    {
+      "path": "texts/frus1914Supp-d8.txt",
+      "bytes": 193,
+      "sha256": "834a9dc285232fc92ed2066909a2cc32aa0a443dbca7de84c283f586a0a81ac0"
+    },
+    {
+      "path": "texts/frus1914Supp-d80.txt",
+      "bytes": 735,
+      "sha256": "82b8f62d9561cf18a8eed652c1d25f51e407736ac3185e1f8f5fc5a8316464ea"
+    },
+    {
+      "path": "texts/frus1914Supp-d800.txt",
+      "bytes": 610,
+      "sha256": "fa5651d700e8c6ee7585fa2465f5478bf92d67a82f22d98c9e55ebc7c2a59691"
+    },
+    {
+      "path": "texts/frus1914Supp-d801.txt",
+      "bytes": 1905,
+      "sha256": "af25cfb3861d200e7da038a79ccddf050fae982adc5cb872c7d229a925649601"
+    },
+    {
+      "path": "texts/frus1914Supp-d802.txt",
+      "bytes": 404,
+      "sha256": "30a238d5b024265e645428ec0c257fdf319bd0fbeb65d604aa250da9870cd824"
+    },
+    {
+      "path": "texts/frus1914Supp-d803.txt",
+      "bytes": 528,
+      "sha256": "15be758cfa7dfe9f0f0cfdd22d76e1943570090d458dad955bc3c68c1bfd8187"
+    },
+    {
+      "path": "texts/frus1914Supp-d804.txt",
+      "bytes": 889,
+      "sha256": "a60c5f9523add4ab3e33ddd56a213f0183bdbb84bb249d39ac77e6db760c818b"
+    },
+    {
+      "path": "texts/frus1914Supp-d805.txt",
+      "bytes": 1884,
+      "sha256": "368c367bf7c7823568690b33f0e777778e51a8d1c4cefa1ee12a8e1b4bc41d9f"
+    },
+    {
+      "path": "texts/frus1914Supp-d806.txt",
+      "bytes": 238,
+      "sha256": "0d22dee36b3fdb29d77f9c50e3aa02514ae0f8bf49ae3c2f34d01f6dc1f78bd1"
+    },
+    {
+      "path": "texts/frus1914Supp-d807.txt",
+      "bytes": 218,
+      "sha256": "b7765749b2855b1bd1d43f58c0e742c49202000b8991206d7c59e62477c39e3f"
+    },
+    {
+      "path": "texts/frus1914Supp-d808.txt",
+      "bytes": 425,
+      "sha256": "c41bced18dc22b9ef20f55199bca43b98e13a2244f8f1b30d33de6d8576efbfc"
+    },
+    {
+      "path": "texts/frus1914Supp-d809.txt",
+      "bytes": 560,
+      "sha256": "9cbca8d8ba3dd086fe672c17f11d9b740276915e7ea7abcadfb5442a25ebec5e"
+    },
+    {
+      "path": "texts/frus1914Supp-d81.txt",
+      "bytes": 451,
+      "sha256": "f56bc484464c8816c49f47de6896dae85733b52c0b0078ee14ef7e41dd17bc2c"
+    },
+    {
+      "path": "texts/frus1914Supp-d810.txt",
+      "bytes": 1195,
+      "sha256": "c80da017359f4e95a9d4b18e61ee686debc17dafa12089e6045673be0d3959a1"
+    },
+    {
+      "path": "texts/frus1914Supp-d811.txt",
+      "bytes": 723,
+      "sha256": "e1b0c53e76de8f40e32d45cc223717a5291e2a7c1fa428257236b5d3ec5683a0"
+    },
+    {
+      "path": "texts/frus1914Supp-d812.txt",
+      "bytes": 1136,
+      "sha256": "fd13b9c3b104859368746201691b2a1026174a1ce362caf014bd4be8a54b30b6"
+    },
+    {
+      "path": "texts/frus1914Supp-d813.txt",
+      "bytes": 249,
+      "sha256": "435601f7029e2198c9c38a9fa6956610ef9fe4c8666fbb0acdafac4251445d8a"
+    },
+    {
+      "path": "texts/frus1914Supp-d814.txt",
+      "bytes": 400,
+      "sha256": "874e9f0e4da0b2b6e2aedf006682aa58b7d6b0fe3921ed5acda29a4d996db079"
+    },
+    {
+      "path": "texts/frus1914Supp-d815.txt",
+      "bytes": 473,
+      "sha256": "739c8d24fe4ba5d1e8262e22086826365f82bbb6f3f738d59f605fa98ee753eb"
+    },
+    {
+      "path": "texts/frus1914Supp-d816.txt",
+      "bytes": 670,
+      "sha256": "8dd6ec4eba55d65f3b39f9aaf8af2a9a85393960fdce4e580baf355069ecf667"
+    },
+    {
+      "path": "texts/frus1914Supp-d817.txt",
+      "bytes": 438,
+      "sha256": "d98e6b748e3ef02ebbaa538a992efe609ce7a3a7f45ae544c2eb6d529315c6d1"
+    },
+    {
+      "path": "texts/frus1914Supp-d818.txt",
+      "bytes": 425,
+      "sha256": "3537da02f70e50effd5b9d8bb768f9d4a068f7082bbccf877ffa6a6cca958a0b"
+    },
+    {
+      "path": "texts/frus1914Supp-d819.txt",
+      "bytes": 636,
+      "sha256": "75e99ea89114bcb9a07117bb477dddb0f42f7729dcc6dd40b34c53b2c2577ce4"
+    },
+    {
+      "path": "texts/frus1914Supp-d82.txt",
+      "bytes": 1028,
+      "sha256": "026566f5eb91703a070f48e398a7d83b2e5c9c688387babe9ae4092bf4bc361b"
+    },
+    {
+      "path": "texts/frus1914Supp-d820.txt",
+      "bytes": 524,
+      "sha256": "7d2ed59475967ad5b2e8708cb6ab7ae3295bf37dbe6e2501eeb166e6a24cd1e9"
+    },
+    {
+      "path": "texts/frus1914Supp-d821.txt",
+      "bytes": 435,
+      "sha256": "bc93d7a110d8cc038d958dbc5b00dfcd189d18cda5789363c27098342d4d9c41"
+    },
+    {
+      "path": "texts/frus1914Supp-d822.txt",
+      "bytes": 1114,
+      "sha256": "16915f2f104ad93227afd270d7b6f398bdf34f0077b0db0be5195a99e443c566"
+    },
+    {
+      "path": "texts/frus1914Supp-d823.txt",
+      "bytes": 569,
+      "sha256": "fd3368e50812f8108bf0fc9098832d8037f702cf270bbe505478f11df740d23f"
+    },
+    {
+      "path": "texts/frus1914Supp-d824.txt",
+      "bytes": 2173,
+      "sha256": "c944a035027ba4211b6e2041962dda5bd4daff61e03f93dfe03312f2dc85485d"
+    },
+    {
+      "path": "texts/frus1914Supp-d825.txt",
+      "bytes": 1459,
+      "sha256": "4a4d1807b19e8519d9b333788e607391ed98bef7529ca743029b6c780d63e11d"
+    },
+    {
+      "path": "texts/frus1914Supp-d826.txt",
+      "bytes": 965,
+      "sha256": "3789b6f880156042497961bcef0c26eaa354df3a6b620475dfdec3f70a1abe18"
+    },
+    {
+      "path": "texts/frus1914Supp-d827.txt",
+      "bytes": 1683,
+      "sha256": "11bc7a5b374c26943b4dd5e3e4bfe93a63f7a012959c7add22a6fe3652eeed48"
+    },
+    {
+      "path": "texts/frus1914Supp-d828.txt",
+      "bytes": 404,
+      "sha256": "2113463fdbed7051426827f32f3a4fbd0b7f2bf73e33f7154a27141a6eb284d3"
+    },
+    {
+      "path": "texts/frus1914Supp-d829.txt",
+      "bytes": 786,
+      "sha256": "1127f28a698388311604e399c7cf171a78c533eebdda8b4681c82f8a61617920"
+    },
+    {
+      "path": "texts/frus1914Supp-d83.txt",
+      "bytes": 1619,
+      "sha256": "ebb2b0bbc4961ae16ea595b4d61507f0cfba71c74258e9d1f4b04d52a9e3c9a0"
+    },
+    {
+      "path": "texts/frus1914Supp-d830.txt",
+      "bytes": 585,
+      "sha256": "73296ad7ff93ee0bd20e76b193cbd5876b1ee67d52e2c98d3bee172527ad0034"
+    },
+    {
+      "path": "texts/frus1914Supp-d831.txt",
+      "bytes": 1397,
+      "sha256": "961e9e4add8fa731315d7e1864e09def1ec90c566fa78e92b4ffeb21150af890"
+    },
+    {
+      "path": "texts/frus1914Supp-d832.txt",
+      "bytes": 2104,
+      "sha256": "1c565c7c477c5563d9bba65405c2bb13075cc4d648ad6c305b884fa84f1d292b"
+    },
+    {
+      "path": "texts/frus1914Supp-d833.txt",
+      "bytes": 624,
+      "sha256": "5da026f1d0eeeebb29d2fe542650d5e4e6e031a45437fa2e51c8e865c67f459e"
+    },
+    {
+      "path": "texts/frus1914Supp-d834.txt",
+      "bytes": 916,
+      "sha256": "12b086957c2d6200427cd5423a0bb61afb148c38bee929396719619dbd589a44"
+    },
+    {
+      "path": "texts/frus1914Supp-d835.txt",
+      "bytes": 478,
+      "sha256": "40499fe3249b6a71fc3a94885464599440b60ebcedd8a1ff1e0ded94e02532ae"
+    },
+    {
+      "path": "texts/frus1914Supp-d836.txt",
+      "bytes": 446,
+      "sha256": "6ff934de41b0ce25cdcb257bfa34cc8b95a5cdd7830fa0c52c2c49eed8f07ae9"
+    },
+    {
+      "path": "texts/frus1914Supp-d837.txt",
+      "bytes": 609,
+      "sha256": "0e8eaf8a55d36c22f705d46e0b1b25b661fcd2b6a61b02436294f49c2eb33a30"
+    },
+    {
+      "path": "texts/frus1914Supp-d838.txt",
+      "bytes": 958,
+      "sha256": "255f725e0123d03a3a8cbe9d794954773d0ae69c83de7903bc82aef72273eb4f"
+    },
+    {
+      "path": "texts/frus1914Supp-d839.txt",
+      "bytes": 445,
+      "sha256": "d25f367244f095bed1a8011e055f5c07767af83e558dc4044581e9b37fe83429"
+    },
+    {
+      "path": "texts/frus1914Supp-d84.txt",
+      "bytes": 855,
+      "sha256": "7d8777515cdcb1e8cb1a4ce15934f569f738485d974c31e7665d56812213d9f0"
+    },
+    {
+      "path": "texts/frus1914Supp-d840.txt",
+      "bytes": 2506,
+      "sha256": "ed4cbc79878969c47f774b9c64afc6ba1ac5655e1ed14e96780cc177b24da11a"
+    },
+    {
+      "path": "texts/frus1914Supp-d841.txt",
+      "bytes": 1087,
+      "sha256": "f902ee5ccd8b262b21a23d25efc8a75274e6a580d9741801dee87b849362ec15"
+    },
+    {
+      "path": "texts/frus1914Supp-d842.txt",
+      "bytes": 2248,
+      "sha256": "bfa0407393ebd7fc65dc5936844b6f13774280843034a51f45a838c9606b915a"
+    },
+    {
+      "path": "texts/frus1914Supp-d843.txt",
+      "bytes": 384,
+      "sha256": "92a5e010eb88602b365e39aa9e6cb2d652fe31d5be6a50d555ce38f7e8e9279e"
+    },
+    {
+      "path": "texts/frus1914Supp-d844.txt",
+      "bytes": 631,
+      "sha256": "592d29004be67e777a5ca4ecae511c46732a583ac0724746f47a8e7a5f75146d"
+    },
+    {
+      "path": "texts/frus1914Supp-d845.txt",
+      "bytes": 925,
+      "sha256": "a74cbdc60dd9ce4151a81fe6b7184c570bbf7c2c771d34eec912e876247b6efc"
+    },
+    {
+      "path": "texts/frus1914Supp-d846.txt",
+      "bytes": 911,
+      "sha256": "c745a6ba4e1e11dd31b7b25df939284c4716d23391d113250c41b6d67d431d99"
+    },
+    {
+      "path": "texts/frus1914Supp-d847.txt",
+      "bytes": 679,
+      "sha256": "c5361f48b6efe7132b0d9699c0f24004d90897f2baec317e6fe11b318ad8e5e3"
+    },
+    {
+      "path": "texts/frus1914Supp-d848.txt",
+      "bytes": 1025,
+      "sha256": "c7cc12e13e85447f3f46c81d3c00d9a2cc8659956f879d4799d9982e26c6faec"
+    },
+    {
+      "path": "texts/frus1914Supp-d849.txt",
+      "bytes": 2831,
+      "sha256": "8af64aa56d02d79b876896d0c01caab6fdd1cfb853eac55b2ac1bb7c0a67c5b8"
+    },
+    {
+      "path": "texts/frus1914Supp-d85.txt",
+      "bytes": 647,
+      "sha256": "180014ffcdb5597c4224cccc223773944cdf03fb791e3a202b9f60b57e3c6134"
+    },
+    {
+      "path": "texts/frus1914Supp-d850.txt",
+      "bytes": 617,
+      "sha256": "64cde8f8c5376acde58ac08857d6dc8ba78e7a51a939b84b791d7b72492ad70e"
+    },
+    {
+      "path": "texts/frus1914Supp-d851.txt",
+      "bytes": 670,
+      "sha256": "6b33307f1ecf4ec50c9d326ffd0458c5ec58f5f65234106548db2818bc750929"
+    },
+    {
+      "path": "texts/frus1914Supp-d852.txt",
+      "bytes": 839,
+      "sha256": "a6a19993bda73616b41167a73b519b47963678f90bf2dc774ef25f012c235d09"
+    },
+    {
+      "path": "texts/frus1914Supp-d853.txt",
+      "bytes": 384,
+      "sha256": "be8eb521ea19c2120926c02232b5521a2d8177bc8a0904fee2807e1246b15995"
+    },
+    {
+      "path": "texts/frus1914Supp-d854.txt",
+      "bytes": 892,
+      "sha256": "5904564e023d32ceb7a093d8b2242fc95f8aa55984fe23dd0e0d556784e52f4c"
+    },
+    {
+      "path": "texts/frus1914Supp-d855.txt",
+      "bytes": 1079,
+      "sha256": "5795effd970fc3bafca709f78ac942ad94f254e1fc6e28bf8f3795b870453153"
+    },
+    {
+      "path": "texts/frus1914Supp-d856.txt",
+      "bytes": 829,
+      "sha256": "5f2ff5a1fb0a9377fb8fd5bc025e4bd84666cf34061bdea01a8851dce565f299"
+    },
+    {
+      "path": "texts/frus1914Supp-d857.txt",
+      "bytes": 1100,
+      "sha256": "ddbcaba98022786c7c529711952d2ec695992eda04618e08b0c82fb51264681c"
+    },
+    {
+      "path": "texts/frus1914Supp-d858.txt",
+      "bytes": 949,
+      "sha256": "aa9481fe0f2c148db5b4d1dca224b69df493fc173a448ec80e0488629ef31980"
+    },
+    {
+      "path": "texts/frus1914Supp-d859.txt",
+      "bytes": 972,
+      "sha256": "8dac1d1d3f44287c1a91e70fe1182a9e5c23079c2578510b5ee816b666a07eab"
+    },
+    {
+      "path": "texts/frus1914Supp-d86.txt",
+      "bytes": 1029,
+      "sha256": "8dc50e526ed52c9e95021cd9e5d0fd04b50fef415e1575df00a8b2da8b4e09d0"
+    },
+    {
+      "path": "texts/frus1914Supp-d860.txt",
+      "bytes": 286,
+      "sha256": "a4a78a4bc1139647234292404f0568008874f75a48eee7a4de1f47ad23e59beb"
+    },
+    {
+      "path": "texts/frus1914Supp-d861.txt",
+      "bytes": 1097,
+      "sha256": "bc3fb5f04f31f7e60d830ba4b909ce094619d3eaca39918d83deeeb6c7c4c06d"
+    },
+    {
+      "path": "texts/frus1914Supp-d862.txt",
+      "bytes": 776,
+      "sha256": "b8732d9c904211c5f9d9b1291dfca318acbcd46a7a7689ae320185e260ca01de"
+    },
+    {
+      "path": "texts/frus1914Supp-d863.txt",
+      "bytes": 448,
+      "sha256": "1e462e466f188bf152ea2cc1790ecf573c242b4667d65615f89ced664eeb7b02"
+    },
+    {
+      "path": "texts/frus1914Supp-d864.txt",
+      "bytes": 629,
+      "sha256": "54cd116f88cce38318b09844062daf3e89e5d1fb5d58ab7154409b6cf1c63782"
+    },
+    {
+      "path": "texts/frus1914Supp-d865.txt",
+      "bytes": 770,
+      "sha256": "ef0a1b09cd12c1843fac8708e87720d2c74b3a48f92e98cbd483be5a7fce2716"
+    },
+    {
+      "path": "texts/frus1914Supp-d866.txt",
+      "bytes": 851,
+      "sha256": "f481d7e6fc7595a0a34693dd2ad8078f4434b1888812b09ad216a2120018639b"
+    },
+    {
+      "path": "texts/frus1914Supp-d867.txt",
+      "bytes": 5890,
+      "sha256": "6fde2e269e7dd4b6b5b2a53a0423d46d2d40bb263c867043e6427aa37a5e1815"
+    },
+    {
+      "path": "texts/frus1914Supp-d868.txt",
+      "bytes": 568,
+      "sha256": "305bff641f38c5be2a6873de43fde428fa5a8161671abd022af702f55df82c0c"
+    },
+    {
+      "path": "texts/frus1914Supp-d869.txt",
+      "bytes": 868,
+      "sha256": "12bbd776363f9d1b8bc2441a12edd21a5ed08113eb2cdfe4464dfe8e6c8780d3"
+    },
+    {
+      "path": "texts/frus1914Supp-d87.txt",
+      "bytes": 858,
+      "sha256": "48a78e80cbb5bc6ca246cb5bed824b535544a49181a3536cbaba11a5b0474be7"
+    },
+    {
+      "path": "texts/frus1914Supp-d870.txt",
+      "bytes": 434,
+      "sha256": "84763376f781ad3afab6e5681e620b6fc824a5e98f756ae3f403898f9f42f260"
+    },
+    {
+      "path": "texts/frus1914Supp-d871.txt",
+      "bytes": 293,
+      "sha256": "c14d1032f055c29615e0ab13ec8ca50e220b908a12344071f8b03cb58ca1f0aa"
+    },
+    {
+      "path": "texts/frus1914Supp-d872.txt",
+      "bytes": 315,
+      "sha256": "f7f55f328cc2565161814133d7d31a3041a8c85e4cc34de3590c0875d0eddcd7"
+    },
+    {
+      "path": "texts/frus1914Supp-d873.txt",
+      "bytes": 866,
+      "sha256": "0dbb17d782ca9abd9976f37832bc7a8b02ef50439bb94e00fb8a0b3306c7415d"
+    },
+    {
+      "path": "texts/frus1914Supp-d874.txt",
+      "bytes": 246,
+      "sha256": "af1045b07d397d29c5eb1899fdfffa0d0fa6065f9f5c095f3ffaafe1f20a91d7"
+    },
+    {
+      "path": "texts/frus1914Supp-d875.txt",
+      "bytes": 287,
+      "sha256": "a66d3ce0d71bf5192cd181dc137353736c6db6d4d2215607f2ed089bc859a0ed"
+    },
+    {
+      "path": "texts/frus1914Supp-d876.txt",
+      "bytes": 438,
+      "sha256": "b58c29a4e51faa450a63e8423473979d32efbd5720a6e1f6219a1e62e9d759d8"
+    },
+    {
+      "path": "texts/frus1914Supp-d877.txt",
+      "bytes": 399,
+      "sha256": "39b7e8e34c3045a912d2d1e6eb9163b19eeceea90985650a0bc17f5f7abb0230"
+    },
+    {
+      "path": "texts/frus1914Supp-d878.txt",
+      "bytes": 525,
+      "sha256": "5edb693479bcef731ef845121b767bc8ce3fd1585a7be0286ebf7619424a01d4"
+    },
+    {
+      "path": "texts/frus1914Supp-d879.txt",
+      "bytes": 1340,
+      "sha256": "8a4f1faf9947c3f11d00b51aac53eb7662c176018d909a74744bd9668b0d5f47"
+    },
+    {
+      "path": "texts/frus1914Supp-d88.txt",
+      "bytes": 352,
+      "sha256": "c23048f5f74ea425f1bc0fec0c55a6f1f82614fed728d59146db11ca1073c0f5"
+    },
+    {
+      "path": "texts/frus1914Supp-d880.txt",
+      "bytes": 171,
+      "sha256": "162b7bd1919c1e4a0d3d90e9a789275b5f6ba35ee31e0f4a2b1402bf8597dec6"
+    },
+    {
+      "path": "texts/frus1914Supp-d881.txt",
+      "bytes": 1428,
+      "sha256": "6911348de4ddf0834919ef4e94d3b5020391bcc3580cea2fb7815f388ccdd92b"
+    },
+    {
+      "path": "texts/frus1914Supp-d882.txt",
+      "bytes": 354,
+      "sha256": "e596b03a582b20358920478bea6cafbae7368dadc9bbabe71dcb894df00b0264"
+    },
+    {
+      "path": "texts/frus1914Supp-d883.txt",
+      "bytes": 609,
+      "sha256": "953fd1e2433f5f8b555b78313fc95c0092beafb6301e8e09e1cbf34d0107cee9"
+    },
+    {
+      "path": "texts/frus1914Supp-d884.txt",
+      "bytes": 284,
+      "sha256": "145a41309cf6f69e83407c2cc6a89532a50c6f5606f633b03478500da66e9950"
+    },
+    {
+      "path": "texts/frus1914Supp-d885.txt",
+      "bytes": 12106,
+      "sha256": "5624888ed5b7b4b6da8ff4f2ec364515a5eaef25f909e4947392abeedf8ff663"
+    },
+    {
+      "path": "texts/frus1914Supp-d886.txt",
+      "bytes": 13825,
+      "sha256": "f01fab601f6f46d10831ab71590500d3d130e42730d3f854c6e85e57c110d2ca"
+    },
+    {
+      "path": "texts/frus1914Supp-d887.txt",
+      "bytes": 1481,
+      "sha256": "e5956b61dfe67416c5ceff7e4c14fea0ca91673221fd36c99f09c8ae5a5c280f"
+    },
+    {
+      "path": "texts/frus1914Supp-d89.txt",
+      "bytes": 546,
+      "sha256": "3425f8b15eb9e3a7e8bef58c52d7c0057aa6891116a2334595d3e6a60305bcef"
+    },
+    {
+      "path": "texts/frus1914Supp-d9.txt",
+      "bytes": 845,
+      "sha256": "071ca7a8f36d15de583fefe9cc4b6a5f146743a2c7db70e701bfd0d7e912fad5"
+    },
+    {
+      "path": "texts/frus1914Supp-d90.txt",
+      "bytes": 815,
+      "sha256": "8f4e46e6521634f374c9d72536802a402ee7182def7448568daae86f6f81b45a"
+    },
+    {
+      "path": "texts/frus1914Supp-d91.txt",
+      "bytes": 207,
+      "sha256": "a79c0b5d31af49f99f3a83e90b4401ef1c4bd313b496a51f78e0c27683b7fb5d"
+    },
+    {
+      "path": "texts/frus1914Supp-d92.txt",
+      "bytes": 772,
+      "sha256": "afa0a17b9ebfd89e00eb68a1ae8f01f66fc8974abfaf853e7630e0c4d1ce79df"
+    },
+    {
+      "path": "texts/frus1914Supp-d93.txt",
+      "bytes": 884,
+      "sha256": "9480df98e58d1e2e04e435411021c3596103b1f77ac37604cccfb5358c72c324"
+    },
+    {
+      "path": "texts/frus1914Supp-d94.txt",
+      "bytes": 904,
+      "sha256": "a36277703b6fd413236e4a9a0983c2d41da8f3a1c36c1e159b4c9ef3173453bf"
+    },
+    {
+      "path": "texts/frus1914Supp-d95.txt",
+      "bytes": 627,
+      "sha256": "a71eea948c05b946c769c64798820471cdff23143bd8f1915992a1fa5c4c8300"
+    },
+    {
+      "path": "texts/frus1914Supp-d96.txt",
+      "bytes": 322,
+      "sha256": "6ef340062badea0cfda0a795a1d43c6431fb0064a0bddac16d8472df25ff9cd2"
+    },
+    {
+      "path": "texts/frus1914Supp-d97.txt",
+      "bytes": 1664,
+      "sha256": "33f8c8ebc0a98a675ed37f09c31990cb1a06edf61328e647e50c799f3f2b34f8"
+    },
+    {
+      "path": "texts/frus1914Supp-d98.txt",
+      "bytes": 326,
+      "sha256": "35c31c52358b4b7d6844e9755d82e932b4897e516ea7332fa375cddcfd0a50b5"
+    },
+    {
+      "path": "texts/frus1914Supp-d99.txt",
+      "bytes": 332,
+      "sha256": "9bc144ebf247f8f07b1198bb6d1f5c6cbd627f29fdb886b553cd268bba696cc8"
+    },
+    {
+      "path": "texts/lichnowsky-english-declaration.txt",
+      "bytes": 2791,
+      "sha256": "fae2e3f9776f0b017fbd0b10959aa6b9266ebd1b3c1a8560608179640e4c26ef"
+    },
+    {
+      "path": "texts/lichnowsky-responsibility.txt",
+      "bytes": 1522,
+      "sha256": "8b9ea7681128a1363a1e36a3027e2a9a75c1e6c95f72c4426bb92d1b2bfb5bc1"
+    },
+    {
+      "path": "texts/lichnowsky-retrospect.txt",
+      "bytes": 2520,
+      "sha256": "4d42753097f11ed0ec2b983775ab848925d7303bb6fbc99f8480444a0d770ba5"
+    },
+    {
+      "path": "texts/lichnowsky-serbian-crisis.txt",
+      "bytes": 9390,
+      "sha256": "01bd4bad3b649c9a7d2d40f241ba598dfdb1551b0223677d47cdd43e07014bdd"
+    },
+    {
+      "path": "upstream/downloads.json",
+      "bytes": 1991,
+      "sha256": "9f1f7eef602d1eb925a07782fe8607d72e2401a1b2e72947270dd9c4b2c521ef"
+    },
+    {
+      "path": "upstream/frus-README.md",
+      "bytes": 7982,
+      "sha256": "7f5882f092c8e3db1ae87b259d544eb2ecc0f025b880ddf666eeb45244b2a44e"
+    },
+    {
+      "path": "upstream/frus1914Supp.xml",
+      "bytes": 8157496,
+      "sha256": "fb3953d32bf3e8b5751a291a8c04a5362b3cb050e962feaeab9b17d80c991ac4"
+    },
+    {
+      "path": "upstream/lichnowsky-39457.txt",
+      "bytes": 120226,
+      "sha256": "87fd8d7b633afe5ab95c401234fd9eb95e6860a775249c46add090e693778868"
+    },
+    {
+      "path": "validation/build-summary.json",
+      "bytes": 22771,
+      "sha256": "458bf2f126c0f074e6088596469eea514a3968ca66d7349199a50a5ecd563003"
+    },
+    {
+      "path": "validation/cognitive-methods-native.json",
+      "bytes": 1339,
+      "sha256": "49ac1b24dbe9a7947a9ab8130bd76baa8e365ce37260a01b5c080e684b8601ff"
+    },
+    {
+      "path": "validation/collection-adapter-tests.txt",
+      "bytes": 1590,
+      "sha256": "8449b523244a25a6aceb7fdbd0473e65a7fd68f98ebe9721bc7e71f6d9e9ebf0"
+    },
+    {
+      "path": "validation/collection-build.json",
+      "bytes": 261,
+      "sha256": "1f870d91ebcd7b5bdc38833e8a9f4304b052815720772b528fd5e0ec75e27ad4"
+    },
+    {
+      "path": "validation/corpus-tests.txt",
+      "bytes": 3095,
+      "sha256": "4cbecd62382901130e0b9f2a4050e8fdbc1e19b684a0737aa2d8b9f021ec3596"
+    },
+    {
+      "path": "validation/expanded-native/acceptance.json",
+      "bytes": 1524,
+      "sha256": "b34253f6a2fde6c7844e07703e79f464d1b139cda320f1f612d0a89e65d463d4"
+    },
+    {
+      "path": "validation/expanded-native/censorship.context.json",
+      "bytes": 47096,
+      "sha256": "bf4713279cc38a5790ebcd82cbb41161b9c31a25540697dd9a199f4f59645051"
+    },
+    {
+      "path": "validation/expanded-native/censorship.request.json",
+      "bytes": 174,
+      "sha256": "cb15143228ed73d18a77061c71cc8725b823421702bdf8f9619317e8eae1a91b"
+    },
+    {
+      "path": "validation/expanded-native/hospitals.context.json",
+      "bytes": 58578,
+      "sha256": "48d1dda8c1f8123947552ff5cc85e8d85e9c0a9dc72b7c7eca482ec3fcd9e477"
+    },
+    {
+      "path": "validation/expanded-native/hospitals.request.json",
+      "bytes": 175,
+      "sha256": "5b932899989107cd82f1557fb6b4f90ea7a1357664c1e44b39828a45ec2024c9"
+    },
+    {
+      "path": "validation/expanded-native/mediation.context.json",
+      "bytes": 55671,
+      "sha256": "83273fafcdc5412b98999fa00045a7bb9e0ec58a60e80d5b01ef95466ef6517d"
+    },
+    {
+      "path": "validation/expanded-native/mediation.request.json",
+      "bytes": 177,
+      "sha256": "38064a849727a939f3612b9a8c8c5cbf33544fd226e291b226dd622414b3c05d"
+    },
+    {
+      "path": "validation/expanded-native/protection.context.json",
+      "bytes": 27550,
+      "sha256": "653fa927e8d88d5773e03ca926af8e5b8a16c4150f5d412fc009543841e06103"
+    },
+    {
+      "path": "validation/expanded-native/protection.request.json",
+      "bytes": 176,
+      "sha256": "52665f2d3a9ed30805ff5da93abfcbde6f6c2b3a17e64de1a53be691ac89f7f4"
+    },
+    {
+      "path": "validation/expanded-native/relief.context.json",
+      "bytes": 44161,
+      "sha256": "c85554c9f4e573bda0d6936cdd4f6da55403a14f45ab0c29a3a4dbc4b4f56bc3"
+    },
+    {
+      "path": "validation/expanded-native/relief.request.json",
+      "bytes": 174,
+      "sha256": "82a9da2b2ddddcfe739209fdfffcd0b7fb4a51f090fdc2ae413fae33f532d065"
+    },
+    {
+      "path": "validation/expanded-native/treaty.context.json",
+      "bytes": 62939,
+      "sha256": "65d796d6dc0d395bf1dde3c8e617f9f5084f3179df9ffa61c838a1ad8f5d5185"
+    },
+    {
+      "path": "validation/expanded-native/treaty.request.json",
+      "bytes": 185,
+      "sha256": "4f039125f3bbfee000befe22923d6dd39c50f4c2f058145bfe59c9cf49045cbf"
+    },
+    {
+      "path": "validation/expanded-native-inspection.json",
+      "bytes": 6373,
+      "sha256": "b3ac5c662d1d5dba0c1224b61013d2cf7b8d4d974e275116a8dc7af9bb659a1a"
+    },
+    {
+      "path": "validation/extended-tests.txt",
+      "bytes": 1545,
+      "sha256": "e082b7d952aaa3f95fa7a1bcdfb628c8bcc140a55d43d33bc59b2700c4c30360"
+    },
+    {
+      "path": "validation/historical-recipient-received-july30.json",
+      "bytes": 38363,
+      "sha256": "6927b0b316f97842097b100c0e9de3a6526edde357280297121904d36c51ad4f"
+    },
+    {
+      "path": "validation/historical-source-created-july30.json",
+      "bytes": 33006,
+      "sha256": "d70a12d71c166c3616b11f25ecb9823ec31bf869dc9fc1e479a851c3ddadd282"
+    },
+    {
+      "path": "validation/readme-july.context.json",
+      "bytes": 938,
+      "sha256": "497f2a723af577ad6c4db1a212879f3d40de3661213ac41b3de498f9fed2e243"
+    },
+    {
+      "path": "validation/readme-relief.context.json",
+      "bytes": 31960,
+      "sha256": "a7d896e419b8f0ad3533df8bfb6dcfd2c8d1363ae636715420c7c2d28c3fe8f1"
+    },
+    {
+      "path": "validation/rebuild.json",
+      "bytes": 1055,
+      "sha256": "0706871238c830aaf74ab28996e636defc36853a23854fd659571f73e238acc8"
+    },
+    {
+      "path": "validation/statistics-summary.json",
+      "bytes": 1782,
+      "sha256": "b6ebbd711c6b5e99e28f12e31949eec0bfb513e39534e64434e872c8bae72d68"
+    }
+  ]
+}

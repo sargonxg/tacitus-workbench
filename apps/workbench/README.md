@@ -21,18 +21,23 @@ the clean inventory before public distribution. Public repository visibility doe
 not grant a license. `private: true` is intentional.
 See `APPLICATION_RIGHTS.md` for the exact boundary.
 
-## Run with existing dependencies
+## Reproducible install
 
-Node 24 and the already-installed React 19.2.4, Vite 8.3.1 and TypeScript 5.9.3
-were used. This task installs nothing and carries no copied website lockfile.
-The local `node_modules` junction is a development convenience, excluded from the
-handoff. On a machine with those dependencies available:
+The integration adds a fresh official-registry `package-lock.json`; it carries no
+private website lockfile or dependency junction. Node 24 is required.
 
-```
+```sh
+npm ci --ignore-scripts --registry=https://registry.npmjs.org
 npm run typecheck
 npm run build
 npm start
 ```
+
+See the repository README for the tested native-core build and 622-record lexical
+collection preparation. Use `TACITUS_TEST_BROWSER=/usr/bin/chromium npm test` for
+the cloud's preinstalled browser. Default Playwright browser discovery remains
+available on other machines. Current results are in `docs/CLOUD_VERIFICATION.md`;
+`VERIFICATION.md` records historical pre-integration evidence only.
 
 Open `http://127.0.0.1:4317`. Without explicit core configuration, live execution
 is unavailable; select **Recorded July 1914 example** to load the saved peace

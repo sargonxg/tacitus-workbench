@@ -1,7 +1,7 @@
 {
   "status": "unpublished review candidate; new application modules reserved rights pending explicit owner license choice and independent inventory review",
   "private_website_review_commit": "1965d55fd67327d1e4653b01347127cc3b17f18c",
-  "self_exclusion": "FILE_INVENTORY.json describes all other deliverable files; its own hash is in the handoff ZIP hash",
+  "self_exclusion": "FILE_INVENTORY.json excludes itself; final commit and artifact digest bind this manifest.",
   "excluded": [
     "node_modules",
     "dist",
@@ -25,17 +25,21 @@
     },
     {
       "path": "README.md",
-      "sha256": "ef94acb785822d441fc7f3a2301a8a40746032223a6706ee52b16909a44ffe5f",
-      "bytes": 7091,
+      "sha256": "503665e7c99a5696745b7ef7a57b4b76fa3bd77f9989c294fdb193eac5159c43",
+      "bytes": 7394,
       "origin": "Independently authored in task-owned standalone directory",
-      "v2_changed_from_sha256": "57e5ca83952d700069ec783f767d0a6499d5eb0bdbf473d93b8b8fe2fe7db1bc"
+      "v2_changed_from_sha256": "57e5ca83952d700069ec783f767d0a6499d5eb0bdbf473d93b8b8fe2fe7db1bc",
+      "pr3_sha256": "ef94acb785822d441fc7f3a2301a8a40746032223a6706ee52b16909a44ffe5f",
+      "integration_note": "Updated in local reproducibility integration; original provenance retained"
     },
     {
       "path": "VERIFICATION.md",
-      "sha256": "f90609122a26e2704cb8520134ecb10f3dd3d8ee8abbc3753ac77263e0c07b45",
-      "bytes": 5009,
+      "sha256": "ae472f5d187ad60ebd8be98d2c8dfd7f317ba694cecf90da8a1f7c83c0f1cb92",
+      "bytes": 5182,
       "origin": "Independently authored in task-owned standalone directory",
-      "v2_changed_from_sha256": "92b5487635c88a884ea9f0c98a838d8404dd1de051df28b1a8843f5baf02dc1c"
+      "v2_changed_from_sha256": "92b5487635c88a884ea9f0c98a838d8404dd1de051df28b1a8843f5baf02dc1c",
+      "pr3_sha256": "f90609122a26e2704cb8520134ecb10f3dd3d8ee8abbc3753ac77263e0c07b45",
+      "integration_note": "Updated in local reproducibility integration; original provenance retained"
     },
     {
       "path": "index.html",
@@ -72,6 +76,12 @@
       "sha256": "387dd7baa307083401a27c58c362c30832f5ba1dba84f10cc22c33401523f45c",
       "bytes": 112425,
       "origin": "Installed dependency license text; no application-source license grant"
+    },
+    {
+      "path": "package-lock.json",
+      "origin": "Fresh npm official-registry resolution in this cloud; no private website lockfile",
+      "sha256": "a62c2e489f9a86cf900e1ea73b7537f1572a2de54cd46519f3d827142a913da9",
+      "bytes": 30512
     },
     {
       "path": "package.json",
@@ -113,6 +123,12 @@
       "identical_to_origin": true
     },
     {
+      "path": "public/notices/expanded-RIGHTS.md",
+      "origin": "Exact copy of PR2 examples/diplomacy-1914-v2/RIGHTS.md",
+      "sha256": "922177b0b45f3ed1c78fb333fa744810274745594bc546a3dad12a6a084badbe",
+      "bytes": 6988
+    },
+    {
       "path": "scripts/verify-inventory.mjs",
       "origin": "Independently authored in task-owned standalone directory",
       "sha256": "ddda6a4d2d2a3344cdfb7a86273893050346867eb80705e6436d289884825658",
@@ -120,10 +136,12 @@
     },
     {
       "path": "server/index.mjs",
-      "sha256": "76b492072ecf1cbff4afcd312a230127c53f4190d9d639aa3ecd58cf72326d37",
-      "bytes": 3491,
+      "sha256": "94c26b88f4b66e15a096edb52c21d08e85131f60da3846ce36232f314ef13a06",
+      "bytes": 4565,
       "origin": "Independently authored in task-owned standalone directory",
-      "v2_changed_from_sha256": "a903636375a3d170301985c57f10788f2e9e6cbc98f6fedef682396a858eff59"
+      "v2_changed_from_sha256": "a903636375a3d170301985c57f10788f2e9e6cbc98f6fedef682396a858eff59",
+      "pr3_sha256": "76b492072ecf1cbff4afcd312a230127c53f4190d9d639aa3ecd58cf72326d37",
+      "integration_note": "Updated in local reproducibility integration; original provenance retained"
     },
     {
       "path": "server/local-inspector.mjs",
@@ -132,6 +150,12 @@
       "origin": "website-inspector/src/lib/local-inspector.mjs",
       "origin_sha256": "21f95c0caf37a654ea35ab7589406fab6a9e969b4093e4f9fc7f375425c66ddd",
       "identical_to_origin": true
+    },
+    {
+      "path": "src/CollectionSearch.tsx",
+      "origin": "Independently authored local integration; original eligible application work retains reserved-rights boundary",
+      "sha256": "7cbab27c5697964d3d41bc79f94d89b7c8acdc8a9b191d698f5e2248df3e816f",
+      "bytes": 3303
     },
     {
       "path": "src/env.d.ts",
@@ -214,10 +238,12 @@
     },
     {
       "path": "src/main.tsx",
-      "sha256": "c5315d5aa7817be738c031e066abcb31176593aca5ed82b04dfea0b12419f93f",
-      "bytes": 9491,
+      "sha256": "877d0c46c0027881cf684d673b07d43de9b33600b0ad20c903a02b2e30518466",
+      "bytes": 9562,
       "origin": "Independently authored in task-owned standalone directory",
-      "v2_changed_from_sha256": "28400f4627a5464ca76d05fda24c6aca3587fcb1122860a58473b7ccfc85ddaa"
+      "v2_changed_from_sha256": "28400f4627a5464ca76d05fda24c6aca3587fcb1122860a58473b7ccfc85ddaa",
+      "pr3_sha256": "c5315d5aa7817be738c031e066abcb31176593aca5ed82b04dfea0b12419f93f",
+      "integration_note": "Updated in local reproducibility integration; original provenance retained"
     },
     {
       "path": "src/style.css",
@@ -227,16 +253,20 @@
     },
     {
       "path": "tests/interface.test.mjs",
-      "sha256": "475e55733a336b98c33cb032bc8bbf293896c6a0a8d1417ab6df46d5814afdc1",
-      "bytes": 5942,
+      "sha256": "173b5399f2f79a9c563077184d9362a34e5fab199e7079255e26e4dba802d266",
+      "bytes": 10064,
       "origin": "Independently authored in task-owned standalone directory",
-      "v2_changed_from_sha256": "4991e0548041aec9f1e46d9d730c8d9dae6cea73100d0ef8daa4d60ea1d8de23"
+      "v2_changed_from_sha256": "4991e0548041aec9f1e46d9d730c8d9dae6cea73100d0ef8daa4d60ea1d8de23",
+      "pr3_sha256": "475e55733a336b98c33cb032bc8bbf293896c6a0a8d1417ab6df46d5814afdc1",
+      "integration_note": "Updated in local reproducibility integration; original provenance retained"
     },
     {
       "path": "tests/server-boundary.test.mjs",
       "origin": "Independently authored in task-owned standalone v2 directory",
-      "sha256": "2ce8c22be3b807e80891fee3eac275a90b24d93707d5de48a5349cb09d2ac4c8",
-      "bytes": 3213
+      "sha256": "3b526c58d1cebf1b65c150b99c5b93f4fa516c733209518d50ed636e70cad608",
+      "bytes": 3258,
+      "pr3_sha256": "2ce8c22be3b807e80891fee3eac275a90b24d93707d5de48a5349cb09d2ac4c8",
+      "integration_note": "Updated in local reproducibility integration; original provenance retained"
     },
     {
       "path": "tsconfig.json",
@@ -252,5 +282,6 @@
     }
   ],
   "review_version": 2,
-  "frozen_v1_archive_sha256": "5c899ff0cb48579a3ced9c8574d77f2a6b45e8c8ab52a7bc223165558195636f"
+  "frozen_v1_archive_sha256": "5c899ff0cb48579a3ced9c8574d77f2a6b45e8c8ab52a7bc223165558195636f",
+  "integration_base": "5766d1cb3472f85d6ed702728295349e99641520"
 }

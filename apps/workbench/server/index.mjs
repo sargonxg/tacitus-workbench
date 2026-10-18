@@ -1,3 +1,5 @@
+import {existsSync} from 'node:fs';
+import {runCore} from './local-inspector.mjs';
 import {createServer} from 'node:http';
 import {Readable} from 'node:stream';
 import {readFile} from 'node:fs/promises';
@@ -11,6 +13,8 @@ const origin=`http://127.0.0.1:${port}`;
 const dist=fileURLToPath(new URL('../dist/',import.meta.url));
 const live=process.env.TACITUS_LOCAL_INSPECTOR==='1'&&process.env.NODE_ENV!=='production'&&!process.env.VERCEL&&!process.env.K_SERVICE&&!!process.env.TACITUS_KNOWLEDGE_CAPTURE_BIN&&!!process.env.TACITUS_KNOWLEDGE_CAPTURE_SHA256;
 const inspect=createInspector({binary:process.env.TACITUS_KNOWLEDGE_CAPTURE_BIN,digest:process.env.TACITUS_KNOWLEDGE_CAPTURE_SHA256});
+const collectionRoot=fileURLToPath(new URL('../../../examples/diplomacy-1914-v2/.data/',import.meta.url));
+const collectionReady=existsSync(resolve(collectionRoot,'lexical-index/manifest.json'));
 let activeRequest=false;
 const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.md':'text/plain; charset=utf-8','.txt':'text/plain; charset=utf-8'};
 export const server=createServer(async(req,res)=>{
@@ -20,15 +24,21 @@ export const server=createServer(async(req,res)=>{
   try{
     if(req.headers.host!==new URL(origin).host)throw new InspectorError('host_denied',403);
     const path=new URL(req.url,origin).pathname;
-    if(req.method==='GET'&&path==='/api/status'){res.setHeader('Content-Type','application/json');res.end(JSON.stringify({live,origin}));return;}
-    if(req.method==='POST'&&path==='/api/inspect'){
+    if(req.method==='GET'&&path==='/api/status'){res.setHeader('Content-Type','application/json');res.end(JSON.stringify({live,origin,collection:collectionReady&&process.env.TACITUS_LOCAL_INSPECTOR==='1'&&process.env.NODE_ENV!=='production'&&!process.env.VERCEL&&!process.env.K_SERVICE}));return;}
+    if(req.method==='POST'&&['/api/inspect','/api/collection'].includes(path)){
       const boundary=new Request(origin+path,{method:'POST',headers:req.headers});
       localAccess(boundary,{...process.env,TACITUS_INSPECTOR_ORIGIN:origin});
       if(activeRequest){res.setHeader('Connection','close');throw new InspectorError('inspector_busy',429);}
       activeRequest=true;
       try{
         const request=new Request(origin+path,{method:'POST',headers:req.headers,body:Readable.toWeb(req),duplex:'half',signal:abort.signal});
-        const result=await inspect(await boundedBody(request),abort.signal);
+        let result;
+        if(path==='/api/collection'){
+          if(!collectionReady)throw new InspectorError('collection_not_prepared',503);
+          const input=await boundedBody(request,4096);
+          if(!input||typeof input.question!=='string'||!input.question.trim()||Buffer.byteLength(input.question)>2000)throw new InspectorError('invalid_query');
+          result=await runCore('/usr/bin/python3',[resolve(collectionRoot,'collection-adapter/collection.py'),'query',resolve(collectionRoot,'lexical-index')],JSON.stringify({question:input.question,max_bytes:32768}),{signal:abort.signal,output:32768});
+        }else result=await inspect(await boundedBody(request),abort.signal);
         res.setHeader('Content-Type','application/json');res.end(result);return;
       }finally{activeRequest=false;}
     }

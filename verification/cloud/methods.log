@@ -1,0 +1,20 @@
+   Compiling tacitus-analysis v0.1.0 (/workspace/tacitus-core-build/crates/tacitus-analysis)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.51s
+     Running `target/debug/examples/validate_cognitive_methods /workspace/tacitus-workbench/examples/diplomacy-1914-v2/.data/annotations/expanded/capture.json /workspace/tacitus-workbench/examples/diplomacy-1914-v2/.data/annotations/expanded/cognitive-methods.json`
+{
+  "fingerprints": {
+    "method-acceptance-stages-comparison": "627beff892208375d1802cab81edac3a647e1d105841308b2fb648b08ffb20af",
+    "method-cable-policy-change-comparison": "81577fe7341277d6603c76653636f541791e10be9b1b2206ab16e0a2d19a3509",
+    "method-censorship-observation-scope": "4dd8cd7e212979a1ecd6162640900f734f8f0bb63cab91f644c133ef74dbc76d",
+    "method-communications-and-knowledge-lag": "23e0c0a4051b7a853b8c3e9d81a6e434e25a6c78423e99e04c74601cf652e54a",
+    "method-hospital-replies-differentiated": "1e22ddddb46e56b76f94ba3af2e9944da41fa371af459d8bcc09e91559402760",
+    "method-mediation-authority-comparison": "5974da76784c9abf731da0a76c5b8a1863896a5bef2a21a059586f4df6140265",
+    "method-naval-rule-scope-comparison": "e4d24c06c93cacaa188ba874ea50a65b5bad5ecbd1de304cc2da1959e05d2fe3",
+    "method-protection-authority-scope": "3901b227e205d0ee3388da858dce371183dca4fbdf9ca4afa47f20b4e22c432c",
+    "method-relief-assurance-boundaries": "583aa6ed2a7a9bcd146d6473decd7c714f107408c899b6818ed1d8abbc7958b4",
+    "method-relief-permission-sequence": "b1416f94f2e53aef218acece4ce5dfaa19f91ad12869d4835c8ae45259e65092"
+  },
+  "format": "tacitus-native-method-validation/1",
+  "methods": 10,
+  "scope": "Native typed provenance validation only; methods remain unreviewed and are not ingested by knowledge_capture reuse."
+}
