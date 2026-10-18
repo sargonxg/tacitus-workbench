@@ -12,7 +12,9 @@ it fit a native capsule. An authored document currently requires the existing
 single-source profile: two attributed reported statements, unique single-line
 exact quotations, one common declared actor/institution/event, and one explicit
 `contradicts`, `supersedes` or `depends_on` relation/direction/rationale. Cross-source
-relations and combined cross-capsule native queries are unsupported.
+relations and joint semantic inference are unsupported. The separate
+[collection query command](COLLECTION_QUERY.md) invokes all native capsules under
+one global budget and preserves separate exact native responses.
 
 ## Install and execute
 
@@ -141,7 +143,8 @@ absence of evidence. Query budgets are 2,048–250,000 bytes with explicit omiss
 Import an individual ZIP from `native/` through the existing workbench native file
 picker, inspect it, use its recorded checkpoint and query/export exact Context.
 The capsules are independently bounded snapshots; the UI does not query all
-capsules at once. Duplicate content with different logical identities/provenance
+capsules at once. Use the optional collection CLI for separate native receipts
+under one global budget. Duplicate content with different logical identities/provenance
 is preserved and flagged, not treated as independent corroboration. Source-only
 documents appear in lexical search and the manifest, not in native graphs.
 
@@ -192,7 +195,9 @@ nodes/25 declared links, and 1 MiB serialized capture and ZIP each. The pinned
 native contract independently enforces 32 sources/256 assertions, 256 nodes/512
 links, 2 MiB graph JSON/entry, 64 ZIP entries and 8 MiB archive limits. Packing refuses
 if any bound is exceeded. Splitting is deterministic by stable source ID and
-actual capture bytes; no source/annotation is silently truncated. Native and
+actual capture bytes; ZIP serialization can add overhead, so an exact helper
+archive-size refusal additionally triggers deterministic bisection. Other packing
+failures still abort. No source/annotation is silently truncated. Native and
 lexical queries can omit evidence under their explicit output budgets.
 
 ```sh
@@ -204,8 +209,8 @@ python3 -m unittest discover -s tools/local-import/tests -v
 Real-native tests require both executables; without them the native cases are
 explicitly skipped. These tests supplement the unchanged root README's default
 and full UI acceptance commands. See `VERIFICATION.md` for the actual 128-document
-result and independent reviews. Maximum 256-document capacity, every combined
-worst-case byte boundary, storage crash durability and non-Linux behavior have
-not been stress-tested. The 128-document fixture and 26 near-source-limit byte
-sharding case establish bounded behavior, not universal scale, production
-readiness or answer-quality gains.
+result and independent reviews. The subsequent [collection-query verification](COLLECTION_QUERY_VERIFICATION.md)
+now tests the maximum 256-document count and a combined 8 MiB source/7,698,670-byte
+manifest case. Every possible worst-case combination, storage crash durability
+and non-Linux behavior remain unverified. These synthetic checks establish
+bounded behavior, not universal scale, production readiness or answer-quality gains.

@@ -1,5 +1,10 @@
 # Cloud batch-import verification — 2026-10-18
 
+This records the PR10 baseline. Subsequent maximum-count/combined-limit tests and
+the separately bounded query command are recorded in
+[collection-query verification](COLLECTION_QUERY_VERIFICATION.md); the historical
+untested-scaling statements below describe the earlier checkpoint.
+
 Repository `sargonxg/tacitus-workbench`, branch
 `feat/local-manifest-import-20261018`, based on merged main
 `a58301abf7cbc0899f7eba94d246709cac37a0c4`. Core remains pinned to
