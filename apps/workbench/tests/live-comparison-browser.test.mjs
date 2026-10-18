@@ -6,9 +6,9 @@ import {chromium} from '@playwright/test';
 test('modern live comparison: matched evidence, refusal, immutable exports and keyboard lifecycle',async()=>{
  const origin='http://127.0.0.1:4337',enabled=process.env.TACITUS_LOCAL_INSPECTOR==='1'&&!!process.env.TACITUS_TEST_ARCHIVE;
  if(process.env.TACITUS_ACCEPTANCE==='1'){assert.equal(enabled,true,'Comparison live acceptance requires configured core/archive');for(const key of ['TACITUS_KNOWLEDGE_CAPTURE_BIN','TACITUS_KNOWLEDGE_CAPTURE_SHA256'])assert.ok(process.env[key],key);}
- const child=spawn(process.execPath,['server/index.mjs'],{env:{...process.env,PORT:'4337'},stdio:'ignore'});let browser;
+ const child=spawn(process.execPath,['server/index.mjs'],{env:{...process.env,PORT:'4337'},stdio:['ignore','pipe','pipe']});let browser,serverOutput='';child.stdout.on('data',d=>serverOutput+=d);child.stderr.on('data',d=>serverOutput+=d);
  try{
-  for(let i=0;i<100;i++){try{if((await fetch(origin+'/api/status')).ok)break;}catch{}await new Promise(r=>setTimeout(r,50));}
+  let ready=false;for(let i=0;i<100;i++){assert.equal(child.exitCode,null,serverOutput);if(serverOutput.includes('Local evidence inspector: '+origin+';'))try{const response=await fetch(origin+'/api/status');ready=response.ok&&(await response.json()).origin===origin;}catch{}if(ready)break;await new Promise(r=>setTimeout(r,50));}assert.ok(ready,serverOutput);assert.equal(child.exitCode,null,serverOutput);
   browser=await chromium.launch({headless:true,...(process.env.TACITUS_TEST_BROWSER?{executablePath:process.env.TACITUS_TEST_BROWSER}:{})});
   for(const width of [1440,390]){
    const context=await browser.newContext({viewport:{width,height:1000},acceptDownloads:true});const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(origin);

@@ -1,4 +1,10 @@
-# Local release checks — 18 October 2026
+# Release checks — current audit and historical PR12 pass
+
+The [integrated release-candidate audit](INTEGRATED_RC_AUDIT.md) verifies main
+through PR15 and the subsequent test/documentation corrections. It ran in a Linux
+cloud executor with local-only loopback browser previews. Public hosted deployment
+and authenticated multiuser service operation remain unsupported. The detailed
+results below retain their historical PR12 scope and counts.
 
 This document records the earlier PR12 release pass. The subsequent
 [local collection explorer](LOCAL_COLLECTION_EXPLORER.md) adds browser opening of
@@ -66,9 +72,16 @@ stdout result. Keep exact packets, lineage and omissions together when decoding.
 
 ## Full browser acceptance
 
-In the same shell after preparing both examples and the expanded lexical index:
+In the same shell after preparing both examples and the expanded lexical index,
+prepare a **fresh** browser fixture directory with all three core/helper identities
+exported (see the root build commands):
 
 ```sh
+cd "$TACITUS_WORKBENCH_ROOT"
+export TACITUS_BATCH_AUTHOR_BIN=/tmp/tacitus-build/core-build/target/debug/examples/batch_author
+export TACITUS_BATCH_AUTHOR_SHA256="$(sha256sum "$TACITUS_BATCH_AUTHOR_BIN" | cut -d ' ' -f 1)"
+export TACITUS_TEST_IMPORTED_COLLECTIONS=/tmp/tacitus-browser-collection-fixtures
+python3 tools/local-import/tests/prepare_browser_fixtures.py --output "$TACITUS_TEST_IMPORTED_COLLECTIONS"
 cd "$TACITUS_WORKBENCH_ROOT/apps/workbench"
 npm run typecheck
 npm run build
@@ -79,7 +92,8 @@ TACITUS_TEST_ARCHIVE="$TACITUS_WORKBENCH_ROOT/examples/july-1914/july-1914.nativ
 node scripts/verify-inventory.mjs
 ```
 
-The full command requires live and authoring opt-ins plus both executable/digest pairs;
+The full command requires the browser fixtures, live and authoring opt-ins, the
+knowledge-capture and local-author executable/digest pairs, and the July archive;
 missing configuration fails. `/usr/bin/chromium` is the Linux system-browser path used
 here; use a matching Playwright browser on other systems. This is not a cross-platform
 or full accessibility certification.
@@ -127,7 +141,7 @@ they are not current-main test receipts.
 
 Typecheck and build passed. Final default tests passed **30 with one explicit native-authoring skip**; full configured browser acceptance passed **31/31 with zero skips**. The first full run failed only because the onboarding regression still expected the obsolete pinned README link. Its exact expected URL was updated to the current guide; all other checks remained, and the full suite passed on rerun. The inventory verifies 59 application deliverables, retaining historical origin hashes and reserved-rights metadata; stale equality flags are corrected without changing those origins.
 
-An independent command reviewer checked the current guides against actual logs, independently summed the 135 Rust tests and hashed the fresh executables, reviewed the UI diff and exact URL assertion, and verified all 17 tracked rights/notice files byte-for-byte against the baseline. An independent skeptical diplomatic walkthrough on 1440- and 390-pixel views checked source links, exact quotes, modality, conditions, exceptions, unknown dates, omissions, refusal and export bytes. The expanded relief query selected nine assertions; its 20,000-byte query selected zero with 46 omissions and now displays explicit insufficient-context guidance. Strict unknown-date requests refused with no export or recorded fallback. Both widths had zero observed page errors or horizontal overflow. These are fixture walkthroughs, not the unseen/model-answer evaluation proposed in the architecture.
+An independent command reviewer checked the current guides against actual logs, independently summed the 135 Rust tests and hashed the fresh executables, reviewed the UI diff and exact URL assertion, and verified the 16 tracked rights/license/notice files plus the notice-bearing `apps/workbench/src/graph/sourceNotices.ts` module byte-for-byte against the baseline. An independent skeptical diplomatic walkthrough on 1440- and 390-pixel views checked source links, exact quotes, modality, conditions, exceptions, unknown dates, omissions, refusal and export bytes. The expanded relief query selected nine assertions; its 20,000-byte query selected zero with 46 omissions and now displays explicit insufficient-context guidance. Strict unknown-date requests refused with no export or recorded fallback. Both widths had zero observed page errors or horizontal overflow. These are fixture walkthroughs, not the unseen/model-answer evaluation proposed in the architecture.
 
 Concrete fixes restore safe HTTP(S) original-source links from native metadata, remove an assumed assistant author from generic annotation cautions, show actual selected/omitted counts and make omission-only results explicit. Original native JSON is unchanged. Application and architecture guides now cover local authoring, batch import and the globally bounded collection receipt. Missing build tools are diagnosed before creating a build directory.
 
@@ -141,7 +155,7 @@ commercial license, rights verification or model-quality claim is introduced.
 | Readiness area | Decision |
 | --- | --- |
 | Local runnable workbench | Passed the locked install/build, recorded/live browser, explicit authoring and optional CLI gates described above; the reviewed commit/PR identifies the published candidate. |
-| Cloud/hosted service | Unsupported by this release. Loopback operation is not hosted authentication, persistence or production operations. |
+| Linux cloud execution / hosted service | Linux cloud execution with loopback services and local-only browser previews is tested. Public hosted deployment, authentication, persistence and multiuser production operation are unsupported. |
 | PRAXIS / Foundry | Held. No private code copied, deployment run or external bridge certified. Separate owner/deployment review is still required. |
 | Model answer evaluation | Unrun. An optional [offline harness](../tools/offline-eval/README.md) provides packet/export/import capability; synthetic tests are not a model study. No provider/model calls, measured answer-quality gains or policy-decision benefit established. |
 | Source semantics | Proposals remain unreviewed; structural citations and byte fidelity do not establish historical truth or knowledge dates. |
