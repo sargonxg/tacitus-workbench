@@ -1,0 +1,612 @@
+[
+  {
+    "id": "method-acceptance-stages-comparison",
+    "version": 1,
+    "workspace": "diplomacy-1914-expanded-cases",
+    "kind": "distinction",
+    "description": "Unreviewed analytical checklist: Which stage is actually evidenced: acceptance of a principle, agreed wording, signature, ratification, implementation, or only an expectation?",
+    "scope": "Reading attributed historical diplomatic records in this collection. This is an analytical aid, not a universal empirical rule, legal determination or authenticated reviewed method.",
+    "prerequisites": [
+      "Inspect the exact source passages and their attribution, conditions and exceptions.",
+      "Separate source composition, embedded component dates, recipient receipt and modern corpus availability.",
+      "Keep the method as an unreviewed proposal until an explicit authorized review occurs."
+    ],
+    "failure_conditions": [
+      "Different countries, dates and reported stages are being compared; this does not establish a single uniform treaty process.",
+      "Do not generalize from this selected official documentary record to all actors, genres, languages or periods.",
+      "A missing record, reply or observation is not evidence that the historical event or communication never occurred."
+    ],
+    "evidence": [
+      {
+        "source": "frus1914Supp-d1@1",
+        "text_hash": "b9cfdf4c0bd3b072c14cdd4b26a5212a0f48711784683e90437832fc65368fc3",
+        "start": 222,
+        "end": 306,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1; TEI div[@xml:id='d1']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d1@1",
+        "text_hash": "b9cfdf4c0bd3b072c14cdd4b26a5212a0f48711784683e90437832fc65368fc3",
+        "start": 649,
+        "end": 755,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1; TEI div[@xml:id='d1']/p[3]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d2@1",
+        "text_hash": "94e7e3d2f3c5ec4f4f57002158fd034ccae7351c15fd34ad3cf65037708cb527",
+        "start": 282,
+        "end": 525,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d2; TEI div[@xml:id='d2']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d3@1",
+        "text_hash": "b7bee56181532095a476996e982930cec3bb20f432eab25d29cb1d744956b6e6",
+        "start": 356,
+        "end": 525,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d3; TEI div[@xml:id='d3']/p[3]",
+        "original_language": "en",
+        "translation": null
+      }
+    ],
+    "created_at": 1792332960,
+    "available_at": 1792332960,
+    "ontology_version": "tacitus-policy/1"
+  },
+  {
+    "id": "method-mediation-authority-comparison",
+    "version": 1,
+    "workspace": "diplomacy-1914-expanded-cases",
+    "kind": "distinction",
+    "description": "Unreviewed analytical checklist: Who authorized the position, how many reporting layers intervene, what conditions apply, and is an armistice separately evidenced?",
+    "scope": "Reading attributed historical diplomatic records in this collection. This is an analytical aid, not a universal empirical rule, legal determination or authenticated reviewed method.",
+    "prerequisites": [
+      "Inspect the exact source passages and their attribution, conditions and exceptions.",
+      "Separate source composition, embedded component dates, recipient receipt and modern corpus availability.",
+      "Keep the method as an unreviewed proposal until an explicit authorized review occurs."
+    ],
+    "failure_conditions": [
+      "These are different actors’ statements, not one formally agreed negotiation record.",
+      "No response is not silently recoded as rejection or acceptance.",
+      "Do not generalize from this selected official documentary record to all actors, genres, languages or periods.",
+      "A missing record, reply or observation is not evidence that the historical event or communication never occurred."
+    ],
+    "evidence": [
+      {
+        "source": "frus1914Supp-d186@1",
+        "text_hash": "07d60764fc44b8853ceb9351526acfe348cc0fe6df0deca370c5e0b86c01030c",
+        "start": 398,
+        "end": 487,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d186; TEI div[@xml:id='d186']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d186@1",
+        "text_hash": "07d60764fc44b8853ceb9351526acfe348cc0fe6df0deca370c5e0b86c01030c",
+        "start": 489,
+        "end": 659,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d186; TEI div[@xml:id='d186']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d186@1",
+        "text_hash": "07d60764fc44b8853ceb9351526acfe348cc0fe6df0deca370c5e0b86c01030c",
+        "start": 745,
+        "end": 835,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d186; TEI div[@xml:id='d186']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d190@1",
+        "text_hash": "43432913146e16b10e02c77194db2c112b5ce3346a159343ccc570ab2709c088",
+        "start": 527,
+        "end": 653,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d190; TEI div[@xml:id='d190']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d190@1",
+        "text_hash": "43432913146e16b10e02c77194db2c112b5ce3346a159343ccc570ab2709c088",
+        "start": 1186,
+        "end": 1342,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d190; TEI div[@xml:id='d190']/p[3]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d193@1",
+        "text_hash": "7f0695a6d6fb6a0d82d04386c395cb548425abeed1eedce51704c4da02cc318c",
+        "start": 155,
+        "end": 412,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d193; TEI div[@xml:id='d193']/p[2]",
+        "original_language": "en",
+        "translation": null
+      }
+    ],
+    "created_at": 1792332960,
+    "available_at": 1792332960,
+    "ontology_version": "tacitus-policy/1"
+  },
+  {
+    "id": "method-naval-rule-scope-comparison",
+    "version": 1,
+    "workspace": "diplomacy-1914-expanded-cases",
+    "kind": "distinction",
+    "description": "Unreviewed analytical checklist: Was the precise proposal accepted, and did reciprocity, reservations or modifications change its scope?",
+    "scope": "Reading attributed historical diplomatic records in this collection. This is an analytical aid, not a universal empirical rule, legal determination or authenticated reviewed method.",
+    "prerequisites": [
+      "Inspect the exact source passages and their attribution, conditions and exceptions.",
+      "Separate source composition, embedded component dates, recipient receipt and modern corpus availability.",
+      "Keep the method as an unreviewed proposal until an explicit authorized review occurs."
+    ],
+    "failure_conditions": [
+      "This comparison preserves attributed legal positions; it does not adjudicate their validity or prove compliance.",
+      "Do not generalize from this selected official documentary record to all actors, genres, languages or periods.",
+      "A missing record, reply or observation is not evidence that the historical event or communication never occurred."
+    ],
+    "evidence": [
+      {
+        "source": "frus1914Supp-d356@1",
+        "text_hash": "93c78bc668517203070212bf64971cc304eb1f02df26986d7f22ad1cd1143c6b",
+        "start": 379,
+        "end": 484,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d356; TEI div[@xml:id='d356']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d358@1",
+        "text_hash": "899e3ce5ee178d26376391fdc53c42fe4447511872a04c101b89e3579fc9d80b",
+        "start": 182,
+        "end": 408,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d358; TEI div[@xml:id='d358']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d369@1",
+        "text_hash": "1da35bbbe216f415d6fbb481699747a575ac0fbc968977fb9bfb04918dfdd069",
+        "start": 273,
+        "end": 453,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d369; TEI div[@xml:id='d369']/p[3]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d375@1",
+        "text_hash": "a881b35113c8076e542c3ef3b3d96808b64d2ab221ca21a9a2425ea2b92a636d",
+        "start": 1637,
+        "end": 2034,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d375; TEI div[@xml:id='d375']/p[3]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d371@1",
+        "text_hash": "e4f910930552e5c88259ec0c7e40dd478cb353df2fe6f50e9d893c4b2de0dcd0",
+        "start": 226,
+        "end": 400,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d371; TEI div[@xml:id='d371']/p[2]",
+        "original_language": "en",
+        "translation": null
+      }
+    ],
+    "created_at": 1792332960,
+    "available_at": 1792332960,
+    "ontology_version": "tacitus-policy/1"
+  },
+  {
+    "id": "method-cable-policy-change-comparison",
+    "version": 1,
+    "workspace": "diplomacy-1914-expanded-cases",
+    "kind": "distinction",
+    "description": "Unreviewed analytical checklist: Are two observations about the same carrier, route, scope and date, or are you generalizing a local change?",
+    "scope": "Reading attributed historical diplomatic records in this collection. This is an analytical aid, not a universal empirical rule, legal determination or authenticated reviewed method.",
+    "prerequisites": [
+      "Inspect the exact source passages and their attribution, conditions and exceptions.",
+      "Separate source composition, embedded component dates, recipient receipt and modern corpus availability.",
+      "Keep the method as an unreviewed proposal until an explicit authorized review occurs."
+    ],
+    "failure_conditions": [
+      "The first statement is a company complaint and the second a government report of company information; neither is a measured transport audit.",
+      "Do not generalize from this selected official documentary record to all actors, genres, languages or periods.",
+      "A missing record, reply or observation is not evidence that the historical event or communication never occurred."
+    ],
+    "evidence": [
+      {
+        "source": "frus1914Supp-d792@1",
+        "text_hash": "56925841321b875353c8d3e59f6278a47ef6e24d96c0e1eac1a2a8bcf5f94c5f",
+        "start": 97,
+        "end": 259,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d792; TEI div[@xml:id='d792']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d795@1",
+        "text_hash": "e12aca81a1174a4a10e716fa0d0256ea5d24dc5bb668a03da5ab8714fbb193e7",
+        "start": 234,
+        "end": 450,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d795; TEI div[@xml:id='d795']/p[1]",
+        "original_language": "en",
+        "translation": null
+      }
+    ],
+    "created_at": 1792332960,
+    "available_at": 1792332960,
+    "ontology_version": "tacitus-policy/1"
+  },
+  {
+    "id": "method-censorship-observation-scope",
+    "version": 1,
+    "workspace": "diplomacy-1914-expanded-cases",
+    "kind": "distinction",
+    "description": "Unreviewed analytical checklist: What are the observation window, channel, covered population, exceptions and evidentiary limits of a zero or exemption?",
+    "scope": "Reading attributed historical diplomatic records in this collection. This is an analytical aid, not a universal empirical rule, legal determination or authenticated reviewed method.",
+    "prerequisites": [
+      "Inspect the exact source passages and their attribution, conditions and exceptions.",
+      "Separate source composition, embedded component dates, recipient receipt and modern corpus availability.",
+      "Keep the method as an unreviewed proposal until an explicit authorized review occurs."
+    ],
+    "failure_conditions": [
+      "An administrative promise to explain cases is not evidence that every disputed cable was resolved.",
+      "Do not generalize from this selected official documentary record to all actors, genres, languages or periods.",
+      "A missing record, reply or observation is not evidence that the historical event or communication never occurred."
+    ],
+    "evidence": [
+      {
+        "source": "frus1914Supp-d850@1",
+        "text_hash": "64cde8f8c5376acde58ac08857d6dc8ba78e7a51a939b84b791d7b72492ad70e",
+        "start": 341,
+        "end": 468,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d850; TEI div[@xml:id='d850']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d850@1",
+        "text_hash": "64cde8f8c5376acde58ac08857d6dc8ba78e7a51a939b84b791d7b72492ad70e",
+        "start": 470,
+        "end": 595,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d850; TEI div[@xml:id='d850']/p[3]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d798@1",
+        "text_hash": "37eebee596dd2f5e334839ee3fa9dee7800991c14fdd8a04e44b75fef7ef6440",
+        "start": 198,
+        "end": 367,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d798; TEI div[@xml:id='d798']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d855@1",
+        "text_hash": "5795effd970fc3bafca709f78ac942ad94f254e1fc6e28bf8f3795b870453153",
+        "start": 867,
+        "end": 987,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d855; TEI div[@xml:id='d855']/p[6]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d855@1",
+        "text_hash": "5795effd970fc3bafca709f78ac942ad94f254e1fc6e28bf8f3795b870453153",
+        "start": 646,
+        "end": 865,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d855; TEI div[@xml:id='d855']/p[5]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d800@1",
+        "text_hash": "fa5651d700e8c6ee7585fa2465f5478bf92d67a82f22d98c9e55ebc7c2a59691",
+        "start": 405,
+        "end": 588,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d800; TEI div[@xml:id='d800']/p[2]",
+        "original_language": "en",
+        "translation": null
+      }
+    ],
+    "created_at": 1792332960,
+    "available_at": 1792332960,
+    "ontology_version": "tacitus-policy/1"
+  },
+  {
+    "id": "method-protection-authority-scope",
+    "version": 1,
+    "workspace": "diplomacy-1914-expanded-cases",
+    "kind": "distinction",
+    "description": "Unreviewed analytical checklist: Does the evidence distinguish custody, protection, authority, non-exclusivity and actual local capacity?",
+    "scope": "Reading attributed historical diplomatic records in this collection. This is an analytical aid, not a universal empirical rule, legal determination or authenticated reviewed method.",
+    "prerequisites": [
+      "Inspect the exact source passages and their attribution, conditions and exceptions.",
+      "Separate source composition, embedded component dates, recipient receipt and modern corpus availability.",
+      "Keep the method as an unreviewed proposal until an explicit authorized review occurs."
+    ],
+    "failure_conditions": [
+      "The Whitlock publisher record includes a later reply; whole-record historical filtering conservatively withholds affected date views.",
+      "No guarantee of safety or military alliance follows from these statements.",
+      "Do not generalize from this selected official documentary record to all actors, genres, languages or periods.",
+      "A missing record, reply or observation is not evidence that the historical event or communication never occurred."
+    ],
+    "evidence": [
+      {
+        "source": "frus1914Supp-d1153@1",
+        "text_hash": "55d189d4cc040005038b22a90d9b45852d04c58a9cf4d6688bbb35a597676ce3",
+        "start": 156,
+        "end": 505,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1153; TEI div[@xml:id='d1153']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d1155@1",
+        "text_hash": "7ab070f1359760bc596e777b8afc0272d80022df59bf5e53cd854dcd0dd86619",
+        "start": 1300,
+        "end": 1357,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1155; TEI div[@xml:id='d1155']/attachment[1]/p[1]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d1159@1",
+        "text_hash": "ffd4ee2c29e87b9fb527fe44b00f5e9d2107e89ae0849e6ff7cd8b381ff58b68",
+        "start": 997,
+        "end": 1211,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1159; TEI div[@xml:id='d1159']/p[2]",
+        "original_language": "en",
+        "translation": null
+      }
+    ],
+    "created_at": 1792332960,
+    "available_at": 1792332960,
+    "ontology_version": "tacitus-policy/1"
+  },
+  {
+    "id": "method-relief-permission-sequence",
+    "version": 1,
+    "workspace": "diplomacy-1914-expanded-cases",
+    "kind": "distinction",
+    "description": "Unreviewed analytical checklist: Which party requested action, which party assented, which authority authorized it, and what evidence shows actual execution?",
+    "scope": "Reading attributed historical diplomatic records in this collection. This is an analytical aid, not a universal empirical rule, legal determination or authenticated reviewed method.",
+    "prerequisites": [
+      "Inspect the exact source passages and their attribution, conditions and exceptions.",
+      "Separate source composition, embedded component dates, recipient receipt and modern corpus availability.",
+      "Keep the method as an unreviewed proposal until an explicit authorized review occurs."
+    ],
+    "failure_conditions": [
+      "Dates refer to these records; recipient receipt, delivery and operational success are separate questions.",
+      "Do not generalize from this selected official documentary record to all actors, genres, languages or periods.",
+      "A missing record, reply or observation is not evidence that the historical event or communication never occurred."
+    ],
+    "evidence": [
+      {
+        "source": "frus1914Supp-d1286@1",
+        "text_hash": "51b4f020c5764235bd810c1cb219503d6b26b8fae500cdd8a396aa5fd75c278b",
+        "start": 679,
+        "end": 848,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1286; TEI div[@xml:id='d1286']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d1288@1",
+        "text_hash": "bee92b427c5a24609f5dcbfe4ab753e1961e7ea6a4ecde796871b3347c175eda",
+        "start": 157,
+        "end": 246,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1288; TEI div[@xml:id='d1288']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d1291@1",
+        "text_hash": "e60abde71ad588aad44b98b37a4b4fb60b49ffeae90a0dc9c4457adf0c2ccf2e",
+        "start": 278,
+        "end": 356,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1291; TEI div[@xml:id='d1291']/p[2]",
+        "original_language": "en",
+        "translation": null
+      }
+    ],
+    "created_at": 1792332960,
+    "available_at": 1792332960,
+    "ontology_version": "tacitus-policy/1"
+  },
+  {
+    "id": "method-relief-assurance-boundaries",
+    "version": 1,
+    "workspace": "diplomacy-1914-expanded-cases",
+    "kind": "distinction",
+    "description": "Unreviewed analytical checklist: Who gave which assurance, to whom, through which channel, for how long, and was it prospective or already operative?",
+    "scope": "Reading attributed historical diplomatic records in this collection. This is an analytical aid, not a universal empirical rule, legal determination or authenticated reviewed method.",
+    "prerequisites": [
+      "Inspect the exact source passages and their attribution, conditions and exceptions.",
+      "Separate source composition, embedded component dates, recipient receipt and modern corpus availability.",
+      "Keep the method as an unreviewed proposal until an explicit authorized review occurs."
+    ],
+    "failure_conditions": [
+      "Promised future assurances and reported written assurances are distinct. Neither establishes actual compliance.",
+      "Do not generalize from this selected official documentary record to all actors, genres, languages or periods.",
+      "A missing record, reply or observation is not evidence that the historical event or communication never occurred."
+    ],
+    "evidence": [
+      {
+        "source": "frus1914Supp-d1295@1",
+        "text_hash": "7a003702aa78db12f26d08c077915830c63226ea1ef0ee073abd0015697295d5",
+        "start": 180,
+        "end": 534,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1295; TEI div[@xml:id='d1295']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d1295@1",
+        "text_hash": "7a003702aa78db12f26d08c077915830c63226ea1ef0ee073abd0015697295d5",
+        "start": 1121,
+        "end": 1203,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1295; TEI div[@xml:id='d1295']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d1316@1",
+        "text_hash": "e6e774fec79ee4c10dac8322ce2167879a39ac508e2614c7c6eecf1187486e33",
+        "start": 157,
+        "end": 227,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1316; TEI div[@xml:id='d1316']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d1316@1",
+        "text_hash": "e6e774fec79ee4c10dac8322ce2167879a39ac508e2614c7c6eecf1187486e33",
+        "start": 364,
+        "end": 694,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1316; TEI div[@xml:id='d1316']/p[2]",
+        "original_language": "en",
+        "translation": null
+      }
+    ],
+    "created_at": 1792332960,
+    "available_at": 1792332960,
+    "ontology_version": "tacitus-policy/1"
+  },
+  {
+    "id": "method-hospital-replies-differentiated",
+    "version": 1,
+    "workspace": "diplomacy-1914-expanded-cases",
+    "kind": "distinction",
+    "description": "Unreviewed analytical checklist: Can you separate a proposal, assent in principle, a definition request, silence, an existing rule with exceptions and willingness to study?",
+    "scope": "Reading attributed historical diplomatic records in this collection. This is an analytical aid, not a universal empirical rule, legal determination or authenticated reviewed method.",
+    "prerequisites": [
+      "Inspect the exact source passages and their attribution, conditions and exceptions.",
+      "Separate source composition, embedded component dates, recipient receipt and modern corpus availability.",
+      "Keep the method as an unreviewed proposal until an explicit authorized review occurs."
+    ],
+    "failure_conditions": [
+      "The record does not establish a completed uniform agreement, nor does it establish implementation.",
+      "Do not generalize from this selected official documentary record to all actors, genres, languages or periods.",
+      "A missing record, reply or observation is not evidence that the historical event or communication never occurred."
+    ],
+    "evidence": [
+      {
+        "source": "frus1914Supp-d1336@1",
+        "text_hash": "5f4317cd5c6ca083c92d7c29977ff2d1faccebad7cfdbd3b1b3bbc7cc172fc5c",
+        "start": 674,
+        "end": 804,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1336; TEI div[@xml:id='d1336']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d1338@1",
+        "text_hash": "4b6f3bee2fd3c394b58b07e29c1bd85c6a034bd0e34b9a591e32c8920786de6d",
+        "start": 285,
+        "end": 600,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1338; TEI div[@xml:id='d1338']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d1344@1",
+        "text_hash": "643d6ec1b27eb1151612c4539cc2bbbaad77421ca2b3d70b1e1e17b26c2d4ba2",
+        "start": 351,
+        "end": 386,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1344; TEI div[@xml:id='d1344']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d1344@1",
+        "text_hash": "643d6ec1b27eb1151612c4539cc2bbbaad77421ca2b3d70b1e1e17b26c2d4ba2",
+        "start": 62,
+        "end": 149,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1344; TEI div[@xml:id='d1344']/dateline[1]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d1345@1",
+        "text_hash": "b6a4f854b6c21f84fbd18d01b9b6de9cb24c29a3313402ff037aa270745b16e3",
+        "start": 331,
+        "end": 656,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1345; TEI div[@xml:id='d1345']/p[2]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d1346@1",
+        "text_hash": "ed234556c336563da584ddd91317d787710a01a06d95f4ff124ebb1f9ed9569f",
+        "start": 1287,
+        "end": 1520,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1346; TEI div[@xml:id='d1346']/p[3]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d1346@1",
+        "text_hash": "ed234556c336563da584ddd91317d787710a01a06d95f4ff124ebb1f9ed9569f",
+        "start": 347,
+        "end": 525,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d1346; TEI div[@xml:id='d1346']/p[3]",
+        "original_language": "en",
+        "translation": null
+      }
+    ],
+    "created_at": 1792332960,
+    "available_at": 1792332960,
+    "ontology_version": "tacitus-policy/1"
+  },
+  {
+    "id": "method-communications-and-knowledge-lag",
+    "version": 1,
+    "workspace": "diplomacy-1914-expanded-cases",
+    "kind": "distinction",
+    "description": "Unreviewed analytical checklist: Are composition, transmission, receipt and other possible information channels being treated separately?",
+    "scope": "Reading attributed historical diplomatic records in this collection. This is an analytical aid, not a universal empirical rule, legal determination or authenticated reviewed method.",
+    "prerequisites": [
+      "Inspect the exact source passages and their attribution, conditions and exceptions.",
+      "Separate source composition, embedded component dates, recipient receipt and modern corpus availability.",
+      "Keep the method as an unreviewed proposal until an explicit authorized review occurs."
+    ],
+    "failure_conditions": [
+      "The printed receipt is September12. Other channels may have conveyed information earlier; this source does not establish their absence.",
+      "Do not generalize from this selected official documentary record to all actors, genres, languages or periods.",
+      "A missing record, reply or observation is not evidence that the historical event or communication never occurred."
+    ],
+    "evidence": [
+      {
+        "source": "frus1914Supp-d194@1",
+        "text_hash": "b64267bfe2ec771141452aa675b57d9c56f6b01aec80fc27ac4704e8d6d754b0",
+        "start": 330,
+        "end": 566,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d194; TEI div[@xml:id='d194']/p[3]",
+        "original_language": "en",
+        "translation": null
+      },
+      {
+        "source": "frus1914Supp-d194@1",
+        "text_hash": "b64267bfe2ec771141452aa675b57d9c56f6b01aec80fc27ac4704e8d6d754b0",
+        "start": 84,
+        "end": 154,
+        "locator": "https://history.state.gov/historicaldocuments/frus1914Supp/d194; TEI div[@xml:id='d194']/dateline[1]",
+        "original_language": "en",
+        "translation": null
+      }
+    ],
+    "created_at": 1792332960,
+    "available_at": 1792332960,
+    "ontology_version": "tacitus-policy/1"
+  }
+]

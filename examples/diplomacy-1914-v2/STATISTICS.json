@@ -1,0 +1,317 @@
+{
+  "format": "tacitus-corpus-expansion-statistics/1",
+  "catalog_sha256": "75e17341a7c78203ea31526863fdd3ec2b0a2ed272b9c6b9e4f6f900312c993c",
+  "baseline_public_commit": "dd9dc217f8b839b2b00bf645b62bfb8272ee6146",
+  "baseline_records": 166,
+  "candidate_records": 622,
+  "new_distinct_records": 456,
+  "record_growth_factor": 3.746987951807229,
+  "unique_document_ids": 622,
+  "unique_normalized_hashes": 622,
+  "normalized_text_bytes": 910023,
+  "baseline_text_bytes": 209963,
+  "text_growth_factor": 4.334206503050537,
+  "structural_blocks": 4452,
+  "paragraph_blocks": 2574,
+  "publisher_marked_people": 123,
+  "known_document_dates": 591,
+  "date_range": [
+    "1914-06-15",
+    "1915-01-05"
+  ],
+  "known_receipt_calendar_dates": 249,
+  "explicit_1915_documents": [
+    "frus1914Supp-d351",
+    "frus1914Supp-d417",
+    "frus1914Supp-d856",
+    "frus1914Supp-d1194"
+  ],
+  "historical_date_ambiguities": {
+    "frus1914Supp-d352": {
+      "annotation_origin": "assistant-authored metadata cautions; unreviewed historical interpretation",
+      "source_created_ambiguous": false,
+      "recipient_received_ambiguous": true,
+      "reasons": [
+        "Receipt explicitly prints January 14, 1916, despite a December 1914 dispatch; preserved without correction. Do not silently infer 1915."
+      ]
+    },
+    "frus1914Supp-d837": {
+      "annotation_origin": "assistant-authored metadata cautions; unreviewed historical interpretation",
+      "source_created_ambiguous": true,
+      "recipient_received_ambiguous": false,
+      "reasons": [
+        "Publisher inferred date bounds say 1913 while printed receipt says December 7, 1914. Composition remains unknown; inferred bounds are not used for historical selection."
+      ]
+    },
+    "frus1914Supp-d1159": {
+      "annotation_origin": "assistant-authored metadata cautions; unreviewed historical interpretation",
+      "source_created_ambiguous": true,
+      "recipient_received_ambiguous": false,
+      "reasons": [
+        "Composite publisher record includes embedded correspondence dated later than its outer dateline (1914-08-05). Whole-record source-created selection is withheld; do not leak those later components into an earlier snapshot."
+      ]
+    },
+    "frus1914Supp-d1166": {
+      "annotation_origin": "assistant-authored metadata cautions; unreviewed historical interpretation",
+      "source_created_ambiguous": true,
+      "recipient_received_ambiguous": true,
+      "reasons": [
+        "Composite publisher record includes embedded correspondence dated later than its outer dateline (1914-08-15). Whole-record source-created selection is withheld; do not leak those later components into an earlier snapshot.",
+        "An embedded component is dated after the outer receipt calendar day (1914-08-15). Whole-record recipient-received selection is withheld; outer receipt does not establish receipt of the full edited packet."
+      ]
+    },
+    "frus1914Supp-d1167": {
+      "annotation_origin": "assistant-authored metadata cautions; unreviewed historical interpretation",
+      "source_created_ambiguous": true,
+      "recipient_received_ambiguous": true,
+      "reasons": [
+        "Composite publisher record includes embedded correspondence dated later than its outer dateline (1914-08-19, 1914-08-20). Whole-record source-created selection is withheld; do not leak those later components into an earlier snapshot.",
+        "An embedded component is dated after the outer receipt calendar day (1914-08-20). Whole-record recipient-received selection is withheld; outer receipt does not establish receipt of the full edited packet."
+      ]
+    },
+    "frus1914Supp-d1175": {
+      "annotation_origin": "assistant-authored metadata cautions; unreviewed historical interpretation",
+      "source_created_ambiguous": true,
+      "recipient_received_ambiguous": false,
+      "reasons": [
+        "Composite publisher record includes embedded correspondence dated later than its outer dateline (1914-10-09). Whole-record source-created selection is withheld; do not leak those later components into an earlier snapshot."
+      ]
+    },
+    "frus1914Supp-d1176": {
+      "annotation_origin": "assistant-authored metadata cautions; unreviewed historical interpretation",
+      "source_created_ambiguous": false,
+      "recipient_received_ambiguous": true,
+      "reasons": [
+        "An embedded component is dated after the outer receipt calendar day (1914-11-05). Whole-record recipient-received selection is withheld; outer receipt does not establish receipt of the full edited packet."
+      ]
+    },
+    "frus1914Supp-d1177": {
+      "annotation_origin": "assistant-authored metadata cautions; unreviewed historical interpretation",
+      "source_created_ambiguous": true,
+      "recipient_received_ambiguous": true,
+      "reasons": [
+        "Composite publisher record includes embedded correspondence dated later than its outer dateline (1914-11-12). Whole-record source-created selection is withheld; do not leak those later components into an earlier snapshot.",
+        "An embedded component is dated after the outer receipt calendar day (1914-11-12). Whole-record recipient-received selection is withheld; outer receipt does not establish receipt of the full edited packet."
+      ]
+    },
+    "frus1914Supp-d1178": {
+      "annotation_origin": "assistant-authored metadata cautions; unreviewed historical interpretation",
+      "source_created_ambiguous": true,
+      "recipient_received_ambiguous": false,
+      "reasons": [
+        "Printed dateline November 12 differs from a separately retained later correction dated November 18. The correction is editorial metadata, not silently substituted into contemporaneous text."
+      ]
+    },
+    "frus1914Supp-d1182": {
+      "annotation_origin": "assistant-authored metadata cautions; unreviewed historical interpretation",
+      "source_created_ambiguous": true,
+      "recipient_received_ambiguous": true,
+      "reasons": [
+        "Composite publisher record includes embedded correspondence dated later than its outer dateline (1914-12-05). Whole-record source-created selection is withheld; do not leak those later components into an earlier snapshot.",
+        "An embedded component is dated after the outer receipt calendar day (1914-12-05). Whole-record recipient-received selection is withheld; outer receipt does not establish receipt of the full edited packet."
+      ]
+    },
+    "frus1914Supp-d1183": {
+      "annotation_origin": "assistant-authored metadata cautions; unreviewed historical interpretation",
+      "source_created_ambiguous": true,
+      "recipient_received_ambiguous": true,
+      "reasons": [
+        "Composite publisher record includes embedded correspondence dated later than its outer dateline (1914-12-16). Whole-record source-created selection is withheld; do not leak those later components into an earlier snapshot.",
+        "An embedded component is dated after the outer receipt calendar day (1914-12-16). Whole-record recipient-received selection is withheld; outer receipt does not establish receipt of the full edited packet."
+      ]
+    },
+    "frus1914Supp-d1186": {
+      "annotation_origin": "assistant-authored metadata cautions; unreviewed historical interpretation",
+      "source_created_ambiguous": true,
+      "recipient_received_ambiguous": true,
+      "reasons": [
+        "Composite publisher record includes embedded correspondence dated later than its outer dateline (1914-09-16). Whole-record source-created selection is withheld; do not leak those later components into an earlier snapshot.",
+        "An embedded component is dated after the outer receipt calendar day (1914-09-16). Whole-record recipient-received selection is withheld; outer receipt does not establish receipt of the full edited packet."
+      ]
+    },
+    "frus1914Supp-d1190": {
+      "annotation_origin": "assistant-authored metadata cautions; unreviewed historical interpretation",
+      "source_created_ambiguous": true,
+      "recipient_received_ambiguous": true,
+      "reasons": [
+        "Composite publisher record includes embedded correspondence dated later than its outer dateline (1914-11-05). Whole-record source-created selection is withheld; do not leak those later components into an earlier snapshot.",
+        "An embedded component is dated after the outer receipt calendar day (1914-11-05). Whole-record recipient-received selection is withheld; outer receipt does not establish receipt of the full edited packet."
+      ]
+    },
+    "frus1914Supp-d1191": {
+      "annotation_origin": "assistant-authored metadata cautions; unreviewed historical interpretation",
+      "source_created_ambiguous": true,
+      "recipient_received_ambiguous": true,
+      "reasons": [
+        "Composite publisher record includes embedded correspondence dated later than its outer dateline (1914-11-20). Whole-record source-created selection is withheld; do not leak those later components into an earlier snapshot.",
+        "An embedded component is dated after the outer receipt calendar day (1914-11-20). Whole-record recipient-received selection is withheld; outer receipt does not establish receipt of the full edited packet."
+      ]
+    },
+    "frus1914Supp-d1192": {
+      "annotation_origin": "assistant-authored metadata cautions; unreviewed historical interpretation",
+      "source_created_ambiguous": true,
+      "recipient_received_ambiguous": true,
+      "reasons": [
+        "Composite publisher record includes embedded correspondence dated later than its outer dateline (1914-12-29). Whole-record source-created selection is withheld; do not leak those later components into an earlier snapshot.",
+        "An embedded component is dated after the outer receipt calendar day (1914-12-29). Whole-record recipient-received selection is withheld; outer receipt does not establish receipt of the full edited packet."
+      ]
+    },
+    "frus1914Supp-d1308": {
+      "annotation_origin": "assistant-authored metadata cautions; unreviewed historical interpretation",
+      "source_created_ambiguous": true,
+      "recipient_received_ambiguous": false,
+      "reasons": [
+        "Composite publisher record includes embedded correspondence dated later than its outer dateline (1914-10-03). Whole-record source-created selection is withheld; do not leak those later components into an earlier snapshot."
+      ]
+    }
+  },
+  "composite_records_with_later_dated_components": {
+    "frus1914Supp-d1159": [
+      "1914-08-05"
+    ],
+    "frus1914Supp-d1166": [
+      "1914-08-15"
+    ],
+    "frus1914Supp-d1167": [
+      "1914-08-19",
+      "1914-08-20"
+    ],
+    "frus1914Supp-d1175": [
+      "1914-10-09"
+    ],
+    "frus1914Supp-d1177": [
+      "1914-11-12"
+    ],
+    "frus1914Supp-d1182": [
+      "1914-12-05"
+    ],
+    "frus1914Supp-d1183": [
+      "1914-12-16"
+    ],
+    "frus1914Supp-d1186": [
+      "1914-09-16"
+    ],
+    "frus1914Supp-d1190": [
+      "1914-11-05"
+    ],
+    "frus1914Supp-d1191": [
+      "1914-11-20"
+    ],
+    "frus1914Supp-d1192": [
+      "1914-12-29"
+    ],
+    "frus1914Supp-d1308": [
+      "1914-10-03"
+    ]
+  },
+  "translation_markers": 14,
+  "literal_phrase_occurrences": 599,
+  "baseline_39_claim_capture_unchanged": true,
+  "baseline_source_text_hashes_unchanged": true,
+  "authored_unreviewed_assertions": {
+    "baseline": 39,
+    "expanded": 46,
+    "total": 85,
+    "expanded_source_statements": 37,
+    "expanded_comparisons": 9
+  },
+  "native_typed_method_proposals": 10,
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Negotiations relative to the conclusion of treaties for the advancement of general peace",
+      "records": 23
+    },
+    {
+      "id": "ch2",
+      "title": "The crisis",
+      "records": 9
+    },
+    {
+      "id": "ch3",
+      "title": "The first suggestion of mediation by the United States (July 28)—The opening of hostilities",
+      "records": 59
+    },
+    {
+      "id": "ch4",
+      "title": "The offer of good offices (August 4–5)—The spread of hostilities",
+      "records": 94
+    },
+    {
+      "id": "ch5",
+      "title": "New suggestion of good offices and mediation (September 7–8)—Developments in the Near East",
+      "records": 34
+    },
+    {
+      "id": "ch6",
+      "title": "Further appeals for peace (October–November)—Turkey enters the War",
+      "records": 44
+    },
+    {
+      "id": "ch7",
+      "title": "Spanish suggestion of joint good offices (December 7)—Establishment of the British Protectorate in Egypt",
+      "records": 19
+    },
+    {
+      "id": "ch8",
+      "title": "The war in the Far East: Neutralization proposals—Japan’s entrance against Germany—The extension of operations in China and the Pacific Ocean",
+      "records": 72
+    },
+    {
+      "id": "ch9",
+      "title": "Efforts toward recognition of the Declaration of London—Proclamations, orders, and decrees of belligerent governments on contraband of war and trade with enemy countries",
+      "records": 63
+    },
+    {
+      "id": "ch19",
+      "title": "Censorship of the cables by belligerent governments",
+      "records": 67
+    },
+    {
+      "id": "ch20",
+      "title": "Censorship of the mails by belligerent governments: ordinary mail",
+      "records": 9
+    },
+    {
+      "id": "ch21",
+      "title": "Censorship of the mails by belligerent governments: diplomatic and consular mail",
+      "records": 19
+    },
+    {
+      "id": "ch22",
+      "title": "Proclamations of neutrality—The President’s appeal to the people of the United States",
+      "records": 3
+    },
+    {
+      "id": "ch37",
+      "title": "Representation of belligerent governments in enemy countries—Protection of their interests",
+      "records": 33
+    },
+    {
+      "id": "ch38",
+      "title": "Activities of the United States in regard to prisoners of war and interned civilians",
+      "records": 9
+    },
+    {
+      "id": "ch42",
+      "title": "Negotiations relating to the work of Belgian relief",
+      "records": 33
+    },
+    {
+      "id": "ch43",
+      "title": "Negotiations relating to the work of the Red Cross",
+      "records": 17
+    },
+    {
+      "id": "ch44",
+      "title": "Proposal for the Exemption of Hospital Supplies From Seizure As Contraband of War",
+      "records": 11
+    }
+  ],
+  "limits": [
+    "Document/block/person counts are structural records, not inferred facts.",
+    "Semantic assertions and cognitive methods are explicitly assistant-authored unreviewed proposals, not automatic extraction or validated historical truth.",
+    "Method proposals are validated native CognitiveMethod values; knowledge_capture reuse does not yet ingest methods.",
+    "Basis-specific metadata cautions conservatively withhold ambiguous historical packets; they are not a complete historian review of all chronology."
+  ]
+}

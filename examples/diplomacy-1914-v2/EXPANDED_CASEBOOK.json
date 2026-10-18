@@ -1,0 +1,189 @@
+{
+  "format": "tacitus-curated-casebook/1",
+  "title": "Reusable questions for reading diplomatic evidence",
+  "annotation_author": "TACITUS research assistant",
+  "review_status": "unreviewed semantic proposals",
+  "source_statement_claims": 37,
+  "comparison_claims": 9,
+  "cases": [
+    {
+      "id": "acceptance-stages-comparison",
+      "title": "Consent has more than one stage",
+      "question": "Did acceptance of the peace plan mean a treaty had been signed?",
+      "reusable_checklist_question": "Which stage is actually evidenced: acceptance of a principle, agreed wording, signature, ratification, implementation, or only an expectation?",
+      "checklist_status": "Assistant-authored analytical aid for reuse; not an empirical universal rule or legal instruction.",
+      "source_claim_ids": [
+        "peace-principle-acceptance",
+        "peace-treaty-signature-distinct",
+        "british-pre-signature-step",
+        "gerard-no-signing-chance"
+      ],
+      "comparison_claim_id": "acceptance-stages-comparison",
+      "limitations": [
+        "Different countries, dates and reported stages are being compared; this does not establish a single uniform treaty process."
+      ],
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "mediation-authority-comparison",
+      "title": "A mediation signal is not a mandate",
+      "question": "How strong was the September mediation signal?",
+      "reusable_checklist_question": "Who authorized the position, how many reporting layers intervene, what conditions apply, and is an armistice separately evidenced?",
+      "checklist_status": "Assistant-authored analytical aid for reuse; not an empirical universal rule or legal instruction.",
+      "source_claim_ids": [
+        "bernstorff-no-new-communication",
+        "bernstorff-reciprocal-mediation-belief",
+        "armistice-not-established",
+        "grey-private-conditional-peace",
+        "gerard-informal-no-answer"
+      ],
+      "comparison_claim_id": "mediation-authority-comparison",
+      "limitations": [
+        "These are different actors’ statements, not one formally agreed negotiation record.",
+        "No response is not silently recoded as rejection or acceptance."
+      ],
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "naval-rule-scope-comparison",
+      "title": "Reciprocity and reservations alter the proposition",
+      "question": "Did the powers accept the same naval rules?",
+      "reusable_checklist_question": "Was the precise proposal accepted, and did reciprocity, reservations or modifications change its scope?",
+      "checklist_status": "Assistant-authored analytical aid for reuse; not an empirical universal rule or legal instruction.",
+      "source_claim_ids": [
+        "london-inquiry-universal-condition",
+        "austria-london-reciprocity",
+        "france-london-reservations",
+        "us-modification-not-acceptance",
+        "us-opinion-limited-interests"
+      ],
+      "comparison_claim_id": "naval-rule-scope-comparison",
+      "limitations": [
+        "This comparison preserves attributed legal positions; it does not adjudicate their validity or prove compliance."
+      ],
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "cable-policy-change-comparison",
+      "title": "A restriction can change within a limited route",
+      "question": "What changed in code traffic to Puerto Rico?",
+      "reusable_checklist_question": "Are two observations about the same carrier, route, scope and date, or are you generalizing a local change?",
+      "checklist_status": "Assistant-authored analytical aid for reuse; not an empirical universal rule or legal instruction.",
+      "source_claim_ids": [
+        "kirby-reports-code-refusal",
+        "porto-rico-acceptance-restored"
+      ],
+      "comparison_claim_id": "cable-policy-change-comparison",
+      "limitations": [
+        "The first statement is a company complaint and the second a government report of company information; neither is a measured transport audit."
+      ],
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "censorship-observation-scope",
+      "title": "A zero and an exemption need boundaries",
+      "question": "Can one daily report show censorship stopped?",
+      "reusable_checklist_question": "What are the observation window, channel, covered population, exceptions and evidentiary limits of a zero or exemption?",
+      "checklist_status": "Assistant-authored analytical aid for reuse; not an empirical universal rule or legal instruction.",
+      "source_claim_ids": [
+        "zero-stopped-bounded-window",
+        "cipher-route-specific-exception",
+        "censor-coverage-exception",
+        "stopped-message-inquiry-conditions",
+        "correction-needs-specific-instances"
+      ],
+      "comparison_claim_id": "censorship-observation-scope",
+      "limitations": [
+        "An administrative promise to explain cases is not evidence that every disputed cable was resolved."
+      ],
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "protection-authority-scope",
+      "title": "Assistance depends on authority and capacity",
+      "question": "What did taking charge of foreign interests actually authorize?",
+      "reusable_checklist_question": "Does the evidence distinguish custody, protection, authority, non-exclusivity and actual local capacity?",
+      "checklist_status": "Assistant-authored analytical aid for reuse; not an empirical universal rule or legal instruction.",
+      "source_claim_ids": [
+        "protection-nonexclusive-condition",
+        "montenegro-capacity-exception",
+        "whitlock-provisional-custody"
+      ],
+      "comparison_claim_id": "protection-authority-scope",
+      "limitations": [
+        "The Whitlock publisher record includes a later reply; whole-record historical filtering conservatively withholds affected date views.",
+        "No guarantee of safety or military alliance follows from these statements."
+      ],
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "relief-permission-sequence",
+      "title": "Request, assent and authorization are different steps",
+      "question": "When did the Belgian food plan move from request to U.S. authorization?",
+      "reusable_checklist_question": "Which party requested action, which party assented, which authority authorized it, and what evidence shows actual execution?",
+      "checklist_status": "Assistant-authored analytical aid for reuse; not an empirical universal rule or legal instruction.",
+      "source_claim_ids": [
+        "relief-request-not-authorization",
+        "relief-german-approval-reported",
+        "relief-us-authorization"
+      ],
+      "comparison_claim_id": "relief-permission-sequence",
+      "limitations": [
+        "Dates refer to these records; recipient receipt, delivery and operational success are separate questions."
+      ],
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "relief-assurance-boundaries",
+      "title": "An assurance has a sender, channel and duration",
+      "question": "Was all relief food guaranteed against seizure?",
+      "reusable_checklist_question": "Who gave which assurance, to whom, through which channel, for how long, and was it prospective or already operative?",
+      "checklist_status": "Assistant-authored analytical aid for reuse; not an empirical universal rule or legal instruction.",
+      "source_claim_ids": [
+        "relief-assurance-commission-scope",
+        "relief-outside-channel-risk",
+        "gerard-relief-personal-capacity",
+        "relief-assurance-conditional-duration"
+      ],
+      "comparison_claim_id": "relief-assurance-boundaries",
+      "limitations": [
+        "Promised future assurances and reported written assurances are distinct. Neither establishes actual compliance."
+      ],
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "hospital-replies-differentiated",
+      "title": "Replies resist a yes-or-no summary",
+      "question": "Had the hospital-supply exemption been agreed?",
+      "reusable_checklist_question": "Can you separate a proposal, assent in principle, a definition request, silence, an existing rule with exceptions and willingness to study?",
+      "checklist_status": "Assistant-authored analytical aid for reuse; not an empirical universal rule or legal instruction.",
+      "source_claim_ids": [
+        "hospital-supplies-joint-proposal",
+        "hospital-principle-needs-definition",
+        "belgian-hospital-response-absent",
+        "hospital-immunity-with-requisition-exception",
+        "france-hospital-reluctance-not-total-refusal"
+      ],
+      "comparison_claim_id": "hospital-replies-differentiated",
+      "limitations": [
+        "The record does not establish a completed uniform agreement, nor does it establish implementation."
+      ],
+      "review_status": "unreviewed"
+    },
+    {
+      "id": "communications-and-knowledge-lag",
+      "title": "A dated report can arrive much later",
+      "question": "What could Washington infer from Vopicka’s July30 report before it arrived?",
+      "reusable_checklist_question": "Are composition, transmission, receipt and other possible information channels being treated separately?",
+      "checklist_status": "Assistant-authored analytical aid; not proof of historical mental states.",
+      "source_claim_ids": [
+        "vopicka-transmission-lag"
+      ],
+      "comparison_claim_id": null,
+      "limitations": [
+        "The printed receipt is September12. Other channels may have conveyed information earlier; this source does not establish their absence."
+      ],
+      "review_status": "unreviewed"
+    }
+  ]
+}
