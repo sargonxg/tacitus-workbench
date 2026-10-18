@@ -25,8 +25,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "cfe60f34dd5596c2244eef2d9c6c68fddb947d52a7f6544cbf807f19db35fcfb",
-      "bytes": 9894,
+      "sha256": "1b4e72ee0673fac543a330d078c25698d1be974102c3aa1fb44b1a48952f0cd1",
+      "bytes": 9996,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "57e5ca83952d700069ec783f767d0a6499d5eb0bdbf473d93b8b8fe2fe7db1bc",
       "pr3_sha256": "ef94acb785822d441fc7f3a2301a8a40746032223a6706ee52b16909a44ffe5f",
@@ -215,8 +215,56 @@
     {
       "path": "src/ProductGuide.tsx",
       "origin": "Independently authored onboarding component or regression test; existing reserved-rights boundary retained",
-      "sha256": "aa7bc8f9a411d3c4540f03ed0a0195364a51ed4f5c16bda60def0c838065d3d1",
-      "bytes": 5802
+      "sha256": "65b5f85a481eb671408618fc1ab612db6a21d831fa0b0c89cd24f98f8d8d5574",
+      "bytes": 5864
+    },
+    {
+      "path": "src/collection/CollectionExplorer.tsx",
+      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
+      "sha256": "7b1f951f3bd12de06720074bf398779ccc8a67fbb012a13359239f77d89abd29",
+      "bytes": 18014
+    },
+    {
+      "path": "src/collection/MembershipMap.tsx",
+      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
+      "sha256": "4db54d12a69933cc99f4bee76a10b36da50e6016ebe06be2f2accb452db41e14",
+      "bytes": 2828
+    },
+    {
+      "path": "src/collection/collection-worker.mjs",
+      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
+      "sha256": "0975812bd6b3865a4db8169535f95830ecb1f18aaeaa9ed0ffd0800a109b964d",
+      "bytes": 1288
+    },
+    {
+      "path": "src/collection/collection.css",
+      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
+      "sha256": "b84bc709d8ae64be988eb3cae62d43e7b097a12d21908d5c59d6bbe327819c34",
+      "bytes": 1648
+    },
+    {
+      "path": "src/collection/strict-data.mjs",
+      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
+      "sha256": "12a420b986887f7a277ac0cdfdcc8e1bff84c35ff7aefedcea047c35eebd63c5",
+      "bytes": 6860
+    },
+    {
+      "path": "src/collection/types.ts",
+      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
+      "sha256": "9fa9910745246a8f04f9b0df3d33f725de1c83555865023a9a4439d564d8c31e",
+      "bytes": 1574
+    },
+    {
+      "path": "src/collection/validate-collection.mjs",
+      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
+      "sha256": "3c05552dd99ed04a5d91949e9932d1a049e59bcd6c4535cba8890e2cc4b786ca",
+      "bytes": 21235
+    },
+    {
+      "path": "src/collection/validate-query.mjs",
+      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
+      "sha256": "0da892f5aacb921c75e20ceef04a4d1d27cc908432d48c240c84dba5c79c958d",
+      "bytes": 10303
     },
     {
       "path": "src/env.d.ts",
@@ -266,8 +314,8 @@
     },
     {
       "path": "src/graph/evidenceGraph.ts",
-      "sha256": "0153dbe467a32c451047a33a2def9b5fa0cb6bac85975187bf0a0fae84798447",
-      "bytes": 26816,
+      "sha256": "4b3758b7e23f7bdb79a04fd8f3d1fb665e2b5626bbf98dd26a35242828023d9c",
+      "bytes": 26833,
       "origin": "website-inspector/src/components/local-inspector/evidenceGraph.ts",
       "origin_sha256": "e99e515a867e6c8cf4bdb3837fdfe958aac70f44f218ce6227bf6fa32acc4cb5",
       "identical_to_origin": false,
@@ -312,8 +360,8 @@
     },
     {
       "path": "src/main.tsx",
-      "sha256": "062486eaa48205ed5e9b641dabe9e210900f6789426ec4c591519c9031536a10",
-      "bytes": 12262,
+      "sha256": "6fc7dc706b68b2c9cfe123ef99566dee20522a6f229b52f9e5ec97b0594cded5",
+      "bytes": 12349,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "28400f4627a5464ca76d05fda24c6aca3587fcb1122860a58473b7ccfc85ddaa",
       "pr3_sha256": "c5315d5aa7817be738c031e066abcb31176593aca5ed82b04dfea0b12419f93f",
@@ -334,6 +382,24 @@
       "origin": "Independently authored workbench local-text authoring application adapter, form or synthetic acceptance fixture; existing reserved-rights boundary",
       "sha256": "545f08295d6b86b4c8b258893263746deff456ff6d435548903c9b3433e64fe5",
       "bytes": 1040
+    },
+    {
+      "path": "tests/collection-browser.test.mjs",
+      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
+      "sha256": "94be93f9bea7bc02aa2dab1b2ffacab233363ec5b70c98306479afbb0e451f1d",
+      "bytes": 9764
+    },
+    {
+      "path": "tests/collection-fixtures.mjs",
+      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
+      "sha256": "d77fcb6f3660193b74219c0a05be592db9fc81002f86ddc0b6df9e90fb37c13d",
+      "bytes": 684
+    },
+    {
+      "path": "tests/collection-validation.test.mjs",
+      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
+      "sha256": "2cbc32f347b7d1a1595077d069521a109683787bcef8533306569592061ff22c",
+      "bytes": 11205
     },
     {
       "path": "tests/fixtures/synthetic-local.md",
@@ -377,6 +443,18 @@
       "bytes": 8001
     },
     {
+      "path": "tests/native-source-browser.test.mjs",
+      "origin": "Independently authored public workbench release regression test; existing reserved application rights",
+      "sha256": "131808504ae2d53b702435d07a8283edbe575d48e4fdad420babbc85e90eb98e",
+      "bytes": 3845
+    },
+    {
+      "path": "tests/native-source-projection.test.mjs",
+      "origin": "Independently authored public workbench release regression test; existing reserved application rights",
+      "sha256": "c8c1af27e39ebf004b29ff09d55fbb598177e5dd41f409ced71e2d03890ec745",
+      "bytes": 2434
+    },
+    {
       "path": "tests/onboarding-browser.test.mjs",
       "origin": "Independently authored onboarding component or regression test; existing reserved-rights boundary retained",
       "sha256": "1aa12748ea19da779cc65f24f489f99ee1b78b539916220d492acd8276595646",
@@ -415,18 +493,6 @@
       "sha256": "860395a734db4ed97efd9a21775b594eaaa23fd7db0edf3e3a08a7dd407b5487",
       "bytes": 145,
       "origin": "Independently authored in task-owned standalone directory"
-    },
-    {
-      "path": "tests/native-source-projection.test.mjs",
-      "origin": "Independently authored public workbench release regression test; existing reserved application rights",
-      "sha256": "c8c1af27e39ebf004b29ff09d55fbb598177e5dd41f409ced71e2d03890ec745",
-      "bytes": 2434
-    },
-    {
-      "path": "tests/native-source-browser.test.mjs",
-      "origin": "Independently authored public workbench release regression test; existing reserved application rights",
-      "sha256": "131808504ae2d53b702435d07a8283edbe575d48e4fdad420babbc85e90eb98e",
-      "bytes": 3845
     }
   ],
   "review_version": 2,

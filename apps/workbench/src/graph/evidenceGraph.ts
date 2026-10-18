@@ -19,7 +19,7 @@ export const KINDS: NodeKind[] = ['document', 'passage', 'claim', 'actor', 'inst
 export const KIND_LABELS: Record<NodeKind, string> = { document: 'Sources', passage: 'Structural passages', claim: 'Unreviewed assertions', actor: 'Actors', institution: 'Institutions', event: 'Events' };
 export const COLORS: Record<NodeKind, string> = { document: '#75b8ef', passage: '#8ca5bc', claim: '#e6ba78', actor: '#8cd6bf', institution: '#c9a4e6', event: '#ef9d9d' };
 const encoder = new TextEncoder();
-const decoder = new TextDecoder('utf-8', { fatal: true });
+const decoder = new TextDecoder('utf-8', { fatal: true, ignoreBOM: true });
 const key = (kind: NodeKind, id: string) => `${kind}:${id}`;
 const cmp = (a: string, b: string) => a < b ? -1 : a > b ? 1 : 0;
 function ensure(ok: unknown, message: string): asserts ok { if (!ok) throw new Error(message); }

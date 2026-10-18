@@ -85,13 +85,16 @@ Save one successful live query as run A, change only native checkpoints and quer
 cd "$TACITUS_WORKBENCH_ROOT/apps/workbench"
 TACITUS_TEST_BROWSER=/usr/bin/chromium npm test
 # With live + authoring variables exported and both examples prepared:
+# Prepare browser collection fixtures as documented below first.
 TACITUS_TEST_BROWSER=/usr/bin/chromium \
 TACITUS_ACCEPTANCE=1 TACITUS_TEST_COLLECTION=1 \
 TACITUS_TEST_ARCHIVE="$(git rev-parse --show-toplevel)/examples/july-1914/july-1914.native-v2.zip" npm test
 node scripts/verify-inventory.mjs
 ```
 
-`TACITUS_ACCEPTANCE=1` requires live and authoring opt-ins, both binary/digest pairs, native archive, and collection tests; missing configuration fails instead of silently running a partial suite. Native output budgets match the pinned core range of 2,048 to 250,000 bytes.
+Prepare the fresh browser collection fixtures using [the explorer acceptance commands](docs/LOCAL_COLLECTION_EXPLORER.md#reproduce-acceptance) and export `TACITUS_TEST_IMPORTED_COLLECTIONS` before full acceptance.
+
+`TACITUS_ACCEPTANCE=1` requires these fixtures, live and authoring opt-ins, both binary/digest pairs, native archive, and collection tests; missing configuration fails instead of silently running a partial suite. Native output budgets match the pinned core range of 2,048 to 250,000 bytes.
 
 If system Chromium is unavailable, `npx playwright install chromium` installs the matching browser; omit `TACITUS_TEST_BROWSER` to use it. That download was blocked by the cloud network policy in this run, so the actual browser acceptance used preinstalled Chromium 154. Browser tests cover desktop/mobile recorded and live import/query, graph selection/filtering, exact native and lexical downloads, refusal without fallback, reset/reimport and stale export invalidation. See [release pass](docs/RELEASE_READINESS.md) for current commands/results and [historical cloud verification](docs/CLOUD_VERIFICATION.md) for the initial integration run. [npm's clean-install contract](https://docs.npmjs.com/cli/v11/commands/npm-ci/) and [Playwright launch options](https://playwright.dev/docs/api/class-browsertype#browser-type-launch-option-executable-path) describe the dependency and browser setup.
 
@@ -107,4 +110,4 @@ The server binds loopback only and live operations require explicit opt-in. Nati
 
 The onboarding fact fixture and downloadable ZIP copies are derived from the already shipped, checksum-verified source bundles. Regenerate them with `python3 scripts/prepare-onboarding.py`; use `--check` to verify without writing. Data tests bind displayed counts and download identities to the actual archived corpus/captures. See [onboarding verification](docs/ONBOARDING_VERIFICATION.md) for branch-specific checks.
 
-The beginner path above is recorded demo → live sample → explicit local authoring. Batch importing and collection queries are advanced CLI workflows, not browser import options. [Release readiness](docs/RELEASE_READINESS.md) separates local verification, unsupported hosting, held external integrations and unrun model evaluation.
+The beginner path above is recorded demo → live sample → explicit local authoring. Batch importing and collection queries remain advanced CLI workflows. The [local collection explorer](docs/LOCAL_COLLECTION_EXPLORER.md) opens their validated output directories and optional saved receipts in the browser, with separate raw-source, authored-assertion and native-membership views. It performs no new native query. [Release readiness](docs/RELEASE_READINESS.md) separates local verification, unsupported hosting, held external integrations and unrun model evaluation.

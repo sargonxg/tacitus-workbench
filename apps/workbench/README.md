@@ -28,7 +28,7 @@ The test suite also requires Python 3.11+. Run browser tests from this applicati
 `TACITUS_TEST_BROWSER=/usr/bin/chromium npm test` when system Chromium is available.
 Otherwise install the matching Playwright browser and omit that variable, as
 described in the repository README. Full `TACITUS_ACCEPTANCE=1` testing also
-requires live and authoring opt-ins, both executable/digest pairs, the July native
+requires prepared [browser collection fixtures](../../docs/LOCAL_COLLECTION_EXPLORER.md#reproduce-acceptance), live and authoring opt-ins, both executable/digest pairs, the July native
 archive and the prepared expanded collection. The root acceptance instructions
 provide the complete configuration; the earlier prerequisites below are not
 sufficient for the current full suite.
