@@ -25,8 +25,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "503665e7c99a5696745b7ef7a57b4b76fa3bd77f9989c294fdb193eac5159c43",
-      "bytes": 7394,
+      "sha256": "c23d12162b0cc8126a0ff5117f358dbe41e41f3c89442443ec10a66c362cb345",
+      "bytes": 7614,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "57e5ca83952d700069ec783f767d0a6499d5eb0bdbf473d93b8b8fe2fe7db1bc",
       "pr3_sha256": "ef94acb785822d441fc7f3a2301a8a40746032223a6706ee52b16909a44ffe5f",
