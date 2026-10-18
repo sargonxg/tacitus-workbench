@@ -1,0 +1,29 @@
+test_1915_documents_are_not_silently_dropped_or_backdated (__main__.CorpusIntegrity.test_1915_documents_are_not_silently_dropped_or_backdated) ... ok
+test_all_literal_phrase_spans (__main__.CorpusIntegrity.test_all_literal_phrase_spans) ... ok
+test_all_texts_hash_and_exact_blocks (__main__.CorpusIntegrity.test_all_texts_hash_and_exact_blocks) ... ok
+test_baseline_text_and_native_proposals_unchanged (__main__.CorpusIntegrity.test_baseline_text_and_native_proposals_unchanged) ... ok
+test_changed_outlook_is_not_timeless_contradiction (__main__.CorpusIntegrity.test_changed_outlook_is_not_timeless_contradiction) ... ok
+test_composite_record_does_not_leak_embedded_future_reply (__main__.CorpusIntegrity.test_composite_record_does_not_leak_embedded_future_reply) ... ok
+test_conflicting_publisher_bounds_do_not_create_a_date (__main__.CorpusIntegrity.test_conflicting_publisher_bounds_do_not_create_a_date) ... ok
+test_created_by_july27_has_no_hindsight (__main__.CorpusIntegrity.test_created_by_july27_has_no_hindsight) ... ok
+test_delayed_receipt_does_not_leak (__main__.CorpusIntegrity.test_delayed_receipt_does_not_leak) ... ok
+test_later_editorial_date_correction_stays_separate (__main__.CorpusIntegrity.test_later_editorial_date_correction_stays_separate) ... ok
+test_native_fingerprinting_does_not_change_content (__main__.CorpusIntegrity.test_native_fingerprinting_does_not_change_content) ... ok
+test_native_payload_does_not_assert_review (__main__.CorpusIntegrity.test_native_payload_does_not_assert_review) ... ok
+test_native_schema_limits_and_exact_evidence (__main__.CorpusIntegrity.test_native_schema_limits_and_exact_evidence) ... ok
+test_only_primary_component_dates_gate_packets (__main__.CorpusIntegrity.test_only_primary_component_dates_gate_packets) ... ok
+test_outer_receipt_does_not_establish_full_composite_receipt (__main__.CorpusIntegrity.test_outer_receipt_does_not_establish_full_composite_receipt) ... ok
+test_printed_1916_receipt_is_preserved_but_flagged (__main__.CorpusIntegrity.test_printed_1916_receipt_is_preserved_but_flagged) ... ok
+test_real_distinct_records_and_complete_chapters (__main__.CorpusIntegrity.test_real_distinct_records_and_complete_chapters) ... ok
+test_reported_event_date_does_not_enable_memoir (__main__.CorpusIntegrity.test_reported_event_date_does_not_enable_memoir) ... ok
+test_standalone_list_and_closers_preserved_in_new_records (__main__.CorpusIntegrity.test_standalone_list_and_closers_preserved_in_new_records) ... ok
+test_stats_are_derived_from_actual_records (__main__.CorpusIntegrity.test_stats_are_derived_from_actual_records) ... ok
+test_undated_and_cross_date_distinctions (__main__.CorpusIntegrity.test_undated_and_cross_date_distinctions) ... ok
+test_unique_real_document_ids (__main__.CorpusIntegrity.test_unique_real_document_ids) ... ok
+test_unknown_receipt_day_is_withheld (__main__.CorpusIntegrity.test_unknown_receipt_day_is_withheld) ... ok
+test_upstream_bytes (__main__.CorpusIntegrity.test_upstream_bytes) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.049s
+
+OK

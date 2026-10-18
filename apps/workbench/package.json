@@ -1,0 +1,9 @@
+{
+  "name": "tacitus-local-interface-candidate",
+  "version": "0.0.2",
+  "private": true,
+  "type": "module",
+  "scripts": {"build":"vite build --configLoader native", "start":"node server/index.mjs", "test":"node --test tests/*.test.mjs", "typecheck":"tsc --noEmit"},
+  "dependencies":{"react":"19.2.4","react-dom":"19.2.4"},
+  "devDependencies":{"vite":"8.3.1","typescript":"5.9.3","@playwright/test":"1.60.0","@types/react":"19.2.14","@types/react-dom":"19.2.3","@types/node":"20.19.35"}
+}

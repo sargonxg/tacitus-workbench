@@ -1,0 +1,11 @@
+feb4b7c6e9532ae1898561100ab3c437cf734a3c	HEAD
+9ed66eef932fee3b8888fcfed4ed582b0123c133	refs/heads/codex/diplomacy-1914-expanded
+dd9dc217f8b839b2b00bf645b62bfb8272ee6146	refs/heads/codex/july-1914-example
+5766d1cb3472f85d6ed702728295349e99641520	refs/heads/codex/workbench-source-preview
+feb4b7c6e9532ae1898561100ab3c437cf734a3c	refs/heads/main
+dd9dc217f8b839b2b00bf645b62bfb8272ee6146	refs/pull/1/head
+68d079fc182e755638c0fa882f9a91cf222bbe35	refs/pull/1/merge
+9ed66eef932fee3b8888fcfed4ed582b0123c133	refs/pull/2/head
+679f35c1917c0f58dc03ae87d422cf82a6e79f25	refs/pull/2/merge
+5766d1cb3472f85d6ed702728295349e99641520	refs/pull/3/head
+ff0d80c75efa950589f90b41a08330d1df34ab28	refs/pull/3/merge

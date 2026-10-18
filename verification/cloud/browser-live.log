@@ -1,0 +1,20 @@
+
+> tacitus-local-interface-candidate@0.0.2 test
+> node --test tests/*.test.mjs
+
+✔ standalone HTTP boundary and desktop/mobile recorded and live flows (12627.874292ms)
+✔ default disabled server serves recorded data and refuses API before origin checks (111.087306ms)
+✔ enabled outer lock rejects concurrent headers before body and releases on errors and disconnect (10248.649765ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 13024.569106
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

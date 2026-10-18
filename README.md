@@ -1,26 +1,74 @@
 # TACITUS Workbench
 
-A workbench in development for source-backed policy and diplomatic knowledge: inspect documents, review a temporal evidence graph, and reuse qualified context in new prompts.
+Local evidence inspector integrating the public standalone interface and two source examples. Import a native ZIP, inspect its evidence graph, query the pinned Rust core, and export its exact Context JSON. Recorded examples are explicitly selected and never replace failed live requests. A separate lexical workflow searches 622 source records; it does not turn the collection into a native capsule or reviewed claims.
 
-This repository starts with the reproducible Rust capsule dependency and integration contract. The integrated browser application is not yet released here. The tested core can create, inspect and reuse explicitly annotated capsules locally; literal extraction and lexical retrieval do not provide automatic semantic understanding or generated-answer quality guarantees.
+This integration branch starts at PR3 `5766d1cb3472f85d6ed702728295349e99641520`, includes the unchanged example directories from PR1 `dd9dc217f8b839b2b00bf645b62bfb8272ee6146` and PR2 `9ed66eef932fee3b8888fcfed4ed582b0123c133`, and leaves their branches and main unchanged. No private website code was accessed or copied during integration.
 
-## Run the capsule core
+## Install and run recorded mode
 
-See [the pinned build instructions](docs/CORE_INTEGRATION.md). Use Rust 1.95.0, Python 3.11+ and Git. The core is separately licensed Apache-2.0, with its exact source revision and reviewed patch recorded here. It needs no model account or full EdgeQuake application build.
+Prerequisites: Node 24, npm, Python 3.11+ and Git. Tested on Linux with Node 24.19.0/npm 11.9.0. The committed npm lockfile resolves only official registry packages. No credentials or model account are needed.
 
-Future local UI integration uses `TACITUS_KNOWLEDGE_CAPTURE_BIN` as an explicit absolute path to the built `knowledge_capture` executable. This variable alone does not start a server. Imported text is untrusted, review state stays visible, and omission-only outputs are not answers.
+```sh
+cd apps/workbench
+npm ci --ignore-scripts --registry=https://registry.npmjs.org
+npm run typecheck
+npm run build
+npm start
+```
 
-## Delivery checklist
+Open `http://127.0.0.1:4317`, select **Recorded July 1914 example**, then load its Context. This runs no native core. The optional recorded walkthrough remains a separate teaching example.
 
-- [x] Pin the reviewed native-v2 Rust dependency and source-span retrieval patch
-- [x] Preserve Apache-2.0 notices and source-specific rights boundaries
-- [ ] Integrate and independently test the new browser upload/graph/query workflow
-- [ ] Add the rights-audited July 1914 example and its reproducibility receipts
-- [ ] Verify clean install and browser behavior from this repository
-- [ ] Implement hosted accounts, access control, paid marketplace flows and model-backed extraction
+## Build and run the live core
 
-No hosting, payments, model calls, production authorization or automatic expert review is implied by the local capsule engine.
+Install Rust 1.95.0 through the official rustup distribution if absent. Keep its cargo binary directory on PATH. From the repository root, choose a new absolute output directory:
 
-## Rights
+```sh
+bash scripts/build-core.sh /tmp/tacitus-build
+python3 examples/july-1914/prepare_example.py
+python3 examples/july-1914/.data/validation/verify_native.py --binary /tmp/tacitus-build/core-build/target/debug/examples/knowledge_capture
+export TACITUS_KNOWLEDGE_CAPTURE_BIN=/tmp/tacitus-build/core-build/target/debug/examples/knowledge_capture
+export TACITUS_KNOWLEDGE_CAPTURE_SHA256="$(sha256sum "$TACITUS_KNOWLEDGE_CAPTURE_BIN" | cut -d ' ' -f 1)"
+export TACITUS_LOCAL_INSPECTOR=1
+cd apps/workbench
+npm start
+```
 
-No blanket open-source license is granted for new, eligible original workbench material. Commercial licensing terms are pending; contact the repository owner before commercial use of that material. This does not restrict rights already granted for Apache-2.0 dependencies, CC0 fixtures or public-domain sources. See [RIGHTS.md](RIGHTS.md). This is a boundary notice, not a finalized commercial agreement.
+Import `examples/july-1914/july-1914.native-v2.zip` using the native file picker, inspect, then query with the default peace question and modern checkpoint `1792328100`. Build instructions and hashes are in [CORE_INTEGRATION.md](docs/CORE_INTEGRATION.md). The core preparation script creates only four capsule crates; full EdgeQuake, Docker, inference and model credentials are not needed. Preparation helpers refuse existing output directories.
+
+## Prepare the separate expanded collection
+
+From the repository root, with the server stopped:
+
+```sh
+python3 examples/diplomacy-1914-v2/prepare_example.py
+cd examples/diplomacy-1914-v2/.data
+python3 scripts/verify_corpus.py
+python3 scripts/verify_extended.py
+python3 collection-adapter/collection.py build corpus-index.json lexical-index
+```
+
+Restart the opted-in server. **622-record lexical collection** calls the bundled Python adapter against its local 32-shard index, with a fixed 32,768-byte global output budget. Every query preserves exact source blocks, metadata, rights, warnings and omission counts, and offers exact JSON export. The browser search uses the complete modern collection without a historical filter; the adapter's CLI supports explicitly labeled calendar filters. Linux `/usr/bin/python3` is required by this local HTTP integration.
+
+The separate `expanded-cases.native-v2.zip` can also be imported into the live native workflow. Use question `relief assurance`, known-as-of and valid-at `1792332960` to reproduce its relief fixture. The native capsule contains 46 unreviewed proposals and stays within native bounds. The baseline has 39 proposals; neither contains all 622 source records. Ten method proposals are separately represented but are not retrieved by the current core.
+
+## Acceptance
+
+```sh
+cd apps/workbench
+TACITUS_TEST_BROWSER=/usr/bin/chromium npm test
+# With the live variables exported above and both examples prepared:
+TACITUS_TEST_BROWSER=/usr/bin/chromium \
+TACITUS_ACCEPTANCE=1 TACITUS_TEST_COLLECTION=1 \
+TACITUS_TEST_ARCHIVE="$(git rev-parse --show-toplevel)/examples/july-1914/july-1914.native-v2.zip" npm test
+node scripts/verify-inventory.mjs
+```
+
+`TACITUS_ACCEPTANCE=1` requires live opt-in, binary/digest, native archive, and collection tests; missing configuration fails instead of silently running a partial suite. Native output budgets match the pinned core range of 2,048 to 250,000 bytes.
+
+If system Chromium is unavailable, `npx playwright install chromium` installs the matching browser; omit `TACITUS_TEST_BROWSER` to use it. That download was blocked by the cloud network policy in this run, so the actual browser acceptance used preinstalled Chromium 154. Browser tests cover desktop/mobile recorded and live import/query, graph selection/filtering, exact native and lexical downloads, refusal without fallback, reset/reimport and stale export invalidation. See [cloud verification](docs/CLOUD_VERIFICATION.md) for actual commands, results and failures. [npm's clean-install contract](https://docs.npmjs.com/cli/v11/commands/npm-ci/) and [Playwright launch options](https://playwright.dev/docs/api/class-browsertype#browser-type-launch-option-executable-path) describe the dependency and browser setup.
+
+## Rights and limits
+
+[RIGHTS.md](RIGHTS.md) and [application boundaries](apps/workbench/APPLICATION_RIGHTS.md) remain in effect. Original eligible application modules retain reserved rights. Apache core/patch notices and FRUS/Gutenberg source terms are preserved; no new legal terms or application license is introduced. Lichnowsky's public-domain status is USA-specific, with Gutenberg distribution/trademark conditions retained.
+
+The server binds loopback only and live operations require explicit opt-in. Native timestamps describe modern ingestion, not what a diplomat knew in 1914. Assertions, comparisons and metadata cautions remain unreviewed. Byte fidelity, local retrieval and historical filtering tests establish no answer-quality gains or production readiness. This branch adds no hosting, accounts, payment, deployment or shared authorization service.

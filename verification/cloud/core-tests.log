@@ -1,0 +1,348 @@
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded block-buffer v0.10.4
+  Downloaded cpufeatures v0.2.17
+  Downloaded equivalent v1.0.2
+  Downloaded hashbrown v0.17.1
+  Downloaded memchr v2.8.2
+  Downloaded crypto-common v0.1.7
+  Downloaded quote v1.0.46
+  Downloaded indexmap v2.14.0
+  Downloaded itoa v1.0.18
+  Downloaded cfg-if v1.0.4
+  Downloaded generic-array v0.14.7
+  Downloaded serde v1.0.228
+  Downloaded proc-macro2 v1.0.106
+  Downloaded serde_derive v1.0.228
+  Downloaded serde_json v1.0.150
+  Downloaded serde_core v1.0.228
+  Downloaded sha2 v0.10.9
+  Downloaded syn v2.0.118
+  Downloaded zmij v1.0.21
+  Downloaded version_check v0.9.5
+  Downloaded zip v4.6.1
+  Downloaded unicode-ident v1.0.24
+  Downloaded crc32fast v1.5.0
+  Downloaded digest v0.10.7
+  Downloaded typenum v1.20.1
+   Compiling version_check v0.9.5
+   Compiling proc-macro2 v1.0.106
+   Compiling typenum v1.20.1
+   Compiling quote v1.0.46
+   Compiling unicode-ident v1.0.24
+   Compiling serde_core v1.0.228
+   Compiling generic-array v0.14.7
+   Compiling zmij v1.0.21
+   Compiling cfg-if v1.0.4
+   Compiling serde v1.0.228
+   Compiling syn v2.0.118
+   Compiling memchr v2.8.2
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.7
+   Compiling serde_json v1.0.150
+   Compiling digest v0.10.7
+   Compiling itoa v1.0.18
+   Compiling cpufeatures v0.2.17
+   Compiling sha2 v0.10.9
+   Compiling crc32fast v1.5.0
+   Compiling equivalent v1.0.2
+   Compiling hashbrown v0.17.1
+   Compiling indexmap v2.14.0
+   Compiling serde_derive v1.0.228
+   Compiling zip v4.6.1
+   Compiling tacitus-core v0.1.0 (/workspace/tacitus-core-build/crates/tacitus-core)
+   Compiling tacitus-capsules v0.1.0 (/workspace/tacitus-core-build/crates/tacitus-capsules)
+   Compiling tacitus-evals v0.1.0 (/workspace/tacitus-core-build/crates/tacitus-evals)
+   Compiling tacitus-analysis v0.1.0 (/workspace/tacitus-core-build/crates/tacitus-analysis)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 14.88s
+     Running unittests src/lib.rs (target/debug/deps/tacitus_analysis-b01c9b8605e2a5e6)
+
+running 1 test
+test v2_workflow::internal_tests::retained_budget_includes_manifest ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/authoring.rs (target/debug/deps/authoring-75d46521d0fa094c)
+
+running 4 tests
+test unknown_publication_remains_null ... ok
+test refuses_native_v1_reviews_and_unknown_fields ... ok
+test refuses_unconfirmed_duplicate_and_misleading_declarations ... ok
+test existing_three_author_validate_inspect_review ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running tests/cited_brief.rs (target/debug/deps/cited_brief-e22e5614f383fb18)
+
+running 15 tests
+test duplicate_and_unknown_priority_rejected ... ok
+test attribution_cannot_be_silently_truncated ... ok
+test future_and_expired_excluded ... ok
+test mutated_export_not_rendered_as_verified ... ok
+test document_retains_appendix_and_independent_budget ... ok
+test opaque_methods_fail_closed_on_revocation ... ok
+test opaque_artifacts_fail_closed_on_revocation_budget_or_time ... ok
+test preserves_qualified_claim_and_exact_excerpt ... ok
+test deterministic_exact_budget ... ok
+test relations_fail_closed ... ok
+test references_only_fail_without_excerpt ... ok
+test tampering_rejected ... ok
+test revocation_rechecked ... ok
+test trusted_method_label_is_downgraded_for_direct_callers ... ok
+test real_humanitarian_opaque_provenance_cannot_leak_after_revocation ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/compact_brief.rs (target/debug/deps/compact_brief-b1054ba440ffa4e6)
+
+running 21 tests
+test cannot_remove_global_rights_or_claim_scope ... ok
+test damaged_text_reference_rejects_even_rehashed_envelope ... ok
+test declared_artifact_correction_cannot_be_lost ... ok
+test contradiction_supersession_and_nonempty_exceptions ... ok
+test embedded_artifact_duplicate_keys_reject_before_profile_projection ... ok
+test exact_claim_qualifications_and_budget ... ok
+test explicit_dependencies_are_closed ... ok
+test omission_receipt_has_explicit_machine_and_human_status ... ok
+test future_profile_revision_or_unknown_nested_guard_rejects ... ok
+test partition_and_fingerprint_tamper_fail_closed ... ok
+test all_three_equal_budget_exact_retention ... ok
+test renderer_bound_and_mutation ... ok
+test priority_is_explicit_and_injection_stays_data ... ok
+test revoked_unknown_and_future_reject ... ok
+test renderer_rejects_missing_temporal_in_rehashed_document ... ok
+test required_safety_and_source_context_cannot_be_omitted ... ok
+test selected_analysis_requires_exact_dependencies ... ok
+test selected_evidence_status_and_legacy_derivation_are_consistent ... ok
+test text_references_reconstruct_exact_original_items ... ok
+test strict_mapping_and_request_boundary_reject_duplicates ... ok
+test unknown_opaque_artifact_rejected ... ok
+
+test result: ok. 21 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.47s
+
+     Running tests/extraction_review.rs (target/debug/deps/extraction_review-f3a0b0fc3866bbf4)
+
+running 9 tests
+test duplicate_input_keys_and_sources_reject ... ok
+test every_entity_linked_claim_needs_mention_and_corrections_must_resolve ... ok
+test malformed_or_hallucinated_span_and_unresolved_entity_rejected ... ok
+test candidate_cannot_claim_review_or_settled_truth ... ok
+test review_metadata_is_not_available_before_its_recording_checkpoint ... ok
+test order_is_irrelevant_but_exact_proposal_bytes_and_actor_are_bound ... ok
+test same_text_metadata_and_membership_changes_invalidate_review ... ok
+test reviewed_proposal_promotes_and_reuses_without_imported_authority ... ok
+test temporal_inconsistency_and_future_review_refuse ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/knowledge_capture.rs (target/debug/deps/knowledge_capture-25cd656ee2481083)
+
+running 8 tests
+test automatic_candidates_preserve_exact_unicode_spans ... ok
+test expired_source_refuses_opaque_metadata_before_output ... ok
+test no_match_is_explicit_omission_receipt ... ok
+test rights_missing_or_graph_mismatch_rejected ... ok
+test revoked_source_refuses_entire_output_including_nested_metadata ... ok
+test actual_upload_graph_roundtrip_and_distinct_prompts ... ok
+test unknown_time_and_future_graph_fail_closed ... ok
+test emitted_budget_or_refusal_and_no_qualifier_loss ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/layers.rs (target/debug/deps/layers-ce2528ae21731c71)
+
+running 13 tests
+test changed_claim_revision_requires_graph_rebinding ... ok
+test denied_redistribution_omits_linked_claims ... ok
+test contradiction_group_is_all_or_none ... ok
+test duplicate_links_reject_but_distinct_relations_preserve_ambiguity ... ok
+test future_and_expired_evidence_cannot_enter_context ... ok
+test explicit_reported_false_is_not_inferred_from_missing_knowledge ... ok
+test future_graph_annotation_cannot_leak_into_historical_packet ... ok
+test tampered_source_hash_is_rejected ... ok
+test unresolved_graph_links_fail_closed ... ok
+test imported_instruction_is_data_and_does_not_execute ... ok
+test layered_claims_preserve_citations_guards_and_unknown ... ok
+test reproducible_serialization_and_complete_budget ... ok
+test withdrawn_source_blocks_entire_connected_group ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/minister_brief.rs (target/debug/deps/minister_brief-339429ca5fd74c92)
+
+running 3 tests
+test institutional_publication_and_calendar_date_do_not_invent_timestamp ... ok
+test multilingual_speech_preserves_original_and_unreviewed_translation ... ok
+test no_cross_language_semantic_match_or_current_deadline_claim ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/policy_harness.rs (target/debug/deps/policy_harness-949ee8292b44bc9e)
+
+running 4 tests
+test explicit_task_overrides_suggestion ... ok
+test qualification_stays_with_authorization ... ok
+test hallucinated_citation_and_missing_brief_sections_fail ... ok
+test duplicate_common_origin_is_not_confirmation ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/source_span_recall.rs (target/debug/deps/source_span_recall-e2a21821e2934d80)
+
+running 4 tests
+test source_channel_does_not_bypass_revocation_or_strict_time ... ok
+test original_french_span_recovers_claim_and_required_closure ... ok
+test unquoted_document_text_and_assistant_translation_do_not_create_seeds ... ok
+test overlapping_original_span_scan_has_explicit_work_bound ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.38s
+
+     Running tests/v2_workflow.rs (target/debug/deps/v2_workflow-5e20c602f059bbec)
+
+running 10 tests
+test date_verified_mode_rejects_unknown ... ok
+test future_checkpoint_and_budget_fail_closed ... ok
+test duplicate_version_different_content_rejected ... ok
+test missing_authority_is_never_promoted ... ok
+test no_automatic_native_v1_migration ... ok
+test deterministic_and_mutation_checked ... ok
+test revocation_blocks_entire_opaque_output ... ok
+test reimport_cannot_clear_revocation ... ok
+test temporal_disclosure_derived_without_mutating_assertions ... ok
+test three_corrected_capsules_import_inspect_context_document ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests/workflows.rs (target/debug/deps/workflows-4d0ccdeae90763ad)
+
+running 8 tests
+test changed_source_traces_cycle_safe_transitive_impact ... ok
+test hypothesis_matrix_preserves_unknown_without_probability ... ok
+test decision_brief_is_cited_proposal_not_accepted_knowledge ... ok
+test missing_model_propagates_without_mock_or_cloud_fallback ... ok
+test rhetoric_is_not_delivery ... ok
+test decision_brief_rejects_unknown_citation_and_malformed_output ... ok
+test packet_tampering_and_unselected_evidence_are_rejected ... ok
+test serialized_prompt_budget_and_contract_binding_are_checked ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/tacitus_capsules-db83566e7ffbbc1a)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/tacitus_capsules-4ea72d6b14abf2f5)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/policy_v2.rs (target/debug/deps/policy_v2-72e145e664bcbca5)
+
+running 4 tests
+test v1_is_not_silently_v2_and_unknown_fields_fail ... ok
+test package_checks_rights_and_all_assertion_fields ... ok
+test exact_native_export_preserves_method_but_downgrades_review ... ok
+test strict_archive_preflight_rejects_ambiguous_json_without_changing_legacy_import ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/roundtrip.rs (target/debug/deps/roundtrip-99dd0724549c0fc9)
+
+running 15 tests
+test archive_traversal_and_executables_rejected ... ok
+test capsule_rejects_cross_workspace_assertion_even_without_bodies ... ok
+test duplicate_central_directory_names_cannot_be_silently_collapsed ... ok
+test byte_offsets_and_stale_human_review ... ok
+test disclosure_rights_and_withdrawal_are_enforced ... ok
+test pre_and_post_retrieval_scope_and_dates ... ok
+test hash_mismatch_rejected ... ok
+test selected_text_ingestion_preserves_bytes_hashes_and_rejects_malformed ... ok
+test method_provenance_and_identity_are_checked ... ok
+test imported_method_cannot_retain_acceptance ... ok
+test small_budget_is_actionable_and_never_truncates ... ok
+test references_only_cannot_fabricate_evidence ... ok
+test unsupported_schema_and_executable_method_fields_rejected ... ok
+test substantive_fresh_workspace_roundtrip ... ok
+test symlink_and_oversized_entries_rejected ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/strict_json.rs (target/debug/deps/strict_json-beee2f428bb95441)
+
+running 5 tests
+test malformed_utf8_syntax_surrogates_and_nonfinite_numbers_rejected ... ok
+test arrays_scopes_and_unicode_remain_distinct_without_normalization ... ok
+test duplicate_keys_at_every_level_and_decoded_equivalence ... ok
+test numeric_edges_preserve_existing_serde_semantics_not_jcs ... ok
+test depth_nodes_and_bytes_are_bounded ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running unittests src/lib.rs (target/debug/deps/tacitus_core-e55b754b2844b98e)
+
+running 3 tests
+test tests::digest_known_vector ... ok
+test tests::half_open_interval ... ok
+test tests::local_identity_is_exact ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/domain_graphs.rs (target/debug/deps/domain_graphs-976fcbe39e1b6299)
+
+running 4 tests
+test actor_search_matches_subject_or_speaker_without_identity_resolution ... ok
+test funding_and_position_views_do_not_promote_conditional_undertakings ... ok
+test rights_view_preserves_allegation_and_excludes_explanatory_inference ... ok
+test registry_is_bounded_and_uses_only_canonical_relations ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/policy_memory.rs (target/debug/deps/policy_memory-9bb30cbe4f0b9f12)
+
+running 2 tests
+test source_hash_language_and_utf8_are_exact ... ok
+test applicability_is_review_scope_and_version_bound ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/tacitus_evals-c10404ef2793b67c)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/records.rs (target/debug/deps/records-a505c20b42058502)
+
+running 2 tests
+test unequal_access_and_not_run_cannot_be_compared ... ok
+test null_human_ratings_stay_pending ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests tacitus_analysis
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests tacitus_capsules
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests tacitus_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests tacitus_evals
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
