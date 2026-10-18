@@ -1,0 +1,92 @@
+{
+  "format": "tacitus-july-publication-validation/1",
+  "validated_at": "2026-10-18",
+  "status": "local structural reproducibility passed; independent release review passed",
+  "environment": "Linux x86_64; Python 3.12.14; Rust 1.95.0; locked official dependencies already cached",
+  "checks": {
+    "safe_expansion_tests_passed": 11,
+    "clean_expansion_files": 209,
+    "offline_corpus_tests_passed": 13,
+    "core_tests_passed": 135,
+    "pinned_core_base": "0d47eafd93f2b4a5e4a926d3c761410b1c319cd6",
+    "patch_applies_to_pinned_base": true,
+    "patched_knowledge_capture_rs_sha256": "b4a520566ec6d39179283fae3afe8ad330d0595b08ad9eebf9c99539cf7d9662",
+    "full_corpus_regeneration": true,
+    "native_rust_fingerprints_reproduced_exact_capture_bytes": true,
+    "full_repack_reproduced_exact_zip_bytes": true
+  },
+  "native_receipt": {
+    "archive_sha256": "c7268bef3b19ff9b93458a64e476dd52df1c76f074e77fe149d2983268a66e5f",
+    "binary_sha256": "f7b75db10cf8bf8cad48dd32796b86eb13c89a9b97b6e5f32f7003ea8c95fcb2",
+    "checks": [
+      {
+        "case": "mediation.request",
+        "exact_reproduction": true,
+        "claims": 6,
+        "bytes": 33364
+      },
+      {
+        "case": "mobilization.request",
+        "exact_reproduction": true,
+        "claims": 4,
+        "bytes": 23998
+      },
+      {
+        "case": "peace.request",
+        "exact_reproduction": true,
+        "claims": 8,
+        "bytes": 38990
+      },
+      {
+        "case": "retrospective.request",
+        "exact_reproduction": true,
+        "claims": 12,
+        "bytes": 48385
+      },
+      {
+        "case": "strict",
+        "rejected_empty_stdout": true
+      },
+      {
+        "case": "pre_ingestion",
+        "rejected_empty_stdout": true
+      },
+      {
+        "case": "historical_1914",
+        "rejected_empty_stdout": true
+      },
+      {
+        "case": "revoked",
+        "rejected_empty_stdout": true
+      },
+      {
+        "case": "deterministic_repack",
+        "exact_bytes": true
+      },
+      {
+        "case": "evidence_tamper",
+        "rejected_empty_stdout": true
+      }
+    ],
+    "scope": "Structural local validation only; annotations unreviewed; modern ingestion checkpoint is not historical knowledge."
+  },
+  "limits": [
+    "Core checkout used an existing local clone at the exact public commit, not a new remote network download.",
+    "Core dependencies were already present in the official Cargo registry cache; tests and build used --locked --offline.",
+    "Executable hashes vary with build location/toolchain; source and fixture bytes are pinned.",
+    "No UI/browser integration verification is claimed here.",
+    "Semantic annotations remain unreviewed; this is not a semantic quality benchmark.",
+    "Public access does not replace the source-specific rights and repository policy."
+  ],
+  "independent_release_review": {
+    "date": "2026-10-18",
+    "safe_expansion_tests": 11,
+    "expanded_files_inspected": 209,
+    "corpus_tests": 13,
+    "historical_selection_commands": 2,
+    "native_checks": 10,
+    "privacy_scope": "No private paths, credentials or user documents found; contemporary catalog HTML excluded.",
+    "notices": "Apache patch/license/notice match reviewed core; full Gutenberg license and USA-specific rights warning preserved.",
+    "scope": "Independent structural and release-scope review, not historian review or worldwide rights adjudication."
+  }
+}
