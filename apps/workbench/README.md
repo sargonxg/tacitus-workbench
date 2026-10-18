@@ -85,6 +85,9 @@ Its native archive SHA-256 is
 `c7268bef3b19ff9b93458a64e476dd52df1c76f074e77fe149d2983268a66e5f`.
 It was produced by source-span-patched core `0d47eafd93f2b4a5e4a926d3c761410b1c319cd6`,
 patch SHA-256 `5dbf6a9c000b7a381601063115c9b08d4b509d239b7edd9d2c4b0067f3856611`.
+Current builds pin merged core `6bbdb0764b2bc7d7b05804c79ce9b5505c3bfc95`, which
+already contains that source-span fix. The historical patch and receipts remain
+for provenance; the build no longer applies a local patch.
 The tested Windows executable SHA-256 was
 `fa695e57f04d487b4c569363cbf5732106d7051d2bddfb15f84dfee93051996f`.
 No executable or full source corpus is bundled here. Public flagship base

@@ -38,8 +38,8 @@ semantic extraction, authoring or review-approval endpoint. See the
 [expanded collection contract](../examples/diplomacy-1914-v2/README.md).
 
 [The build helper](../scripts/build-core.sh) pins public core commit
-`0d47eafd93f2b4a5e4a926d3c761410b1c319cd6`, applies the checked source-span patch,
-and builds an isolated four-crate workspace with Rust 1.95.0 and a lockfile. It
+`6bbdb0764b2bc7d7b05804c79ce9b5505c3bfc95`, which includes the reviewed source-span
+fix upstream, and builds an isolated four-crate workspace with Rust 1.95.0 and a lockfile. It
 does not track the latest core branch. The
 [local adapter](../apps/workbench/server/local-inspector.mjs) checks the selected
 executable digest, uses argument arrays without a shell, limits bodies, archives,
