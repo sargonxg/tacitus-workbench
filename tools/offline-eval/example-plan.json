@@ -1,0 +1,30 @@
+{
+  "format": "tacitus-offline-plan/1",
+  "name": "July source subset — development packing protocol",
+  "split": "development",
+  "source_split": {
+    "kind": "shared_frozen_archive",
+    "prior_exposure": "The July example and its annotations are public development material; sources are not held out."
+  },
+  "questions": [
+    {"id": "dev-qualification", "group": "dev-qualification", "split": "development", "text": "What conditions and exceptions qualify the reported assurances of peace and mediation?", "kind": "qualification", "previously_exposed": true},
+    {"id": "dev-insufficient", "group": "dev-insufficient", "split": "development", "text": "Does this evidence establish exactly what each diplomat privately knew? State what remains unknown.", "kind": "insufficient", "previously_exposed": true}
+  ],
+  "instructions": "Answer only to the extent supported by the supplied evidence. Preserve disagreement and explain insufficiency.",
+  "model": {
+    "name": "REPLACE_WITH_EXTERNAL_MODEL_NAME",
+    "version": "REPLACE_WITH_FROZEN_MODEL_REVISION",
+    "tokenizer_id": "REPLACE_WITH_EXTERNAL_TOKENIZER_ID",
+    "tokenizer_version": "REPLACE_WITH_FROZEN_TOKENIZER_REVISION",
+    "temperature": 0,
+    "top_p": 1,
+    "seed": null,
+    "max_output_tokens": 1000,
+    "max_input_tokens": null
+  },
+  "max_prompt_bytes": 100000,
+  "retrieval": {"known_as_of": 1792328100, "valid_at": 1792328100, "time_mode": "disclose_unknown"},
+  "response_origin": "external_model_output",
+  "no_gold_in_inputs": true,
+  "exposure_attestation": "These example questions are development questions, not held-out gold. Before a study, independently freeze question/paraphrase groups and record all prior exposure; do not relabel familiar fixtures as unseen."
+}
