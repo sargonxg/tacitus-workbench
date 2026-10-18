@@ -53,6 +53,10 @@ Restart the opted-in server. **622-record lexical collection** calls the bundled
 
 The separate `expanded-cases.native-v2.zip` can also be imported into the live native workflow. Use question `relief assurance`, known-as-of and valid-at `1792332960` to reproduce its relief fixture. The native capsule contains 46 unreviewed proposals and stays within native bounds. The baseline has 39 proposals; neither contains all 622 source records. Ten method proposals are separately represented but are not retrieved by the current core.
 
+## Create from your own local text
+
+[Local text authoring](docs/LOCAL_TEXT_AUTHORING.md) creates a native capsule from one bounded UTF-8 text/Markdown source, two explicit unreviewed reported-statement annotations and one user-declared relation. The helper is built by the same core script. Enable it with `TACITUS_LOCAL_AUTHORING=1`, `TACITUS_CAPTURE_AUTHOR_BIN` and its verified `TACITUS_CAPTURE_AUTHOR_SHA256` alongside the existing live configuration. No extraction model, URL fetching or upload service is involved. Read the guide for exact quotes, rights declarations, persistence and unsupported inputs.
+
 ## Compare live retrieval checkpoints
 
 Save one successful live query as run A, change only native checkpoints and query again for run B. Inspect citation-linked selected claims/sources, qualifications, temporal disclosures and omissions. Both exact Context exports retain their original bytes. Refusals remain explicit; these modern retrieval checkpoints do not establish what an actor knew in 1914. See [comparison instructions and limits](docs/LIVE_CHECKPOINT_COMPARISON.md).
@@ -62,14 +66,14 @@ Save one successful live query as run A, change only native checkpoints and quer
 ```sh
 cd apps/workbench
 TACITUS_TEST_BROWSER=/usr/bin/chromium npm test
-# With the live variables exported above and both examples prepared:
+# With live + authoring variables exported and both examples prepared:
 TACITUS_TEST_BROWSER=/usr/bin/chromium \
 TACITUS_ACCEPTANCE=1 TACITUS_TEST_COLLECTION=1 \
 TACITUS_TEST_ARCHIVE="$(git rev-parse --show-toplevel)/examples/july-1914/july-1914.native-v2.zip" npm test
 node scripts/verify-inventory.mjs
 ```
 
-`TACITUS_ACCEPTANCE=1` requires live opt-in, binary/digest, native archive, and collection tests; missing configuration fails instead of silently running a partial suite. Native output budgets match the pinned core range of 2,048 to 250,000 bytes.
+`TACITUS_ACCEPTANCE=1` requires live and authoring opt-ins, both binary/digest pairs, native archive, and collection tests; missing configuration fails instead of silently running a partial suite. Native output budgets match the pinned core range of 2,048 to 250,000 bytes.
 
 If system Chromium is unavailable, `npx playwright install chromium` installs the matching browser; omit `TACITUS_TEST_BROWSER` to use it. That download was blocked by the cloud network policy in this run, so the actual browser acceptance used preinstalled Chromium 154. Browser tests cover desktop/mobile recorded and live import/query, graph selection/filtering, exact native and lexical downloads, refusal without fallback, reset/reimport and stale export invalidation. See [cloud verification](docs/CLOUD_VERIFICATION.md) for actual commands, results and failures. [npm's clean-install contract](https://docs.npmjs.com/cli/v11/commands/npm-ci/) and [Playwright launch options](https://playwright.dev/docs/api/class-browsertype#browser-type-launch-option-executable-path) describe the dependency and browser setup.
 

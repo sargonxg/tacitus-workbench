@@ -133,3 +133,7 @@ license this new application source. No application LICENSE has been invented.
 `TACITUS_TEST_ARCHIVE` plus the live configuration above to include actual-core
 inspection/query and live-refusal checks. Test screenshots/logs stay in `output/`.
 The private website's full verification result is separate from this candidate.
+
+## Local user-source authoring
+
+See [`docs/LOCAL_TEXT_AUTHORING.md`](../../docs/LOCAL_TEXT_AUTHORING.md) for the bounded local text/Markdown → explicit reported-statement annotations → validated native capsule flow, helper opt-in, storage/deletion behavior, limits and acceptance. The new helper/client/server/form/tests are independently authored workbench application source under the existing reserved-rights boundary; no private website code or new legal terms are added.
