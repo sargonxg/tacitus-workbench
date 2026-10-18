@@ -4,6 +4,8 @@ Local evidence inspector integrating the public standalone interface and two sou
 
 This integration branch starts at PR3 `5766d1cb3472f85d6ed702728295349e99641520`, includes the unchanged example directories from PR1 `dd9dc217f8b839b2b00bf645b62bfb8272ee6146` and PR2 `9ed66eef932fee3b8888fcfed4ed582b0123c133`, and leaves their branches and main unchanged. No private website code was accessed or copied during integration.
 
+See [operational architecture and release readiness](docs/OPERATIONAL_ARCHITECTURE.md) for the implemented flow, independent review responsibilities, release gates and proposed matched evaluation.
+
 ## Install and run recorded mode
 
 Prerequisites: Node 24, npm, Python 3.11+ and Git. Tested on Linux with Node 24.19.0/npm 11.9.0. The committed npm lockfile resolves only official registry packages. No credentials or model account are needed.
