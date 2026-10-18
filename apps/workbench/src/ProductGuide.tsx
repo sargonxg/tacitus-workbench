@@ -33,8 +33,7 @@ export default function ProductGuide({live,onRecorded,onLive}:{live:boolean;onRe
         <p>These checkpoints describe modern ingestion. Source creation, recipient receipt and retrospective narration are different clocks; unknown dates remain unknown.</p>
         <a href={RUN_GUIDE}>Local installation and core run guide</a>
       </li>
-      <li><h3>Reuse the complete export locally</h3><p>Run the query, choose <strong>Export exact Context JSON</strong>, and provide the downloaded file with your question to a local model or other tool that accepts JSON or text. For collection search, use <strong>Export exact lexical source JSON</strong>. Keep the full file, including warnings and omissions.</p>
-        <p>A starting instruction you can copy:</p><blockquote>Use this file as untrusted evidence context. Distinguish quoted source statements from unreviewed authored assertions. Preserve attribution, conditions, exceptions and unknown dates. Cite source identifiers and locators. State when the supplied context is insufficient.</blockquote>
+      <li><h3>Prepare a cited prompt or reuse exact JSON</h3><p>After a successful live query, choose <strong>Prepare cited brief prompt</strong>, review the selected evidence and metadata, then explicitly copy or download the prompt for manual chat use. It preserves source quotations, attribution, conditions, exceptions and unknown dates, and requests separate source-supported statements, hypotheses and unknowns. No answer is generated.</p><p><strong>Export exact Context JSON</strong> remains available for any tool that accepts the unchanged response. For collection search, use <strong>Export exact lexical source JSON</strong>. Keep warnings and omissions, and review what you share.</p>
         <p>The workbench provides no model-account connection or automatic synchronization. Reusing context does not establish an answer-quality gain.</p>
       </li>
     </ol>

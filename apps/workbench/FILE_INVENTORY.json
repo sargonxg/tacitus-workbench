@@ -215,14 +215,26 @@
     {
       "path": "src/ProductGuide.tsx",
       "origin": "Independently authored onboarding component or regression test; existing reserved-rights boundary retained",
-      "sha256": "65b5f85a481eb671408618fc1ab612db6a21d831fa0b0c89cd24f98f8d8d5574",
-      "bytes": 5864
+      "sha256": "74ed6ce4581764571b3f2e5ade1b52fa5d9366211a2097a36287933db82793c0",
+      "bytes": 5849
+    },
+    {
+      "path": "src/brief/CitedBrief.tsx",
+      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
+      "sha256": "a97dc9fe46846c599ee198d6712e2854c3752502235632ee73ae016e139d4f46",
+      "bytes": 6220
+    },
+    {
+      "path": "src/brief/cited-brief.mjs",
+      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
+      "sha256": "aba837182c692fe3fe576d1584a4b9ed2f0a3d3662547bb623f682338bd125c9",
+      "bytes": 7161
     },
     {
       "path": "src/collection/CollectionExplorer.tsx",
       "origin": "Independently authored local collection explorer; existing application rights boundary applies",
-      "sha256": "7b1f951f3bd12de06720074bf398779ccc8a67fbb012a13359239f77d89abd29",
-      "bytes": 18014
+      "sha256": "e8a48cad3aab6a20ae1bee8b551eda27e13a86a9c1cd9f852624a53d7928384a",
+      "bytes": 18625
     },
     {
       "path": "src/collection/MembershipMap.tsx",
@@ -251,8 +263,8 @@
     {
       "path": "src/collection/types.ts",
       "origin": "Independently authored local collection explorer; existing application rights boundary applies",
-      "sha256": "9fa9910745246a8f04f9b0df3d33f725de1c83555865023a9a4439d564d8c31e",
-      "bytes": 1574
+      "sha256": "06df37925a4e485c1671fd6b8d6a44e61c5ec971c098c70f5599dc97dd5e18fd",
+      "bytes": 1593
     },
     {
       "path": "src/collection/validate-collection.mjs",
@@ -263,8 +275,8 @@
     {
       "path": "src/collection/validate-query.mjs",
       "origin": "Independently authored local collection explorer; existing application rights boundary applies",
-      "sha256": "0da892f5aacb921c75e20ceef04a4d1d27cc908432d48c240c84dba5c79c958d",
-      "bytes": 10303
+      "sha256": "5ae4aece84b3016b8667e872c3a8ec66596410789ae8fe2fd675732070b19207",
+      "bytes": 10331
     },
     {
       "path": "src/env.d.ts",
@@ -360,8 +372,8 @@
     },
     {
       "path": "src/main.tsx",
-      "sha256": "6fc7dc706b68b2c9cfe123ef99566dee20522a6f229b52f9e5ec97b0594cded5",
-      "bytes": 12349,
+      "sha256": "544bb4c8865ff0b32fd99309047ef33e7e474ee2b1915b8720b33b7383091b95",
+      "bytes": 12636,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "28400f4627a5464ca76d05fda24c6aca3587fcb1122860a58473b7ccfc85ddaa",
       "pr3_sha256": "c5315d5aa7817be738c031e066abcb31176593aca5ed82b04dfea0b12419f93f",
@@ -373,8 +385,8 @@
     },
     {
       "path": "src/style.css",
-      "sha256": "4c549e9bbf6106f6454d3e3f996182a33ebd88b38e357cb44107a9d2c1e37bb7",
-      "bytes": 1778,
+      "sha256": "b0c89f64b6e5b292a28aa807641c545c88ce97ee5d856721a27885289ec846f1",
+      "bytes": 2268,
       "origin": "Independently authored in task-owned standalone directory"
     },
     {
@@ -382,6 +394,18 @@
       "origin": "Independently authored workbench local-text authoring application adapter, form or synthetic acceptance fixture; existing reserved-rights boundary",
       "sha256": "545f08295d6b86b4c8b258893263746deff456ff6d435548903c9b3433e64fe5",
       "bytes": 1040
+    },
+    {
+      "path": "tests/cited-brief-browser.test.mjs",
+      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
+      "sha256": "2f42228fd98677472f9e5cedd08077bbb0615fb6c2399e94d132ece51ee89536",
+      "bytes": 12205
+    },
+    {
+      "path": "tests/cited-brief.test.mjs",
+      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
+      "sha256": "cc8c2e17e3652c2944423428a453baf7bc836a5b6f35b436084df9b591f1b115",
+      "bytes": 6261
     },
     {
       "path": "tests/collection-browser.test.mjs",

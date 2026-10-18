@@ -98,6 +98,10 @@ Prepare the fresh browser collection fixtures using [the explorer acceptance com
 
 If system Chromium is unavailable, `npx playwright install chromium` installs the matching browser; omit `TACITUS_TEST_BROWSER` to use it. That download was blocked by the cloud network policy in this run, so the actual browser acceptance used preinstalled Chromium 154. Browser tests cover desktop/mobile recorded and live import/query, graph selection/filtering, exact native and lexical downloads, refusal without fallback, reset/reimport and stale export invalidation. See [release pass](docs/RELEASE_READINESS.md) for current commands/results and [historical cloud verification](docs/CLOUD_VERIFICATION.md) for the initial integration run. [npm's clean-install contract](https://docs.npmjs.com/cli/v11/commands/npm-ci/) and [Playwright launch options](https://playwright.dev/docs/api/class-browsertype#browser-type-launch-option-executable-path) describe the dependency and browser setup.
 
+## Prepare a prompt for manual chat use
+
+After a successful live query, or for one verified saved collection packet, [prepare a cited brief prompt](docs/MANUAL_CITED_BRIEF.md). Review its question, selected evidence, exact citation index, qualifications, unknown dates and omissions, then explicitly copy or download it for manual external chat use. This exports a prompt; it generates no answer and connects to no provider. Exact Context bytes and hashes remain available, and token counts are not inferred.
+
 ## Offline matched evaluation capability
 
 The optional [offline harness](tools/offline-eval/README.md) freezes one identical source/annotation subset and questions, exports randomized baseline/native prompt packets, and imports external answers plus explicit human ratings. It makes no provider calls. Mechanical citation-byte checks remain separate from human support judgments; missing/refused runs stay visible. The example questions are development material, and model-answer evaluation remains unrun. No answer-quality gain is established.
