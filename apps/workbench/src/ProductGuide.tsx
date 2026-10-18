@@ -18,7 +18,7 @@ export default function ProductGuide({live,onRecorded,onLive}:{live:boolean;onRe
   return <section className="product-guide" aria-labelledby="guide-title">
     <p className="eyebrow">TACITUS · Start here</p><h2 id="guide-title">Build context you can trace back to evidence</h2>
     <p>TACITUS provides reusable, evidence-linked knowledge structures for policy and diplomacy. Inspect sources, attributed assertions, qualifications and dates; then carry the complete evidence context into your next question.</p>
-    <div className="guide-actions" aria-label="Choose how to start"><button onClick={onRecorded}>Start recorded demo</button><button onClick={onLive}>Open live-core controls</button></div>
+    <div className="guide-actions" aria-label="Choose how to start"><button onClick={onRecorded}>Start recorded demo</button><button onClick={onLive}>Open live-core controls</button><a href="#local-authoring">Create from local text</a></div>
     {error&&<p role="status">Guide facts could not load. The execution controls below remain available.</p>}
     {facts&&<div className="guide-scopes" aria-label="What the examples contain">
       <article><h3>{facts.collection.records} source records</h3><p>The full collection contains {facts.collection.publisher_records} FRUS publisher records and {facts.collection.retrospective_sections} retrospective memoir sections. Lexical search selects exact source passages; it does not create reviewed claims.</p><a href="#collection-search">Explore the full-source index</a></article>

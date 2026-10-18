@@ -25,8 +25,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "c23d12162b0cc8126a0ff5117f358dbe41e41f3c89442443ec10a66c362cb345",
-      "bytes": 7614,
+      "sha256": "d60b6a608cbd43f75d5ffa96863918245b113d963f94d322a6600f1090d12558",
+      "bytes": 8095,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "57e5ca83952d700069ec783f767d0a6499d5eb0bdbf473d93b8b8fe2fe7db1bc",
       "pr3_sha256": "ef94acb785822d441fc7f3a2301a8a40746032223a6706ee52b16909a44ffe5f",
@@ -154,14 +154,20 @@
     },
     {
       "path": "server/index.mjs",
-      "sha256": "1ada9a1e75eba00858ebec81cbb33c5272e374d396f02169042984caef4eaeb5",
-      "bytes": 4644,
+      "sha256": "77b04551a2bedb591ba3bbaa176e4244a109898b425f2a6806b08fa06e44414c",
+      "bytes": 5663,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "a903636375a3d170301985c57f10788f2e9e6cbc98f6fedef682396a858eff59",
       "pr3_sha256": "76b492072ecf1cbff4afcd312a230127c53f4190d9d639aa3ecd58cf72326d37",
       "integration_note": "Updated in local reproducibility integration; original provenance retained",
       "onboarding_base_sha256": "94c26b88f4b66e15a096edb52c21d08e85131f60da3846ce36232f314ef13a06",
       "onboarding_change": "Product start guide, focus target, or native sample static MIME support"
+    },
+    {
+      "path": "server/local-author.mjs",
+      "origin": "Independently authored workbench local-text authoring application adapter, form or synthetic acceptance fixture; existing reserved-rights boundary",
+      "sha256": "3572bc55b19265ef5cae3fe286871511fd40b68cbf81341b85ce9174caedce0c",
+      "bytes": 5381
     },
     {
       "path": "server/local-inspector.mjs",
@@ -174,12 +180,30 @@
       "review_correction": "Pinned native budget validation and explicit acceptance/boundary coverage"
     },
     {
+      "path": "server/local_author.rs",
+      "origin": "Independently authored workbench local-text authoring application adapter, form or synthetic acceptance fixture; existing reserved-rights boundary",
+      "sha256": "0792736d4c72fcd670f4ae4a0dd815bf9ae432d366af96abecf391b59440dff8",
+      "bytes": 2192
+    },
+    {
       "path": "src/CollectionSearch.tsx",
       "origin": "Independently authored local integration; original eligible application work retains reserved-rights boundary",
       "sha256": "744ce0da88cf731685b50efcc20d0659da4f7836e35dca55c936a88336d33e0a",
       "bytes": 3340,
       "onboarding_base_sha256": "7cbab27c5697964d3d41bc79f94d89b7c8acdc8a9b191d698f5e2248df3e816f",
       "onboarding_change": "Product start guide, focus target, or native sample static MIME support"
+    },
+    {
+      "path": "src/LiveComparison.tsx",
+      "sha256": "b1a2017c119c772da930b25996f8d454e197139af10cdadded9f3680ce2a8a43",
+      "bytes": 6024,
+      "origin": "Independently authored local checkpoint comparison; original application reserved-rights boundary unchanged"
+    },
+    {
+      "path": "src/LocalAuthor.tsx",
+      "origin": "Independently authored workbench local-text authoring application adapter, form or synthetic acceptance fixture; existing reserved-rights boundary",
+      "sha256": "e82982b79bdaa5832d3b8d737a2543c1eeb2105e13ff52210bfb60bcfa70b47e",
+      "bytes": 8859
     },
     {
       "path": "src/ProductGuide.css",
@@ -190,8 +214,8 @@
     {
       "path": "src/ProductGuide.tsx",
       "origin": "Independently authored onboarding component or regression test; existing reserved-rights boundary retained",
-      "sha256": "423d84f858427f720e1aca5085ba6c871da429db27b62db9d8ba50c80110e5a9",
-      "bytes": 5785
+      "sha256": "d4d4f9ffa945e90263e08e4bd95c95ae8ff33e79b35d62ea86ac81c62c4f6514",
+      "bytes": 5838
     },
     {
       "path": "src/env.d.ts",
@@ -265,6 +289,18 @@
       "identical_to_origin": true
     },
     {
+      "path": "src/live-comparison.mjs",
+      "sha256": "ed0d62e41bd3b3f75dd54b91bd403604c1abf3accd76fece6872b7e53c29c8bf",
+      "bytes": 5952,
+      "origin": "Independently authored local checkpoint comparison; original application reserved-rights boundary unchanged"
+    },
+    {
+      "path": "src/local-author-client.mjs",
+      "origin": "Independently authored workbench local-text authoring application adapter, form or synthetic acceptance fixture; existing reserved-rights boundary",
+      "sha256": "c192b883a6871d8c30765958e32aebd136b7ee894c1f21425e371015c67aa98a",
+      "bytes": 5331
+    },
+    {
       "path": "src/local-inspector-client.mjs",
       "sha256": "4b01cf8d39e63d3efa452b90c63370afb9ba1e33225480a644e109351b563550",
       "bytes": 718,
@@ -274,8 +310,8 @@
     },
     {
       "path": "src/main.tsx",
-      "sha256": "b4ab7cca28241c8baf7ac7ea5a8848c9e0a3751a718ebf4230ebb86ca9b9d341",
-      "bytes": 11385,
+      "sha256": "36e1dc2b61732dded3dcd27a3d779306800cfe77386ea62dbc42397ed5d9451e",
+      "bytes": 11809,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "28400f4627a5464ca76d05fda24c6aca3587fcb1122860a58473b7ccfc85ddaa",
       "pr3_sha256": "c5315d5aa7817be738c031e066abcb31176593aca5ed82b04dfea0b12419f93f",
@@ -287,9 +323,21 @@
     },
     {
       "path": "src/style.css",
-      "sha256": "f334e35937b2c48415ca801d9c70f83a607a6ded396c27ecef22bdf2ad1569f1",
-      "bytes": 1463,
+      "sha256": "40fdf02f6f08e1357c7c31ac6d4dff24f927d6847147dadbad18033592d739df",
+      "bytes": 1739,
       "origin": "Independently authored in task-owned standalone directory"
+    },
+    {
+      "path": "tests/author-fixture.mjs",
+      "origin": "Independently authored workbench local-text authoring application adapter, form or synthetic acceptance fixture; existing reserved-rights boundary",
+      "sha256": "545f08295d6b86b4c8b258893263746deff456ff6d435548903c9b3433e64fe5",
+      "bytes": 1040
+    },
+    {
+      "path": "tests/fixtures/synthetic-local.md",
+      "origin": "Independently authored workbench local-text authoring application adapter, form or synthetic acceptance fixture; existing reserved-rights boundary",
+      "sha256": "f2bf1eb6517e89ae2d8e892002cf69a7a91938a6ef7dfd29ce92236654ca73e8",
+      "bytes": 209
     },
     {
       "path": "tests/interface.test.mjs",
@@ -301,6 +349,30 @@
       "integration_note": "Updated in local reproducibility integration; original provenance retained",
       "reviewed_baseline_sha256": "173b5399f2f79a9c563077184d9362a34e5fab199e7079255e26e4dba802d266",
       "review_correction": "Pinned native budget validation and explicit acceptance/boundary coverage"
+    },
+    {
+      "path": "tests/live-comparison-browser.test.mjs",
+      "sha256": "4078c4eb3d61c6f9feace561dd54100ab798b1b31c7706dadac3f801603a94bf",
+      "bytes": 6581,
+      "origin": "Independently authored local checkpoint comparison; original application reserved-rights boundary unchanged"
+    },
+    {
+      "path": "tests/live-comparison.test.mjs",
+      "sha256": "f8be99ffaee0fd08955affd9403516411322ea7eddd213b54d3991cc09b9c5eb",
+      "bytes": 6694,
+      "origin": "Independently authored local checkpoint comparison; original application reserved-rights boundary unchanged"
+    },
+    {
+      "path": "tests/local-author-browser.test.mjs",
+      "origin": "Independently authored workbench local-text authoring application adapter, form or synthetic acceptance fixture; existing reserved-rights boundary",
+      "sha256": "c75c972a48b990009ec6de14e96e389e2777b1d9520954c4c120bc1554839888",
+      "bytes": 8732
+    },
+    {
+      "path": "tests/local-author.test.mjs",
+      "origin": "Independently authored workbench local-text authoring application adapter, form or synthetic acceptance fixture; existing reserved-rights boundary",
+      "sha256": "6b8cb85b19eca8ed9423cfcaaa084320b569c3a98c88be2aa55e9b4dbc495021",
+      "bytes": 8001
     },
     {
       "path": "tests/onboarding-browser.test.mjs",
@@ -341,30 +413,6 @@
       "sha256": "860395a734db4ed97efd9a21775b594eaaa23fd7db0edf3e3a08a7dd407b5487",
       "bytes": 145,
       "origin": "Independently authored in task-owned standalone directory"
-    },
-    {
-      "path": "src/LiveComparison.tsx",
-      "sha256": "b1a2017c119c772da930b25996f8d454e197139af10cdadded9f3680ce2a8a43",
-      "bytes": 6024,
-      "origin": "Independently authored local checkpoint comparison; original application reserved-rights boundary unchanged"
-    },
-    {
-      "path": "src/live-comparison.mjs",
-      "sha256": "ed0d62e41bd3b3f75dd54b91bd403604c1abf3accd76fece6872b7e53c29c8bf",
-      "bytes": 5952,
-      "origin": "Independently authored local checkpoint comparison; original application reserved-rights boundary unchanged"
-    },
-    {
-      "path": "tests/live-comparison.test.mjs",
-      "sha256": "f8be99ffaee0fd08955affd9403516411322ea7eddd213b54d3991cc09b9c5eb",
-      "bytes": 6694,
-      "origin": "Independently authored local checkpoint comparison; original application reserved-rights boundary unchanged"
-    },
-    {
-      "path": "tests/live-comparison-browser.test.mjs",
-      "sha256": "4078c4eb3d61c6f9feace561dd54100ab798b1b31c7706dadac3f801603a94bf",
-      "bytes": 6581,
-      "origin": "Independently authored local checkpoint comparison; original application reserved-rights boundary unchanged"
     }
   ],
   "review_version": 2,

@@ -10,10 +10,12 @@ import LiveComparison from './LiveComparison';
 import type {LiveRun} from './LiveComparison';
 import {makeLiveRun} from './live-comparison.mjs';
 import ProductGuide from './ProductGuide';
+import LocalAuthor from './LocalAuthor';
 import type {WalkthroughData} from './graph/julyWalkthroughModel';
 const GuidedWalkthrough=lazy(()=>import('./graph/July1914Walkthrough'));
 
 function App(){
+  const [authoring,setAuthoring]=useState(false);
   const [mode,setMode]=useState<'live'|'recorded'>('live'),[available,setAvailable]=useState(false);
   const [archive,setArchive]=useState(''),[fileName,setFileName]=useState(''),[inspected,setInspected]=useState(false);
   const [raw,setRaw]=useState(''),[inspection,setInspection]=useState(''),[message,setMessage]=useState(''),[busy,setBusy]=useState(false);
@@ -25,7 +27,7 @@ function App(){
   function editQuery(change:()=>void){epoch.current.cancel();setBusy(false);setRaw('');setCurrentRun(null);setMessage('Query changed; run the core again for these parameters.');change();}
   const [guided,setGuided]=useState<WalkthroughData|null>(null);
   async function loadGuided(){try{const response=await fetch('/examples/july1914-walkthrough.json');if(!response.ok)throw new Error('Guided fixture unavailable');setGuided(await response.json());}catch(e){setMessage(String(e));}}
-  useEffect(()=>{fetch('/api/status').then(r=>r.json()).then(s=>setAvailable(s.live===true)).catch(()=>setMessage('Local status unavailable.'));return()=>epoch.current.cancel();},[]);
+  useEffect(()=>{fetch('/api/status').then(r=>r.json()).then(s=>{setAvailable(s.live===true);setAuthoring(s.authoring===true);}).catch(()=>setMessage('Local status unavailable.'));return()=>epoch.current.cancel();},[]);
   const projection=useMemo(()=>{if(!raw)return null;try{
     const context=JSON.parse(raw) as NativeContext;
     const presentation=Object.fromEntries(Object.entries(context.source_metadata).map(([id,s])=>[id,{perspective:s.source_family==='lichnowsky-gutenberg-39457-english'?'retrospective' as const:s.source_family==='frus1914Supp-official-1928'?'contemporary' as const:'unknown' as const}]));
@@ -56,6 +58,7 @@ function App(){
   function exportContext(){downloadContext(raw,mode==='recorded'?'recorded-peace.context.json':'live.context.json');}
   return <main><header><p className="eyebrow">Local research tools · policy and diplomacy</p><h1>TACITUS Workbench</h1><p>Reusable evidence-linked context for policy and diplomacy.</p></header>
     <ProductGuide live={available} onRecorded={()=>{reset();setMode('recorded');void recorded();document.getElementById('execution')?.focus();}} onLive={()=>{reset();setMode('live');document.getElementById('execution')?.focus();}}/>
+    <LocalAuthor enabled={authoring} onInvalidate={()=>reset()} onUse={(file,checkpoint,question)=>{setMode('live');setKnown(String(checkpoint));setValid(String(checkpoint));setTimeMode('disclose_unknown');setQuestion(question);void choose(file);document.getElementById('execution')?.focus();}}/>
     <section id="execution" tabIndex={-1} className="controls" aria-label="Execution"><label>Execution mode<select value={mode} onChange={e=>{reset();setMode(e.target.value as 'live'|'recorded');}}><option value="live">Live local core</option><option value="recorded">Recorded July 1914 example</option></select></label>
     {mode==='live'?<><p>{available?'Local core configured. The executable digest is checked for each operation.':'Live execution is unavailable. Configure the pinned local executable and explicit opt-in, or select recorded example mode.'}</p><label>Native ZIP (maximum 8 MiB)<input ref={fileInput} type="file" accept=".zip" disabled={!available||busy} onChange={e=>void choose(e.target.files?.[0])}/></label><p>{fileName}</p><button disabled={!available||!archive||busy} onClick={()=>void request('inspect')}>Inspect archive</button>
     <div className="fields"><label>Question<input value={question} disabled={busy} onChange={e=>editQuery(()=>setQuestion(e.target.value))}/></label><label>Known as of (native checkpoint)<input type="number" value={known} disabled={busy} onChange={e=>editQuery(()=>setKnown(e.target.value))}/></label><label>Valid at (native checkpoint)<input type="number" value={valid} disabled={busy} onChange={e=>editQuery(()=>setValid(e.target.value))}/></label><label>Maximum output bytes<input type="number" min="2048" max="250000" value={budget} disabled={busy} onChange={e=>editQuery(()=>setBudget(e.target.value))}/></label><label>Validity policy<select value={timeMode} disabled={busy} onChange={e=>editQuery(()=>setTimeMode(e.target.value))}><option value="disclose_unknown">Disclose unknown validity</option><option value="require_declared_interval">Require declared interval</option></select></label></div><button disabled={!inspected||busy} onClick={()=>void request('reuse')}>Query core</button></>:<><p><strong>Recorded example:</strong> a precomputed peace Context from the reviewed source-span core. Loading it runs no core query and produces no model answer or quality score.</p><button disabled={busy} onClick={()=>void recorded()}>Load recorded peace Context</button></>}
