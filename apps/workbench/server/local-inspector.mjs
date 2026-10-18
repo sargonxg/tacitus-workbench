@@ -51,7 +51,7 @@ export function validateInput(input) {
     const q = input.query;
     if (!q || typeof q.question !== 'string' || !q.question.trim() || Buffer.byteLength(q.question) > 8000 ||
         !['disclose_unknown', 'require_declared_interval'].includes(q.time_mode) ||
-        !Number.isSafeInteger(q.max_bytes) || q.max_bytes < 256 || q.max_bytes > 1024 * 1024 ||
+        !Number.isSafeInteger(q.max_bytes) || q.max_bytes < 2048 || q.max_bytes > 250000 ||
         ![q.known_as_of, q.valid_at].every(v => Number.isSafeInteger(v)) ||
         !Array.isArray(q.revoked_sources) || q.revoked_sources.length > 100 ||
         !q.revoked_sources.every(v => typeof v === 'string' && v.length <= 256)) fail('invalid_query');

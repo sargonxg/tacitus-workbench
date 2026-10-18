@@ -19,16 +19,22 @@ test('default disabled server serves recorded data and refuses API before origin
 });
 test('enabled outer lock rejects concurrent headers before body and releases on errors and disconnect',async()=>{
  const {child,origin}=await start(4321,true);const pending=[];
- function partial(){let response;const result=new Promise(resolve=>response=resolve);const req=http.request(origin+'/api/inspect',{method:'POST',headers:{Origin:origin,'Content-Type':'application/json','Content-Length':12000000}},res=>{res.resume();response(res.statusCode);});req.on('error',()=>{});req.write('{');pending.push(req);return {req,result};}
- async function small(body,from=origin){return fetch(origin+'/api/inspect',{method:'POST',headers:{Origin:from,'Content-Type':'application/json'},body});}
+ function partial(route='/api/inspect'){let response;const result=new Promise(resolve=>response=resolve);const req=http.request(origin+route,{method:'POST',headers:{Origin:origin,'Content-Type':'application/json','Content-Length':12000000}},res=>{res.resume();response(res.statusCode);});req.on('error',()=>{});req.write('{');pending.push(req);return {req,result};}
+ async function small(body,from=origin,route='/api/inspect'){return fetch(origin+route,{method:'POST',headers:{Origin:from,'Content-Type':'application/json'},body});}
  try{
-  assert.equal((await small('{}','https://example.invalid')).status,403);
+  for(const route of ['/api/inspect','/api/collection'])assert.equal((await small('{}','https://example.invalid',route)).status,403);
   const first=partial();await new Promise(resolve=>setTimeout(resolve,100));
-  const second=partial();const status=await Promise.race([second.result,new Promise((_,reject)=>setTimeout(()=>reject(new Error('Concurrent request waited for body')),1500))]);assert.equal(status,429);
+  const second=partial('/api/collection');const status=await Promise.race([second.result,new Promise((_,reject)=>setTimeout(()=>reject(new Error('Concurrent request waited for body')),1500))]);assert.equal(status,429);
   first.req.destroy();second.req.destroy();
   let released;for(let n=0;n<30;n++){released=await small('{');if(released.status!==429)break;await new Promise(r=>setTimeout(r,30));}assert.equal(released.status,400);assert.equal((await released.json()).error,'invalid_json');
   const noCore=await small('{}');assert.equal(noCore.status,503);assert.equal((await noCore.json()).error,'core_not_configured');
   assert.equal((await small('{')).status,400);
+  if((await(await fetch(origin+'/api/status')).json()).collection){
+   assert.equal((await small(JSON.stringify({question:''}),origin,'/api/collection')).status,400);
+   assert.equal((await small(JSON.stringify({question:'q'.repeat(2001)}),origin,'/api/collection')).status,400);
+   assert.equal((await small(JSON.stringify({question:'q'.repeat(4096)}),origin,'/api/collection')).status,413);
+   assert.equal((await small('{}')).status,503);
+  }
   const expiring=partial();assert.equal(await expiring.result,408);
   assert.equal((await small('{}')).status,503);
  }finally{for(const req of pending)req.destroy();await stop(child);}

@@ -18,7 +18,7 @@ npm ci --ignore-scripts --registry=https://registry.npmjs.org --cache=/workspace
 npm run typecheck
 npm run build
 TACITUS_TEST_BROWSER=/usr/bin/chromium npm test
-TACITUS_TEST_BROWSER=/usr/bin/chromium TACITUS_TEST_COLLECTION=1 \
+TACITUS_TEST_BROWSER=/usr/bin/chromium TACITUS_ACCEPTANCE=1 TACITUS_TEST_COLLECTION=1 \
 TACITUS_LOCAL_INSPECTOR=1 \
 TACITUS_KNOWLEDGE_CAPTURE_BIN=/workspace/tacitus-core-build/target/debug/examples/knowledge_capture \
 TACITUS_KNOWLEDGE_CAPTURE_SHA256=5b1e05276784f8e460054b718535809f3dc2eaa265dc861ddbc954710167e420 \
@@ -66,3 +66,7 @@ All work is local. No push, PR, merge, deployment, paid service, credential acce
 The lexical HTTP integration currently requires Linux `/usr/bin/python3` and a prepared local index at the documented fixed path. The browser lexical workflow intentionally exposes full-modern-collection search only; historical filters remain available through the audited CLI. No shared authorization, hosted access, automatic expert review, semantic extraction or model answer generation was added. Unreviewed annotations and source-specific jurisdiction/distribution cautions remain visible. These checks establish local runnable behavior and byte fidelity, not production readiness or answer-quality gains.
 
 A fresh extraction of the exported source archive into `/workspace/tacitus-artifact-smoke` also passed `npm ci --offline --ignore-scripts --cache=/workspace/.npm-cache`, typecheck, build and the default 3/3 browser suite. Its log is `verification/cloud/artifact-smoke.log`. The archive contains no node_modules; the clean install used cached official-registry packages. A local opted-in server remains running at `http://127.0.0.1:4317`; status returned both `live: true` and `collection: true`.
+
+## Independent review addendum
+
+A separate reviewer inspected unchanged baseline commit `231c2e97e44e3e95c201f5c5ff662db296e20d3a` and identified one medium budget-contract defect. A subsequent corrective commit aligns the UI/adapter with the core's 2,048–250,000-byte range, adds explicit fail-fast full acceptance, and expands negative boundary/resource tests. Corrected typecheck/build pass; corrected default and full-acceptance suites each pass 6/6 with no skips. The reviewer independently passed the three new contract tests and found no further concrete defect. See [TACITUS_REVIEW_REPORT.md](TACITUS_REVIEW_REPORT.md) for precise findings, review scope and remaining evidence limitations. The original service process remains uninterrupted; adapter changes load on its next local restart.

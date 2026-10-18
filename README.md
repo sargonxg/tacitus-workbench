@@ -58,10 +58,12 @@ cd apps/workbench
 TACITUS_TEST_BROWSER=/usr/bin/chromium npm test
 # With the live variables exported above and both examples prepared:
 TACITUS_TEST_BROWSER=/usr/bin/chromium \
-TACITUS_TEST_COLLECTION=1 \
+TACITUS_ACCEPTANCE=1 TACITUS_TEST_COLLECTION=1 \
 TACITUS_TEST_ARCHIVE="$(git rev-parse --show-toplevel)/examples/july-1914/july-1914.native-v2.zip" npm test
 node scripts/verify-inventory.mjs
 ```
+
+`TACITUS_ACCEPTANCE=1` requires live opt-in, binary/digest, native archive, and collection tests; missing configuration fails instead of silently running a partial suite. Native output budgets match the pinned core range of 2,048 to 250,000 bytes.
 
 If system Chromium is unavailable, `npx playwright install chromium` installs the matching browser; omit `TACITUS_TEST_BROWSER` to use it. That download was blocked by the cloud network policy in this run, so the actual browser acceptance used preinstalled Chromium 154. Browser tests cover desktop/mobile recorded and live import/query, graph selection/filtering, exact native and lexical downloads, refusal without fallback, reset/reimport and stale export invalidation. See [cloud verification](docs/CLOUD_VERIFICATION.md) for actual commands, results and failures. [npm's clean-install contract](https://docs.npmjs.com/cli/v11/commands/npm-ci/) and [Playwright launch options](https://playwright.dev/docs/api/class-browsertype#browser-type-launch-option-executable-path) describe the dependency and browser setup.
 

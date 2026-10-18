@@ -145,11 +145,13 @@
     },
     {
       "path": "server/local-inspector.mjs",
-      "sha256": "21f95c0caf37a654ea35ab7589406fab6a9e969b4093e4f9fc7f375425c66ddd",
-      "bytes": 7423,
+      "sha256": "8f81a743f5bd4993a409a754a8b67ddc2675515a98b10809b65bb6d439cf0b63",
+      "bytes": 7419,
       "origin": "website-inspector/src/lib/local-inspector.mjs",
       "origin_sha256": "21f95c0caf37a654ea35ab7589406fab6a9e969b4093e4f9fc7f375425c66ddd",
-      "identical_to_origin": true
+      "identical_to_origin": true,
+      "reviewed_baseline_sha256": "21f95c0caf37a654ea35ab7589406fab6a9e969b4093e4f9fc7f375425c66ddd",
+      "review_correction": "Pinned native budget validation and explicit acceptance/boundary coverage"
     },
     {
       "path": "src/CollectionSearch.tsx",
@@ -238,12 +240,14 @@
     },
     {
       "path": "src/main.tsx",
-      "sha256": "877d0c46c0027881cf684d673b07d43de9b33600b0ad20c903a02b2e30518466",
+      "sha256": "1e2c209dd24ab216827a5e80c53eb54dd12a03c123463318c6bffb830cadca45",
       "bytes": 9562,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "28400f4627a5464ca76d05fda24c6aca3587fcb1122860a58473b7ccfc85ddaa",
       "pr3_sha256": "c5315d5aa7817be738c031e066abcb31176593aca5ed82b04dfea0b12419f93f",
-      "integration_note": "Updated in local reproducibility integration; original provenance retained"
+      "integration_note": "Updated in local reproducibility integration; original provenance retained",
+      "reviewed_baseline_sha256": "877d0c46c0027881cf684d673b07d43de9b33600b0ad20c903a02b2e30518466",
+      "review_correction": "Pinned native budget validation and explicit acceptance/boundary coverage"
     },
     {
       "path": "src/style.css",
@@ -253,20 +257,30 @@
     },
     {
       "path": "tests/interface.test.mjs",
-      "sha256": "173b5399f2f79a9c563077184d9362a34e5fab199e7079255e26e4dba802d266",
-      "bytes": 10064,
+      "sha256": "7eec88da0251987dadcd7024b69b16026faf8a4a2fcf10a5ab479a4e8a44f21e",
+      "bytes": 10672,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "4991e0548041aec9f1e46d9d730c8d9dae6cea73100d0ef8daa4d60ea1d8de23",
       "pr3_sha256": "475e55733a336b98c33cb032bc8bbf293896c6a0a8d1417ab6df46d5814afdc1",
-      "integration_note": "Updated in local reproducibility integration; original provenance retained"
+      "integration_note": "Updated in local reproducibility integration; original provenance retained",
+      "reviewed_baseline_sha256": "173b5399f2f79a9c563077184d9362a34e5fab199e7079255e26e4dba802d266",
+      "review_correction": "Pinned native budget validation and explicit acceptance/boundary coverage"
+    },
+    {
+      "path": "tests/query-contract.test.mjs",
+      "origin": "Independently authored regression test for pinned core query/resource contracts; existing reserved-rights boundary retained",
+      "sha256": "9511f2d108306f7b61ec55a759ababb6e6857fb6655b2d052be3c3bc66498cc0",
+      "bytes": 1346
     },
     {
       "path": "tests/server-boundary.test.mjs",
       "origin": "Independently authored in task-owned standalone v2 directory",
-      "sha256": "3b526c58d1cebf1b65c150b99c5b93f4fa516c733209518d50ed636e70cad608",
-      "bytes": 3258,
+      "sha256": "d515ff132add311240e78b3d233fbf0d9d2f97d3feaae4e98c157939af0a6a34",
+      "bytes": 3804,
       "pr3_sha256": "2ce8c22be3b807e80891fee3eac275a90b24d93707d5de48a5349cb09d2ac4c8",
-      "integration_note": "Updated in local reproducibility integration; original provenance retained"
+      "integration_note": "Updated in local reproducibility integration; original provenance retained",
+      "reviewed_baseline_sha256": "3b526c58d1cebf1b65c150b99c5b93f4fa516c733209518d50ed636e70cad608",
+      "review_correction": "Pinned native budget validation and explicit acceptance/boundary coverage"
     },
     {
       "path": "tsconfig.json",

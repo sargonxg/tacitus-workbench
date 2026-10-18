@@ -7,6 +7,11 @@ import {chromium} from '@playwright/test';
 test('standalone HTTP boundary and desktop/mobile recorded and live flows',async()=>{
   const origin='http://127.0.0.1:4318';
   const enabled=process.env.TACITUS_LOCAL_INSPECTOR==='1';
+  if(process.env.TACITUS_ACCEPTANCE==='1'){
+    assert.equal(enabled,true,'Explicit acceptance requires TACITUS_LOCAL_INSPECTOR=1');
+    for(const name of ['TACITUS_KNOWLEDGE_CAPTURE_BIN','TACITUS_KNOWLEDGE_CAPTURE_SHA256','TACITUS_TEST_ARCHIVE'])assert.ok(process.env[name],`Explicit acceptance requires ${name}`);
+    assert.equal(process.env.TACITUS_TEST_COLLECTION,'1','Explicit acceptance requires collection tests');
+  }
   const child=spawn(process.execPath,['server/index.mjs'],{cwd:process.cwd(),env:{...process.env,PORT:'4318'},stdio:'pipe',windowsHide:true});
   let browser;let output='';child.stdout.on('data',d=>output+=d);child.stderr.on('data',d=>output+=d);
   try{
@@ -26,7 +31,7 @@ test('standalone HTTP boundary and desktop/mobile recorded and live flows',async
       assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
       await page.screenshot({path:`output/interface-${width}.png`,fullPage:true});assert.deepEqual(errors,[]);
       if(enabled&&process.env.TACITUS_TEST_ARCHIVE){
-        await page.getByLabel('Execution mode').selectOption('live');await page.getByLabel('Native ZIP').setInputFiles(process.env.TACITUS_TEST_ARCHIVE);await page.getByRole('button',{name:'Inspect archive',exact:true}).click();await page.getByText('Exact archive inspection',{exact:true}).waitFor();
+        await page.getByLabel('Execution mode').selectOption('live');assert.equal(await page.getByLabel('Maximum output bytes').getAttribute('min'),'2048');assert.equal(await page.getByLabel('Maximum output bytes').getAttribute('max'),'250000');await page.getByLabel('Native ZIP').setInputFiles(process.env.TACITUS_TEST_ARCHIVE);await page.getByRole('button',{name:'Inspect archive',exact:true}).click();await page.getByText('Exact archive inspection',{exact:true}).waitFor();
         await page.getByRole('button',{name:'Query core',exact:true}).click();await page.getByRole('button',{name:'Export exact Context JSON'}).waitFor();assert.equal((await page.locator('body').innerText()).includes('Live Context'),true);
         const liveDownloadPromise=page.waitForEvent('download');await page.getByRole('button',{name:'Export exact Context JSON'}).click();
         assert.equal(await readFile(await (await liveDownloadPromise).path(),'utf8'),expected);
