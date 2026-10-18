@@ -6,6 +6,11 @@ if [ "$#" -ne 1 ]; then
 fi
 case "$1" in /*) ;; *) echo 'Absolute output path required' >&2; exit 2;; esac
 if [ -e "$1" ] || [ -L "$1" ]; then echo 'Fresh output directory required' >&2; exit 2; fi
+# Refuse missing prerequisites before creating or cloning into the output path.
+for tool in git python3 cargo sha256sum; do
+  command -v "$tool" >/dev/null || { echo "Required tool missing from PATH: $tool" >&2; exit 2; }
+done
+cargo +1.95.0 --version >/dev/null
 workbench=$(cd -- "$(dirname -- "$0")/.." && pwd)
 build_root=$1
 mkdir -- "$build_root"

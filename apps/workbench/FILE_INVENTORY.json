@@ -1,5 +1,5 @@
 {
-  "status": "unpublished review candidate; new application modules reserved rights pending explicit owner license choice and independent inventory review",
+  "status": "Public local workbench; original application modules retain reserved rights; no new license grant",
   "private_website_review_commit": "1965d55fd67327d1e4653b01347127cc3b17f18c",
   "self_exclusion": "FILE_INVENTORY.json excludes itself; final commit and artifact digest bind this manifest.",
   "excluded": [
@@ -25,8 +25,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "d60b6a608cbd43f75d5ffa96863918245b113d963f94d322a6600f1090d12558",
-      "bytes": 8095,
+      "sha256": "cfe60f34dd5596c2244eef2d9c6c68fddb947d52a7f6544cbf807f19db35fcfb",
+      "bytes": 9894,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "57e5ca83952d700069ec783f767d0a6499d5eb0bdbf473d93b8b8fe2fe7db1bc",
       "pr3_sha256": "ef94acb785822d441fc7f3a2301a8a40746032223a6706ee52b16909a44ffe5f",
@@ -175,9 +175,10 @@
       "bytes": 7574,
       "origin": "website-inspector/src/lib/local-inspector.mjs",
       "origin_sha256": "21f95c0caf37a654ea35ab7589406fab6a9e969b4093e4f9fc7f375425c66ddd",
-      "identical_to_origin": true,
+      "identical_to_origin": false,
       "reviewed_baseline_sha256": "21f95c0caf37a654ea35ab7589406fab6a9e969b4093e4f9fc7f375425c66ddd",
-      "review_correction": "Pinned native budget validation and explicit acceptance/boundary coverage"
+      "review_correction": "Pinned native budget validation and explicit acceptance/boundary coverage",
+      "origin_comparison_note": "Historical origin hash retained; public integration modifies this file."
     },
     {
       "path": "server/local_author.rs",
@@ -214,8 +215,8 @@
     {
       "path": "src/ProductGuide.tsx",
       "origin": "Independently authored onboarding component or regression test; existing reserved-rights boundary retained",
-      "sha256": "d4d4f9ffa945e90263e08e4bd95c95ae8ff33e79b35d62ea86ac81c62c4f6514",
-      "bytes": 5838
+      "sha256": "aa7bc8f9a411d3c4540f03ed0a0195364a51ed4f5c16bda60def0c838065d3d1",
+      "bytes": 5802
     },
     {
       "path": "src/env.d.ts",
@@ -265,11 +266,12 @@
     },
     {
       "path": "src/graph/evidenceGraph.ts",
-      "sha256": "ca7057749511b3fce5df5c119d98847ccdb24bf1eaf95952a0aea2bf8773dd13",
-      "bytes": 26789,
+      "sha256": "0153dbe467a32c451047a33a2def9b5fa0cb6bac85975187bf0a0fae84798447",
+      "bytes": 26816,
       "origin": "website-inspector/src/components/local-inspector/evidenceGraph.ts",
       "origin_sha256": "e99e515a867e6c8cf4bdb3837fdfe958aac70f44f218ce6227bf6fa32acc4cb5",
-      "identical_to_origin": true
+      "identical_to_origin": false,
+      "release_changed_from_sha256": "ca7057749511b3fce5df5c119d98847ccdb24bf1eaf95952a0aea2bf8773dd13"
     },
     {
       "path": "src/graph/julyWalkthroughModel.ts",
@@ -310,8 +312,8 @@
     },
     {
       "path": "src/main.tsx",
-      "sha256": "7fde5c0c74fe046afa9012264e1cd79914d9de84ea49a06c6e36d0271fbe8918",
-      "bytes": 11834,
+      "sha256": "062486eaa48205ed5e9b641dabe9e210900f6789426ec4c591519c9031536a10",
+      "bytes": 12262,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "28400f4627a5464ca76d05fda24c6aca3587fcb1122860a58473b7ccfc85ddaa",
       "pr3_sha256": "c5315d5aa7817be738c031e066abcb31176593aca5ed82b04dfea0b12419f93f",
@@ -377,8 +379,8 @@
     {
       "path": "tests/onboarding-browser.test.mjs",
       "origin": "Independently authored onboarding component or regression test; existing reserved-rights boundary retained",
-      "sha256": "e3a11a6b8d8e80d94c0053b7af4e4d1ea5b29dfcafb6c2cd0f6ba5818cd06ebf",
-      "bytes": 5228
+      "sha256": "1aa12748ea19da779cc65f24f489f99ee1b78b539916220d492acd8276595646",
+      "bytes": 5192
     },
     {
       "path": "tests/onboarding-data.test.mjs",
@@ -413,10 +415,23 @@
       "sha256": "860395a734db4ed97efd9a21775b594eaaa23fd7db0edf3e3a08a7dd407b5487",
       "bytes": 145,
       "origin": "Independently authored in task-owned standalone directory"
+    },
+    {
+      "path": "tests/native-source-projection.test.mjs",
+      "origin": "Independently authored public workbench release regression test; existing reserved application rights",
+      "sha256": "c8c1af27e39ebf004b29ff09d55fbb598177e5dd41f409ced71e2d03890ec745",
+      "bytes": 2434
+    },
+    {
+      "path": "tests/native-source-browser.test.mjs",
+      "origin": "Independently authored public workbench release regression test; existing reserved application rights",
+      "sha256": "131808504ae2d53b702435d07a8283edbe575d48e4fdad420babbc85e90eb98e",
+      "bytes": 3845
     }
   ],
   "review_version": 2,
   "frozen_v1_archive_sha256": "5c899ff0cb48579a3ced9c8574d77f2a6b45e8c8ab52a7bc223165558195636f",
   "integration_base": "5766d1cb3472f85d6ed702728295349e99641520",
-  "onboarding_base_commit": "d08756d059c4ff8dfcf2efc099cf318f9f14f0c8"
+  "onboarding_base_commit": "d08756d059c4ff8dfcf2efc099cf318f9f14f0c8",
+  "historical_status": "unpublished review candidate; new application modules reserved rights pending explicit owner license choice and independent inventory review"
 }

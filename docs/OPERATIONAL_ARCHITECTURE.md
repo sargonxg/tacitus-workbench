@@ -1,7 +1,6 @@
 # Operational architecture and release readiness
 
-This is a new synthesis of the public code and recorded checks at workbench main
-`2b3062f8e4a4d389c2204f8d8e6f0c9dbf2e0e0f` (18 October 2026).
+This describes public main through PR11 (`25d93ecaaf00aea80ccf2acefcf27b5de5b9e2b3`, 18 October 2026), with the release documentation/navigation corrections described in [current release checks](RELEASE_READINESS.md).
 It is not a reconstruction of an unavailable roadmap or an assurance of production
 readiness. [Run instructions](../README.md), [verification](CLOUD_VERIFICATION.md)
 and [onboarding checks](ONBOARDING_VERIFICATION.md) remain the execution evidence.
@@ -24,6 +23,13 @@ flowchart TD
     I --> T[Matched live checkpoint comparison with exact evidence and refusals]
     B --> K[622-record lexical index: 32 shards]
     K --> L[Separate lexical query and exact source-block JSON]
+    U[Local UTF-8 text and explicit annotations] --> V[Opted-in local author helper]
+    V --> E
+    W[Local manifest: up to 256 declared documents] --> X[Linux importer: verify exact bytes and declarations]
+    X --> Y[Lexical index: every source]
+    X --> Z[Separate bounded native capsules: authored sources only]
+    Z --> Q[Collection query: one outer global byte budget]
+    Q --> O[Receipt with separate exact base64 Context packets and omissions]
     R[Explicit recorded-mode selection] --> S[Frozen example Context and graph]
     J -. user-directed future integration .-> M[External model or application]
 ```
@@ -33,8 +39,7 @@ publisher text or adjudicate truth. The July capsule has **28 sources and 39
 unreviewed claim proposals**; the expanded capsule has **31 sources and 46**.
 Authored assertions, comparisons, conditions and exceptions are structured input,
 not automatically approved knowledge. The CLI can propose literal line candidates
-and pack explicit captures. The browser exposes only `inspect` and `reuse`, not a
-semantic extraction, authoring or review-approval endpoint. See the
+and pack explicit captures. The browser supports `inspect`, `reuse` and separately opted-in bounded local text authoring: two explicit reported statements and one declared relation. It provides no automatic semantic extraction or review-approval endpoint. See the
 [July preparation and regeneration contract](../examples/july-1914/README.md) and
 [expanded collection contract](../examples/diplomacy-1914-v2/README.md).
 
@@ -68,6 +73,12 @@ warnings and omissions, but does not pack all 622 records into either capsule.
 The browser searches the modern collection; calendar filters belong to the CLI.
 Ten method proposals are separately represented and are not retrieved by current
 native reuse. Recorded mode replays frozen Context and runs no core.
+
+## Own-source collection boundary
+
+[Local text authoring](LOCAL_TEXT_AUTHORING.md) accepts one UTF-8 source up to 32 KiB and explicit unreviewed annotations; it does not fetch URLs or extract PDF/OCR. [Manifest import](../tools/local-import/README.md) indexes up to 256 sources (8 MiB total), including source-only records with no authored assertions. Each native capsule remains bounded independently. Annotation author, source author and batch operator are distinct declarations, not verified identities.
+
+[Collection query](../tools/local-import/COLLECTION_QUERY.md) verifies a reviewed full manifest/snapshot identity and queries all native capsules with the same question/checkpoints. Its 4,096–2,097,152-byte outer budget includes base64 and lineage overhead; native child budgets stay 2,048–250,000 bytes. Equal deterministic ceilings are not relevance ranking, unused space is not redistributed, and any child refusal fails the whole query. Separate exact packets do not form one merged Context or joint graph. Source-only records remain explicitly excluded from native querying. Unknown validity, unresolved disagreement and omissions must remain visible.
 
 ## Native-v2 and the legacy PRAXIS boundary
 
@@ -107,7 +118,7 @@ not new claims that all gates have been executed for every commit.
 | Gate | Pass / fail rule | Evidence or status |
 | --- | --- | --- |
 | Candidate identity | Exact source commit, core/patch pins and archive hashes recorded; notices retained. Fail on unexplained content or rights changes. | Public pins and notices in [core integration](CORE_INTEGRATION.md), [rights](../RIGHTS.md) and source manifests. |
-| Install and application | Locked clean install, typecheck, build and default suite succeed. Full acceptance must explicitly enable native and collection prerequisites and have zero skips. | Prior main-source default and full suites: 8/8 each; see onboarding verification. A default-only pass cannot establish live operation. |
+| Install and application | Locked clean install, typecheck, build and default suite succeed. Full acceptance must explicitly enable native, authoring and collection prerequisites and have zero skips. | Current default/full/browser and importer results are in [release checks](RELEASE_READINESS.md); earlier 8-test onboarding reports are historical. A default-only pass cannot establish live operation. |
 | Native fidelity | All ten frozen fixture outputs match exactly; deterministic repack, budget bounds, tamper/revocation/strict-time refusals succeed. Fail on byte drift without review or export after a refused reuse query. | Four July and six expanded fixtures recorded; these are structural regressions, not unseen evaluation questions. |
 | Collection fidelity | 622 records / 32 shards, exact adapter/browser response and export, global cap and omission counts agree. Fail if omission-only output is presented as an answer. | Recorded integrated browser and corpus checks; separate from native capsule scope. |
 | Browser boundary | Desktop/mobile import, graph, query, reset, error and stale-download behavior pass. Fail on page errors, silent fallback or stale export. | System Chromium acceptance recorded; matching Playwright browser download was blocked. No full accessibility audit claimed. |
@@ -161,7 +172,7 @@ No paid/model calls or this study have been executed as part of this document.
 **Implemented locally:** pinned capsule build; verified source bundles; explicit
 recorded/live separation; native import/inspection and graph; bounded deterministic
 reuse and exact exports; separate lexical collection search; visible uncertainty,
-source notices and unreviewed status; guided onboarding, [live checkpoint comparison](LIVE_CHECKPOINT_COMPARISON.md) and structural regressions.
+source notices and unreviewed status; guided onboarding, explicit local authoring, manifest import and globally bounded collection queries, [live checkpoint comparison](LIVE_CHECKPOINT_COMPARISON.md) and structural regressions.
 
 **Pending acceptance or implementation:** independent semantic/historical approval,
 matched model evaluation, automatic semantic extraction and approval workflow,
