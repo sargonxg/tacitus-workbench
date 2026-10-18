@@ -1,0 +1,256 @@
+{
+  "status": "unpublished review candidate; new application modules reserved rights pending explicit owner license choice and independent inventory review",
+  "private_website_review_commit": "1965d55fd67327d1e4653b01347127cc3b17f18c",
+  "self_exclusion": "FILE_INVENTORY.json describes all other deliverable files; its own hash is in the handoff ZIP hash",
+  "excluded": [
+    "node_modules",
+    "dist",
+    "output",
+    ".git",
+    "all pre-existing private website source/config/assets/package locks",
+    "external core executable and full corpus"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "862ba73d08f59df63c3a135359ad72a3e17356b2167894b75a4d833195aeef30",
+      "bytes": 42,
+      "origin": "Independently authored in task-owned standalone directory"
+    },
+    {
+      "path": "APPLICATION_RIGHTS.md",
+      "origin": "Independently authored in task-owned standalone directory",
+      "sha256": "326a2619b4ca7255bd97af277d59b72837bd72c55e77eb45309ad95fc885c8ec",
+      "bytes": 1711
+    },
+    {
+      "path": "README.md",
+      "sha256": "ef94acb785822d441fc7f3a2301a8a40746032223a6706ee52b16909a44ffe5f",
+      "bytes": 7091,
+      "origin": "Independently authored in task-owned standalone directory",
+      "v2_changed_from_sha256": "57e5ca83952d700069ec783f767d0a6499d5eb0bdbf473d93b8b8fe2fe7db1bc"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "sha256": "f90609122a26e2704cb8520134ecb10f3dd3d8ee8abbc3753ac77263e0c07b45",
+      "bytes": 5009,
+      "origin": "Independently authored in task-owned standalone directory",
+      "v2_changed_from_sha256": "92b5487635c88a884ea9f0c98a838d8404dd1de051df28b1a8843f5baf02dc1c"
+    },
+    {
+      "path": "index.html",
+      "sha256": "0de7b0bf3e734cc829108585c9014962cd1c440308312863c87b179150beb25b",
+      "bytes": 266,
+      "origin": "Independently authored in task-owned standalone directory"
+    },
+    {
+      "path": "notices/dependencies/playwright-test-LICENSE.txt",
+      "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb",
+      "bytes": 11601,
+      "origin": "Installed dependency license text; no application-source license grant"
+    },
+    {
+      "path": "notices/dependencies/react-LICENSE.txt",
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+      "bytes": 1088,
+      "origin": "Installed dependency license text; no application-source license grant"
+    },
+    {
+      "path": "notices/dependencies/react-dom-LICENSE.txt",
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+      "bytes": 1088,
+      "origin": "Installed dependency license text; no application-source license grant"
+    },
+    {
+      "path": "notices/dependencies/typescript-LICENSE.txt",
+      "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+      "bytes": 9197,
+      "origin": "Installed dependency license text; no application-source license grant"
+    },
+    {
+      "path": "notices/dependencies/vite-LICENSE.md",
+      "sha256": "387dd7baa307083401a27c58c362c30832f5ba1dba84f10cc22c33401523f45c",
+      "bytes": 112425,
+      "origin": "Installed dependency license text; no application-source license grant"
+    },
+    {
+      "path": "package.json",
+      "sha256": "8c4ec6f4988e0844677f5bc68923a395a20450824078a9b234a50e394794c9df",
+      "bytes": 493,
+      "origin": "Independently authored in task-owned standalone directory",
+      "v2_changed_from_sha256": "13454bd5207e3ad225a802ad4a3f24fe1c09120602901fb57dc0065ad62a9985"
+    },
+    {
+      "path": "public/examples/july1914-walkthrough.json",
+      "sha256": "bc407be145af172b7035765ed0af45855672340ee1aeeca2a64857c12c57b59a",
+      "bytes": 489690,
+      "origin": "guided-transfer/extracted/tacitus-guided-walkthrough/data/july1914-walkthrough.json",
+      "origin_sha256": "bc407be145af172b7035765ed0af45855672340ee1aeeca2a64857c12c57b59a",
+      "identical_to_origin": true
+    },
+    {
+      "path": "public/examples/peace.context.json",
+      "sha256": "db66dc39092669574ac527e95a8fd570508c26401d6f3f943e7aa7fdc411a51e",
+      "bytes": 38990,
+      "origin": "corpus-transfer/extracted/july-1914-evidence/validation/native/peace.context.json",
+      "origin_sha256": "db66dc39092669574ac527e95a8fd570508c26401d6f3f943e7aa7fdc411a51e",
+      "identical_to_origin": true
+    },
+    {
+      "path": "public/notices/LICENSE-GUTENBERG.txt",
+      "sha256": "18bc5c6f86b23ade32c4d711e765328b0c642c383a993c8d7f11c7ee21da4bf1",
+      "bytes": 17530,
+      "origin": "website-inspector/public/notices/july1914/LICENSE-GUTENBERG.txt",
+      "origin_sha256": "18bc5c6f86b23ade32c4d711e765328b0c642c383a993c8d7f11c7ee21da4bf1",
+      "identical_to_origin": true
+    },
+    {
+      "path": "public/notices/RIGHTS.md",
+      "sha256": "d91ec321ff51b787d948560af45ab058ae788e0060d85d4b63122397c0d07f55",
+      "bytes": 6138,
+      "origin": "website-inspector/public/notices/july1914/RIGHTS.md",
+      "origin_sha256": "d91ec321ff51b787d948560af45ab058ae788e0060d85d4b63122397c0d07f55",
+      "identical_to_origin": true
+    },
+    {
+      "path": "scripts/verify-inventory.mjs",
+      "origin": "Independently authored in task-owned standalone directory",
+      "sha256": "ddda6a4d2d2a3344cdfb7a86273893050346867eb80705e6436d289884825658",
+      "bytes": 1451
+    },
+    {
+      "path": "server/index.mjs",
+      "sha256": "76b492072ecf1cbff4afcd312a230127c53f4190d9d639aa3ecd58cf72326d37",
+      "bytes": 3491,
+      "origin": "Independently authored in task-owned standalone directory",
+      "v2_changed_from_sha256": "a903636375a3d170301985c57f10788f2e9e6cbc98f6fedef682396a858eff59"
+    },
+    {
+      "path": "server/local-inspector.mjs",
+      "sha256": "21f95c0caf37a654ea35ab7589406fab6a9e969b4093e4f9fc7f375425c66ddd",
+      "bytes": 7423,
+      "origin": "website-inspector/src/lib/local-inspector.mjs",
+      "origin_sha256": "21f95c0caf37a654ea35ab7589406fab6a9e969b4093e4f9fc7f375425c66ddd",
+      "identical_to_origin": true
+    },
+    {
+      "path": "src/env.d.ts",
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "bytes": 38,
+      "origin": "Independently authored in task-owned standalone directory"
+    },
+    {
+      "path": "src/graph/EvidenceGraphExplorer.module.css",
+      "sha256": "cd4d85b5da4d7a8e143ac731f18ada269a59abd0b4ccd1f29c5ed0f4a5ce579d",
+      "bytes": 7139,
+      "origin": "website-inspector/src/components/local-inspector/EvidenceGraphExplorer.module.css",
+      "origin_sha256": "cd4d85b5da4d7a8e143ac731f18ada269a59abd0b4ccd1f29c5ed0f4a5ce579d",
+      "identical_to_origin": true
+    },
+    {
+      "path": "src/graph/EvidenceGraphExplorer.tsx",
+      "sha256": "6e379d5d951f6dee87da5baafb4a8fe265261b5f475a4e4289bb76541b62a543",
+      "bytes": 23157,
+      "origin": "website-inspector/src/components/local-inspector/EvidenceGraphExplorer.tsx",
+      "origin_sha256": "6e379d5d951f6dee87da5baafb4a8fe265261b5f475a4e4289bb76541b62a543",
+      "identical_to_origin": true
+    },
+    {
+      "path": "src/graph/July1914Walkthrough.module.css",
+      "sha256": "caedad23da30af5bbf3085af0e42ad025a079ded9bb3b05b88353966c05d2ff1",
+      "bytes": 6879,
+      "origin": "guided-transfer/extracted/tacitus-guided-walkthrough/src/July1914Walkthrough.module.css",
+      "origin_sha256": "caedad23da30af5bbf3085af0e42ad025a079ded9bb3b05b88353966c05d2ff1",
+      "identical_to_origin": true
+    },
+    {
+      "path": "src/graph/July1914Walkthrough.tsx",
+      "sha256": "3540688ec0c4d20aa7cc585a3706d39862bf00ac225f9c49a052b9546d57913b",
+      "bytes": 23863,
+      "origin": "guided-transfer/extracted/tacitus-guided-walkthrough/src/July1914Walkthrough.tsx",
+      "origin_sha256": "3540688ec0c4d20aa7cc585a3706d39862bf00ac225f9c49a052b9546d57913b",
+      "identical_to_origin": true
+    },
+    {
+      "path": "src/graph/corpusGraph.ts",
+      "sha256": "fe19ea8ac08e8716720e70ce167f8e4bf34bda9aacd4d491a6f24874fa75d7af",
+      "bytes": 5910,
+      "origin": "graph-transfer-v2/extracted/tacitus-graph-explorer-20261018/src/corpusGraph.ts",
+      "origin_sha256": "fe19ea8ac08e8716720e70ce167f8e4bf34bda9aacd4d491a6f24874fa75d7af",
+      "identical_to_origin": true
+    },
+    {
+      "path": "src/graph/evidenceGraph.ts",
+      "sha256": "e99e515a867e6c8cf4bdb3837fdfe958aac70f44f218ce6227bf6fa32acc4cb5",
+      "bytes": 26710,
+      "origin": "website-inspector/src/components/local-inspector/evidenceGraph.ts",
+      "origin_sha256": "e99e515a867e6c8cf4bdb3837fdfe958aac70f44f218ce6227bf6fa32acc4cb5",
+      "identical_to_origin": true
+    },
+    {
+      "path": "src/graph/julyWalkthroughModel.ts",
+      "sha256": "56e4a528a0c4320aad9857f4a030e03cfa929f5b437f98f372af94b30156bba8",
+      "bytes": 20455,
+      "origin": "guided-transfer/extracted/tacitus-guided-walkthrough/src/julyWalkthroughModel.ts",
+      "origin_sha256": "f07535e4db9d26ca9492dca8bc4bc91315c399820882385ce60c6a305df14ff7",
+      "identical_to_origin": false,
+      "adaptation": "Type only: replace CorpusIndex intersection with Omit<CorpusIndex, documents> before redefining documents."
+    },
+    {
+      "path": "src/graph/sourceNotices.ts",
+      "sha256": "73efb62927df6b9eb3daa3f9e7ef4ff68da9106a1086c637b40c2edf41bf91e6",
+      "bytes": 727,
+      "origin": "website-inspector/src/components/local-inspector/sourceNotices.ts",
+      "origin_sha256": "73efb62927df6b9eb3daa3f9e7ef4ff68da9106a1086c637b40c2edf41bf91e6",
+      "identical_to_origin": true
+    },
+    {
+      "path": "src/local-inspector-client.mjs",
+      "sha256": "4b01cf8d39e63d3efa452b90c63370afb9ba1e33225480a644e109351b563550",
+      "bytes": 718,
+      "origin": "website-inspector/src/lib/local-inspector-client.mjs",
+      "origin_sha256": "4b01cf8d39e63d3efa452b90c63370afb9ba1e33225480a644e109351b563550",
+      "identical_to_origin": true
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "c5315d5aa7817be738c031e066abcb31176593aca5ed82b04dfea0b12419f93f",
+      "bytes": 9491,
+      "origin": "Independently authored in task-owned standalone directory",
+      "v2_changed_from_sha256": "28400f4627a5464ca76d05fda24c6aca3587fcb1122860a58473b7ccfc85ddaa"
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "143705f4d7ca8eb3f1e2398b30f063438912aeecfa5fa44f51546c48fe9fc281",
+      "bytes": 1250,
+      "origin": "Independently authored in task-owned standalone directory"
+    },
+    {
+      "path": "tests/interface.test.mjs",
+      "sha256": "475e55733a336b98c33cb032bc8bbf293896c6a0a8d1417ab6df46d5814afdc1",
+      "bytes": 5942,
+      "origin": "Independently authored in task-owned standalone directory",
+      "v2_changed_from_sha256": "4991e0548041aec9f1e46d9d730c8d9dae6cea73100d0ef8daa4d60ea1d8de23"
+    },
+    {
+      "path": "tests/server-boundary.test.mjs",
+      "origin": "Independently authored in task-owned standalone v2 directory",
+      "sha256": "2ce8c22be3b807e80891fee3eac275a90b24d93707d5de48a5349cb09d2ac4c8",
+      "bytes": 3213
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "aaa6310dafc43d5eb34913f08538d45d887790f0b53bdb25c0cc1861ff521497",
+      "bytes": 224,
+      "origin": "Independently authored in task-owned standalone directory"
+    },
+    {
+      "path": "vite.config.mjs",
+      "sha256": "860395a734db4ed97efd9a21775b594eaaa23fd7db0edf3e3a08a7dd407b5487",
+      "bytes": 145,
+      "origin": "Independently authored in task-owned standalone directory"
+    }
+  ],
+  "review_version": 2,
+  "frozen_v1_archive_sha256": "5c899ff0cb48579a3ced9c8574d77f2a6b45e8c8ab52a7bc223165558195636f"
+}
