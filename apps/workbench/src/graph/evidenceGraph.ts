@@ -45,7 +45,7 @@ function validateDate(date?: SourceDate): void {
   if (date.day !== undefined) ensure(Number.isInteger(date.day) && date.day >= 1 && date.day <= 31 && date.month !== undefined, 'Invalid source day');
 }
 function node(kind: NodeKind, id: string, label: string, sourceIds: string[], evidence: Evidence[], extra: Partial<GraphNode> = {}): GraphNode {
-  return { id: key(kind, id), kind, label, sourceIds, evidence, uncertainty: kind === 'document' || kind === 'passage' ? 'Source text is evidence of what this document says, not proof of its accuracy.' : 'Assistant-authored annotation; unreviewed and not established historical fact.', conditions: [], exceptions: [], metadata: {}, searchText: '', ...extra };
+  return { id: key(kind, id), kind, label, sourceIds, evidence, uncertainty: kind === 'document' || kind === 'passage' ? 'Source text is evidence of what this document says, not proof of its accuracy.' : 'Authored annotation; unreviewed and not established historical fact.', conditions: [], exceptions: [], metadata: {}, searchText: '', ...extra };
 }
 function evidence(document: SourceDocument, start: number, end: number, locator?: string): Evidence {
   return { sourceId: document.id, title: document.title, quote: quoteFromUtf8(document.text, start, end), start, end, textHash: document.textHash, locator, url: safeSourceUrl(document.url), license: document.license, date: document.date, verification: 'sha256-and-utf8-span' };
@@ -219,7 +219,7 @@ export function graphFromContext(value: NativeContext, presentation: Record<stri
     ensure(/^[a-f0-9]{64}$/.test(source.text_hash), 'Invalid context source hash');
     const shown = presentation[sourceKey] || {};
     validateDate(shown.date);
-    const document: SourceDocument = { id: sourceKey, title: source.title, text: '', textHash: source.text_hash, license: source.license, author: source.author, family: source.source_family, ...shown, url: safeSourceUrl(shown.url) };
+    const document: SourceDocument = { id: sourceKey, title: source.title, text: '', textHash: source.text_hash, license: source.license, author: source.author, family: source.source_family, ...shown, url: safeSourceUrl(shown.url) || safeSourceUrl(source.document_id) };
     sources.set(sourceKey, document); documents.push(document);
     nodes.push(node('document', sourceKey, source.title, [sourceKey], [], { date: shown.date, metadata: { sha256: source.text_hash, license: source.license, perspective: shown.perspective || 'unknown', sourcePublishedAt: source.published_at == null ? 'Unknown' : String(source.published_at), sourceAvailableAt: String(source.available_at), verification: 'Full text is not included in reuse output. Archive validation belongs to the CLI.' } }));
   }

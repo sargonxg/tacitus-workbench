@@ -1,3 +1,40 @@
+# Workbench application — current setup
+
+This application is published in the public workbench repository. Follow the
+[repository README](../../README.md) for current setup, pinned core builds,
+example preparation and acceptance. The historical handoff record below retains
+its original provenance and rights text; its references to an unpublished
+candidate, earlier test prerequisites and earlier verification describe that
+checkpoint, not the current publication or build state. Reserved application
+rights, dependency notices and source-data terms remain unchanged.
+
+For recorded mode, use Node 24 and npm. From the repository root:
+
+```sh
+cd apps/workbench
+npm ci --ignore-scripts --registry=https://registry.npmjs.org
+npm run typecheck
+npm run build
+npm start
+```
+
+Open `http://127.0.0.1:4317` and choose **Start recorded demo**. Recorded mode
+requires no Rust executable, model account or credentials. Stop this server before
+restarting it with live configuration. Live execution additionally needs the
+pinned Rust 1.95.0 core build and Python 3.11+ example preparation; the lexical
+HTTP integration requires Linux `/usr/bin/python3`.
+
+The test suite also requires Python 3.11+. Run browser tests from this application directory with
+`TACITUS_TEST_BROWSER=/usr/bin/chromium npm test` when system Chromium is available.
+Otherwise install the matching Playwright browser and omit that variable, as
+described in the repository README. Full `TACITUS_ACCEPTANCE=1` testing also
+requires live and authoring opt-ins, both executable/digest pairs, the July native
+archive and the prepared expanded collection. The root acceptance instructions
+provide the complete configuration; the earlier prerequisites below are not
+sufficient for the current full suite.
+
+## Preserved historical handoff record
+
 # Local evidence inspector — unpublished review candidate v2
 
 This independently mounted interface accepts native ZIP capsules, inspects and

@@ -22,7 +22,7 @@ test('onboarding guides desktop/mobile users through verified examples, download
    for(const link of await guide.getByRole('link').all()){
     const href=await link.getAttribute('href');if(href.startsWith('/')){const response=await page.request.get(origin+href);assert.equal(response.status(),200,href);}
    }
-   const runGuide=await guide.getByRole('link',{name:'Local installation and core run guide'}).getAttribute('href');assert.equal(runGuide,'https://github.com/sargonxg/tacitus-workbench/blob/d08756d059c4ff8dfcf2efc099cf318f9f14f0c8/README.md');assert.match(await readFile('../../README.md','utf8'),/npm ci --ignore-scripts/);
+   const runGuide=await guide.getByRole('link',{name:'Local installation and core run guide'}).getAttribute('href');assert.equal(runGuide,'https://github.com/sargonxg/tacitus-workbench/blob/main/README.md');assert.match(await readFile('../../README.md','utf8'),/npm ci --ignore-scripts/);
    const nativeDownload=page.waitForEvent('download');await guide.getByRole('link',{name:'Download July native sample'}).click();const downloaded=await nativeDownload;assert.deepEqual(await readFile(await downloaded.path()),await readFile('public'+facts.capsules.july.href));
    await guide.getByRole('button',{name:'Start recorded demo',exact:true}).click();assert.equal(await page.getByLabel('Execution mode').inputValue(),'recorded');assert.equal(await page.evaluate(()=>document.activeElement.id),'execution');await page.getByRole('button',{name:'Export exact Context JSON'}).waitFor();
    const exportDownload=page.waitForEvent('download');await page.getByRole('button',{name:'Export exact Context JSON'}).click();assert.equal(await readFile(await(await exportDownload).path(),'utf8'),expected);

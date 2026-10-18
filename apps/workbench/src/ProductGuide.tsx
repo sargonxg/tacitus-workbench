@@ -3,7 +3,7 @@ import './ProductGuide.css';
 
 type Capsule={sources:number;unreviewed_assertions:number;href:string;sha256:string;question:string;checkpoint:number};
 type Facts={format:string;collection:{records:number;publisher_records:number;retrospective_sections:number};capsules:{july:Capsule;expanded:Capsule}};
-const RUN_GUIDE='https://github.com/sargonxg/tacitus-workbench/blob/d08756d059c4ff8dfcf2efc099cf318f9f14f0c8/README.md';
+const RUN_GUIDE='https://github.com/sargonxg/tacitus-workbench/blob/main/README.md';
 
 export default function ProductGuide({live,onRecorded,onLive}:{live:boolean;onRecorded:()=>void;onLive:()=>void}){
   const [facts,setFacts]=useState<Facts|null>(null),[error,setError]=useState('');
