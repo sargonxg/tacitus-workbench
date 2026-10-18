@@ -1,0 +1,31 @@
+import {useEffect,useRef,useState} from 'react';
+import {prepareCitedBrief,verifyCitedBrief,PACKAGE_MAX_BYTES,PROMPT_MAX_BYTES} from './cited-brief.mjs';
+export type BriefInput={archive:string;core:string;raw:string;query:{question:string;known_as_of:number;valid_at:number;time_mode:string;max_bytes:number;revoked_sources:string[]};origin:{kind:'live-native-context'}|{kind:'saved-collection-native-context';manifest_sha256:string;snapshot_sha256:string;query_receipt_sha256:string}};
+function download(bytes:Uint8Array,name:string){const url=URL.createObjectURL(new Blob([new Uint8Array(bytes).buffer]));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+export default function CitedBrief({input}:{input:BriefInput}){
+ const identity=JSON.stringify(input),current=useRef(identity),epoch=useRef(0),prepareButton=useRef<HTMLButtonElement>(null),heading=useRef<HTMLHeadingElement>(null),file=useRef<HTMLInputElement>(null);
+ current.current=identity;
+ const [prepared,setPrepared]=useState<{identity:string;value:Awaited<ReturnType<typeof prepareCitedBrief>>}|null>(null),[busy,setBusy]=useState(false),[message,setMessage]=useState(''),[error,setError]=useState('');
+ useEffect(()=>{epoch.current++;setPrepared(null);setBusy(false);setMessage('');setError('');if(file.current)file.current.value='';return()=>{epoch.current++;};},[identity]);
+ const value=prepared?.identity===identity?prepared.value:null;
+ async function prepare(imported?:File){const job=++epoch.current,id=identity;setPrepared(null);setBusy(true);setError('');setMessage('Preparing locally…');try{
+  if(imported&&imported.size>PACKAGE_MAX_BYTES)throw Error('Prompt package exceeds 2 MiB');
+  const result=imported?await verifyCitedBrief(new Uint8Array(await imported.arrayBuffer()),input):await prepareCitedBrief(input);
+  if(current.current!==id||epoch.current!==job)return;setPrepared({identity:id,value:result});setMessage(imported?'Exported prompt verified against this current Context. No answer was generated.':'Prepared prompt. No answer was generated.');requestAnimationFrame(()=>{if(current.current===id&&epoch.current===job)heading.current?.focus();});
+ }catch(e){if(current.current===id&&epoch.current===job){setError(`Prompt preparation refused: ${String(e)}`);setMessage('');}}finally{if(current.current===id&&epoch.current===job)setBusy(false);}}
+ async function copy(){if(!value||busy)return;const job=epoch.current,id=identity;setMessage('');setError('');try{
+  if(!navigator.clipboard?.writeText)throw Error('Clipboard is unavailable');await navigator.clipboard.writeText(value.artifact.prompt);
+  if(current.current===id&&epoch.current===job)setMessage('Prompt copied by your request. Paste it manually; no model was called.');
+ }catch{if(current.current===id&&epoch.current===job)setError('Clipboard copy was unavailable or denied. Download the prompt text or select its preview.');}}
+ function dismiss(){epoch.current++;setPrepared(null);setBusy(false);setMessage('Prepared prompt cleared. Already copied or downloaded content cannot be recalled.');setError('');if(file.current)file.current.value='';prepareButton.current?.focus();}
+ return <section className="cited-brief" aria-label="Manual cited brief prompt" onKeyDown={e=>{if(e.key==='Escape'){e.stopPropagation();dismiss();}}}>
+  <h3>Prepare a cited brief prompt</h3><p>{input.origin.kind==='live-native-context'?'Scope: this current live selected Context.':'Scope: this capsule’s selected evidence in the verified saved query; other capsules and source-only records are excluded.'} This exports a prompt for manual use with an external chat model. It generates no answer and connects to no provider.</p>
+  <p>Includes the complete selected Context, capsule manifest and omission metadata. Graph filters do not trim this export. Review the preview before pasting into an external service. Snapshot only: current external revocations are not checked. Do not use a snapshot you know is revoked.</p>
+  <button ref={prepareButton} disabled={busy} onClick={()=>void prepare()}>Prepare cited brief prompt</button><label>Verify exported prompt against this Context<input ref={file} aria-label="Verify exported prompt against this Context" type="file" accept=".json" disabled={busy} onChange={e=>{if(e.target.files?.[0])void prepare(e.target.files[0]);}}/></label>
+  {busy&&<button onClick={dismiss}>Cancel prompt preparation</button>}<p role="status">{message}</p>{error&&<p role="alert">{error}</p>}
+  {value&&<><h4 ref={heading} tabIndex={-1}>Prepared prompt — no answer generated</h4><p>Question: {input.query.question}</p><p>{value.artifact.binding.selected_assertions} selected assertions; {value.artifact.binding.omitted_assertions} omitted assertions. Known as of {input.query.known_as_of}; valid at {input.query.valid_at}; policy {input.query.time_mode}. Unknown dates and qualifications remain in the evidence.</p><p>{value.promptBytes.length.toLocaleString()} complete prompt UTF-8 bytes / {PROMPT_MAX_BYTES.toLocaleString()} maximum. {value.artifact.binding.context_bytes.toLocaleString()} exact Context bytes. {value.packageBytes.length.toLocaleString()} export-package bytes / {PACKAGE_MAX_BYTES.toLocaleString()} maximum. Token count is not measured.</p>
+   <p className="brief-hash">Context SHA-256: {value.artifact.binding.context_sha256}<br/>Prompt SHA-256: {value.artifact.prompt_sha256}</p>
+   <button onClick={()=>void copy()}>Copy prepared prompt</button><button onClick={()=>download(value.promptBytes,'cited-brief.prompt.txt')}>Download prompt text</button><button onClick={()=>download(value.packageBytes,'cited-brief.prompt.json')}>Download verifiable prompt package</button><button onClick={dismiss}>Clear prepared prompt</button>
+   <label>Full exported prompt preview<textarea aria-label="Full exported prompt preview" readOnly value={value.artifact.prompt} rows={14} spellCheck={false}/></label><p>The requested sections separate source-supported attributed statements, hypotheses and unknowns. Exact quotation bytes do not establish semantic support. Data framing is not a guarantee against prompt injection. Review any later model response yourself.</p></>}
+ </section>;
+}

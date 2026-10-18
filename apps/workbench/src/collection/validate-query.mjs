@@ -40,5 +40,5 @@ export async function validateQuery(raw,model){
   selectedCount+=claimIDs.length;selectedSources+=cited.size;records.push({capsuleId:cap.id,raw:nativeRaw,context:native,ceiling:record.native_max_bytes,bytes:nativeRaw.length,selected:claimIDs.length,omitted:omissionIDs.length});
  }
  ensure(ceilings<=q.max_bytes,'Native ceilings exceed global budget');const coverage={declared_sources:model.sources.length,authored_sources:model.sources.filter(s=>s.capsule).length,source_only_sources:m.source_only_ids.length,source_only_ids:model.sources.filter(s=>!s.capsule).map(s=>s.id+'@'+s.version),native_capsules:caps.length,executed_capsules:caps.length,selected_claims:selectedCount,selected_sources:selectedSources};ensure(same(out.coverage,coverage),'Query coverage counts mismatch');
- return {kind:'success',raw,query:q,coverage,records,selected:[...selected],omitted:Object.fromEntries(omitted),warnings:out.warnings,allocation:out.allocation};
+ return {kind:'success',raw,receiptHash:await hash(raw),query:q,coverage,records,selected:[...selected],omitted:Object.fromEntries(omitted),warnings:out.warnings,allocation:out.allocation};
 }

@@ -5,3 +5,4 @@
 textarea{font:inherit;color:inherit;background:#17232c;border:1px solid #66848e;border-radius:4px;padding:10px;max-width:100%;resize:vertical}fieldset{min-width:0;margin:20px 0;border:1px solid #66848e}fieldset label{margin:10px 0}input[type=checkbox]{align-self:flex-start}
 
 .archive-name{overflow-wrap:anywhere}
+.cited-brief{border:1px solid #69758a;border-radius:8px;padding:1rem;margin:1rem 0;min-width:0}.cited-brief textarea{display:block;box-sizing:border-box;width:100%;max-width:100%;font:12px/1.5 ui-monospace,monospace;white-space:pre;overflow:auto}.cited-brief label{display:block;margin:.75rem 0}.cited-brief input[type=file]{max-width:100%}.cited-brief .brief-hash{overflow-wrap:anywhere}.cited-brief h4:focus{outline:3px solid #64b5ff;outline-offset:3px}.cited-brief button{margin:.25rem}

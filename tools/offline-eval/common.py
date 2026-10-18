@@ -60,7 +60,7 @@ def load(path, maximum=MAX_FILE):
 
 
 def implementation():
-    paths = sorted(HERE.glob('*.py')) + [HERE.parent/'local-import/import_collection.py']
+    paths = sorted(HERE.glob('*.py')) + [HERE/'cited-prompt-policy.json', HERE.parent/'local-import/import_collection.py']
     return {str(p.relative_to(HERE.parent)): sha(p.read_bytes()) for p in paths}
 
 

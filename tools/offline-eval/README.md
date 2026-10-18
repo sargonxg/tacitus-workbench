@@ -292,3 +292,15 @@ Existing [rights](../../RIGHTS.md), reserved application-module boundaries, Apac
 core notices and source-data terms remain unchanged. No commercial license or new
 legal terms are introduced. PRAXIS/Foundry deployment holds and unsupported hosting
 remain in force. See [verification](VERIFICATION.md) for actual commands/results.
+
+The evidence/citation policy fragments in `cited-prompt-policy.json` are shared with the [manual cited-brief export](../../docs/MANUAL_CITED_BRIEF.md). Existing offline instruction bytes and answer-file formatting remain unchanged; the policy file is included in implementation hashes. Manual chat prompts are not evaluation submissions.
+
+Future evaluation must retain frozen prompt/capsule versions, untouched evaluation
+questions, paired blind human ratings and complete cost records (including
+retrieval, proposals, compute and feedback). Matching proposal counts alone does
+not establish matched total compute or feedback. Selecting the best round/run
+using held-out evaluation scores is oracle selection, not a deployable selection
+rule. Adaptive harness changes require a separately frozen study; do not mix them
+into the current baseline/capsule comparison. External harness-learning research
+provides no TACITUS performance evidence. This manual export slice runs no models
+or training and changes no evaluation assignment or scoring protocol.
