@@ -1,0 +1,26 @@
+{
+  "format": "tacitus-workbench-onboarding/1",
+  "collection": {
+    "records": 622,
+    "publisher_records": 618,
+    "retrospective_sections": 4
+  },
+  "capsules": {
+    "july": {
+      "sources": 28,
+      "unreviewed_assertions": 39,
+      "href": "/examples/july-1914.native-v2.zip",
+      "sha256": "c7268bef3b19ff9b93458a64e476dd52df1c76f074e77fe149d2983268a66e5f",
+      "question": "peace",
+      "checkpoint": 1792328100
+    },
+    "expanded": {
+      "sources": 31,
+      "unreviewed_assertions": 46,
+      "href": "/examples/expanded-cases.native-v2.zip",
+      "sha256": "7ad38b4d6db8269b1a642d400183230e78bddc0a89e77ca7585e92f23fcf1608",
+      "question": "relief assurance",
+      "checkpoint": 1792332960
+    }
+  }
+}

@@ -16,7 +16,7 @@ const inspect=createInspector({binary:process.env.TACITUS_KNOWLEDGE_CAPTURE_BIN,
 const collectionRoot=fileURLToPath(new URL('../../../examples/diplomacy-1914-v2/.data/',import.meta.url));
 const collectionReady=existsSync(resolve(collectionRoot,'lexical-index/manifest.json'));
 let activeRequest=false;
-const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.md':'text/plain; charset=utf-8','.txt':'text/plain; charset=utf-8'};
+const types={'.zip':'application/zip','.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.md':'text/plain; charset=utf-8','.txt':'text/plain; charset=utf-8'};
 export const server=createServer(async(req,res)=>{
   res.setHeader('Cache-Control','no-store');res.setHeader('X-Content-Type-Options','nosniff');
   res.setHeader('Content-Security-Policy',"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'");
