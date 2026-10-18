@@ -53,6 +53,10 @@ Restart the opted-in server. **622-record lexical collection** calls the bundled
 
 The separate `expanded-cases.native-v2.zip` can also be imported into the live native workflow. Use question `relief assurance`, known-as-of and valid-at `1792332960` to reproduce its relief fixture. The native capsule contains 46 unreviewed proposals and stays within native bounds. The baseline has 39 proposals; neither contains all 622 source records. Ten method proposals are separately represented but are not retrieved by the current core.
 
+## Compare live retrieval checkpoints
+
+Save one successful live query as run A, change only native checkpoints and query again for run B. Inspect citation-linked selected claims/sources, qualifications, temporal disclosures and omissions. Both exact Context exports retain their original bytes. Refusals remain explicit; these modern retrieval checkpoints do not establish what an actor knew in 1914. See [comparison instructions and limits](docs/LIVE_CHECKPOINT_COMPARISON.md).
+
 ## Acceptance
 
 ```sh

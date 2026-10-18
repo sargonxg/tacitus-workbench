@@ -101,7 +101,7 @@ export function runCore(binary, args, stdin, { signal, timeout = LIMITS.timeout,
 }
 export function createInspector({ binary, digest, runner = runCore, tempRoot = tmpdir() }) {
   let active = false;
-  return async (input, signal) => {
+  return async (input, signal, onVerified = () => {}) => {
     if (!binary || !isAbsolute(binary) || !/^[a-f0-9]{64}$/.test(digest ?? '')) fail('core_not_configured', 503);
     if (active) fail('inspector_busy', 429);
     active = true; let directory;
@@ -112,6 +112,8 @@ export function createInspector({ binary, digest, runner = runCore, tempRoot = t
       directory = await mkdtemp(join(tempRoot, 'tacitus-inspect-'));
       const capsule = join(directory, 'capsule.zip');
       await writeFile(capsule, data.archive, { flag: 'wx', mode: 0o600 });
+      // Identity is a pre-invocation check of a trusted local file, not immutable execution attestation.
+      onVerified(digest);
       return await runner(binary, [data.operation, capsule], data.query ? JSON.stringify(data.query) : '', { signal });
     } finally {
       try { if (directory) await rm(directory, { recursive: true, force: true }); } finally { active = false; }
