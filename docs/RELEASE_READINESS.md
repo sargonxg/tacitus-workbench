@@ -1,5 +1,10 @@
 # Local release checks — 18 October 2026
 
+This document records the earlier PR12 release pass. The subsequent
+[local collection explorer](LOCAL_COLLECTION_EXPLORER.md) adds browser opening of
+existing importer directories and saved receipts. Its acceptance fixture setup is
+now also required for full application acceptance.
+
 This bounded pass starts from a genuinely fresh clone of public workbench main
 `25d93ecaaf00aea80ccf2acefcf27b5de5b9e2b3` (PR6–11 included). It adds documentation,
 prerequisite diagnostics and concrete evidence-view corrections; it adds no service,
@@ -10,7 +15,8 @@ model, deployment or legal terms. The existing v0.1.0 tag remains unchanged.
 Follow the [root README](../README.md) in order: clone/install → recorded demo →
 build pinned core → live sample → explicitly author local text. Use the same shell
 for exported settings. Stop `npm start` with Ctrl-C before changing modes. The
-collection CLI is an optional advanced path, not a browser collection uploader.
+collection CLI remains an optional advanced path; its output can now be opened
+locally through the collection explorer without a server upload.
 
 Recorded mode loads saved bytes with no native process. Live sample mode calls the
 hash-pinned native core; failures remain failures. In the live view, select a claim,
