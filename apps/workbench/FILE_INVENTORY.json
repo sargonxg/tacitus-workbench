@@ -154,8 +154,8 @@
     },
     {
       "path": "server/index.mjs",
-      "sha256": "0f60ca75bb25d11fa52a0cbcea5a0f5d71464c5a25d80483a091b18413e21fbd",
-      "bytes": 4590,
+      "sha256": "1ada9a1e75eba00858ebec81cbb33c5272e374d396f02169042984caef4eaeb5",
+      "bytes": 4644,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "a903636375a3d170301985c57f10788f2e9e6cbc98f6fedef682396a858eff59",
       "pr3_sha256": "76b492072ecf1cbff4afcd312a230127c53f4190d9d639aa3ecd58cf72326d37",
@@ -165,8 +165,8 @@
     },
     {
       "path": "server/local-inspector.mjs",
-      "sha256": "8f81a743f5bd4993a409a754a8b67ddc2675515a98b10809b65bb6d439cf0b63",
-      "bytes": 7419,
+      "sha256": "950f5e8e29c57622743e232d9df718967fc11ccf8ec47a248402d1c0a8447893",
+      "bytes": 7574,
       "origin": "website-inspector/src/lib/local-inspector.mjs",
       "origin_sha256": "21f95c0caf37a654ea35ab7589406fab6a9e969b4093e4f9fc7f375425c66ddd",
       "identical_to_origin": true,
@@ -241,8 +241,8 @@
     },
     {
       "path": "src/graph/evidenceGraph.ts",
-      "sha256": "e99e515a867e6c8cf4bdb3837fdfe958aac70f44f218ce6227bf6fa32acc4cb5",
-      "bytes": 26710,
+      "sha256": "ca7057749511b3fce5df5c119d98847ccdb24bf1eaf95952a0aea2bf8773dd13",
+      "bytes": 26789,
       "origin": "website-inspector/src/components/local-inspector/evidenceGraph.ts",
       "origin_sha256": "e99e515a867e6c8cf4bdb3837fdfe958aac70f44f218ce6227bf6fa32acc4cb5",
       "identical_to_origin": true
@@ -274,8 +274,8 @@
     },
     {
       "path": "src/main.tsx",
-      "sha256": "c2788e1f6aaa8535bd48dd4569f54aecf803cdc5cea115b676dc65bc40d3391a",
-      "bytes": 9820,
+      "sha256": "b4ab7cca28241c8baf7ac7ea5a8848c9e0a3751a718ebf4230ebb86ca9b9d341",
+      "bytes": 11385,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "28400f4627a5464ca76d05fda24c6aca3587fcb1122860a58473b7ccfc85ddaa",
       "pr3_sha256": "c5315d5aa7817be738c031e066abcb31176593aca5ed82b04dfea0b12419f93f",
@@ -287,8 +287,8 @@
     },
     {
       "path": "src/style.css",
-      "sha256": "143705f4d7ca8eb3f1e2398b30f063438912aeecfa5fa44f51546c48fe9fc281",
-      "bytes": 1250,
+      "sha256": "f334e35937b2c48415ca801d9c70f83a607a6ded396c27ecef22bdf2ad1569f1",
+      "bytes": 1463,
       "origin": "Independently authored in task-owned standalone directory"
     },
     {
@@ -341,6 +341,30 @@
       "sha256": "860395a734db4ed97efd9a21775b594eaaa23fd7db0edf3e3a08a7dd407b5487",
       "bytes": 145,
       "origin": "Independently authored in task-owned standalone directory"
+    },
+    {
+      "path": "src/LiveComparison.tsx",
+      "sha256": "b1a2017c119c772da930b25996f8d454e197139af10cdadded9f3680ce2a8a43",
+      "bytes": 6024,
+      "origin": "Independently authored local checkpoint comparison; original application reserved-rights boundary unchanged"
+    },
+    {
+      "path": "src/live-comparison.mjs",
+      "sha256": "ed0d62e41bd3b3f75dd54b91bd403604c1abf3accd76fece6872b7e53c29c8bf",
+      "bytes": 5952,
+      "origin": "Independently authored local checkpoint comparison; original application reserved-rights boundary unchanged"
+    },
+    {
+      "path": "tests/live-comparison.test.mjs",
+      "sha256": "f8be99ffaee0fd08955affd9403516411322ea7eddd213b54d3991cc09b9c5eb",
+      "bytes": 6694,
+      "origin": "Independently authored local checkpoint comparison; original application reserved-rights boundary unchanged"
+    },
+    {
+      "path": "tests/live-comparison-browser.test.mjs",
+      "sha256": "4078c4eb3d61c6f9feace561dd54100ab798b1b31c7706dadac3f801603a94bf",
+      "bytes": 6581,
+      "origin": "Independently authored local checkpoint comparison; original application reserved-rights boundary unchanged"
     }
   ],
   "review_version": 2,

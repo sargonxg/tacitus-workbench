@@ -38,7 +38,7 @@ export const server=createServer(async(req,res)=>{
           const input=await boundedBody(request,4096);
           if(!input||typeof input.question!=='string'||!input.question.trim()||Buffer.byteLength(input.question)>2000)throw new InspectorError('invalid_query');
           result=await runCore('/usr/bin/python3',[resolve(collectionRoot,'collection-adapter/collection.py'),'query',resolve(collectionRoot,'lexical-index')],JSON.stringify({question:input.question,max_bytes:32768}),{signal:abort.signal,output:32768});
-        }else result=await inspect(await boundedBody(request),abort.signal);
+        }else result=await inspect(await boundedBody(request),abort.signal,digest=>res.setHeader('X-Tacitus-Core-SHA256',digest));
         res.setHeader('Content-Type','application/json');res.end(result);return;
       }finally{activeRequest=false;}
     }

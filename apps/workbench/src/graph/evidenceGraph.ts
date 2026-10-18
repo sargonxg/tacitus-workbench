@@ -204,7 +204,7 @@ export type NativeContext = {
     claims: Record<string, { assertion: NativeCapture['assertions'][number]; knowledge: string; citations: { span: NativeSpan; text: string; title: string; family: string; license: string; }[]; }>;
     entities: NativeCapture['graph']['nodes']; relationships: NativeCapture['graph']['links']; omissions: Record<string, string>; warnings: string[]; };
   temporal_status: Record<string, string>; observed_at: Record<string, number | null>;
-  source_metadata: Record<string, { id: string; version: number; title: string; text_hash: string; license: string; author: string; source_family: string; published_at: number | null; available_at: number; restricted: boolean; withdrawn: boolean; }>;
+  source_metadata: Record<string, { id: string; version: number; title: string; text_hash: string; license: string; author: string; source_family: string; published_at: number | null; available_at: number; document_id?: string; valid_from?: number | null; valid_until?: number | null; restricted: boolean; withdrawn: boolean; }>;
 };
 export type SourcePresentation = { url?: string; date?: SourceDate; perspective?: SourceDocument['perspective']; };
 /** Exact CLI reuse output. Does NOT pretend excerpts can verify full source hashes. */

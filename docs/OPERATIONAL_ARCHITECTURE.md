@@ -21,6 +21,7 @@ flowchart TD
     H -->|refusal| N[Explicit refusal with no new Context]
     I --> G[Graph and source evidence view]
     I --> J[Exact JSON download]
+    I --> T[Matched live checkpoint comparison with exact evidence and refusals]
     B --> K[622-record lexical index: 32 shards]
     K --> L[Separate lexical query and exact source-block JSON]
     R[Explicit recorded-mode selection] --> S[Frozen example Context and graph]
@@ -160,7 +161,7 @@ No paid/model calls or this study have been executed as part of this document.
 **Implemented locally:** pinned capsule build; verified source bundles; explicit
 recorded/live separation; native import/inspection and graph; bounded deterministic
 reuse and exact exports; separate lexical collection search; visible uncertainty,
-source notices and unreviewed status; guided onboarding and structural regressions.
+source notices and unreviewed status; guided onboarding, [live checkpoint comparison](LIVE_CHECKPOINT_COMPARISON.md) and structural regressions.
 
 **Pending acceptance or implementation:** independent semantic/historical approval,
 matched model evaluation, automatic semantic extraction and approval workflow,
