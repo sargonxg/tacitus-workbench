@@ -137,6 +137,6 @@ commercial license, rights verification or model-quality claim is introduced.
 | Local runnable workbench | Passed the locked install/build, recorded/live browser, explicit authoring and optional CLI gates described above; the reviewed commit/PR identifies the published candidate. |
 | Cloud/hosted service | Unsupported by this release. Loopback operation is not hosted authentication, persistence or production operations. |
 | PRAXIS / Foundry | Held. No private code copied, deployment run or external bridge certified. Separate owner/deployment review is still required. |
-| Model answer evaluation | Unrun. No provider/model calls, measured answer-quality gains or policy-decision benefit established. |
+| Model answer evaluation | Unrun. An optional [offline harness](../tools/offline-eval/README.md) provides packet/export/import capability; synthetic tests are not a model study. No provider/model calls, measured answer-quality gains or policy-decision benefit established. |
 | Source semantics | Proposals remain unreviewed; structural citations and byte fidelity do not establish historical truth or knowledge dates. |
 | Publication identifier | Use the reviewed commit/PR. No new tag or movement of existing tags is needed. |

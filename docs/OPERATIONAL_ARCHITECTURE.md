@@ -125,6 +125,10 @@ not new claims that all gates have been executed for every commit.
 | Source and usefulness | Independent source/time review passes and the held-out study below meets predeclared criteria. Fail on unsupported attribution/time/citation or unresolved critical defects. | Pending. Current proposals must retain unreviewed labels. |
 | Publication and hosting | Current permitted protections/checks/reviews and hooks can be inspected; no unmet requirement or excluded deployment/security/cost effect. Fail closed on inaccessible evidence. | Must be checked at publication; mergeability alone is insufficient. Hosting, accounts and payments are pending. |
 
+## Offline evaluation capability — study not yet run
+
+The [local harness](../tools/offline-eval/README.md) now implements frozen single-capsule prompt export, randomized labels/order, explicit external answer/human rating imports and paired descriptive reports. Both arms access the same full sources and authored annotation/graph information; their full prompt byte ceilings are matched. Mechanical ID/hash/quote-offset/prompt-presence checks do not establish semantic support. Source-held-out generalization, guaranteed blinding, matched token use without external measurements and model-quality gains are not claimed. The protocol below remains the proposed actual study; no provider/model answers have been collected by the harness.
+
 ## Proposed matched evaluation — not yet run
 
 Freeze a protocol before collecting answers. Start with the **same exact source
