@@ -14,7 +14,7 @@ export default function CollectionSearch(){
     }catch(e){setError(String(e));}finally{setBusy(false);}
   }
   function download(){const url=URL.createObjectURL(new Blob([raw],{type:'application/json'}));const link=document.createElement('a');link.href=url;link.download='lexical-source-context.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
-  return <section aria-label="Expanded lexical collection"><h2>622-record lexical collection</h2>
+  return <section id="collection-search" tabIndex={-1} aria-label="Expanded lexical collection"><h2>622-record lexical collection</h2>
     <p>Search exact source blocks across 32 index shards. This separate source index produces no native capsule, semantic graph, generated answer or reviewed claim. The native capsules contain bounded, assistant-authored unreviewed proposals. The ten method proposals are not retrieved by the core.</p>
     <p>This search uses the full modern collection without a historical cutoff. Dates, unknown validity, retrospective memoir evidence, source rights and omissions remain in the complete response. Read the collection's <a href="/notices/expanded-RIGHTS.md">source rights</a>.</p>
     <label>Lexical question<input value={question} disabled={busy} maxLength={2000} onChange={e=>{setQuestion(e.target.value);setRaw('');setError('');}}/></label>

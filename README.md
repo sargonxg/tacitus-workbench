@@ -16,7 +16,7 @@ npm run build
 npm start
 ```
 
-Open `http://127.0.0.1:4317`, select **Recorded July 1914 example**, then load its Context. This runs no native core. The optional recorded walkthrough remains a separate teaching example.
+Open `http://127.0.0.1:4317`. The start guide explains collection versus capsule scope and offers **Start recorded demo**, exact native sample downloads, live-core controls and local context-reuse steps. You can also select **Recorded July 1914 example** in the execution controls and load its Context. This runs no native core. The optional recorded walkthrough remains a separate teaching example.
 
 ## Build and run the live core
 
@@ -72,3 +72,5 @@ If system Chromium is unavailable, `npx playwright install chromium` installs th
 [RIGHTS.md](RIGHTS.md) and [application boundaries](apps/workbench/APPLICATION_RIGHTS.md) remain in effect. Original eligible application modules retain reserved rights. Apache core/patch notices and FRUS/Gutenberg source terms are preserved; no new legal terms or application license is introduced. Lichnowsky's public-domain status is USA-specific, with Gutenberg distribution/trademark conditions retained.
 
 The server binds loopback only and live operations require explicit opt-in. Native timestamps describe modern ingestion, not what a diplomat knew in 1914. Assertions, comparisons and metadata cautions remain unreviewed. Byte fidelity, local retrieval and historical filtering tests establish no answer-quality gains or production readiness. This branch adds no hosting, accounts, payment, deployment or shared authorization service.
+
+The onboarding fact fixture and downloadable ZIP copies are derived from the already shipped, checksum-verified source bundles. Regenerate them with `python3 scripts/prepare-onboarding.py`; use `--check` to verify without writing. Data tests bind displayed counts and download identities to the actual archived corpus/captures. See [onboarding verification](docs/ONBOARDING_VERIFICATION.md) for branch-specific checks.

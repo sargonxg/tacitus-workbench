@@ -91,12 +91,30 @@
       "v2_changed_from_sha256": "13454bd5207e3ad225a802ad4a3f24fe1c09120602901fb57dc0065ad62a9985"
     },
     {
+      "path": "public/examples/expanded-cases.native-v2.zip",
+      "origin": "Exact copy of the corresponding already shipped public example archive; existing source-data terms retained",
+      "sha256": "7ad38b4d6db8269b1a642d400183230e78bddc0a89e77ca7585e92f23fcf1608",
+      "bytes": 190289
+    },
+    {
+      "path": "public/examples/july-1914.native-v2.zip",
+      "origin": "Exact copy of the corresponding already shipped public example archive; existing source-data terms retained",
+      "sha256": "c7268bef3b19ff9b93458a64e476dd52df1c76f074e77fe149d2983268a66e5f",
+      "bytes": 138303
+    },
+    {
       "path": "public/examples/july1914-walkthrough.json",
       "sha256": "bc407be145af172b7035765ed0af45855672340ee1aeeca2a64857c12c57b59a",
       "bytes": 489690,
       "origin": "guided-transfer/extracted/tacitus-guided-walkthrough/data/july1914-walkthrough.json",
       "origin_sha256": "bc407be145af172b7035765ed0af45855672340ee1aeeca2a64857c12c57b59a",
       "identical_to_origin": true
+    },
+    {
+      "path": "public/examples/onboarding-facts.json",
+      "origin": "Counts and identities derived from checksum-verified public corpus/capture bundles by scripts/prepare-onboarding.py",
+      "sha256": "658379c9805c3deee60ddf25ee34301fb0eb0de708a35d2bb4f3cd711758057e",
+      "bytes": 734
     },
     {
       "path": "public/examples/peace.context.json",
@@ -136,12 +154,14 @@
     },
     {
       "path": "server/index.mjs",
-      "sha256": "94c26b88f4b66e15a096edb52c21d08e85131f60da3846ce36232f314ef13a06",
-      "bytes": 4565,
+      "sha256": "0f60ca75bb25d11fa52a0cbcea5a0f5d71464c5a25d80483a091b18413e21fbd",
+      "bytes": 4590,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "a903636375a3d170301985c57f10788f2e9e6cbc98f6fedef682396a858eff59",
       "pr3_sha256": "76b492072ecf1cbff4afcd312a230127c53f4190d9d639aa3ecd58cf72326d37",
-      "integration_note": "Updated in local reproducibility integration; original provenance retained"
+      "integration_note": "Updated in local reproducibility integration; original provenance retained",
+      "onboarding_base_sha256": "94c26b88f4b66e15a096edb52c21d08e85131f60da3846ce36232f314ef13a06",
+      "onboarding_change": "Product start guide, focus target, or native sample static MIME support"
     },
     {
       "path": "server/local-inspector.mjs",
@@ -156,8 +176,22 @@
     {
       "path": "src/CollectionSearch.tsx",
       "origin": "Independently authored local integration; original eligible application work retains reserved-rights boundary",
-      "sha256": "7cbab27c5697964d3d41bc79f94d89b7c8acdc8a9b191d698f5e2248df3e816f",
-      "bytes": 3303
+      "sha256": "744ce0da88cf731685b50efcc20d0659da4f7836e35dca55c936a88336d33e0a",
+      "bytes": 3340,
+      "onboarding_base_sha256": "7cbab27c5697964d3d41bc79f94d89b7c8acdc8a9b191d698f5e2248df3e816f",
+      "onboarding_change": "Product start guide, focus target, or native sample static MIME support"
+    },
+    {
+      "path": "src/ProductGuide.css",
+      "origin": "Independently authored onboarding component or regression test; existing reserved-rights boundary retained",
+      "sha256": "cf25735161e3de337cbf5dd36ecb4f9f977764f7d261dc84010e33058f0db7c4",
+      "bytes": 1191
+    },
+    {
+      "path": "src/ProductGuide.tsx",
+      "origin": "Independently authored onboarding component or regression test; existing reserved-rights boundary retained",
+      "sha256": "423d84f858427f720e1aca5085ba6c871da429db27b62db9d8ba50c80110e5a9",
+      "bytes": 5785
     },
     {
       "path": "src/env.d.ts",
@@ -240,14 +274,16 @@
     },
     {
       "path": "src/main.tsx",
-      "sha256": "1e2c209dd24ab216827a5e80c53eb54dd12a03c123463318c6bffb830cadca45",
-      "bytes": 9562,
+      "sha256": "c2788e1f6aaa8535bd48dd4569f54aecf803cdc5cea115b676dc65bc40d3391a",
+      "bytes": 9820,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "28400f4627a5464ca76d05fda24c6aca3587fcb1122860a58473b7ccfc85ddaa",
       "pr3_sha256": "c5315d5aa7817be738c031e066abcb31176593aca5ed82b04dfea0b12419f93f",
       "integration_note": "Updated in local reproducibility integration; original provenance retained",
       "reviewed_baseline_sha256": "877d0c46c0027881cf684d673b07d43de9b33600b0ad20c903a02b2e30518466",
-      "review_correction": "Pinned native budget validation and explicit acceptance/boundary coverage"
+      "review_correction": "Pinned native budget validation and explicit acceptance/boundary coverage",
+      "onboarding_base_sha256": "1e2c209dd24ab216827a5e80c53eb54dd12a03c123463318c6bffb830cadca45",
+      "onboarding_change": "Product start guide, focus target, or native sample static MIME support"
     },
     {
       "path": "src/style.css",
@@ -265,6 +301,18 @@
       "integration_note": "Updated in local reproducibility integration; original provenance retained",
       "reviewed_baseline_sha256": "173b5399f2f79a9c563077184d9362a34e5fab199e7079255e26e4dba802d266",
       "review_correction": "Pinned native budget validation and explicit acceptance/boundary coverage"
+    },
+    {
+      "path": "tests/onboarding-browser.test.mjs",
+      "origin": "Independently authored onboarding component or regression test; existing reserved-rights boundary retained",
+      "sha256": "e3a11a6b8d8e80d94c0053b7af4e4d1ea5b29dfcafb6c2cd0f6ba5818cd06ebf",
+      "bytes": 5228
+    },
+    {
+      "path": "tests/onboarding-data.test.mjs",
+      "origin": "Independently authored onboarding component or regression test; existing reserved-rights boundary retained",
+      "sha256": "9bf513bdc21fba79675a34e34fb07004bb93ea6bb61a3bf0043c88f05dde4614",
+      "bytes": 2039
     },
     {
       "path": "tests/query-contract.test.mjs",
@@ -297,5 +345,6 @@
   ],
   "review_version": 2,
   "frozen_v1_archive_sha256": "5c899ff0cb48579a3ced9c8574d77f2a6b45e8c8ab52a7bc223165558195636f",
-  "integration_base": "5766d1cb3472f85d6ed702728295349e99641520"
+  "integration_base": "5766d1cb3472f85d6ed702728295349e99641520",
+  "onboarding_base_commit": "d08756d059c4ff8dfcf2efc099cf318f9f14f0c8"
 }
