@@ -2,6 +2,8 @@
 
 Local evidence inspector integrating the public standalone interface and two source examples. Import a native ZIP, inspect its evidence graph, query the pinned Rust core, and export its exact Context JSON. Recorded examples are explicitly selected and never replace failed live requests. A separate lexical workflow searches 622 source records; it does not turn the collection into a native capsule or reviewed claims.
 
+[tacitus.me](https://tacitus.me) is the TACITUS company/research showcase; hosted [PRAXIS](https://praxis.tacitus.me) is invitation-only, with AI generation and paid upgrades paused. This standalone local tool is separate from those services and from the [capsule core's bounded developer workflow](https://github.com/sargonxg/tacitus-political-policy-second-brain/blob/main/docs/tacitus/LOCAL_CAPSULE_RELEASE.md).
+
 Published main includes the reviewed standalone interface from PR3 `5766d1cb3472f85d6ed702728295349e99641520` and example directories from PR1 `dd9dc217f8b839b2b00bf645b62bfb8272ee6146` and PR2 `9ed66eef932fee3b8888fcfed4ed582b0123c133`, integrated through PR4 and PR5. PR6 adds the operational architecture. Current builds pin merged core `6bbdb0764b2bc7d7b05804c79ce9b5505c3bfc95`; historical verification reports describe the checkpoints tested at the time. The existing v0.1.0 tag is unchanged.
 
 See [operational architecture and release readiness](docs/OPERATIONAL_ARCHITECTURE.md) for the implemented flow, independent review responsibilities, release gates and proposed matched evaluation.
