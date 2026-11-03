@@ -8,6 +8,14 @@ Published main includes the reviewed standalone interface from PR3 `5766d1cb3472
 
 See [operational architecture and release readiness](docs/OPERATIONAL_ARCHITECTURE.md) for the implemented flow, independent review responsibilities, release gates and proposed matched evaluation.
 
+## Inspect a context in the browser
+
+![Working evidence graph, using the recorded July 1914 source example](apps/workbench/docs/images/context-desktop.png)
+
+The **Context explorer** adds a static view of evidence, assertions, ontology, clocks, review qualifications and omissions. Open a recorded example or import an exported Context JSON in browser memory, follow exact citations, and download the original bytes. No native query or model generation runs in this viewer.
+
+From `apps/workbench`, run `npm ci --ignore-scripts`, then `npm run build:showcase`. Serve `showcase-dist/` locally or as Cloudflare Static Assets. [Viewer, screenshots and cloud instructions](apps/workbench/docs/context-explorer.md). The existing local workbench below supports separate native query and authoring workflows.
+
 ## Install and run recorded mode
 
 Prerequisites: Node 24, npm, Python 3.11+ and Git. Tested on Linux with Node 24.19.0/npm 11.9.0. The committed npm lockfile resolves only official registry packages. No credentials or model account are needed.

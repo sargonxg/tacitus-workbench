@@ -1,0 +1,5 @@
+{
+  "name": "tacitus-context-explorer",
+  "compatibility_date": "2026-11-03",
+  "assets": {"directory": "./showcase-dist", "not_found_handling": "404-page"}
+}

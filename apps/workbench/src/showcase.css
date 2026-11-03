@@ -1,0 +1,248 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172b36;
+  background: #f6f7f3;
+  font-synthesis: none;
+  color-scheme: light;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button,
+a,
+summary,
+input {
+  touch-action: manipulation;
+}
+button {
+  cursor: pointer;
+  color: inherit;
+  background: transparent;
+  border: 1px solid #9ba7aa;
+  padding: 11px 16px;
+  border-radius: 0;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+a {
+  color: inherit;
+  text-underline-offset: 4px;
+}
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #8d4a32;
+  outline-offset: 4px;
+}
+.skip {
+  position: absolute;
+  top: -60px;
+  background: #fff;
+  padding: 15px;
+  z-index: 100;
+}
+.skip:focus {
+  top: 10px;
+}
+.showcase-header,
+.showcase-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1540px;
+  margin: auto;
+  padding: 25px 36px;
+  border-bottom: 1px solid #d7dddf;
+  font-size: 0.78rem;
+}
+.brand {
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+.brand span {
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-left: 20px;
+  color: #586970;
+}
+.showcase-main {
+  max-width: 1540px;
+  margin: auto;
+  padding: 0 36px;
+}
+.showcase-intro {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 80px;
+  padding: 48px 0 36px;
+  align-items: end;
+}
+.kicker {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #685548;
+}
+.showcase-intro h1 {
+  font-size: clamp(2.4rem, 4.5vw, 4.2rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 1.03;
+  margin: 20px 0;
+}
+.showcase-intro > div > p:last-child {
+  max-width: 58ch;
+  font-size: 1rem;
+  color: #51646e;
+  line-height: 1.65;
+}
+.showcase-intro aside {
+  border-left: 1px solid #bfc9ca;
+  padding-left: 24px;
+  max-width: 400px;
+  font-size: 0.8rem;
+  line-height: 1.65;
+}
+.showcase-intro aside strong {
+  font-weight: 500;
+}
+.showcase-intro aside p {
+  color: #51646e;
+}
+.showcase-toolbar {
+  display: flex;
+  align-items: start;
+  gap: 14px;
+  flex-wrap: wrap;
+  border-top: 1px solid #cbd3d5;
+  padding-top: 20px;
+}
+.showcase-toolbar nav {
+  display: flex;
+  gap: 0;
+  margin-right: auto;
+}
+.showcase-toolbar nav button {
+  border: 0;
+  border-bottom: 2px solid transparent;
+}
+.showcase-toolbar nav button[aria-pressed="true"] {
+  border-color: #8d4a32;
+  color: #8d4a32;
+}
+.showcase-toolbar > button,
+.import-menu {
+  font-size: 0.8rem;
+}
+.import-menu {
+  max-width: 300px;
+  position: relative;
+}
+.import-menu summary {
+  cursor: pointer;
+  padding: 12px 14px;
+  border: 1px solid #9ba7aa;
+}
+.import-menu label {
+  display: grid;
+  gap: 12px;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+.import-menu[open] {
+  padding: 0 0 12px;
+}
+.import-menu input {
+  width: 100%;
+}
+.import-menu p {
+  line-height: 1.5;
+  color: #51646e;
+}
+.showcase-status,
+.data-scope {
+  font-size: 0.76rem;
+  line-height: 1.6;
+  color: #51646e;
+}
+.showcase-status {
+  margin: 16px 0 4px;
+}
+.data-scope {
+  margin: 4px 0 20px;
+}
+.showcase-method {
+  border-top: 1px solid #cbd3d5;
+  padding: 24px 0;
+  margin: 32px 0;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  max-width: 900px;
+}
+.showcase-method summary {
+  cursor: pointer;
+}
+.showcase-footer {
+  border-bottom: 0;
+  border-top: 1px solid #d7dddf;
+  color: #51646e;
+}
+.showcase-main #explorer {
+  min-width: 0;
+}
+.showcase-main #explorer:focus {
+  outline: none;
+}
+@media (max-width: 720px) {
+  .showcase-header,
+  .showcase-footer {
+    padding: 20px;
+    align-items: start;
+  }
+  .brand span {
+    display: block;
+    margin: 6px 0 0;
+  }
+  .showcase-main {
+    padding: 0 18px;
+  }
+  .showcase-intro {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding-top: 30px;
+  }
+  .showcase-intro aside {
+    font-size: 0.75rem;
+    padding-left: 14px;
+  }
+  .showcase-toolbar {
+    gap: 10px;
+  }
+  .showcase-toolbar nav {
+    width: 100%;
+  }
+  .showcase-toolbar > button {
+    padding: 12px 8px;
+  }
+  .showcase-footer {
+    font-size: 0.7rem;
+  }
+  .showcase-intro h1 {
+    font-size: 2.9rem;
+  }
+}

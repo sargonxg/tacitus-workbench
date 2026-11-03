@@ -6,7 +6,7 @@ import type { EvidenceGraph, GraphNode, NodeKind } from './evidenceGraph';
 import styles from './EvidenceGraphExplorer.module.css';
 import { sourceNoticeFlags } from './sourceNotices';
 
-type Props = { graph: EvidenceGraph; initialPerspective?: 'all' | 'contemporary' | 'retrospective' | 'unknown' };
+type Props = { graph: EvidenceGraph; initialPerspective?: 'all' | 'contemporary' | 'retrospective' | 'unknown'; initialSelectedId?: string };
 type View = { zoom: number; x: number; y: number };
 const INITIAL_VIEW: View = { zoom: 1, x: 0, y: 0 };
 const PAGE_SIZE = 24;
@@ -18,11 +18,11 @@ function useReducedMotion(stopPlaying: (value: boolean) => void) {
 }
 
 /** Entirely read-only. Supply the actual native context projection or the separately labeled corpus projection. */
-export default function EvidenceGraphExplorer({ graph, initialPerspective = 'contemporary' }: Props) {
+export default function EvidenceGraphExplorer({ graph, initialPerspective = 'contemporary', initialSelectedId }: Props) {
   const uid = useId();
   const [query, setQuery] = useState(''), [kinds, setKinds] = useState<NodeKind[]>(KINDS), [perspective, setPerspective] = useState(initialPerspective);
   const [entityId, setEntityId] = useState(''), [yearFrom, setYearFrom] = useState(''), [yearTo, setYearTo] = useState(''), [includeUndated, setIncludeUndated] = useState(true);
-  const [selectedId, setSelectedId] = useState<string | undefined>(), [paging, setPaging] = useState({ key: '', page: 0 }), [view, setView] = useState(INITIAL_VIEW);
+  const [selectedId, setSelectedId] = useState<string | undefined>(initialSelectedId), [paging, setPaging] = useState({ key: '', page: 0 }), [view, setView] = useState(INITIAL_VIEW);
   const [cutoffIndex, setCutoffIndex] = useState<number | null>(null), [playing, setPlaying] = useState(false), [twoHop, setTwoHop] = useState(false);
   const reducedMotion = useReducedMotion(setPlaying);
   const paintTiming = useRef<HTMLSpanElement>(null);
@@ -155,10 +155,10 @@ export default function EvidenceGraphExplorer({ graph, initialPerspective = 'con
       <aside className={styles.inspector} aria-labelledby={`${uid}-detail`}>
         <h3 id={`${uid}-detail`}>Evidence inspector</h3>{selectedId && !visibleIds.has(selectedId) && <p role="status" className={styles.caution}>Selected node is outside the current filters. Choose a visible result or reset filters.</p>}
         {selected ? <><p className={styles.eyebrow}>{KIND_LABELS[selected.kind]}</p><h4>{selected.label}</h4><p className={styles.caution}>{selected.uncertainty}</p><p>{selected.date ? `Source date: ${selected.date.label} (${selected.date.precision} precision${selected.date.calendar ? `, ${selected.date.calendar}` : ''})` : 'Source date: not assigned'}</p>
-          <dl>{Object.entries(selected.metadata).map(([name, value]) => <div key={name}><dt>{name}</dt><dd>{value}</dd></div>)}</dl>
-          {selected.conditions.length > 0 && <><h4>Conditions</h4><ul>{selected.conditions.map((text, i) => <li key={i}>{text}</li>)}</ul></>}{selected.exceptions.length > 0 && <><h4>Exceptions</h4><ul>{selected.exceptions.map((text, i) => <li key={i}>{text}</li>)}</ul></>}
           <h4>{selected.evidence.length ? 'Bound source quotations' : 'Source-neighborhood excerpts (up to 6)'}</h4>
           {detailEvidence.length ? detailEvidence.map((ev, i) => <article className={styles.quote} key={`${ev.sourceId}-${ev.start}-${i}`}><strong>{ev.title}</strong><blockquote>{ev.quote}</blockquote><small>{ev.locator || `UTF-8 bytes ${ev.start}–${ev.end}`} · byte range [{ev.start}, {ev.end})<br />{ev.date?.label || 'Date not supplied'} · {ev.license}<br />{ev.verification === 'sha256-and-utf8-span' ? 'Full source SHA-256 and exact UTF-8 span checked' : 'Native context excerpt; span length checked, full text unavailable here'}</small><details><summary>Source hash</summary><code>{ev.textHash}</code></details>{safeSourceUrl(ev.url) && <a href={safeSourceUrl(ev.url)} target="_blank" rel="noopener noreferrer">Open original source ↗</a>}</article>) : <p>No quotation is available for this selection.</p>}
+          <dl>{Object.entries(selected.metadata).map(([name, value]) => <div key={name}><dt>{name}</dt><dd>{value}</dd></div>)}</dl>
+          {selected.conditions.length > 0 && <><h4>Conditions</h4><ul>{selected.conditions.map((text, i) => <li key={i}>{text}</li>)}</ul></>}{selected.exceptions.length > 0 && <><h4>Exceptions</h4><ul>{selected.exceptions.map((text, i) => <li key={i}>{text}</li>)}</ul></>}
           <h4>Declared connections ({allConnections.length})</h4><ul className={styles.connections}>{allConnections.slice(0, 100).map(edge => { const other = nodeById.get(edge.from === selected.id ? edge.to : edge.from); return <li key={edge.id}><span>{edge.label}</span>{other && <button type="button" onClick={() => select(other)}>{truncate(other.label, 100)}</button>}{edge.rationale && <p>{edge.rationale}</p>}</li>; })}</ul>{allConnections.length > 100 && <p>First 100 connections shown. Narrow the graph to inspect a smaller neighborhood.</p>}
         </> : <div className={styles.placeholder}><strong>Start with a source or an actor.</strong><p>Every displayed connection keeps its meaning, evidence and review status. No spatial proximity is treated as proof.</p></div>}
       </aside>

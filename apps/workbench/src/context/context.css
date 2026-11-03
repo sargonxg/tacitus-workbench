@@ -1,0 +1,237 @@
+.context-layers {
+  --cl-ink: #142b36;
+  --cl-muted: #51646e;
+  --cl-line: #d7dddf;
+  color: var(--cl-ink);
+  background: #fafbf9;
+  border: 1px solid var(--cl-line);
+  margin: 26px 0;
+  padding: 28px;
+  border-radius: 0;
+  color-scheme: light;
+  min-width: 0;
+}
+.cl-heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: end;
+  margin-bottom: 22px;
+}
+.cl-heading h2 {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin: 10px 0;
+}
+.cl-heading p {
+  font-size: 0.9rem;
+  color: var(--cl-muted);
+  margin: 0;
+}
+.context-layers .cl-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 0.69rem;
+  color: #685548;
+}
+.cl-layout {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  border-top: 1px solid var(--cl-line);
+  min-height: 480px;
+}
+.cl-layer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-top: 18px;
+}
+.context-layers .cl-layer-list button {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 12px;
+  width: 100%;
+  border: 0;
+  border-left: 2px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  color: var(--cl-muted);
+  font-size: 0.85rem;
+  margin: 0;
+  padding: 15px 12px;
+  cursor: pointer;
+}
+.context-layers .cl-layer-list button[aria-pressed="true"] {
+  background: #e9eeeb;
+  border-color: #8d4a32;
+  color: var(--cl-ink);
+}
+.cl-number {
+  font:
+    10px ui-monospace,
+    monospace;
+  opacity: 1;
+}
+.cl-layer-list small {
+  margin-left: auto;
+}
+.cl-inspector {
+  padding: 24px 0 10px 32px;
+  min-width: 0;
+  border-left: 1px solid var(--cl-line);
+  max-height: 690px;
+  overflow: auto;
+  overflow-wrap: anywhere;
+  scrollbar-gutter: stable;
+}
+.cl-inspector h3 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  max-width: 45ch;
+  margin: 10px 0 22px;
+  line-height: 1.35;
+}
+.cl-inspector h4 {
+  font-size: 0.85rem;
+  margin: 24px 0 12px;
+}
+.context-layers label {
+  font-size: 0.78rem;
+}
+.context-layers select {
+  background: #fff;
+  color: var(--cl-ink);
+  border: 1px solid #a0acb1;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 0;
+}
+.context-layers dl {
+  margin: 18px 0;
+}
+.context-layers dl > div {
+  display: grid;
+  grid-template-columns: minmax(115px, 26%) minmax(0, 1fr);
+  gap: 16px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--cl-line);
+  font-size: 0.8rem;
+}
+.context-layers dt {
+  color: var(--cl-muted);
+}
+.context-layers dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.cl-citation blockquote {
+  font-family: Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1.6;
+  margin: 12px 0 16px;
+  border-left: 2px solid #8d4a32;
+  padding-left: 20px;
+  max-width: 60ch;
+}
+.cl-citation > p,
+.cl-source-title {
+  font-size: 0.8rem;
+  color: var(--cl-muted);
+}
+.cl-proposition {
+  font-size: 1.2rem;
+}
+.cl-note {
+  font-size: 0.8rem;
+  color: var(--cl-muted);
+}
+.cl-records {
+  list-style: none;
+  padding: 0;
+}
+.cl-records li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 1px solid var(--cl-line);
+  padding: 12px 0;
+  font-size: 0.85rem;
+}
+.cl-records span {
+  color: var(--cl-muted);
+  min-width: 70px;
+}
+.cl-records strong {
+  font-weight: 500;
+}
+.cl-records small {
+  color: var(--cl-muted);
+}
+.cl-edge {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--cl-line);
+  font-size: 0.84rem;
+}
+.cl-edge p {
+  margin: 8px 0;
+}
+.context-layers li {
+  font-size: 0.86rem;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+.context-layers details {
+  border: 1px solid var(--cl-line);
+  padding: 12px;
+  border-radius: 0;
+  margin: 10px 0;
+}
+.context-layers summary {
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.context-layers button:focus-visible,
+.context-layers select:focus-visible {
+  outline: 2px solid #8d4a32;
+  outline-offset: 3px;
+}
+@media (max-width: 720px) {
+  .context-layers {
+    padding: 18px;
+  }
+  .cl-heading {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .cl-layout {
+    grid-template-columns: 1fr;
+  }
+  .cl-layer-list {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 12px;
+  }
+  .context-layers .cl-layer-list button {
+    min-width: 150px;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+    padding: 12px;
+  }
+  .cl-inspector {
+    border-left: 0;
+    border-top: 1px solid var(--cl-line);
+    padding: 22px 0;
+    max-height: none;
+  }
+  .context-layers dl > div {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .cl-citation blockquote {
+    font-size: 1.15rem;
+  }
+}

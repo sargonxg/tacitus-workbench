@@ -1,5 +1,8 @@
 # Workbench application — current setup
 
+**[Context explorer](docs/context-explorer.md)** — inspect seven layers of an exported native context. `npm run build:showcase` creates the static viewer for local or cloud hosting; live native operations remain in the local workbench.
+
+
 This application is published in the public workbench repository. Follow the
 [repository README](../../README.md) for current setup, pinned core builds,
 example preparation and acceptance. The historical handoff record below retains
