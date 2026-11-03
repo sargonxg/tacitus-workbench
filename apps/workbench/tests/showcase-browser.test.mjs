@@ -98,6 +98,11 @@ test("static explorer inspects layers, retains exact exports and refuses invalid
       await page
         .getByText(Object.keys(sample.context.omissions)[0], { exact: true })
         .waitFor();
+      if (width === 1440) {
+        await page.locator('.cl-inspector').focus();
+        await page.keyboard.press('PageDown');
+        await page.waitForFunction(() => document.querySelector('.cl-inspector').scrollTop > 0);
+      }
       await page
         .getByRole("navigation", { name: "Context layer", exact: true })
         .getByRole("button", { name: /Evidence/ })

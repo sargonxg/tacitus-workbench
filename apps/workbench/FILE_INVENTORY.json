@@ -338,14 +338,16 @@
     {
       "path": "src/context/ContextLayers.tsx",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
-      "sha256": "d59f8969f24715c2b6fd875d7fd74d715428c0d71ecbda49dd93b33fd310e96b",
-      "bytes": 11145
+      "sha256": "ba4796f0a0805c8afb696117e1e5bcf60634782cb50056dc808431abffc332d5",
+      "bytes": 11158,
+      "keyboard_access_previous_sha256": "d59f8969f24715c2b6fd875d7fd74d715428c0d71ecbda49dd93b33fd310e96b"
     },
     {
       "path": "src/context/context.css",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
-      "sha256": "32a81c5a880164d8a7de9a8fbaeb40c0a840f37c6193b2864b172443ec173217",
-      "bytes": 4497
+      "sha256": "b044754e85ddb4b99231e33af7a13147f2c16f7bbb50b64c4ae235d2adb76971",
+      "bytes": 4579,
+      "keyboard_access_previous_sha256": "32a81c5a880164d8a7de9a8fbaeb40c0a840f37c6193b2864b172443ec173217"
     },
     {
       "path": "src/context/contextLayers.mjs",
@@ -605,8 +607,9 @@
     {
       "path": "tests/showcase-browser.test.mjs",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
-      "sha256": "865e875459b1eef0a0d82fed06781d5496f0bf232c51460f3dcb99a36ffaaab0",
-      "bytes": 5546
+      "sha256": "b5c689a8de1efa3f89cf2dc5041b1ae1b18b90715709b3a890759de7c7ec80eb",
+      "bytes": 5779,
+      "keyboard_access_previous_sha256": "865e875459b1eef0a0d82fed06781d5496f0bf232c51460f3dcb99a36ffaaab0"
     },
     {
       "path": "tsconfig.json",

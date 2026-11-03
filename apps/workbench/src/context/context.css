@@ -235,3 +235,4 @@
     font-size: 1.15rem;
   }
 }
+.cl-inspector:focus-visible { outline: 2px solid #8d4a32; outline-offset: -2px; }

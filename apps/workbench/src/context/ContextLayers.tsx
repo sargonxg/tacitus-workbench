@@ -66,7 +66,7 @@ export default function ContextLayers({ value }: { value: NativeContext }) {
             ))}
           </div>
         </nav>
-        <div className="cl-inspector" id={uid} aria-live="polite">
+        <div className="cl-inspector" id={uid} aria-live="polite" tabIndex={0}>
           <p className="cl-kicker">{layer[1]}</p>
           <h3>{layer[2]}</h3>
           {active === "purpose" && (
