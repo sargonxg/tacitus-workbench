@@ -28,33 +28,14 @@
       "bytes": 1711
     },
     {
-      "path": "README.md",
-      "sha256": "68547baab4e282dcf087cbf48976211fd02f10fc1d0c3993b178aa3d94aa5f35",
-      "bytes": 10865,
-      "origin": "Independently authored in task-owned standalone directory",
-      "v2_changed_from_sha256": "57e5ca83952d700069ec783f767d0a6499d5eb0bdbf473d93b8b8fe2fe7db1bc",
-      "pr3_sha256": "ef94acb785822d441fc7f3a2301a8a40746032223a6706ee52b16909a44ffe5f",
-      "integration_note": "Updated for the static context explorer; prior provenance and rights retained",
-      "context_explorer_previous_sha256": "1b4e72ee0673fac543a330d078c25698d1be974102c3aa1fb44b1a48952f0cd1",
-      "readiness_2026_11_05_previous_sha256": "709fba9adce72f453f0e9bcdbbdde7c846e33ec148f2ced887b596177e0d8e2d",
-      "readiness_2026_11_05_note": "Quickstart and static preview command; existing provenance and rights retained."
-    },
-    {
-      "path": "VERIFICATION.md",
-      "sha256": "ae472f5d187ad60ebd8be98d2c8dfd7f317ba694cecf90da8a1f7c83c0f1cb92",
-      "bytes": 5182,
-      "origin": "Independently authored in task-owned standalone directory",
-      "v2_changed_from_sha256": "92b5487635c88a884ea9f0c98a838d8404dd1de051df28b1a8843f5baf02dc1c",
-      "pr3_sha256": "f90609122a26e2704cb8520134ecb10f3dd3d8ee8abbc3753ac77263e0c07b45",
-      "integration_note": "Updated in local reproducibility integration; original provenance retained"
-    },
-    {
       "path": "docs/context-explorer.md",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
-      "sha256": "96f0ef24c4515d6422c4e8b192d44fd8c5338c5f02ce3df5c895ee09052e3972",
-      "bytes": 3721,
+      "sha256": "485975c259188e64e04f92f29e662b68ee7871d066b4027c9c906c3d32c1bff5",
+      "bytes": 3972,
       "readiness_2026_11_05_previous_sha256": "15748142db87bcf257390045ac216d45da939d91e9dec4a29b8dd1d5a50d27b7",
-      "readiness_2026_11_05_note": "Quickstart and static preview command; existing provenance and rights retained."
+      "readiness_2026_11_05_note": "Quickstart and static preview command; existing provenance and rights retained.",
+      "research_selection_previous_sha256": "96f0ef24c4515d6422c4e8b192d44fd8c5338c5f02ce3df5c895ee09052e3972",
+      "research_selection_note": "Updated for the separate bounded research-selection reader and documented setup"
     },
     {
       "path": "docs/context-verification.md",
@@ -87,6 +68,12 @@
       "bytes": 209220
     },
     {
+      "origin": "Independent Workbench research-selection implementation; existing application rights retained",
+      "path": "docs/research-selection-reader.md",
+      "sha256": "a67e324e48b35b74ab961fa12878c344037c55413b32a8eda8703d7c21b20ee4",
+      "bytes": 5142
+    },
+    {
       "path": "index.html",
       "sha256": "0de7b0bf3e734cc829108585c9014962cd1c440308312863c87b179150beb25b",
       "bytes": 266,
@@ -99,13 +86,13 @@
       "origin": "Installed dependency license text; no application-source license grant"
     },
     {
-      "path": "notices/dependencies/react-LICENSE.txt",
+      "path": "notices/dependencies/react-dom-LICENSE.txt",
       "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
       "bytes": 1088,
       "origin": "Installed dependency license text; no application-source license grant"
     },
     {
-      "path": "notices/dependencies/react-dom-LICENSE.txt",
+      "path": "notices/dependencies/react-LICENSE.txt",
       "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
       "bytes": 1088,
       "origin": "Installed dependency license text; no application-source license grant"
@@ -174,6 +161,12 @@
       "identical_to_origin": true
     },
     {
+      "path": "public/notices/expanded-RIGHTS.md",
+      "origin": "Exact copy of PR2 examples/diplomacy-1914-v2/RIGHTS.md",
+      "sha256": "922177b0b45f3ed1c78fb333fa744810274745594bc546a3dad12a6a084badbe",
+      "bytes": 6988
+    },
+    {
       "path": "public/notices/LICENSE-GUTENBERG.txt",
       "sha256": "18bc5c6f86b23ade32c4d711e765328b0c642c383a993c8d7f11c7ee21da4bf1",
       "bytes": 17530,
@@ -190,16 +183,30 @@
       "identical_to_origin": true
     },
     {
-      "path": "public/notices/expanded-RIGHTS.md",
-      "origin": "Exact copy of PR2 examples/diplomacy-1914-v2/RIGHTS.md",
-      "sha256": "922177b0b45f3ed1c78fb333fa744810274745594bc546a3dad12a6a084badbe",
-      "bytes": 6988
+      "path": "README.md",
+      "sha256": "5e1a805d709d690814accd893088a3be44478ecbfdd6c4f1bb30ba3baf577182",
+      "bytes": 11160,
+      "origin": "Independently authored in task-owned standalone directory",
+      "v2_changed_from_sha256": "57e5ca83952d700069ec783f767d0a6499d5eb0bdbf473d93b8b8fe2fe7db1bc",
+      "pr3_sha256": "ef94acb785822d441fc7f3a2301a8a40746032223a6706ee52b16909a44ffe5f",
+      "integration_note": "Updated for the static context explorer; prior provenance and rights retained",
+      "context_explorer_previous_sha256": "1b4e72ee0673fac543a330d078c25698d1be974102c3aa1fb44b1a48952f0cd1",
+      "readiness_2026_11_05_previous_sha256": "709fba9adce72f453f0e9bcdbbdde7c846e33ec148f2ced887b596177e0d8e2d",
+      "readiness_2026_11_05_note": "Quickstart and static preview command; existing provenance and rights retained.",
+      "research_selection_previous_sha256": "68547baab4e282dcf087cbf48976211fd02f10fc1d0c3993b178aa3d94aa5f35",
+      "research_selection_note": "Updated for the separate bounded research-selection reader and documented setup"
     },
     {
       "path": "scripts/build-showcase.mjs",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
       "sha256": "0c4f3200e550a6f10e95dd630caf0a8928be4b36a5e41a1936eaed2bee8f7680",
       "bytes": 227
+    },
+    {
+      "origin": "Independent Workbench research-selection implementation; existing application rights retained",
+      "path": "scripts/update-inventory.mjs",
+      "sha256": "3428fa524c84a2a7fcf22386ed8623dcf2a68d461eef2bd5d3d64d3ceedfcf55",
+      "bytes": 1951
     },
     {
       "path": "scripts/verify-inventory.mjs",
@@ -221,6 +228,12 @@
       "onboarding_change": "Product start guide, focus target, or native sample static MIME support"
     },
     {
+      "path": "server/local_author.rs",
+      "origin": "Independently authored workbench local-text authoring application adapter, form or synthetic acceptance fixture; existing reserved-rights boundary",
+      "sha256": "0792736d4c72fcd670f4ae4a0dd815bf9ae432d366af96abecf391b59440dff8",
+      "bytes": 2192
+    },
+    {
       "path": "server/local-author.mjs",
       "origin": "Independently authored workbench local-text authoring application adapter, form or synthetic acceptance fixture; existing reserved-rights boundary",
       "sha256": "3572bc55b19265ef5cae3fe286871511fd40b68cbf81341b85ce9174caedce0c",
@@ -238,54 +251,10 @@
       "origin_comparison_note": "Historical origin hash retained; public integration modifies this file."
     },
     {
-      "path": "server/local_author.rs",
-      "origin": "Independently authored workbench local-text authoring application adapter, form or synthetic acceptance fixture; existing reserved-rights boundary",
-      "sha256": "0792736d4c72fcd670f4ae4a0dd815bf9ae432d366af96abecf391b59440dff8",
-      "bytes": 2192
-    },
-    {
       "path": "showcase.html",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
       "sha256": "dc6ea29a0aa92da6d2e1a3e784982d88e52d90faef808bb737c58552873d3ef9",
       "bytes": 470
-    },
-    {
-      "path": "src/CollectionSearch.tsx",
-      "origin": "Independently authored local integration; original eligible application work retains reserved-rights boundary",
-      "sha256": "744ce0da88cf731685b50efcc20d0659da4f7836e35dca55c936a88336d33e0a",
-      "bytes": 3340,
-      "onboarding_base_sha256": "7cbab27c5697964d3d41bc79f94d89b7c8acdc8a9b191d698f5e2248df3e816f",
-      "onboarding_change": "Product start guide, focus target, or native sample static MIME support"
-    },
-    {
-      "path": "src/LiveComparison.tsx",
-      "sha256": "b1a2017c119c772da930b25996f8d454e197139af10cdadded9f3680ce2a8a43",
-      "bytes": 6024,
-      "origin": "Independently authored local checkpoint comparison; original application reserved-rights boundary unchanged"
-    },
-    {
-      "path": "src/LocalAuthor.tsx",
-      "origin": "Independently authored workbench local-text authoring application adapter, form or synthetic acceptance fixture; existing reserved-rights boundary",
-      "sha256": "e82982b79bdaa5832d3b8d737a2543c1eeb2105e13ff52210bfb60bcfa70b47e",
-      "bytes": 8859
-    },
-    {
-      "path": "src/ProductGuide.css",
-      "origin": "Independently authored onboarding component or regression test; existing reserved-rights boundary retained",
-      "sha256": "cf25735161e3de337cbf5dd36ecb4f9f977764f7d261dc84010e33058f0db7c4",
-      "bytes": 1191
-    },
-    {
-      "path": "src/ProductGuide.tsx",
-      "origin": "Independently authored onboarding component or regression test; existing reserved-rights boundary retained",
-      "sha256": "74ed6ce4581764571b3f2e5ade1b52fa5d9366211a2097a36287933db82793c0",
-      "bytes": 5849
-    },
-    {
-      "path": "src/brief/CitedBrief.tsx",
-      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
-      "sha256": "a97dc9fe46846c599ee198d6712e2854c3752502235632ee73ae016e139d4f46",
-      "bytes": 6220
     },
     {
       "path": "src/brief/cited-brief.mjs",
@@ -294,16 +263,10 @@
       "bytes": 7161
     },
     {
-      "path": "src/collection/CollectionExplorer.tsx",
+      "path": "src/brief/CitedBrief.tsx",
       "origin": "Independently authored local collection explorer; existing application rights boundary applies",
-      "sha256": "e8a48cad3aab6a20ae1bee8b551eda27e13a86a9c1cd9f852624a53d7928384a",
-      "bytes": 18625
-    },
-    {
-      "path": "src/collection/MembershipMap.tsx",
-      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
-      "sha256": "4db54d12a69933cc99f4bee76a10b36da50e6016ebe06be2f2accb452db41e14",
-      "bytes": 2828
+      "sha256": "a97dc9fe46846c599ee198d6712e2854c3752502235632ee73ae016e139d4f46",
+      "bytes": 6220
     },
     {
       "path": "src/collection/collection-worker.mjs",
@@ -316,6 +279,18 @@
       "origin": "Independently authored local collection explorer; existing application rights boundary applies",
       "sha256": "b84bc709d8ae64be988eb3cae62d43e7b097a12d21908d5c59d6bbe327819c34",
       "bytes": 1648
+    },
+    {
+      "path": "src/collection/CollectionExplorer.tsx",
+      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
+      "sha256": "e8a48cad3aab6a20ae1bee8b551eda27e13a86a9c1cd9f852624a53d7928384a",
+      "bytes": 18625
+    },
+    {
+      "path": "src/collection/MembershipMap.tsx",
+      "origin": "Independently authored local collection explorer; existing application rights boundary applies",
+      "sha256": "4db54d12a69933cc99f4bee76a10b36da50e6016ebe06be2f2accb452db41e14",
+      "bytes": 2828
     },
     {
       "path": "src/collection/strict-data.mjs",
@@ -342,11 +317,12 @@
       "bytes": 10331
     },
     {
-      "path": "src/context/ContextLayers.tsx",
-      "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
-      "sha256": "ba4796f0a0805c8afb696117e1e5bcf60634782cb50056dc808431abffc332d5",
-      "bytes": 11158,
-      "keyboard_access_previous_sha256": "d59f8969f24715c2b6fd875d7fd74d715428c0d71ecbda49dd93b33fd310e96b"
+      "path": "src/CollectionSearch.tsx",
+      "origin": "Independently authored local integration; original eligible application work retains reserved-rights boundary",
+      "sha256": "744ce0da88cf731685b50efcc20d0659da4f7836e35dca55c936a88336d33e0a",
+      "bytes": 3340,
+      "onboarding_base_sha256": "7cbab27c5697964d3d41bc79f94d89b7c8acdc8a9b191d698f5e2248df3e816f",
+      "onboarding_change": "Product start guide, focus target, or native sample static MIME support"
     },
     {
       "path": "src/context/context.css",
@@ -362,10 +338,34 @@
       "bytes": 4455
     },
     {
+      "path": "src/context/ContextLayers.tsx",
+      "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
+      "sha256": "ba4796f0a0805c8afb696117e1e5bcf60634782cb50056dc808431abffc332d5",
+      "bytes": 11158,
+      "keyboard_access_previous_sha256": "d59f8969f24715c2b6fd875d7fd74d715428c0d71ecbda49dd93b33fd310e96b"
+    },
+    {
       "path": "src/env.d.ts",
       "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
       "bytes": 38,
       "origin": "Independently authored in task-owned standalone directory"
+    },
+    {
+      "path": "src/graph/corpusGraph.ts",
+      "sha256": "fe19ea8ac08e8716720e70ce167f8e4bf34bda9aacd4d491a6f24874fa75d7af",
+      "bytes": 5910,
+      "origin": "graph-transfer-v2/extracted/tacitus-graph-explorer-20261018/src/corpusGraph.ts",
+      "origin_sha256": "fe19ea8ac08e8716720e70ce167f8e4bf34bda9aacd4d491a6f24874fa75d7af",
+      "identical_to_origin": true
+    },
+    {
+      "path": "src/graph/evidenceGraph.ts",
+      "sha256": "4b3758b7e23f7bdb79a04fd8f3d1fb665e2b5626bbf98dd26a35242828023d9c",
+      "bytes": 26833,
+      "origin": "website-inspector/src/components/local-inspector/evidenceGraph.ts",
+      "origin_sha256": "e99e515a867e6c8cf4bdb3837fdfe958aac70f44f218ce6227bf6fa32acc4cb5",
+      "identical_to_origin": false,
+      "release_changed_from_sha256": "ca7057749511b3fce5df5c119d98847ccdb24bf1eaf95952a0aea2bf8773dd13"
     },
     {
       "path": "src/graph/EvidenceGraphExplorer.module.css",
@@ -402,23 +402,6 @@
       "identical_to_origin": true
     },
     {
-      "path": "src/graph/corpusGraph.ts",
-      "sha256": "fe19ea8ac08e8716720e70ce167f8e4bf34bda9aacd4d491a6f24874fa75d7af",
-      "bytes": 5910,
-      "origin": "graph-transfer-v2/extracted/tacitus-graph-explorer-20261018/src/corpusGraph.ts",
-      "origin_sha256": "fe19ea8ac08e8716720e70ce167f8e4bf34bda9aacd4d491a6f24874fa75d7af",
-      "identical_to_origin": true
-    },
-    {
-      "path": "src/graph/evidenceGraph.ts",
-      "sha256": "4b3758b7e23f7bdb79a04fd8f3d1fb665e2b5626bbf98dd26a35242828023d9c",
-      "bytes": 26833,
-      "origin": "website-inspector/src/components/local-inspector/evidenceGraph.ts",
-      "origin_sha256": "e99e515a867e6c8cf4bdb3837fdfe958aac70f44f218ce6227bf6fa32acc4cb5",
-      "identical_to_origin": false,
-      "release_changed_from_sha256": "ca7057749511b3fce5df5c119d98847ccdb24bf1eaf95952a0aea2bf8773dd13"
-    },
-    {
       "path": "src/graph/julyWalkthroughModel.ts",
       "sha256": "56e4a528a0c4320aad9857f4a030e03cfa929f5b437f98f372af94b30156bba8",
       "bytes": 20455,
@@ -442,6 +425,12 @@
       "origin": "Independently authored local checkpoint comparison; original application reserved-rights boundary unchanged"
     },
     {
+      "path": "src/LiveComparison.tsx",
+      "sha256": "b1a2017c119c772da930b25996f8d454e197139af10cdadded9f3680ce2a8a43",
+      "bytes": 6024,
+      "origin": "Independently authored local checkpoint comparison; original application reserved-rights boundary unchanged"
+    },
+    {
       "path": "src/local-author-client.mjs",
       "origin": "Independently authored workbench local-text authoring application adapter, form or synthetic acceptance fixture; existing reserved-rights boundary",
       "sha256": "c192b883a6871d8c30765958e32aebd136b7ee894c1f21425e371015c67aa98a",
@@ -454,6 +443,12 @@
       "origin": "website-inspector/src/lib/local-inspector-client.mjs",
       "origin_sha256": "4b01cf8d39e63d3efa452b90c63370afb9ba1e33225480a644e109351b563550",
       "identical_to_origin": true
+    },
+    {
+      "path": "src/LocalAuthor.tsx",
+      "origin": "Independently authored workbench local-text authoring application adapter, form or synthetic acceptance fixture; existing reserved-rights boundary",
+      "sha256": "e82982b79bdaa5832d3b8d737a2543c1eeb2105e13ff52210bfb60bcfa70b47e",
+      "bytes": 8859
     },
     {
       "path": "src/main.tsx",
@@ -470,6 +465,36 @@
       "context_explorer_previous_sha256": "544bb4c8865ff0b32fd99309047ef33e7e474ee2b1915b8720b33b7383091b95"
     },
     {
+      "path": "src/ProductGuide.css",
+      "origin": "Independently authored onboarding component or regression test; existing reserved-rights boundary retained",
+      "sha256": "cf25735161e3de337cbf5dd36ecb4f9f977764f7d261dc84010e33058f0db7c4",
+      "bytes": 1191
+    },
+    {
+      "path": "src/ProductGuide.tsx",
+      "origin": "Independently authored onboarding component or regression test; existing reserved-rights boundary retained",
+      "sha256": "74ed6ce4581764571b3f2e5ade1b52fa5d9366211a2097a36287933db82793c0",
+      "bytes": 5849
+    },
+    {
+      "origin": "Independent Workbench research-selection implementation; existing application rights retained",
+      "path": "src/researchSelection.css",
+      "sha256": "01ae6e0b851d91afcd0462a1feefb341ce07cc9efa8f15707729c4bb66aa59f2",
+      "bytes": 3173
+    },
+    {
+      "origin": "Independent Workbench research-selection implementation; existing application rights retained",
+      "path": "src/researchSelection.ts",
+      "sha256": "aa4408db4b617592667801a0387f4007fb0491293dfdae2fd37c2e1443c6ae72",
+      "bytes": 13944
+    },
+    {
+      "origin": "Independent Workbench research-selection implementation; existing application rights retained",
+      "path": "src/ResearchSelection.tsx",
+      "sha256": "87ee4b1158adcf3f3ffb7ef5ce8e103f96f8d03f9dbf94c58a37af4c50402699",
+      "bytes": 11245
+    },
+    {
       "path": "src/showcase.css",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
       "sha256": "ae4c38a4910d971f415be31286c89aadb3ff90b1240834d65ef916c586f556fc",
@@ -478,8 +503,10 @@
     {
       "path": "src/showcase.tsx",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
-      "sha256": "7260b2ba1b9a8859508b1096f5ec735c5a2dfb792cc2587fb28a010e6ba8d321",
-      "bytes": 9248
+      "sha256": "b063608e328f0715e4c99c6dd57be653dcf0582bfa59218dd8b5b19692a56eec",
+      "bytes": 11324,
+      "research_selection_previous_sha256": "7260b2ba1b9a8859508b1096f5ec735c5a2dfb792cc2587fb28a010e6ba8d321",
+      "research_selection_note": "Updated for the separate bounded research-selection reader and documented setup"
     },
     {
       "path": "src/style.css",
@@ -528,6 +555,12 @@
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
       "sha256": "4d7192ad834eebb177a96f4f80c68a826472e7a79919d264187359c4b2187443",
       "bytes": 2230
+    },
+    {
+      "origin": "Independent Workbench research-selection implementation; existing application rights retained",
+      "path": "tests/fixtures/research-selection-contract.json",
+      "sha256": "ac8d36f684210b10032c81fda117e3929e4832091814a605d170225fc328aff9",
+      "bytes": 62969
     },
     {
       "path": "tests/fixtures/synthetic-local.md",
@@ -601,6 +634,24 @@
       "bytes": 1346
     },
     {
+      "origin": "Independent Workbench research-selection implementation; existing application rights retained",
+      "path": "tests/research-selection-browser.test.mjs",
+      "sha256": "e33949e0f0183ff22af314786153bb2a77e2d7b9458126d213f9a96e7553c5b2",
+      "bytes": 7024
+    },
+    {
+      "origin": "Independent Workbench research-selection implementation; existing application rights retained",
+      "path": "tests/research-selection-fixture.mjs",
+      "sha256": "f94624e9ccb838535821a729f156a1b9d6d3f4ee3c43db87c8c71f8f08970f18",
+      "bytes": 1895
+    },
+    {
+      "origin": "Independent Workbench research-selection implementation; existing application rights retained",
+      "path": "tests/research-selection.test.mjs",
+      "sha256": "b415960768189b1cd8d27b95ac3b52da02a70db7382ffaefe09f2b8b7d8697b2",
+      "bytes": 7485
+    },
+    {
       "path": "tests/server-boundary.test.mjs",
       "origin": "Independently authored in task-owned standalone v2 directory",
       "sha256": "d515ff132add311240e78b3d233fbf0d9d2f97d3feaae4e98c157939af0a6a34",
@@ -622,6 +673,15 @@
       "sha256": "aaa6310dafc43d5eb34913f08538d45d887790f0b53bdb25c0cc1861ff521497",
       "bytes": 224,
       "origin": "Independently authored in task-owned standalone directory"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "sha256": "ae472f5d187ad60ebd8be98d2c8dfd7f317ba694cecf90da8a1f7c83c0f1cb92",
+      "bytes": 5182,
+      "origin": "Independently authored in task-owned standalone directory",
+      "v2_changed_from_sha256": "92b5487635c88a884ea9f0c98a838d8404dd1de051df28b1a8843f5baf02dc1c",
+      "pr3_sha256": "f90609122a26e2704cb8520134ecb10f3dd3d8ee8abbc3753ac77263e0c07b45",
+      "integration_note": "Updated in local reproducibility integration; original provenance retained"
     },
     {
       "path": "vite.config.mjs",

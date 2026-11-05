@@ -1,0 +1,2 @@
+# The deliverable inventory covers exact bytes, including on Windows checkouts.
+apps/workbench/** -text
