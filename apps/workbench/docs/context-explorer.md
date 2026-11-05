@@ -14,10 +14,15 @@ Node 24+, from `apps/workbench`:
 npm ci --ignore-scripts --registry=https://registry.npmjs.org
 npm run typecheck
 npm run build:showcase
-python3 -m http.server 8767 --bind 127.0.0.1 --directory showcase-dist
+npm run preview:showcase
 ```
 
 Open `http://127.0.0.1:8767`. The recorded July 1914 context loads explicitly labelled as recorded. **Open a context** accepts a `tacitus-uploaded-knowledge-context/1` JSON export (maximum 2 MiB). Imports are inspected in browser memory, never sent to an API. Reloading clears them. Invalid imports clear the previous result; no example replaces the failed import.
+
+Stop the preview with Ctrl-C. The preview command serves the built `showcase-dist/`
+on loopback and refuses an occupied port. It does not require Python or expose the
+local native server. To host the static files, upload `showcase-dist/` to an
+appropriate static host; the preview server is for local inspection.
 
 The data is supplied by the native core, not reconstructed from an illustration. The full ontology schema is not bundled in a Context; the inspector displays its identifier, entity kinds and annotated relationships. Modern source availability, historical document dates and world applicability remain separate. Unknowns remain unknown. An excerpt alone does not verify the complete source hash.
 
@@ -43,5 +48,9 @@ TACITUS_TEST_BROWSER=/usr/bin/chromium node --test tests/context-layers.test.mjs
 ```
 
 Browser checks cover desktop/mobile layout, exact source passages, layer navigation, exact-byte download, local import, escaped text, invalid-import refusal and absence of API calls. Screenshots come from that working UI. These checks do not execute or certify a new Rust core build.
+
+See the [5 November readiness receipt](../../../docs/READINESS_2026-11-05.md) for
+the latest command results. The original [context verification](context-verification.md)
+retains its 3 November scope.
 
 Rights in [APPLICATION_RIGHTS.md](../APPLICATION_RIGHTS.md) remain unchanged. FRUS/Gutenberg notices travel in `showcase-dist/notices/`; Gutenberg public-domain status is USA-specific and other jurisdictions remain unverified.

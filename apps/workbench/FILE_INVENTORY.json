@@ -29,13 +29,15 @@
     },
     {
       "path": "README.md",
-      "sha256": "709fba9adce72f453f0e9bcdbbdde7c846e33ec148f2ced887b596177e0d8e2d",
-      "bytes": 10236,
+      "sha256": "68547baab4e282dcf087cbf48976211fd02f10fc1d0c3993b178aa3d94aa5f35",
+      "bytes": 10865,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "57e5ca83952d700069ec783f767d0a6499d5eb0bdbf473d93b8b8fe2fe7db1bc",
       "pr3_sha256": "ef94acb785822d441fc7f3a2301a8a40746032223a6706ee52b16909a44ffe5f",
       "integration_note": "Updated for the static context explorer; prior provenance and rights retained",
-      "context_explorer_previous_sha256": "1b4e72ee0673fac543a330d078c25698d1be974102c3aa1fb44b1a48952f0cd1"
+      "context_explorer_previous_sha256": "1b4e72ee0673fac543a330d078c25698d1be974102c3aa1fb44b1a48952f0cd1",
+      "readiness_2026_11_05_previous_sha256": "709fba9adce72f453f0e9bcdbbdde7c846e33ec148f2ced887b596177e0d8e2d",
+      "readiness_2026_11_05_note": "Quickstart and static preview command; existing provenance and rights retained."
     },
     {
       "path": "VERIFICATION.md",
@@ -49,8 +51,10 @@
     {
       "path": "docs/context-explorer.md",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
-      "sha256": "15748142db87bcf257390045ac216d45da939d91e9dec4a29b8dd1d5a50d27b7",
-      "bytes": 3251
+      "sha256": "96f0ef24c4515d6422c4e8b192d44fd8c5338c5f02ce3df5c895ee09052e3972",
+      "bytes": 3721,
+      "readiness_2026_11_05_previous_sha256": "15748142db87bcf257390045ac216d45da939d91e9dec4a29b8dd1d5a50d27b7",
+      "readiness_2026_11_05_note": "Quickstart and static preview command; existing provenance and rights retained."
     },
     {
       "path": "docs/context-verification.md",
@@ -126,12 +130,14 @@
     },
     {
       "path": "package.json",
-      "sha256": "3005da7c1bf996c139807ded358de9a448c379e56f621b94edb068cb5bfad09c",
-      "bytes": 630,
+      "sha256": "5c07c9000e2695f3a34db5ac7244545c147727e267a76c9872cf6fe24572af35",
+      "bytes": 768,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "13454bd5207e3ad225a802ad4a3f24fe1c09120602901fb57dc0065ad62a9985",
       "context_explorer_previous_sha256": "8c4ec6f4988e0844677f5bc68923a395a20450824078a9b234a50e394794c9df",
-      "integration_note": "Updated for the static context explorer; prior provenance and rights retained"
+      "integration_note": "Updated for the static context explorer; prior provenance and rights retained",
+      "readiness_2026_11_05_previous_sha256": "3005da7c1bf996c139807ded358de9a448c379e56f621b94edb068cb5bfad09c",
+      "readiness_2026_11_05_note": "Quickstart and static preview command; existing provenance and rights retained."
     },
     {
       "path": "public/examples/expanded-cases.native-v2.zip",

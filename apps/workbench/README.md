@@ -2,6 +2,13 @@
 
 **[Context explorer](docs/context-explorer.md)** — inspect seven layers of an exported native context. `npm run build:showcase` creates the static viewer for local or cloud hosting; live native operations remain in the local workbench.
 
+For the fastest path, install with `npm ci --ignore-scripts`, then run
+`npm run typecheck`, `npm run build:showcase` and `npm run preview:showcase`.
+Open `http://127.0.0.1:8767`. This path needs Node 24 and npm; it serves the static
+recorded/local-JSON viewer without Python, Rust or model credentials. It implements
+no native query or capsule authoring. The [5 November readiness receipt](../../docs/READINESS_2026-11-05.md)
+records the checks actually executed and the native acceptance still required.
+
 
 This application is published in the public workbench repository. Follow the
 [repository README](../../README.md) for current setup, pinned core builds,
@@ -27,7 +34,9 @@ restarting it with live configuration. Live execution additionally needs the
 pinned Rust 1.95.0 core build and Python 3.11+ example preparation; the lexical
 HTTP integration requires Linux `/usr/bin/python3`.
 
-The test suite also requires Python 3.11+. Run browser tests from this application directory with
+The test suite also requires Python 3.11+. Run both `npm run build` and
+`npm run build:showcase` before the full default suite; its browser tests use both
+artifacts. Run browser tests from this application directory with
 `TACITUS_TEST_BROWSER=/usr/bin/chromium npm test` when system Chromium is available.
 Otherwise install the matching Playwright browser and omit that variable, as
 described in the repository README. Full `TACITUS_ACCEPTANCE=1` testing also

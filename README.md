@@ -1,6 +1,6 @@
 # TACITUS Workbench
 
-Local evidence inspector integrating the public standalone interface and two source examples. Import a native ZIP, inspect its evidence graph, query the pinned Rust core, and export its exact Context JSON. Recorded examples are explicitly selected and never replace failed live requests. A separate lexical workflow searches 622 source records; it does not turn the collection into a native capsule or reviewed claims.
+Inspect a policy context without losing the passages, qualifications and omissions behind it. This repository provides a static browser viewer and a separate local workbench. The viewer opens Context JSON; the local workbench can inspect/query native ZIP capsules after a pinned Rust build and explicit opt-in. Recorded examples are labelled and never replace a failed live request.
 
 [TACITUS](https://tacitus.me) is an independent project building AI data infrastructure for policy and political analysis. [PRAXIS](https://praxis.tacitus.me), its agentic workspace, is paused; sign-in remains invitation-only, AI generation and paid upgrades are unavailable, and public demonstrations remain available. This standalone local tool is separate from those services and from the [capsule core's bounded developer workflow](https://github.com/sargonxg/tacitus-political-policy-second-brain/blob/main/docs/tacitus/LOCAL_CAPSULE_RELEASE.md).
 
@@ -8,17 +8,24 @@ Published main includes the reviewed standalone interface from PR3 `5766d1cb3472
 
 See [operational architecture and release readiness](docs/OPERATIONAL_ARCHITECTURE.md) for the implemented flow, independent review responsibilities, release gates and proposed matched evaluation.
 
+## Choose a workflow
+
+| Task | Command / guide | Requirements and scope |
+| --- | --- | --- |
+| Inspect a recorded or exported Context JSON | `npm run build:showcase` then `npm run preview:showcase` | Node 24 and npm. Read-only browser view; local JSON imports stay in memory. No Python, Rust, server API or model account. |
+| Try the complete interface with saved results | `npm run build` then `npm start` | Node 24 and npm. Loopback server on port 4317; choose **Start recorded demo**. No native execution. |
+| Inspect/query a native ZIP or author bounded local text | [Pinned-core setup](#build-and-run-the-live-core) and [authoring guide](docs/LOCAL_TEXT_AUTHORING.md) | Rust 1.95.0, Python 3.11+, reviewed executable digests and explicit local opt-ins. Current native acceptance must be run in that configured environment. |
+| Search a source collection or open an existing import | [Expanded collection](#prepare-the-separate-expanded-collection), [manifest importer](tools/local-import/README.md) and [collection explorer](docs/LOCAL_COLLECTION_EXPLORER.md) | Separate advanced workflows. A lexical collection is not a native capsule or reviewed claims. |
+
+The viewer accepts `tacitus-uploaded-knowledge-context/1` exports. It does not import DIALECTICA’s different capsule formats or establish a PRAXIS attachment bridge. [Current readiness and verification](docs/READINESS_2026-11-05.md) separates executed checks from native acceptance and unrun evaluation.
+
 ## Inspect a context in the browser
 
 ![Working evidence graph, using the recorded July 1914 source example](apps/workbench/docs/images/context-desktop.png)
 
 The **Context explorer** adds a static view of evidence, assertions, ontology, clocks, review qualifications and omissions. Open a recorded example or import an exported Context JSON in browser memory, follow exact citations, and download the original bytes. No native query or model generation runs in this viewer.
 
-From `apps/workbench`, run `npm ci --ignore-scripts`, then `npm run build:showcase`. Serve `showcase-dist/` locally or as Cloudflare Static Assets. [Viewer, screenshots and cloud instructions](apps/workbench/docs/context-explorer.md). The existing local workbench below supports separate native query and authoring workflows.
-
-## Install and run recorded mode
-
-Prerequisites: Node 24, npm, Python 3.11+ and Git. Tested on Linux with Node 24.19.0/npm 11.9.0. The committed npm lockfile resolves only official registry packages. No credentials or model account are needed.
+Prerequisites: Node 24, npm and Git. From a new checkout:
 
 ```sh
 git clone https://github.com/sargonxg/tacitus-workbench.git
@@ -27,6 +34,18 @@ export TACITUS_WORKBENCH_ROOT="$PWD"
 cd "$TACITUS_WORKBENCH_ROOT/apps/workbench"
 npm ci --ignore-scripts --registry=https://registry.npmjs.org
 npm run typecheck
+npm run build:showcase
+npm run preview:showcase
+```
+
+Open `http://127.0.0.1:8767`. The recorded July 1914 context loads with its recorded label. Follow a citation, inspect the layers, export the unchanged JSON, or use **Open a context** to inspect your own export. Stop the preview with Ctrl-C. The `showcase-dist/` directory is the static artifact; `preview:showcase` is a loopback preview, not a production server. [Viewer, screenshots and optional cloud instructions](apps/workbench/docs/context-explorer.md).
+
+## Install and run recorded mode
+
+Use the same checkout and installed dependencies from the viewer quickstart, with the preview stopped. Node 24 and npm are enough for recorded mode. Python 3.11+ is needed for the test suite and example/collection preparation; Rust is needed for live native operations. The committed npm lockfile resolves only official registry packages. No credentials or model account are needed for recorded mode.
+
+```sh
+cd "$TACITUS_WORKBENCH_ROOT/apps/workbench"
 npm run build
 npm start
 ```
@@ -35,7 +54,7 @@ Open `http://127.0.0.1:4317`. Keep the terminal open; stop it with Ctrl-C before
 
 ## Build and run the live core
 
-Install Rust 1.95.0 through the official rustup distribution if absent. Keep its cargo binary directory on PATH. From the repository root, choose a new absolute output directory:
+This implemented local path needs Rust 1.95.0 through the official rustup distribution, Python 3.11+, Git and `sha256sum`. Keep Cargo on PATH. The 5 November check did not build or execute the core because Cargo is absent; the earlier native receipts below retain their original dates and scope. From the repository root, choose a new absolute output directory:
 
 ```sh
 cd "$TACITUS_WORKBENCH_ROOT"
@@ -91,8 +110,13 @@ Save one successful live query as run A, change only native checkpoints and quer
 
 ## Acceptance
 
+Build both interfaces before running the complete default suite: its browser tests serve the built local interface and `showcase-dist/`. Python 3.11+ and a working Chromium installation are required. The default suite can pass while explicitly skipping configured native/collection tests; this is not full native acceptance.
+
 ```sh
 cd "$TACITUS_WORKBENCH_ROOT/apps/workbench"
+npm run typecheck
+npm run build
+npm run build:showcase
 TACITUS_TEST_BROWSER=/usr/bin/chromium npm test
 # With live + authoring variables exported and both examples prepared:
 # Prepare browser collection fixtures as documented below first.

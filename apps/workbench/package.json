@@ -8,7 +8,8 @@
     "start": "node server/index.mjs",
     "test": "node --test tests/*.test.mjs",
     "typecheck": "tsc --noEmit",
-    "build:showcase": "node scripts/build-showcase.mjs"
+    "build:showcase": "node scripts/build-showcase.mjs",
+    "preview:showcase": "vite preview --config vite.showcase.config.mjs --configLoader native --host 127.0.0.1 --port 8767 --strictPort"
   },
   "dependencies": {
     "react": "19.2.4",

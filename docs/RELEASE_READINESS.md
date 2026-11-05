@@ -1,5 +1,11 @@
 # Release checks — current audit and historical PR12 pass
 
+For the latest static/recorded quickstart checks, read the
+[5 November 2026 readiness receipt](READINESS_2026-11-05.md). It builds and exercises
+the browser interfaces without certifying a new native core run. Cargo is absent
+from that environment. The native results below are historical and must not be
+counted as newly executed acceptance.
+
 The [integrated release-candidate audit](INTEGRATED_RC_AUDIT.md) verifies main
 through PR15 and the subsequent test/documentation corrections. It ran in a Linux
 cloud executor with local-only loopback browser previews. Public hosted deployment
