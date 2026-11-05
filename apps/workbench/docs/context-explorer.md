@@ -2,6 +2,8 @@
 
 A read-only browser view for the **actual exported native Context**, with an evidence graph and seven inspectable layers: purpose, exact evidence, attributed assertions, ontology/graph, time, review/limits and omissions. The inspector does not rank, rewrite, promote or review assertions. Exact JSON export preserves the original input bytes.
 
+The **Research selection** mode is a separate [bounded source-kit reader](research-selection-reader.md). It inspects historical event and annual country records without treating them as native Context JSON. The same static build includes both modes.
+
 ![Recorded July 1914 context in the working explorer](images/context-desktop.png)
 
 [Mobile](images/context-mobile.png) · [Layer inspector](images/layers-desktop.png)

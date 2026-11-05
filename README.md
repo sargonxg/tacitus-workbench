@@ -2,6 +2,8 @@
 
 Inspect a policy context without losing the passages, qualifications and omissions behind it. This repository provides a static browser viewer and a separate local workbench. The viewer opens Context JSON; the local workbench can inspect/query native ZIP capsules after a pinned Rust build and explicit opt-in. Recorded examples are labelled and never replace a failed live request.
 
+The static viewer also has a separate **[Research selection](apps/workbench/docs/research-selection-reader.md)** mode. Open a bounded packet from the [Middle East historical atlas](https://github.com/sargonxg/Syria-political-analysis/blob/main/docs/historical-atlas.md), inspect original event fields or annual country values, and export the imported bytes unchanged. Source-kit selections and native Context JSON remain different formats; opening either performs no model generation.
+
 [TACITUS](https://tacitus.me) is an independent project building AI data infrastructure for policy and political analysis. [PRAXIS](https://praxis.tacitus.me), its agentic workspace, is paused; sign-in remains invitation-only, AI generation and paid upgrades are unavailable, and public demonstrations remain available. This standalone local tool is separate from those services and from the [capsule core's bounded developer workflow](https://github.com/sargonxg/tacitus-political-policy-second-brain/blob/main/docs/tacitus/LOCAL_CAPSULE_RELEASE.md).
 
 Published main includes the reviewed standalone interface from PR3 `5766d1cb3472f85d6ed702728295349e99641520` and example directories from PR1 `dd9dc217f8b839b2b00bf645b62bfb8272ee6146` and PR2 `9ed66eef932fee3b8888fcfed4ed582b0123c133`, integrated through PR4 and PR5. PR6 adds the operational architecture. Current builds pin merged core `6bbdb0764b2bc7d7b05804c79ce9b5505c3bfc95`; historical verification reports describe the checkpoints tested at the time. The existing v0.1.0 tag is unchanged.
@@ -13,11 +15,14 @@ See [operational architecture and release readiness](docs/OPERATIONAL_ARCHITECTU
 | Task | Command / guide | Requirements and scope |
 | --- | --- | --- |
 | Inspect a recorded or exported Context JSON | `npm run build:showcase` then `npm run preview:showcase` | Node 24 and npm. Read-only browser view; local JSON imports stay in memory. No Python, Rust, server API or model account. |
+| Reopen a source-kit research packet | Same static viewer; choose **Research selection** | `policy-research-selection/1`, at most 200 records / 1 MiB. Source metadata, periods, units, omissions and analyst notes are inspected separately; original imported bytes are preserved. |
 | Try the complete interface with saved results | `npm run build` then `npm start` | Node 24 and npm. Loopback server on port 4317; choose **Start recorded demo**. No native execution. |
 | Inspect/query a native ZIP or author bounded local text | [Pinned-core setup](#build-and-run-the-live-core) and [authoring guide](docs/LOCAL_TEXT_AUTHORING.md) | Rust 1.95.0, Python 3.11+, reviewed executable digests and explicit local opt-ins. Current native acceptance must be run in that configured environment. |
 | Search a source collection or open an existing import | [Expanded collection](#prepare-the-separate-expanded-collection), [manifest importer](tools/local-import/README.md) and [collection explorer](docs/LOCAL_COLLECTION_EXPLORER.md) | Separate advanced workflows. A lexical collection is not a native capsule or reviewed claims. |
 
 The viewer accepts `tacitus-uploaded-knowledge-context/1` exports. It does not import DIALECTICA’s different capsule formats or establish a PRAXIS attachment bridge. [Current readiness and verification](docs/READINESS_2026-11-05.md) separates executed checks from native acceptance and unrun evaluation.
+
+The later [research-selection verification](docs/RESEARCH_SELECTION_VERIFICATION_2026-11-05.md) covers the separate source-kit reader and the current 74-test interface suite, including explicit native skips.
 
 ## Inspect a context in the browser
 

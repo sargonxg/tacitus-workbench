@@ -1,0 +1,174 @@
+.showcase-format-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.showcase-format-switch button[aria-pressed="true"] {
+  border-color: #8d4a32;
+  color: #743d29;
+  background: #fff;
+}
+.research-selection {
+  min-width: 0;
+  padding-bottom: 28px;
+  line-height: 1.6;
+}
+.research-selection h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.research-selection h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.rs-import {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 18px;
+  border-top: 1px solid #cbd3d5;
+  padding-top: 20px;
+  font-size: 0.85rem;
+}
+.rs-import label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 100%;
+}
+.rs-import input {
+  max-width: 100%;
+  min-width: 0;
+}
+.rs-import > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: start;
+}
+.rs-help {
+  color: #4c5f69;
+  font-size: 0.84rem;
+  max-width: 90ch;
+}
+.rs-summary,
+.rs-datasets,
+.rs-notes {
+  border-top: 1px solid #cbd3d5;
+  padding-block: 16px;
+  min-width: 0;
+}
+.research-selection dl {
+  font-size: 0.85rem;
+  margin: 0;
+}
+.research-selection dt {
+  color: #4c5f69;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.research-selection dd {
+  margin: 2px 0 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.research-selection summary {
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding-block: 12px;
+}
+.research-selection pre {
+  margin: 0;
+  padding: 14px;
+  background: #eef1ed;
+  max-height: 360px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 0.78rem;
+}
+.rs-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 24px;
+  padding-block: 16px 28px;
+}
+.rs-record-list,
+.rs-inspector {
+  min-width: 0;
+  max-height: 70vh;
+  overflow: auto;
+  border: 1px solid #cbd3d5;
+  background: #fff;
+}
+.rs-record-list:focus-visible,
+.rs-inspector:focus-visible {
+  outline: 2px solid #8d4a32;
+  outline-offset: 3px;
+}
+.rs-inspector {
+  padding: 16px 20px;
+}
+.rs-record-list table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.8rem;
+}
+.rs-record-list caption {
+  text-align: left;
+  padding: 14px;
+  font-weight: 600;
+}
+.rs-record-list thead th {
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+.rs-record-list th,
+.rs-record-list td {
+  border-bottom: 1px solid #dce1df;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+.rs-record-list th button {
+  padding: 0;
+  border: 0;
+  text-align: left;
+  font-size: inherit;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.rs-record-list th button[aria-pressed="true"] {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.rs-selected {
+  background: #f6f1eb;
+}
+.rs-attributes > div {
+  border-top: 1px solid #e2e6e3;
+  padding-block: 3px 8px;
+}
+.rs-dataset {
+  border-top: 1px solid #dce1df;
+  margin-top: 18px;
+  padding-top: 12px;
+}
+@media (max-width: 800px) {
+  .rs-workspace {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .rs-record-list {
+    max-height: 46vh;
+  }
+  .rs-inspector {
+    max-height: 60vh;
+    padding: 14px;
+  }
+}

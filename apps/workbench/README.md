@@ -2,6 +2,8 @@
 
 **[Context explorer](docs/context-explorer.md)** — inspect seven layers of an exported native context. `npm run build:showcase` creates the static viewer for local or cloud hosting; live native operations remain in the local workbench.
 
+**[Research-selection reader](docs/research-selection-reader.md)** — a separate mode for the Middle East source kit's bounded event/country-data exports. Inspect supplied records and metadata, then download the exact imported JSON bytes. This does not convert the file into a native context.
+
 For the fastest path, install with `npm ci --ignore-scripts`, then run
 `npm run typecheck`, `npm run build:showcase` and `npm run preview:showcase`.
 Open `http://127.0.0.1:8767`. This path needs Node 24 and npm; it serves the static
