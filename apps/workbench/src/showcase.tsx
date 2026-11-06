@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import Explorer from "./graph/EvidenceGraphExplorer";
 import { graphFromContext } from "./graph/evidenceGraph";
@@ -8,6 +8,7 @@ import ContextLayers from "./context/ContextLayers";
 import { validateLayerInput } from "./context/contextLayers.mjs";
 import ResearchSelection from "./ResearchSelection";
 import "./showcase.css";
+const SemanticExplorer = lazy(() => import("./SemanticExplorer"));
 
 type Loaded = {
   raw: string;
@@ -44,7 +45,11 @@ function inspect(raw: string, origin: string): Loaded {
   return { raw, context, graph, origin };
 }
 function App() {
-  const [mode, setMode] = useState<"native" | "selection">("native");
+  const [mode, setMode] = useState<"native" | "selection" | "semantic">(() =>
+    new URLSearchParams(location.search).get("mode") === "semantic"
+      ? "semantic"
+      : "native",
+  );
   const [loaded, setLoaded] = useState<Loaded | null>(null);
   const [view, setView] = useState("graph"),
     [message, setMessage] = useState("Loading recorded example…");
@@ -147,11 +152,17 @@ function App() {
                   Inspect the political concepts, dates and omissions that
                   travel with it.
                 </>
-              ) : (
+              ) : mode === "selection" ? (
                 <>
                   Inspect a bounded research selection from the source kit:
                   historical event records, country indicators and their
                   supplied provenance.
+                </>
+              ) : (
+                <>
+                  Explore source-derived records through five explicit lenses,
+                  inspect the original fields, and prepare a bounded research
+                  context.
                 </>
               )}
             </p>
@@ -160,7 +171,9 @@ function App() {
             <strong>
               {mode === "native"
                 ? loaded?.origin || "Read-only context inspector"
-                : "Research selection reader"}
+                : mode === "selection"
+                  ? "Research selection reader"
+                  : "Semantic exploration / preparation"}
             </strong>
             <p>
               {mode === "native" ? (
@@ -168,11 +181,17 @@ function App() {
                   Native context JSON is inspected in your browser. Querying or
                   authoring a capsule uses the separate local workbench.
                 </>
-              ) : (
+              ) : mode === "selection" ? (
                 <>
                   Files are inspected in this tab. A research selection remains
                   separate from native Context; it is not a capture or model
                   result.
+                </>
+              ) : (
+                <>
+                  A lazy navigation index of real historical records. Context
+                  Capsule preparation remains separate from native capture and
+                  any future PRAXIS attachment.
                 </>
               )}
             </p>
@@ -191,6 +210,12 @@ function App() {
             onClick={() => setMode("selection")}
           >
             Research selection
+          </button>
+          <button
+            aria-pressed={mode === "semantic"}
+            onClick={() => setMode("semantic")}
+          >
+            Semantic exploration
           </button>
         </nav>
         {mode === "native" ? (
@@ -293,22 +318,32 @@ function App() {
               </p>
             </details>
           </>
-        ) : (
+        ) : mode === "selection" ? (
           <div id="explorer" tabIndex={-1}>
             <ResearchSelection />
+          </div>
+        ) : (
+          <div id="explorer" tabIndex={-1}>
+            <Suspense
+              fallback={<p role="status">Loading semantic exploration…</p>}
+            >
+              <SemanticExplorer />
+            </Suspense>
           </div>
         )}
       </main>
       <footer className="showcase-footer">
         <span>TACITUS · Independent personal project</span>
         <a
-          href={`https://github.com/sargonxg/tacitus-workbench/blob/main/apps/workbench/docs/${mode === "native" ? "context-explorer.md" : "research-selection-reader.md"}`}
+          href={`https://github.com/sargonxg/tacitus-workbench/blob/main/apps/workbench/docs/${mode === "native" ? "context-explorer.md" : mode === "selection" ? "research-selection-reader.md" : "semantic-exploration.md"}`}
           target="_blank"
           rel="noreferrer"
         >
           {mode === "native"
             ? "Local & static cloud build ↗"
-            : "Reader format & limits ↗"}
+            : mode === "selection"
+              ? "Reader format & limits ↗"
+              : "Exploration & preparation contract ↗"}
         </a>
       </footer>
     </>

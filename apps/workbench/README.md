@@ -4,13 +4,20 @@
 
 **[Research-selection reader](docs/research-selection-reader.md)** — a separate mode for the Middle East source kit's bounded event/country-data exports. Inspect supplied records and metadata, then download the exact imported JSON bytes. This does not convert the file into a native context.
 
+**[Semantic exploration](docs/semantic-exploration.md)** — inspect 2,048 real
+source-derived GED records through provenance, classification, time and place
+lenses, plus a separate original annual-data example for SOSA. The full directory
+and small drawings share the same filters. Collect inspected fields and explicit
+notes into bounded research-selection preparation; native capsules and live
+PRAXIS attachment remain separate work. The static viewer opens this mode directly
+with `?mode=semantic`; its lazy source-derived assets total about 2.47 MiB.
+
 For the fastest path, install with `npm ci --ignore-scripts`, then run
 `npm run typecheck`, `npm run build:showcase` and `npm run preview:showcase`.
 Open `http://127.0.0.1:8767`. This path needs Node 24 and npm; it serves the static
 recorded/local-JSON viewer without Python, Rust or model credentials. It implements
 no native query or capsule authoring. The [5 November readiness receipt](../../docs/READINESS_2026-11-05.md)
 records the checks actually executed and the native acceptance still required.
-
 
 This application is published in the public workbench repository. Follow the
 [repository README](../../README.md) for current setup, pinned core builds,

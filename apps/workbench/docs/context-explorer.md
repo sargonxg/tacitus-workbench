@@ -4,9 +4,20 @@ A read-only browser view for the **actual exported native Context**, with an evi
 
 The **Research selection** mode is a separate [bounded source-kit reader](research-selection-reader.md). It inspects historical event and annual country records without treating them as native Context JSON. The same static build includes both modes.
 
+The **Semantic exploration** mode adds a [source-derived, five-lens navigation
+index and bounded preparation workflow](semantic-exploration.md). It draws at most
+72 of 2,048 indexed original GED records at once, with the complete paginated
+directory alongside. A separate real World Bank annual example serves the SOSA
+lens. Its research-selection preparation download is not a native capsule or a
+verified PRAXIS attachment. All three modes share the same Node-only static build.
+
 ![Recorded July 1914 context in the working explorer](images/context-desktop.png)
 
 [Mobile](images/context-mobile.png) · [Layer inspector](images/layers-desktop.png)
+
+[Semantic exploration desktop](images/semantic-desktop.png) ·
+[Semantic exploration mobile](images/semantic-mobile.png) ·
+[Original annual observation](images/semantic-observation-desktop.png)
 
 ## Static viewer: local or cloud
 

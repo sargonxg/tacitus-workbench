@@ -1,0 +1,100 @@
+{
+  "title": "Source attribution and bounded-subset transformation",
+  "source_repository": "https://github.com/sargonxg/Syria-political-analysis",
+  "source_revision": "736e7ece6c21441cf4083d3ee84dc6e6f8a8804c",
+  "source_working_tree_modified": true,
+  "source_manifest_sha256": "00289aec3ec3a5dfe30cffc71c12108d20ec7f79a46f3513598948d2265418e5",
+  "catalog_sha256": "1cb5d7b522065285574fda09cee46e225c0f4b00945f779c49afb9d31916a73d",
+  "graph_sha256": "9a279c5dc0e2a8b796e9f058d0b5bd378447457911712a141193cfa1b641d04b",
+  "source_catalog_selection": {
+    "available_records": 120576,
+    "method": "round_robin_country_year_then_provider_id",
+    "purpose": "Navigation sample, not statistically representative",
+    "requested_record_nodes": 2048
+  },
+  "modification": "Only indexed GED records are copied to small gzip subset shards. All retained original provider attributes are unchanged. This is a transformed distribution, not the full source partitions; original partition and per-row hashes remain available.",
+  "datasets": [
+    {
+      "id": "ucdp-ged-26.1",
+      "title": "UCDP GED · selected Middle East history",
+      "version": "26.1",
+      "publisher": "Uppsala Conflict Data Program, Uppsala University",
+      "url": "https://ucdp.uu.se/downloads/",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "sha256": "8c941d84954e555ee2e54f40fa04d9203bf1e2f962203d0a9930966c4947c667",
+      "attribution": [
+        "UCDP GED Global version 26.1, Uppsala University.",
+        "Davies, Pettersson and Öberg (2026), Organized violence 1989–2025, and violent political protests. https://doi.org/10.1093/jopres/xjag046",
+        "Sundberg and Melander (2013), Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4), 523–532.",
+        "Högbladh (2026), UCDP GED Codebook version 26.1.",
+        "Modified distribution: selected countries and provider years, whole-record scope filtering, normalized index fields and deterministic sharding. Original retained field values are unchanged. No provider endorsement is implied."
+      ],
+      "limitations": [
+        "Historical coded observations, 2000–2025; not a current operational feed.",
+        "A selected-country subset, not complete violence, news or policy coverage.",
+        "Provider country labels and coordinates are retained; lookup codes do not assert political boundaries or legal status.",
+        "The provider Israel category contains location records in Gaza and the West Bank; no separate country series is invented.",
+        "A coordinate can represent an administrative area, broad feature, country or estimated sea/air location; inspect where_prec.",
+        "Date windows and date_prec are preserved; midnight strings in the raw source are not precise event timestamps.",
+        "Low, best and high are provider estimates, not confidence intervals. Aggregate reporting can yield nonordered estimates; values are not repaired.",
+        "Clear is the provider coding status, not a human review or a guarantee of truth.",
+        "Source references are bibliographic metadata. Original news articles and private evidence are not bundled.",
+        "Some whole records are omitted by publication scope; absence is not evidence of no violence."
+      ]
+    },
+    {
+      "id": "world-bank-wdi",
+      "title": "World Development Indicators · selected Middle East economies",
+      "version": "2026-10-08",
+      "publisher": "World Bank and the original providers named in indicator metadata",
+      "url": "https://datacatalog.worldbank.org/search/dataset/0037712/world-development-indicators",
+      "license": "CC-BY-4.0; World Bank dataset terms also apply",
+      "license_url": "https://data.worldbank.org/summary-terms-of-use",
+      "sha256": "2d047fe127c9bc8af9532772be59f69880cf09b4bf45ab90f273a0ba30ed9c09",
+      "attribution": "The World Bank: World Development Indicators: original data providers named in each indicator’s metadata. Retrieved 2026-11-05.",
+      "limitations": [
+        "Annual economy-level context; not local conditions or conflict-event evidence.",
+        "Nulls and unreturned periods are separate coverage gaps, never zero, interpolation or carried-forward values.",
+        "Values can be model estimates. Blank provider status is unknown; explicitly flagged forecasts and unrecognized flags are withheld.",
+        "Each series has its own units, denominator, coverage and source methodology; no regional totals or causal links are computed.",
+        "Same country/year alignment with conflict events is descriptive and does not identify a causal relationship."
+      ]
+    }
+  ],
+  "annual_example": {
+    "attributes_sha256": "8b1789a3f551696a6d028fde772a516d8ef63d5250aefff6f44c82cc0bf4ea1c",
+    "country_code": "SY",
+    "dataset_id": "world-bank-wdi",
+    "evidence_fields": {
+      "attributes.country_name": "Syrian Arab Republic",
+      "attributes.countryiso3code": "SYR",
+      "attributes.date": "2024",
+      "attributes.indicator_id": "SP.POP.TOTL",
+      "attributes.indicator_name": "Population, total",
+      "attributes.unit": "",
+      "attributes.value": 24672760
+    },
+    "id": "wdi:2:SYR:SP.POP.TOTL:2024",
+    "indicator_code": "SP.POP.TOTL",
+    "indicator_name": "Population, total",
+    "indicator_shard": "./data/indicators/SY-02.json",
+    "kind": "country_indicator",
+    "lens": "sosa-ssn",
+    "qualification": "An annual provider population estimate. Display unit comes from series metadata; raw unit is retained separately. No physical sensor or exact measurement day is asserted.",
+    "shard": {
+      "bytes": 588858,
+      "count": 465,
+      "country_code": "SY",
+      "dataset_id": "world-bank-wdi",
+      "path": "./data/indicators/SY-02.json",
+      "sha256": "02628cc12c5c078e52b84c1e4f3fdef1f1bf059d3f6b4d8bd823e6a31813927c"
+    },
+    "source_locator": "https://api.worldbank.org/v2/country/SYR/indicator/SP.POP.TOTL?source=2&date=2024&format=json&footnote=y",
+    "unit": "persons",
+    "value": 24672760,
+    "year": 2024,
+    "original_shard_sha256": "02628cc12c5c078e52b84c1e4f3fdef1f1bf059d3f6b4d8bd823e6a31813927c"
+  },
+  "application_rights": "Workbench application rights remain reserved; source-data licences do not grant an application licence."
+}

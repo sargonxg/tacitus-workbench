@@ -30,12 +30,14 @@
     {
       "path": "docs/context-explorer.md",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
-      "sha256": "485975c259188e64e04f92f29e662b68ee7871d066b4027c9c906c3d32c1bff5",
-      "bytes": 3972,
+      "sha256": "bd38fa7bcc64b18a2a5deb0b3ecdc047493e77ef978d0a939477d9bd7569301f",
+      "bytes": 4650,
       "readiness_2026_11_05_previous_sha256": "15748142db87bcf257390045ac216d45da939d91e9dec4a29b8dd1d5a50d27b7",
       "readiness_2026_11_05_note": "Quickstart and static preview command; existing provenance and rights retained.",
       "research_selection_previous_sha256": "96f0ef24c4515d6422c4e8b192d44fd8c5338c5f02ce3df5c895ee09052e3972",
-      "research_selection_note": "Updated for the separate bounded research-selection reader and documented setup"
+      "research_selection_note": "Updated for the separate bounded research-selection reader and documented setup",
+      "semantic_exploration_previous_sha256": "485975c259188e64e04f92f29e662b68ee7871d066b4027c9c906c3d32c1bff5",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "path": "docs/context-verification.md",
@@ -68,10 +70,46 @@
       "bytes": 209220
     },
     {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "docs/images/semantic-desktop.png",
+      "sha256": "18f131351bb59110deeed6223357d55f8a0196b4b78553be3b3e830d2415cb16",
+      "bytes": 323999
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "docs/images/semantic-mobile.png",
+      "sha256": "88c3648ef0d45903e1a7f117a429c815c034df4e85d9325f48cd3ef47483f2ba",
+      "bytes": 266114
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "docs/images/semantic-observation-desktop.png",
+      "sha256": "7e85baf5003632e035ec606ecd1ce1f2b6f9974f11d30d9a36181aaeaecb84f8",
+      "bytes": 290810
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "docs/images/semantic-observation-mobile.png",
+      "sha256": "657f543195c0a60379c752cb8841c5c3a7bf87f7ff25b520679d2f37c89cafca",
+      "bytes": 243863
+    },
+    {
       "origin": "Independent Workbench research-selection implementation; existing application rights retained",
       "path": "docs/research-selection-reader.md",
       "sha256": "a67e324e48b35b74ab961fa12878c344037c55413b32a8eda8703d7c21b20ee4",
       "bytes": 5142
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "docs/semantic-exploration.md",
+      "sha256": "92a086125f7ab123dd1fafe6e70cc689f4c1744e6f848b59727a97d4b0896efd",
+      "bytes": 8485
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "docs/semantic-verification.md",
+      "sha256": "cdde9b7f48534b47ead98073581f396152e2265e2845a8453966fbabbf91006b",
+      "bytes": 3583
     },
     {
       "path": "index.html",
@@ -183,9 +221,1167 @@
       "identical_to_origin": true
     },
     {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/annual-example.json",
+      "sha256": "1edd30e3c42383d5825fd36cd8d13cbc09cf0fd39e8cf153806fe4a3076d5fe6",
+      "bytes": 18951
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/catalog.json",
+      "sha256": "1cb5d7b522065285574fda09cee46e225c0f4b00945f779c49afb9d31916a73d",
+      "bytes": 60749
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/graph.json",
+      "sha256": "9a279c5dc0e2a8b796e9f058d0b5bd378447457911712a141193cfa1b641d04b",
+      "bytes": 1894397
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/manifest.json",
+      "sha256": "2bf3dad514cc4d186734d851c7a35ad93b6ee201754f5c44b6038f8ab78078fc",
+      "bytes": 87762
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2000-001.json.bin",
+      "sha256": "41dd5004d04cf0a3923520ff66c4ad1c2dd7f7de290680797783907da6c8b373",
+      "bytes": 1477
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2004-001.json.bin",
+      "sha256": "3a5d2473a18224437e41edf61e51fc55ba5842893a6998acec83833e6198f589",
+      "bytes": 1200
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2005-001.json.bin",
+      "sha256": "18b0a3233bcfa74e163b0eb6368478d8fd5fad40062c9cff45152f535c5e3f54",
+      "bytes": 1571
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2006-001.json.bin",
+      "sha256": "bbe09645afe0b78123b0c0fa96bd78b2a6d7fba385bf7dce589acd5945537b11",
+      "bytes": 1117
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2008-001.json.bin",
+      "sha256": "0a1fafc30394a2d879ed5afff025d720bcaff8f9a4106303554d99731ae60fb1",
+      "bytes": 1054
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2009-001.json.bin",
+      "sha256": "489a63b9df3483dc76e9923c5e8bb53ead47cfc80ba31e7704f81c6756bc4093",
+      "bytes": 1066
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2010-001.json.bin",
+      "sha256": "6792a405e8bde9fb346f1bfec4f4aea4f86095d0c98210bcbc2195f69534d197",
+      "bytes": 955
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2011-001.json.bin",
+      "sha256": "8b214e0fb43be8a23b48e86c844f78baba061039864462788b825c5a6eb7843b",
+      "bytes": 2256
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2012-001.json.bin",
+      "sha256": "731b47b7eb9ff4b367d2c46161145af861b804a81e93fe686d835ed475d281bf",
+      "bytes": 1225
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2013-001.json.bin",
+      "sha256": "9556e04ba91ef17f76d36eb8e48cc0efec61ca666e90e67ccdffbc6490e6845c",
+      "bytes": 3015
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2014-001.json.bin",
+      "sha256": "7eef8cbdcb1092f260d6b68a978595d358d0e0360fb76634a18d19c3a1d139b5",
+      "bytes": 3148
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2015-001.json.bin",
+      "sha256": "9d788247c2f5c4ca2a6b551c598e5032bf5f42d0e6843afc2b4c8cb93e3bc256",
+      "bytes": 3100
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2016-001.json.bin",
+      "sha256": "0dfcf5e1de02df571a233bac6b1f1c3edd7bfc2a95db950bf60794cb15b8ac26",
+      "bytes": 3165
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2017-001.json.bin",
+      "sha256": "bca0ddeb80153e484c21b7185f7a4e85309967fc4f82aad6ce185ad97583935b",
+      "bytes": 3060
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2018-001.json.bin",
+      "sha256": "efb6bd23bfc5fc265087ca70add90b05b62399cc988ece0d22fa09040e16ca91",
+      "bytes": 2759
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2019-001.json.bin",
+      "sha256": "6570995737c2dc916d09eba77ca0714f6cd7fcd6ffd899a339103abc6b847b74",
+      "bytes": 3659
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2020-001.json.bin",
+      "sha256": "6cdab0ec9e2d19fc83cc30971bbdd69c6ba81d30322b4f861de9cdad36490f8f",
+      "bytes": 4378
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2021-001.json.bin",
+      "sha256": "3747cab20d71087f90e89700af8cfc0355ccd302d5ba33039e6bec2a496de007",
+      "bytes": 3221
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2022-001.json.bin",
+      "sha256": "ec9f944f664aac354cb5fb46b7df15a94aa2d5f1ab2f5615c80f0f5bf29b0c85",
+      "bytes": 2674
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2023-001.json.bin",
+      "sha256": "b700d1f7c8a09c348e6c461598d89a9dc86de68dc42cb8bd679f112157affe17",
+      "bytes": 1770
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/EG/2025-001.json.bin",
+      "sha256": "83a83d4586e62745b54125e9a6f302f55bc24426b321d069ee1c331dd248368e",
+      "bytes": 1000
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2000-001.json.bin",
+      "sha256": "9aadc659cda2df4314d9b1e9529c4df1007d8160763e5d2de50f3ab715d1599e",
+      "bytes": 2689
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2001-001.json.bin",
+      "sha256": "26e2b7a57c74f3095ff656577ba5134c28caae1602324940475e035a4f12987f",
+      "bytes": 2791
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2002-001.json.bin",
+      "sha256": "3719ff0aeb00ad740b4cbab0b0c072719dd071e8ceb7971a4ca337740fe6214c",
+      "bytes": 3370
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2003-001.json.bin",
+      "sha256": "4188db21050d3183e9c7098378b086e27af09af15c5c250b5aca9038cc33159b",
+      "bytes": 2404
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2004-001.json.bin",
+      "sha256": "5e2ca665d450c4fa900e943df83577446f5f29bccdde66155456f62e1a125d89",
+      "bytes": 2354
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2005-001.json.bin",
+      "sha256": "00403ad8c0f96f0c614eaa60edd5fc4e07239e13cfa071314f2caacbffb5f35e",
+      "bytes": 2528
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2006-001.json.bin",
+      "sha256": "6a047d5ad84de6bfc147eac9b66a809741374ae70a410384a7d287e71f02621b",
+      "bytes": 3363
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2007-001.json.bin",
+      "sha256": "b043a2e729aa355a0e9f101c3e1044c33ebd9a9789268b1c6499e31c33aa4b53",
+      "bytes": 2659
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2008-001.json.bin",
+      "sha256": "e69fca987db79f435152414deb20d77426a7e910388b72a91f69531256578cb7",
+      "bytes": 2877
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2009-001.json.bin",
+      "sha256": "6c22855478c98314b0b677f17c159434146b6671e3b08ab4017289f22a55645a",
+      "bytes": 3005
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2010-001.json.bin",
+      "sha256": "9eb4b61c7a4eee0360afc006b0b9e66a18de8e5c024090ad2ab861149700e119",
+      "bytes": 2848
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2011-001.json.bin",
+      "sha256": "30bd27825d6cd8b4bf77d00054a84898cc1d6d79e68808951f74415c95ea4960",
+      "bytes": 2360
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2012-001.json.bin",
+      "sha256": "6d230fd11265a78508295ec4716c17c06abf4346cfa7c71acf359b6c8b97bb12",
+      "bytes": 2663
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2013-001.json.bin",
+      "sha256": "762807ebc209c7d5798df7e4f5804bcd73386ec8d183f439778c5340494c0201",
+      "bytes": 2537
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2014-001.json.bin",
+      "sha256": "6ff71a17ff85c02db79e4e95036dd42e36c1756eda5203394d61d556905456d3",
+      "bytes": 3835
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2015-001.json.bin",
+      "sha256": "30f3982b1dfe11e0d9d2da5f0087329c8db6808858c59ba606ed3175037425fa",
+      "bytes": 3612
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2016-001.json.bin",
+      "sha256": "9fc9440e726812ededc6615ab06a2d1a3721193f7c7cf99ca891c555e3bc310d",
+      "bytes": 3422
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2017-001.json.bin",
+      "sha256": "6713d5eaaff7269bb0bc17ff5b7f4bc0144cabac61b397aa84bd47001fbadc21",
+      "bytes": 3059
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2018-001.json.bin",
+      "sha256": "6f35b5ab312bdc34bf84d01224cad9dc12478efa0d4da7836146b27e3055187c",
+      "bytes": 3955
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2019-001.json.bin",
+      "sha256": "2acb3aaad2d7df226866d3be2b4479e7b9d6d311456f5d5cdb47009d58133193",
+      "bytes": 4259
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2020-001.json.bin",
+      "sha256": "46016cbd17d06bd67a9936a3d2bb0c706ad84bd3401661b422ba48779f2d26e9",
+      "bytes": 3070
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2021-001.json.bin",
+      "sha256": "57bcd202ef7ec32e4bdc353aeaececac98731c1a84816f048118fbc1e75cda2a",
+      "bytes": 4152
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2022-001.json.bin",
+      "sha256": "ec804c13fb5799c95aafc3be26648742ccd427c08876c3b65e0827b5531bd2db",
+      "bytes": 4028
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2023-001.json.bin",
+      "sha256": "b3c5574d879517e41eddd5ac7ccd9060023a4c4480012b8fa8cd72236216ea63",
+      "bytes": 3849
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2024-001.json.bin",
+      "sha256": "b6a95ec8625e54648b5b098554c611a8dabaea4fc1cb227482878d045b5957eb",
+      "bytes": 2483
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IL/2025-001.json.bin",
+      "sha256": "f012fbd3c2ce206af4141739bc675b865217c32d6154383146799119c056794f",
+      "bytes": 2929
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2000-001.json.bin",
+      "sha256": "85cb6c1e98c309ea255d42450892331a7618e3a32747942f9fa6aa0d10c83949",
+      "bytes": 3207
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2001-001.json.bin",
+      "sha256": "4b3148b2a116c8a910a12ad5b8e9d87a035da16c3973aed9493ef16735a7abed",
+      "bytes": 2734
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2002-001.json.bin",
+      "sha256": "739efd6695038f2f962f890250a2cd5acbe1e4f7bd7e7ee8a90aabb57ddb5e34",
+      "bytes": 3319
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2003-001.json.bin",
+      "sha256": "8d24441d7679dba3003ddb970756b5adb1e2f67a1d07daa35dad2c3c2c076756",
+      "bytes": 2216
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2004-001.json.bin",
+      "sha256": "2bcdf02e5d9db250afdd5bf8a8d473c7f04c250aa153eb18c35b58ed3b60df0d",
+      "bytes": 2202
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2005-001.json.bin",
+      "sha256": "32e5be14f6b891feb636a8ce175c6135dce6f91c773cf74546e0b211cd3143ab",
+      "bytes": 1894
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2006-001.json.bin",
+      "sha256": "ae91a110175583a5ea9b4e5335d20981f920407d0bebb38ca8c1091d3deda67f",
+      "bytes": 2474
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2007-001.json.bin",
+      "sha256": "2fa8464f7f0644e75d916ea848ad80014eec961e78e1fb110dc20cd4b3a0168b",
+      "bytes": 2410
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2008-001.json.bin",
+      "sha256": "d3b296bc1ada647fc70aebc973f1a89c34e6e2e3d58ed77a97b34c2c032943c7",
+      "bytes": 2106
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2009-001.json.bin",
+      "sha256": "6138b843cd6cbe31b8bb337d378bf86d38e67ba5df917947764eeb43a2f33245",
+      "bytes": 2070
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2010-001.json.bin",
+      "sha256": "99c33f798c89cf820cdbed0d0f360f2e9dda52040e7ce9017b0f08fae9258e8f",
+      "bytes": 2679
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2011-001.json.bin",
+      "sha256": "f1bd74b002d6929a73266a06994b35fc18a365381a205f6b49dffb2ac72719ce",
+      "bytes": 2709
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2012-001.json.bin",
+      "sha256": "6b60a53dc3a8908649d2b7391072abfe6d303bdcb02ef384c4132987ac665882",
+      "bytes": 2212
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2013-001.json.bin",
+      "sha256": "738b87cf30b610c3d2500492383c3795678870a63b72c043d8d89546683a624f",
+      "bytes": 2703
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2014-001.json.bin",
+      "sha256": "ab442389baeffddd05a93bb20894bf3926f77cf48399a196ac7103ac770a2aab",
+      "bytes": 2163
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2015-001.json.bin",
+      "sha256": "13bc5ae4f89bfc85c94c101a0b824e1c0bcbbab8589bb4d960a61303dac45c7c",
+      "bytes": 2813
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2016-001.json.bin",
+      "sha256": "85ab1ed5cb4771c5e367c9ad6f6f5248788aac39b7f4417c73c088e87f8039a9",
+      "bytes": 3778
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2017-001.json.bin",
+      "sha256": "24b35dbb6625fe5336c4459944a0da5c4522652ffffd9cbba25f151b30ac9989",
+      "bytes": 2883
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2018-001.json.bin",
+      "sha256": "289eac709655143af0e7dcc29c5c95b730cf13307901dc9a17e074ece0e50ac4",
+      "bytes": 3620
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2019-001.json.bin",
+      "sha256": "28ba81f37287c170f2ca60461c1133b0ed2cd81d466b96c69df1acd60b58c156",
+      "bytes": 3568
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2020-001.json.bin",
+      "sha256": "57a516a4fb31971368cf6d382b8a5ada913ec5bb3cac9d517e91e3157b53e4d5",
+      "bytes": 4009
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2021-001.json.bin",
+      "sha256": "02d9a2b0be894477048a2ac69bcf0d86999ce815e9b5ec792ac4b7ebaa2f387c",
+      "bytes": 3634
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2022-001.json.bin",
+      "sha256": "9827d82feb4b8bd3a103e93b9f33898e7f525de85d368e4d82d4886b994a784e",
+      "bytes": 3582
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2023-001.json.bin",
+      "sha256": "55ef76daaff447bd9cc235d57785972af0791348c291b6731965ca25f08b71e9",
+      "bytes": 3345
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2024-001.json.bin",
+      "sha256": "c33599949bbac43ddb9aca8d0f2ffff7afb7292810cc308e70d735144d7126d5",
+      "bytes": 3437
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IQ/2025-001.json.bin",
+      "sha256": "89a82efc44ed41eb329a57e8f4a83d87fa3b3e420de7661848acd68379d652d0",
+      "bytes": 3757
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2000-001.json.bin",
+      "sha256": "05ffe4b19ed4967069f53924e62f5d989a7773a0af124b79032711dc916a5a03",
+      "bytes": 2341
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2001-001.json.bin",
+      "sha256": "8a7d3778296633d5d68fcd194bf0bc31ea884b1a590ef8c7bceaddcac411fb4c",
+      "bytes": 2061
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2002-001.json.bin",
+      "sha256": "c968dbb30d6c344a7f39b7ea38900991d2da1a56dea82a5947c23310597c2d93",
+      "bytes": 1076
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2003-001.json.bin",
+      "sha256": "c7ae742ec30fb46580cfe4dc5d497e3c7897e68fddeca3e35c411c860d5f6b2e",
+      "bytes": 849
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2004-001.json.bin",
+      "sha256": "12e08eee83a2ec7a32de8f47bdb0e359adc94e3ea996290a3a0457c7da0b01ce",
+      "bytes": 928
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2005-001.json.bin",
+      "sha256": "a34fbc9fe3f8f91c6ddd38217124cb53218c33bd013311e41050e85181397a6e",
+      "bytes": 3064
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2006-001.json.bin",
+      "sha256": "8b1b9e3d5ef5dd99b6f26d1a52b958f98c2d4b4ff300140bf00d46c828795508",
+      "bytes": 3098
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2007-001.json.bin",
+      "sha256": "4be16c4295d7d037dc042458d46e92380c3e8e186cabe0e8a5b3a83263d20536",
+      "bytes": 2961
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2008-001.json.bin",
+      "sha256": "bd0ca9ebb747694bfe79e307dfef82c5e95c9f731d394954059dd3b963f5d126",
+      "bytes": 2971
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2009-001.json.bin",
+      "sha256": "859a94fb74bbc22bd733bbed123b7a6ee9ff10b6c9597d4637874a5565369ba6",
+      "bytes": 2931
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2010-001.json.bin",
+      "sha256": "b529a7338e36f31423aa8681f333af85eecb6d1dc003dec2acea83566db2ed90",
+      "bytes": 3105
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2011-001.json.bin",
+      "sha256": "7de668189a4fc18b3e82da1e44098f4b1b87e95436bff46d31aed013206f31aa",
+      "bytes": 2975
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2012-001.json.bin",
+      "sha256": "703691de5d9ee16acd5d4f530dcdc2df6e2a3d1223adf9381eacb4864fe1fa90",
+      "bytes": 1890
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2013-001.json.bin",
+      "sha256": "88f2084291d201d03a4b80db574143109f755b932084963a3c1d24404010b9e3",
+      "bytes": 1551
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2014-001.json.bin",
+      "sha256": "b26686e7029d1029faa90b79cdcfcca34f0f6a58653914ea0ab9a1865a5ec789",
+      "bytes": 1350
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2015-001.json.bin",
+      "sha256": "8afa0b6e4a7fc66c80eb28f398b6ba21b51577163fdd6f2bc411cf5dbe2fddd5",
+      "bytes": 2697
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2016-001.json.bin",
+      "sha256": "72d839c9408d939776a5157a2cad7a72e7e5565a1e615d952aa88f8a49681dd7",
+      "bytes": 3741
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2017-001.json.bin",
+      "sha256": "d3140240c9a81a69f53dfaf7c92e0dbcec43dc9ebb6ee1fab5e30b66d3f7e0cf",
+      "bytes": 3815
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2018-001.json.bin",
+      "sha256": "227791060b7aba8392e50eaedc4af01b21acef0ebb80c54e15cc52aa2d2810c5",
+      "bytes": 4371
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2019-001.json.bin",
+      "sha256": "99858fa4f82b3fd9a5c7ebde85564fc4f50b1288b418069d8cf4f685eaf07c6d",
+      "bytes": 4856
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2020-001.json.bin",
+      "sha256": "83065ffe4bf214003e4038f3d07207cec67d69c567895b5c10314fc20efa8dee",
+      "bytes": 4548
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2021-001.json.bin",
+      "sha256": "f933f6b2daab5b0888db566b8040888065f74a4e9126326bb6f0dae99e7c3d6b",
+      "bytes": 3959
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2022-001.json.bin",
+      "sha256": "ff42e9d5fa58f2ab9ce8541918a1ab3d43891cac42d191a74fdb9efbfcc1a2f4",
+      "bytes": 3705
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2023-001.json.bin",
+      "sha256": "31564a6341df7de3b6c45cdd86cc1971e2d3370cc18972c752e8f691d093a298",
+      "bytes": 3510
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2024-001.json.bin",
+      "sha256": "04122a7b64c7b02f5a2fe36cf50053a069b707fab5d753174d818b39336b216f",
+      "bytes": 4561
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/IR/2025-001.json.bin",
+      "sha256": "52349a5964c17046bc7bd07209f3080437023a816c38b5d73d2dd46e20866812",
+      "bytes": 3425
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/JO/2005-001.json.bin",
+      "sha256": "01942ebd78366a3c53a2d2ebc87d52bbf73422291dc12514f7fa56878b957350",
+      "bytes": 906
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/JO/2015-001.json.bin",
+      "sha256": "ad830086c08eb78ca9a56f13fe3a9ab1f60822c6b84cecd8d05470dd65285e66",
+      "bytes": 848
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/JO/2016-001.json.bin",
+      "sha256": "a5af3f9a7cfc4690dfab741e68500da1d06fb4201d1d3d2750014bedd71883e2",
+      "bytes": 2089
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/JO/2024-001.json.bin",
+      "sha256": "08007293299c491ee9c14c48f589118d595972705a6a869660ba96c8e3f5e0d7",
+      "bytes": 978
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2000-001.json.bin",
+      "sha256": "ab7ab361c77ce89d231a3d3b34725b54449396c83ef129a3542cf85b9f464dab",
+      "bytes": 2825
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2001-001.json.bin",
+      "sha256": "857389a5b257ba7b4008d56a1cb6d99eabe8d1b2904305cb272f42d626a7a3d8",
+      "bytes": 1519
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2002-001.json.bin",
+      "sha256": "089e94c9be5eb914cc4340ca686be72e6e17342b5097914ddf0ee735ebb849a0",
+      "bytes": 959
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2003-001.json.bin",
+      "sha256": "1e587261d193f64fa4407b336b679377a33e5fb8b1cd6cc4609a3f3300b3ff61",
+      "bytes": 814
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2005-001.json.bin",
+      "sha256": "12358870cad11745e8c81e3b0654149b1e54943cbf58226a9c0e0c94825c6338",
+      "bytes": 1146
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2006-001.json.bin",
+      "sha256": "3500224b5b6a3f0dae43c3270ff4c21d817979dccf5061311bfe4963147d59c2",
+      "bytes": 2845
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2008-001.json.bin",
+      "sha256": "9ee39c53399a2611bdeead6c96de6b6af9556eaa40db6885a125db96abdf8274",
+      "bytes": 1521
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2011-001.json.bin",
+      "sha256": "7b8e1073b49b91d4184b2e3784fb149a19914e46ae6224e9c9f1a2772a15a93b",
+      "bytes": 1037
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2012-001.json.bin",
+      "sha256": "234477267540fd8cefa0c4a22bf030be0fbabc87671af513a512d1af41638c1a",
+      "bytes": 1752
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2013-001.json.bin",
+      "sha256": "f03420ae7b988df811568fcf6f8284a467832140030629f8833426cc5d1b3400",
+      "bytes": 2620
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2014-001.json.bin",
+      "sha256": "e1e658452202c8599ed60be56270cbb3cb45448d8d82db4a6cbc6b985ce3cf14",
+      "bytes": 3068
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2015-001.json.bin",
+      "sha256": "eb95224f1b211acb010888c44821d42c53adbba2da91dcd1e59ef2132307635c",
+      "bytes": 3053
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2016-001.json.bin",
+      "sha256": "c1f952349c3ac0cdb7a8bcf4baaee7a068e7fe9094cf18284abcaeb56cac598d",
+      "bytes": 3649
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2017-001.json.bin",
+      "sha256": "31ca50155b34323d07780ca0c066da0748818cbe087855eca109792cb19ebd72",
+      "bytes": 3704
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2018-001.json.bin",
+      "sha256": "6bd56998ea5019ac05323262917498fc9f9afa922116e30833e05276bc8105d3",
+      "bytes": 944
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2020-001.json.bin",
+      "sha256": "d3107a7a0c0429cd3c5f74238161ff99880aa7f7df6e2e43b24923ec5e611e71",
+      "bytes": 1863
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2023-001.json.bin",
+      "sha256": "c2d99f0c2f5175d2146d36111a25b4ba37265058da90932a5c53199b75907bcd",
+      "bytes": 3427
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2024-001.json.bin",
+      "sha256": "73dfab3cbf55ee411deb84a0b6f2293c7a7700f1160f25167958c2a580baeef0",
+      "bytes": 4229
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/LB/2025-001.json.bin",
+      "sha256": "182fa9f03368e587379ff3fdb203c113c50e6b09152c617431a287bb8a904408",
+      "bytes": 3132
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2001-001.json.bin",
+      "sha256": "4ebd0fc820c8e368c3ceb3d8c8c5c43ddd392e19abdf8fc74c3938dc6166ca8f",
+      "bytes": 932
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2004-001.json.bin",
+      "sha256": "05cdc2a73825b2c67945ec463e84ef8bd11346d761a8d170d45291b5361e40b2",
+      "bytes": 1213
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2008-001.json.bin",
+      "sha256": "c4f511acfd6816a7059656db50913179cae6929baddaebadc635b9b207b24a5d",
+      "bytes": 913
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2011-001.json.bin",
+      "sha256": "fff2536f157e34cff5069cb5a82c57653f7c5dc33367a9b66ced56d2c9088cd1",
+      "bytes": 2549
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2012-001.json.bin",
+      "sha256": "dca1ec4687f24fc00cb8834a6be79fc3650baf5e7ddf3a0795a48e2ad7ad209e",
+      "bytes": 3115
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2013-001.json.bin",
+      "sha256": "8427da9d35050d2c7ddbb791e77fc025795c0568af73cef71fe4dd716cb1f2cc",
+      "bytes": 2965
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2014-001.json.bin",
+      "sha256": "14826a064b61547c15ee751d1057b7a01a6e4e915eea72f01a7a21b6e34075ce",
+      "bytes": 4002
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2015-001.json.bin",
+      "sha256": "abfb9f82415da740dab3ea26ef0ebb58dc7a62311b94327ab2fa3aba97b00c35",
+      "bytes": 3238
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2016-001.json.bin",
+      "sha256": "1637c7f574389e8527690db3086c17590cdab10c58781fe56832fd16bbe53f31",
+      "bytes": 3121
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2017-001.json.bin",
+      "sha256": "a6cf4afb2b971deab9309e453c029af922e03ce692931701c0ddf56c1aa5e5cc",
+      "bytes": 3150
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2018-001.json.bin",
+      "sha256": "b3bd47bbebe853ff1a780ccb008cde15de2d1c7ce0be8e5bace7e3b5d874de70",
+      "bytes": 2836
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2019-001.json.bin",
+      "sha256": "d907c33d5a2ed7ede99860441608f3343716f8d280a77fab8ab47417eb3f0906",
+      "bytes": 4328
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2020-001.json.bin",
+      "sha256": "2f6d59db4755e5b6debcbb96b3782ecc782cd7ef6cdf450f229efeb944a1df3c",
+      "bytes": 3715
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2021-001.json.bin",
+      "sha256": "4d82394e643724624e98cb6f6b2d65accde20ff011760a310349a5dde4df7232",
+      "bytes": 3312
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2022-001.json.bin",
+      "sha256": "c83e22e0ee089aae4d52a4e3216a1d701b579047833a646335185b4fe3d06b68",
+      "bytes": 3251
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2023-001.json.bin",
+      "sha256": "3c38a2511611fbd29ede1fa8207355e6eec5214854de387b486e9c3745be6356",
+      "bytes": 3546
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2024-001.json.bin",
+      "sha256": "f830d0e0af1c941c31adaa301d3efffc7390fc7e5aba49945364cb501d1cc8b6",
+      "bytes": 3036
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/SY/2025-001.json.bin",
+      "sha256": "dfcf4ea5823dbd7d7401d8d5b78a280b53bce84d0525a2fe4bf302cc4fa6f011",
+      "bytes": 3340
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2000-001.json.bin",
+      "sha256": "8a837fc37850bb7d04c5fd59bdd6b37ea8724dbba3a99a765bce58606d0ec3d1",
+      "bytes": 2663
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2001-001.json.bin",
+      "sha256": "13fb2bff82a0a7eb3b367ba8202121a1a895366fa1906d43b798229b2658fb2d",
+      "bytes": 2995
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2002-001.json.bin",
+      "sha256": "ac981bf806f1d900781d55b1c2e24c983dc31b3d8158ae72fbf00a373ef626d3",
+      "bytes": 3151
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2003-001.json.bin",
+      "sha256": "a7b7d5dd5564ca7c9875f2b6258c3add26113b4ab69ed6d1a00e34cf7b47933a",
+      "bytes": 2398
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2004-001.json.bin",
+      "sha256": "7e8ef5de2a1616d8c40d775b20eb9ae3c6f23ba1a0f53c5ddd844cb99e97e7bf",
+      "bytes": 2753
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2005-001.json.bin",
+      "sha256": "f6c04f7d8c756e1b5f8d2c2cfb3da45bc3b895f9aef12ff86ec1488a08c016a1",
+      "bytes": 3089
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2006-001.json.bin",
+      "sha256": "6012c756b98a03071a6fc1db88821dceb64aba2c20af3edb467b2fe7636b4c5d",
+      "bytes": 3113
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2007-001.json.bin",
+      "sha256": "617abedc8319064bfed6b01819082ed487246ae10ce1d7494e5def76f05e533b",
+      "bytes": 2872
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2008-001.json.bin",
+      "sha256": "5448b2c9335d03563d78bda77cea1b6d6dcd2857798ca10769bb215d089c15f2",
+      "bytes": 3074
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2009-001.json.bin",
+      "sha256": "ee1b8f7b2c2ec266776eeb990feec2a2a1bb0980019222c52e3e23375cb79b7a",
+      "bytes": 2953
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2010-001.json.bin",
+      "sha256": "149b575f1670ad9c9f812a0027f8ee13f4be9808e6bbe9c1594608a12f651a7a",
+      "bytes": 2675
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2011-001.json.bin",
+      "sha256": "e712666cbbf2f63fcd305f8edbf604f0be2826ab24f319779928509566299209",
+      "bytes": 2690
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2012-001.json.bin",
+      "sha256": "a2faab50f4c71791fe2b04ed4117070d34646ff304d19c0b9fc4b8ea487f141f",
+      "bytes": 2733
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2013-001.json.bin",
+      "sha256": "1c5eee2d6efa86f99aa3dd80444db002da2323528219d712ae5035a9444b2e60",
+      "bytes": 3921
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2014-001.json.bin",
+      "sha256": "9f8cab7a56d478d36a7b3a279e8c070461bcdab6154a784373972a03df74e7c7",
+      "bytes": 2292
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2015-001.json.bin",
+      "sha256": "f7c645c8079b82a959bf361c71d498aacda86e0c973beebd22556ee048a01040",
+      "bytes": 3482
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2016-001.json.bin",
+      "sha256": "b2c6460e9742c557fad5fe34ea759056d9cfe05bfe4397c3870d41200c2983da",
+      "bytes": 2466
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2017-001.json.bin",
+      "sha256": "67e92b258ec209bfd2748a8ef5c4f681d73e4f7b402739529d7011cf27abb2e2",
+      "bytes": 3757
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2018-001.json.bin",
+      "sha256": "717cc782902f09cc108bdb20aaf717eb7f24c3ed2abef36e3d85c2f00e931547",
+      "bytes": 3834
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2019-001.json.bin",
+      "sha256": "16ae392bfafb24d3908b3e778ad0c1f5e25bd49f563a808c3d1c2a6526b8f764",
+      "bytes": 2979
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2020-001.json.bin",
+      "sha256": "de0b74cadc1dbd68c7a6a32ce3d7aada49e3680bf48246fb07b380673f5b396b",
+      "bytes": 3534
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2021-001.json.bin",
+      "sha256": "da196bedc3e68b7d3f7173c387454e73e1035a8d664ff893f95b747916047085",
+      "bytes": 3233
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2022-001.json.bin",
+      "sha256": "64b7aa37965cd07aade132d55a2aa6f72bb57d632196b3104a83b4c9028a99d7",
+      "bytes": 3052
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2023-001.json.bin",
+      "sha256": "ba57069fd9bc7d08d34fc0b503f4586f1ca1dbf55c67a71f32446c0921f244ba",
+      "bytes": 3294
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2024-001.json.bin",
+      "sha256": "467c5c137df2360a714a06c6479f8f90846d7ce8c06877450d76da00e550950b",
+      "bytes": 3725
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/TR/2025-001.json.bin",
+      "sha256": "3ebe7baaaf4e181828aa120bd90cd136e50c4d477053e02f052a399ad9ea7b1d",
+      "bytes": 1557
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2002-001.json.bin",
+      "sha256": "4444c78a3f04919d362b983cb584002ce8823edae205a609927d117c015b5b16",
+      "bytes": 1127
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2003-001.json.bin",
+      "sha256": "74654b4046845162de7d44c9dc39aad0143164c772e410b2aec6bbc0edc54315",
+      "bytes": 911
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2004-001.json.bin",
+      "sha256": "a93766914081aadb1ed2a4cc18ad1a0f1ed23f63cb03a627ee2c65d8522dcf1c",
+      "bytes": 1032
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2007-001.json.bin",
+      "sha256": "bde33eddd4227d768311a7a42d3624e473f047c1f26b16d843d40ad6c5e0aa68",
+      "bytes": 1086
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2008-001.json.bin",
+      "sha256": "4dd5b227047651b5edc2371b1c893eeef18b6e1ad5a8a528dedb2cca0d69a7b6",
+      "bytes": 2732
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2009-001.json.bin",
+      "sha256": "0d8f9158ab985b93039dfd1f0957b0b063690fc0dff41fc175d5ab8e3b3f71c8",
+      "bytes": 3468
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2010-001.json.bin",
+      "sha256": "366e147baddee8c54dd6f3ebec178bd59e4532601cb0e89f46005ae2aad8b927",
+      "bytes": 3358
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2011-001.json.bin",
+      "sha256": "3662877aa1943a2386cea3621d6bb74ae018e9801b7b76f63ff96d46657b1be9",
+      "bytes": 2660
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2012-001.json.bin",
+      "sha256": "a912a038967f070add57f9799628447dd5778a824ad735d7143cfb67863caae0",
+      "bytes": 2653
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2013-001.json.bin",
+      "sha256": "935011badd3734677f08d5d30b864e76cee21bc40bd84fe122d57f8a81b2f895",
+      "bytes": 2867
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2014-001.json.bin",
+      "sha256": "b29fb8287a4bc6670c5fea7c5d0147f42318e5caa20856c24007679dc64d34d6",
+      "bytes": 2763
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2015-001.json.bin",
+      "sha256": "ccb1474fbe8d8c2bd94155adb31ac1f162ee832bb9ebc622b49a0902dba2b7b2",
+      "bytes": 3103
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2016-001.json.bin",
+      "sha256": "952220dd6f02ef938632cd3be68504d85270d40d2ab3c104e823528d0715ff90",
+      "bytes": 2961
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2017-001.json.bin",
+      "sha256": "4555721e2c8590f76592606904449daf88d816028a70c3592bd1553fa2af3a43",
+      "bytes": 3221
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2018-001.json.bin",
+      "sha256": "3fa382634ec6eaf00e603890eee0b86755086f9275a21bef3d8fee6320af1171",
+      "bytes": 3476
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2019-001.json.bin",
+      "sha256": "f65bc88f98f79d9c09dc5b8aa0d4703df9515fc05fa412288ca106715f04c44d",
+      "bytes": 3316
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2020-001.json.bin",
+      "sha256": "0071165086339edacfd3ae8a707265e8536ef86d22f6a51e4015a4f86a3de1ab",
+      "bytes": 3692
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2021-001.json.bin",
+      "sha256": "7585e9ab86346bd469072f3d712d79a26521bcc6d714131c6bc264e2b543e828",
+      "bytes": 2839
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2022-001.json.bin",
+      "sha256": "f28ac0d8d26774fea760d1e25dba14cd35a423e4b25e428acdf478155708bf68",
+      "bytes": 2962
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2023-001.json.bin",
+      "sha256": "c8f1e9ee2a1f9928834f73deecbe0001887572b68ccdccae53dcc8f67419264f",
+      "bytes": 3233
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2024-001.json.bin",
+      "sha256": "df8fcc097dbf65654354d492252a69ac4c6411832562889858349ecad9b30241",
+      "bytes": 4085
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/rows/YE/2025-001.json.bin",
+      "sha256": "08290d586d9482bc183af3257740bce4efd5c19379945733d8d309416893c2e4",
+      "bytes": 3731
+    },
+    {
+      "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
+      "path": "public/semantic/SOURCE-NOTICE.json",
+      "sha256": "6d83ad44141e24ef0ddd7ac79bf0a286514e99260e24ef4564b48a4392ecf265",
+      "bytes": 6329
+    },
+    {
       "path": "README.md",
-      "sha256": "5e1a805d709d690814accd893088a3be44478ecbfdd6c4f1bb30ba3baf577182",
-      "bytes": 11160,
+      "sha256": "e5b402f1cdece6e10a145b9a63259382a46cc47a75153d4a8401d601fd0c8e69",
+      "bytes": 11716,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "57e5ca83952d700069ec783f767d0a6499d5eb0bdbf473d93b8b8fe2fe7db1bc",
       "pr3_sha256": "ef94acb785822d441fc7f3a2301a8a40746032223a6706ee52b16909a44ffe5f",
@@ -194,7 +1390,9 @@
       "readiness_2026_11_05_previous_sha256": "709fba9adce72f453f0e9bcdbbdde7c846e33ec148f2ced887b596177e0d8e2d",
       "readiness_2026_11_05_note": "Quickstart and static preview command; existing provenance and rights retained.",
       "research_selection_previous_sha256": "68547baab4e282dcf087cbf48976211fd02f10fc1d0c3993b178aa3d94aa5f35",
-      "research_selection_note": "Updated for the separate bounded research-selection reader and documented setup"
+      "research_selection_note": "Updated for the separate bounded research-selection reader and documented setup",
+      "semantic_exploration_previous_sha256": "5e1a805d709d690814accd893088a3be44478ecbfdd6c4f1bb30ba3baf577182",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "path": "scripts/build-showcase.mjs",
@@ -203,10 +1401,18 @@
       "bytes": 227
     },
     {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "scripts/sync-semantic-catalog.mjs",
+      "sha256": "4521dff7b516df6429ff0583bf90018c7ea8416af305f9222ab25ae3550ec23a",
+      "bytes": 11347
+    },
+    {
       "origin": "Independent Workbench research-selection implementation; existing application rights retained",
       "path": "scripts/update-inventory.mjs",
-      "sha256": "3428fa524c84a2a7fcf22386ed8623dcf2a68d461eef2bd5d3d64d3ceedfcf55",
-      "bytes": 1951
+      "sha256": "1063faef163cbcbd622e842293e1fca8146f8aab0b56e4971163b1e481cce282",
+      "bytes": 2337,
+      "semantic_exploration_previous_sha256": "3428fa524c84a2a7fcf22386ed8623dcf2a68d461eef2bd5d3d64d3ceedfcf55",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "path": "scripts/verify-inventory.mjs",
@@ -495,6 +1701,24 @@
       "bytes": 11245
     },
     {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "src/semanticExplorer.css",
+      "sha256": "f5cbff4c3ce85cccbd1ea578559690f765e5bbbd35a452b97990e262c7eeb7c1",
+      "bytes": 7294
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "src/SemanticExplorer.tsx",
+      "sha256": "32fe6bcd4d2825a0b1bf467210c328818908a0c71bd8de0f00a391729a0cb5f4",
+      "bytes": 34957
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "src/semanticModel.ts",
+      "sha256": "dc69c3fd0e91c5394c7c86766c009705d0ed7f9c8a617b1d6fc31490628b085d",
+      "bytes": 26791
+    },
+    {
       "path": "src/showcase.css",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
       "sha256": "ae4c38a4910d971f415be31286c89aadb3ff90b1240834d65ef916c586f556fc",
@@ -503,10 +1727,12 @@
     {
       "path": "src/showcase.tsx",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
-      "sha256": "b063608e328f0715e4c99c6dd57be653dcf0582bfa59218dd8b5b19692a56eec",
-      "bytes": 11324,
+      "sha256": "ace07042c3f6a6651eb817d8818f7c9a1d7b0a01daa84471d0a71bfe0a44e433",
+      "bytes": 12770,
       "research_selection_previous_sha256": "7260b2ba1b9a8859508b1096f5ec735c5a2dfb792cc2587fb28a010e6ba8d321",
-      "research_selection_note": "Updated for the separate bounded research-selection reader and documented setup"
+      "research_selection_note": "Updated for the separate bounded research-selection reader and documented setup",
+      "semantic_exploration_previous_sha256": "b063608e328f0715e4c99c6dd57be653dcf0582bfa59218dd8b5b19692a56eec",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "path": "src/style.css",
@@ -652,6 +1878,18 @@
       "bytes": 7485
     },
     {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "tests/semantic-explorer-browser.test.mjs",
+      "sha256": "026bf68b338905a4460496c18e857ce03e08e3c792998f8a9cdad0a4193f1766",
+      "bytes": 10167
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "tests/semantic-model.test.mjs",
+      "sha256": "8d8c68a7bae266af4026d33ad3fc84620dd4bbf2701f96b42ce90159e5910841",
+      "bytes": 10275
+    },
+    {
       "path": "tests/server-boundary.test.mjs",
       "origin": "Independently authored in task-owned standalone v2 directory",
       "sha256": "d515ff132add311240e78b3d233fbf0d9d2f97d3feaae4e98c157939af0a6a34",
@@ -670,9 +1908,11 @@
     },
     {
       "path": "tsconfig.json",
-      "sha256": "aaa6310dafc43d5eb34913f08538d45d887790f0b53bdb25c0cc1861ff521497",
-      "bytes": 224,
-      "origin": "Independently authored in task-owned standalone directory"
+      "sha256": "9aa4b5784d89ac9d4bdb6da7dc5fcb91bf6011b1492eff2ee520815d927ca794",
+      "bytes": 332,
+      "origin": "Independently authored in task-owned standalone directory",
+      "semantic_exploration_previous_sha256": "aaa6310dafc43d5eb34913f08538d45d887790f0b53bdb25c0cc1861ff521497",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "path": "VERIFICATION.md",
