@@ -122,7 +122,9 @@ function App() {
       <a className="skip" href="#explorer">
         Skip to explorer
       </a>
-      <header className="showcase-header">
+      <header
+        className={`showcase-header${mode === "semantic" ? " showcase-header-semantic" : ""}`}
+      >
         <a href="#explorer" className="brand">
           TACITUS<span>Context explorer</span>
         </a>
@@ -134,16 +136,24 @@ function App() {
           Code & run locally ↗
         </a>
       </header>
-      <main className="showcase-main">
+      <main
+        className={`showcase-main${mode === "semantic" ? " showcase-main-semantic" : ""}`}
+      >
         <section className="showcase-intro">
           <div>
             <p className="kicker">
               Independent research software · Giulio Catanzariti
             </p>
             <h1>
-              Read the evidence.
-              <br />
-              Inspect the context.
+              {mode === "semantic" ? (
+                "Semantic context explorer"
+              ) : (
+                <>
+                  Read the evidence.
+                  <br />
+                  Inspect the context.
+                </>
+              )}
             </h1>
             <p>
               {mode === "native" ? (

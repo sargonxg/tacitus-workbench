@@ -66,3 +66,19 @@ improvement is certified by these UI tests. The downloadable artifact is
 `policy-research-selection/1` preparation, not a native capsule.
 
 No commit, push or deployment was performed in this implementation pass.
+
+## Compact visual follow-up
+
+After review of `3def176`, only the semantic heading/header and surrounding
+spacing were compacted; data and behavior contracts are unchanged. The useful
+graph now begins at **730px in a 1440 × 900 viewport**, and **726.66px at
+1280 × 900**. Native Context and Research selection retain their original intro
+dimensions. All four actual captures above were refreshed.
+
+TypeScript checking, the static build and the focused semantic browser suite
+passed. The browser test now explicitly requires the desktop graph to start
+within the first 900px and guards against spacing leaking into Native Context.
+Full-page axe checks with `wcag2a`, `wcag2aa` and `wcag21aa` reported **zero
+violations** at 1440, 1280 and 390 pixels, with no horizontal overflow or browser
+errors. The complete 84-case suite above was not repeated for this visual-only
+follow-up; its five native acceptance skips remain unchanged.

@@ -68,6 +68,7 @@ test("semantic exploration lazily inspects real sources, prepares bounded contex
         .getByRole("status")
         .filter({ hasText: "Recorded context loaded" })
         .waitFor();
+      const nativeIntro = await page.locator(".showcase-intro").boundingBox();
       assert.equal(
         requests.some((u) => u.includes("/semantic/")),
         false,
@@ -91,6 +92,24 @@ test("semantic exploration lazily inspects real sources, prepares bounded contex
         )
         .waitFor();
       assert.equal(await inspector.locator(".se-attributes > div").count(), 49);
+      await page
+        .getByRole("heading", {
+          name: "Semantic context explorer",
+          level: 1,
+          exact: true,
+        })
+        .waitFor();
+      if (width === 1440) {
+        const plotTop = await page
+          .locator(".se-plot")
+          .evaluate(
+            (element) => element.getBoundingClientRect().top + window.scrollY,
+          );
+        assert.ok(
+          plotTop < 900,
+          `Semantic plot must start in the first 900px; got ${plotTop}px`,
+        );
+      }
       assert.equal(
         await page.locator('.se-plot [aria-label^="Plot record"]').count(),
         72,
@@ -263,6 +282,14 @@ test("semantic exploration lazily inspects real sources, prepares bounded contex
       await page
         .getByRole("heading", { name: "Accessible results", exact: true })
         .waitFor();
+      const returnedNativeIntro = await page
+        .locator(".showcase-intro")
+        .boundingBox();
+      assert.equal(
+        returnedNativeIntro.height,
+        nativeIntro.height,
+        "semantic spacing must not leak into native layout",
+      );
       assert.equal(
         requests.some((u) => u.includes("/api/")),
         false,

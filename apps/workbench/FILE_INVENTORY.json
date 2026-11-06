@@ -72,26 +72,34 @@
     {
       "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
       "path": "docs/images/semantic-desktop.png",
-      "sha256": "18f131351bb59110deeed6223357d55f8a0196b4b78553be3b3e830d2415cb16",
-      "bytes": 323999
+      "sha256": "062669492e8c07ffe9adbebf2650d1aab96d5d6a2322909394c4d9a35bc6e9c9",
+      "bytes": 302104,
+      "semantic_exploration_previous_sha256": "18f131351bb59110deeed6223357d55f8a0196b4b78553be3b3e830d2415cb16",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
       "path": "docs/images/semantic-mobile.png",
-      "sha256": "88c3648ef0d45903e1a7f117a429c815c034df4e85d9325f48cd3ef47483f2ba",
-      "bytes": 266114
+      "sha256": "f05321b0323397a68131d6eca3eb416baa7536f75ba05594d3a6ae4778b776b7",
+      "bytes": 252323,
+      "semantic_exploration_previous_sha256": "88c3648ef0d45903e1a7f117a429c815c034df4e85d9325f48cd3ef47483f2ba",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
       "path": "docs/images/semantic-observation-desktop.png",
-      "sha256": "7e85baf5003632e035ec606ecd1ce1f2b6f9974f11d30d9a36181aaeaecb84f8",
-      "bytes": 290810
+      "sha256": "f4f58134e58862462e0aa34a90c08bf1f59e0e4989078a922951e196c18dd296",
+      "bytes": 269440,
+      "semantic_exploration_previous_sha256": "7e85baf5003632e035ec606ecd1ce1f2b6f9974f11d30d9a36181aaeaecb84f8",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
       "path": "docs/images/semantic-observation-mobile.png",
-      "sha256": "657f543195c0a60379c752cb8841c5c3a7bf87f7ff25b520679d2f37c89cafca",
-      "bytes": 243863
+      "sha256": "663b69d5db6e3873e4845d7093578cdb05274c8f892ae90842e3a7d5dfa30cba",
+      "bytes": 230111,
+      "semantic_exploration_previous_sha256": "657f543195c0a60379c752cb8841c5c3a7bf87f7ff25b520679d2f37c89cafca",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "origin": "Independent Workbench research-selection implementation; existing application rights retained",
@@ -108,8 +116,10 @@
     {
       "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
       "path": "docs/semantic-verification.md",
-      "sha256": "cdde9b7f48534b47ead98073581f396152e2265e2845a8453966fbabbf91006b",
-      "bytes": 3583
+      "sha256": "a14200a20b534e79d606541d39d428763e3c8315ec4a629abcb291479a7cc968",
+      "bytes": 4515,
+      "semantic_exploration_previous_sha256": "cdde9b7f48534b47ead98073581f396152e2265e2845a8453966fbabbf91006b",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "path": "index.html",
@@ -1703,8 +1713,10 @@
     {
       "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
       "path": "src/semanticExplorer.css",
-      "sha256": "f5cbff4c3ce85cccbd1ea578559690f765e5bbbd35a452b97990e262c7eeb7c1",
-      "bytes": 7294
+      "sha256": "83ada4c044e8ed75fb7d05a4063e943521436b4eb586c38fd1a12f9e1fd13582",
+      "bytes": 7501,
+      "semantic_exploration_previous_sha256": "f5cbff4c3ce85cccbd1ea578559690f765e5bbbd35a452b97990e262c7eeb7c1",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
@@ -1721,14 +1733,16 @@
     {
       "path": "src/showcase.css",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
-      "sha256": "ae4c38a4910d971f415be31286c89aadb3ff90b1240834d65ef916c586f556fc",
-      "bytes": 4163
+      "sha256": "2cbad95b1c563188ef387714af37a9fa8a26cd9e2b61d92cca0205b0842d77ba",
+      "bytes": 5165,
+      "semantic_exploration_previous_sha256": "ae4c38a4910d971f415be31286c89aadb3ff90b1240834d65ef916c586f556fc",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "path": "src/showcase.tsx",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
-      "sha256": "ace07042c3f6a6651eb817d8818f7c9a1d7b0a01daa84471d0a71bfe0a44e433",
-      "bytes": 12770,
+      "sha256": "23a01f55c07c69650600c6d4542e2336d536b974549506f8e47673b33d69d973",
+      "bytes": 13087,
       "research_selection_previous_sha256": "7260b2ba1b9a8859508b1096f5ec735c5a2dfb792cc2587fb28a010e6ba8d321",
       "research_selection_note": "Updated for the separate bounded research-selection reader and documented setup",
       "semantic_exploration_previous_sha256": "b063608e328f0715e4c99c6dd57be653dcf0582bfa59218dd8b5b19692a56eec",
@@ -1880,8 +1894,10 @@
     {
       "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
       "path": "tests/semantic-explorer-browser.test.mjs",
-      "sha256": "026bf68b338905a4460496c18e857ce03e08e3c792998f8a9cdad0a4193f1766",
-      "bytes": 10167
+      "sha256": "0e7efa13bf1333f43e54435b7e7c6ceb78188f94a2921dcd287263b7a9896950",
+      "bytes": 11018,
+      "semantic_exploration_previous_sha256": "026bf68b338905a4460496c18e857ce03e08e3c792998f8a9cdad0a4193f1766",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",

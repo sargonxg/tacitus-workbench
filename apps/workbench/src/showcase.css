@@ -246,3 +246,48 @@ select:focus-visible {
     font-size: 2.9rem;
   }
 }
+
+.showcase-header-semantic {
+  padding-block: 15px;
+}
+.showcase-main-semantic .showcase-intro {
+  gap: 36px;
+  padding: 22px 0 18px;
+  align-items: center;
+}
+.showcase-main-semantic .showcase-intro .kicker {
+  margin: 0 0 8px;
+}
+.showcase-main-semantic .showcase-intro h1 {
+  font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+  letter-spacing: -0.035em;
+  line-height: 1.16;
+  margin: 0 0 8px;
+}
+.showcase-main-semantic .showcase-intro > div > p:last-child {
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin: 0;
+}
+.showcase-main-semantic .showcase-intro aside {
+  padding-left: 18px;
+  max-width: 460px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.showcase-main-semantic .showcase-intro aside p {
+  margin: 6px 0;
+}
+.showcase-main-semantic .showcase-format-switch {
+  margin-bottom: 12px;
+}
+.showcase-main-semantic .showcase-format-switch button {
+  padding: 9px 12px;
+  font-size: 0.8rem;
+}
+@media (max-width: 720px) {
+  .showcase-main-semantic .showcase-intro {
+    gap: 16px;
+    padding-top: 20px;
+  }
+}
