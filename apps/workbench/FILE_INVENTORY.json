@@ -233,8 +233,10 @@
     {
       "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
       "path": "public/semantic/annual-example.json",
-      "sha256": "1edd30e3c42383d5825fd36cd8d13cbc09cf0fd39e8cf153806fe4a3076d5fe6",
-      "bytes": 18951
+      "sha256": "d1e69ff453e13c4ae23e0580220964ef8e77baf2040a94ec8d6a0a5d73634485",
+      "bytes": 18951,
+      "semantic_exploration_previous_sha256": "1edd30e3c42383d5825fd36cd8d13cbc09cf0fd39e8cf153806fe4a3076d5fe6",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
@@ -251,8 +253,10 @@
     {
       "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
       "path": "public/semantic/manifest.json",
-      "sha256": "2bf3dad514cc4d186734d851c7a35ad93b6ee201754f5c44b6038f8ab78078fc",
-      "bytes": 87762
+      "sha256": "25d5bb057c93276c27c1bbac900d42a7728d2f3e618c23f49f2f629e170dda0a",
+      "bytes": 87763,
+      "semantic_exploration_previous_sha256": "2bf3dad514cc4d186734d851c7a35ad93b6ee201754f5c44b6038f8ab78078fc",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
@@ -1385,8 +1389,10 @@
     {
       "origin": "Source-derived semantic navigation subset; UCDP/World Bank attribution, source licences and modifications in public/semantic/SOURCE-NOTICE.json",
       "path": "public/semantic/SOURCE-NOTICE.json",
-      "sha256": "6d83ad44141e24ef0ddd7ac79bf0a286514e99260e24ef4564b48a4392ecf265",
-      "bytes": 6329
+      "sha256": "4f171b7c3271d834f2d14d8f65015296da6e043e8b058ca71b29c4153ca72515",
+      "bytes": 6330,
+      "semantic_exploration_previous_sha256": "6d83ad44141e24ef0ddd7ac79bf0a286514e99260e24ef4564b48a4392ecf265",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "path": "README.md",

@@ -1,9 +1,9 @@
 {
   "title": "Source attribution and bounded-subset transformation",
   "source_repository": "https://github.com/sargonxg/Syria-political-analysis",
-  "source_revision": "736e7ece6c21441cf4083d3ee84dc6e6f8a8804c",
-  "source_working_tree_modified": true,
-  "source_manifest_sha256": "00289aec3ec3a5dfe30cffc71c12108d20ec7f79a46f3513598948d2265418e5",
+  "source_revision": "ec6bb8e80ccc8acf2880e4f135673bc2721efcc8",
+  "source_working_tree_modified": false,
+  "source_manifest_sha256": "b412c98fac4d718440ad8848c4e4dd91251dc14917be94dae528468301c60a9a",
   "catalog_sha256": "1cb5d7b522065285574fda09cee46e225c0f4b00945f779c49afb9d31916a73d",
   "graph_sha256": "9a279c5dc0e2a8b796e9f058d0b5bd378447457911712a141193cfa1b641d04b",
   "source_catalog_selection": {

@@ -1,11 +1,11 @@
 {
   "format": "tacitus-semantic-explorer/1",
-  "built_at": "2026-11-06T18:53:33.878939Z",
+  "built_at": "2026-11-06T19:28:33.645090Z",
   "source": {
     "title": "Middle East source kit · source-derived semantic navigation",
     "repository": "https://github.com/sargonxg/Syria-political-analysis",
-    "revision": "736e7ece6c21441cf4083d3ee84dc6e6f8a8804c",
-    "working_tree_modified": true
+    "revision": "ec6bb8e80ccc8acf2880e4f135673bc2721efcc8",
+    "working_tree_modified": false
   },
   "catalog": {
     "path": "./catalog.json",
@@ -2486,7 +2486,7 @@
   "observation_example": {
     "path": "./annual-example.json",
     "bytes": 18951,
-    "sha256": "1edd30e3c42383d5825fd36cd8d13cbc09cf0fd39e8cf153806fe4a3076d5fe6"
+    "sha256": "d1e69ff453e13c4ae23e0580220964ef8e77baf2040a94ec8d6a0a5d73634485"
   },
   "limitations": [
     "A deterministic country/year navigation slice, not a representative sample or the complete source dataset.",
