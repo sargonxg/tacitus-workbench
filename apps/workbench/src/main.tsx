@@ -13,7 +13,7 @@ import ProductGuide from './ProductGuide';
 import LocalAuthor from './LocalAuthor';
 import CollectionExplorer from './collection/CollectionExplorer';
 import CitedBrief from './brief/CitedBrief';
-import ContextLayers from './context/ContextLayers';
+import ContextLayers from './context/ContextLayers.tsx';
 import {validateLayerInput} from './context/contextLayers.mjs';
 import type {WalkthroughData} from './graph/julyWalkthroughModel';
 const GuidedWalkthrough=lazy(()=>import('./graph/July1914Walkthrough'));

@@ -45,6 +45,25 @@ npm run preview:showcase
 
 Open `http://127.0.0.1:8767`. The recorded July 1914 context loads with its recorded label. Follow a citation, inspect the layers, export the unchanged JSON, or use **Open a context** to inspect your own export. Stop the preview with Ctrl-C. The `showcase-dist/` directory is the static artifact; `preview:showcase` is a loopback preview, not a production server. [Viewer, screenshots and optional cloud instructions](apps/workbench/docs/context-explorer.md).
 
+For Windows PowerShell, replace the shell setup above with:
+
+```powershell
+git clone https://github.com/sargonxg/tacitus-workbench.git
+Set-Location tacitus-workbench
+$env:TACITUS_WORKBENCH_ROOT = (Get-Location).Path
+Set-Location apps/workbench
+npm ci --ignore-scripts --registry=https://registry.npmjs.org
+npm run typecheck
+npm run build:showcase
+npm run preview:showcase
+```
+
+Run these npm commands from `apps/workbench`; the repository root has no
+`package.json`. Build both `npm run build` and `npm run build:showcase` before
+running the full `npm test` suite. The two builds produce separate artifacts.
+Component imports include `.tsx` where model modules differ only in letter case,
+so Windows resolves the component rather than the similarly named data module.
+
 ## Install and run recorded mode
 
 Use the same checkout and installed dependencies from the viewer quickstart, with the preview stopped. Node 24 and npm are enough for recorded mode. Python 3.11+ is needed for the test suite and example/collection preparation; Rust is needed for live native operations. The committed npm lockfile resolves only official registry packages. No credentials or model account are needed for recorded mode.

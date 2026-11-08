@@ -4,9 +4,9 @@ import Explorer from "./graph/EvidenceGraphExplorer";
 import { graphFromContext } from "./graph/evidenceGraph";
 import type { NativeContext, EvidenceGraph } from "./graph/evidenceGraph";
 import { wholeContextBlob } from "./local-inspector-client.mjs";
-import ContextLayers from "./context/ContextLayers";
+import ContextLayers from "./context/ContextLayers.tsx";
 import { validateLayerInput } from "./context/contextLayers.mjs";
-import ResearchSelection from "./ResearchSelection";
+import ResearchSelection from "./ResearchSelection.tsx";
 import "./showcase.css";
 const SemanticExplorer = lazy(() => import("./SemanticExplorer"));
 
