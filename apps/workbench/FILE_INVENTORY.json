@@ -211,8 +211,10 @@
     {
       "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
       "path": "policy.html",
-      "sha256": "96dfef627d2435a13da65b6e034ccf32c3cce6de0d3c44a6bcd52d7faa591c64",
-      "bytes": 417
+      "sha256": "2fcfcc1990054522c1f42200a9042ebfc18bb1dc82b1a4040cbd04bbd51dbdfd",
+      "bytes": 486,
+      "semantic_exploration_previous_sha256": "96dfef627d2435a13da65b6e034ccf32c3cce6de0d3c44a6bcd52d7faa591c64",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "path": "public/examples/expanded-cases.native-v2.zip",
@@ -1775,6 +1777,12 @@
       "bytes": 1739,
       "semantic_exploration_previous_sha256": "5c750fa52e850a6b76c5a090acbb68feade48efcdcf87e7b44d891abb369574d",
       "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "src/policy-favicon.svg",
+      "sha256": "58c7a620c892e607e677d976caaf32e02542762ee68f0b1bd012424011fcee77",
+      "bytes": 368
     },
     {
       "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
