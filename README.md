@@ -10,6 +10,14 @@ Published main includes the reviewed standalone interface from PR3 `5766d1cb3472
 
 See [operational architecture and release readiness](docs/OPERATIONAL_ARCHITECTURE.md) for the implemented flow, independent review responsibilities, release gates and proposed matched evaluation.
 
+## Inspect a real model-assisted policy draft
+
+The new [Policy briefing reader](apps/workbench/docs/policy-workflow.md) opens results from the [public policy pipeline](https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open/tree/main/reference-pipeline). Inspect a recorded two-step evidence-inspection agent, follow each draft item to its exact quotations, and review qualifications the draft does not repeat. Model usage and the review boundary remain visible.
+
+![Actual historical Syria policy draft and evidence](apps/workbench/docs/images/policy-workflow-desktop.png)
+
+Build the static viewer below, then open `http://127.0.0.1:8767/?mode=workflow`. It is a read-only inspector; actual generation runs separately in the pipeline. The result is not a native Context or verified hosted PRAXIS attachment.
+
 ## Choose a workflow
 
 | Task | Command / guide | Requirements and scope |

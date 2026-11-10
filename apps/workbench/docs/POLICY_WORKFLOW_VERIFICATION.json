@@ -1,0 +1,21 @@
+{
+  "passed": 15,
+  "checks": [
+    "real agent draft loaded",
+    "recorded model usage visible",
+    "citation selects exact source",
+    "historical target retained",
+    "two agent steps inspectable",
+    "actual graph objects",
+    "actual graph relationships",
+    "exact bytes preserved",
+    "no overflow 320",
+    "no overflow 390",
+    "no overflow 768",
+    "no overflow 1440",
+    "failed import clears previous draft",
+    "failed import explicit",
+    "no JS errors"
+  ],
+  "errors": []
+}

@@ -8,6 +8,7 @@ import ContextLayers from "./context/ContextLayers.tsx";
 import { validateLayerInput } from "./context/contextLayers.mjs";
 import ResearchSelection from "./ResearchSelection.tsx";
 import "./showcase.css";
+const PolicyWorkflow = lazy(() => import("./PolicyWorkflow"));
 const SemanticExplorer = lazy(() => import("./SemanticExplorer"));
 
 type Loaded = {
@@ -45,11 +46,10 @@ function inspect(raw: string, origin: string): Loaded {
   return { raw, context, graph, origin };
 }
 function App() {
-  const [mode, setMode] = useState<"native" | "selection" | "semantic">(() =>
-    new URLSearchParams(location.search).get("mode") === "semantic"
-      ? "semantic"
-      : "native",
-  );
+  const [mode, setMode] = useState<"native" | "selection" | "semantic" | "workflow">(() => {
+    const mode=new URLSearchParams(location.search).get("mode");
+    return mode==='workflow'?'workflow':mode==='semantic'?'semantic':'native';
+  });
   const [loaded, setLoaded] = useState<Loaded | null>(null);
   const [view, setView] = useState("graph"),
     [message, setMessage] = useState("Loading recorded example…");
@@ -145,7 +145,7 @@ function App() {
               Independent research software · Giulio Catanzariti
             </p>
             <h1>
-              {mode === "semantic" ? (
+              {mode === "workflow" ? "Policy briefing workbench" : mode === "semantic" ? (
                 "Semantic context explorer"
               ) : (
                 <>
@@ -156,7 +156,7 @@ function App() {
               )}
             </h1>
             <p>
-              {mode === "native" ? (
+              {mode === "workflow" ? <>Inspect a model draft beside exact policy evidence, qualifications and the context that produced it.</> : mode === "native" ? (
                 <>
                   Follow an attributed assertion to its exact source passage.
                   Inspect the political concepts, dates and omissions that
@@ -179,14 +179,14 @@ function App() {
           </div>
           <aside>
             <strong>
-              {mode === "native"
+              {mode === "workflow" ? "Cited drafting workflow" : mode === "native"
                 ? loaded?.origin || "Read-only context inspector"
                 : mode === "selection"
                   ? "Research selection reader"
                   : "Semantic exploration / preparation"}
             </strong>
             <p>
-              {mode === "native" ? (
+              {mode === "workflow" ? <>Open a recorded or imported pipeline result. Read-only inspection; no generation, credentials or external actions in the browser.</> : mode === "native" ? (
                 <>
                   Native context JSON is inspected in your browser. Querying or
                   authoring a capsule uses the separate local workbench.
@@ -227,6 +227,7 @@ function App() {
           >
             Semantic exploration
           </button>
+          <button aria-pressed={mode === "workflow"} onClick={() => setMode("workflow")}>Policy briefing</button>
         </nav>
         {mode === "native" ? (
           <>
@@ -332,7 +333,7 @@ function App() {
           <div id="explorer" tabIndex={-1}>
             <ResearchSelection />
           </div>
-        ) : (
+        ) : mode === "workflow" ? <div id="explorer" tabIndex={-1}><Suspense fallback={<p role="status">Loading policy workflow…</p>}><PolicyWorkflow /></Suspense></div> : (
           <div id="explorer" tabIndex={-1}>
             <Suspense
               fallback={<p role="status">Loading semantic exploration…</p>}
@@ -345,11 +346,11 @@ function App() {
       <footer className="showcase-footer">
         <span>TACITUS · Independent personal project</span>
         <a
-          href={`https://github.com/sargonxg/tacitus-workbench/blob/main/apps/workbench/docs/${mode === "native" ? "context-explorer.md" : mode === "selection" ? "research-selection-reader.md" : "semantic-exploration.md"}`}
+          href={`https://github.com/sargonxg/tacitus-workbench/blob/main/apps/workbench/docs/${mode === "workflow" ? "policy-workflow.md" : mode === "native" ? "context-explorer.md" : mode === "selection" ? "research-selection-reader.md" : "semantic-exploration.md"}`}
           target="_blank"
           rel="noreferrer"
         >
-          {mode === "native"
+          {mode === "workflow" ? "Pipeline format & source checks ↗" : mode === "native"
             ? "Local & static cloud build ↗"
             : mode === "selection"
               ? "Reader format & limits ↗"

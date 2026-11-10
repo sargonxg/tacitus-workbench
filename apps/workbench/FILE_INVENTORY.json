@@ -71,6 +71,24 @@
     },
     {
       "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "docs/images/policy-workflow-desktop.png",
+      "sha256": "464dd6a404d26ea4904afdb3600227d7da1723367cc292b02c84f30fad8ed93b",
+      "bytes": 401352
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "docs/images/policy-workflow-focus.png",
+      "sha256": "f572429bdbe6735d1982dbb6c37a8f058b6ca69abc3b0182db1076731401e8d0",
+      "bytes": 145542
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "docs/images/policy-workflow-mobile.png",
+      "sha256": "0184fd079a6f8f91c9b805c3b7f251f45c003efb8c2814c02f72ceb06f648a28",
+      "bytes": 341058
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
       "path": "docs/images/semantic-desktop.png",
       "sha256": "062669492e8c07ffe9adbebf2650d1aab96d5d6a2322909394c4d9a35bc6e9c9",
       "bytes": 302104,
@@ -100,6 +118,18 @@
       "bytes": 230111,
       "semantic_exploration_previous_sha256": "657f543195c0a60379c752cb8841c5c3a7bf87f7ff25b520679d2f37c89cafca",
       "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "docs/POLICY_WORKFLOW_VERIFICATION.json",
+      "sha256": "a41cc378846c986dbac83a341636f5899905a609d0ae388e78258cb5f7ae3f98",
+      "bytes": 503
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "docs/policy-workflow.md",
+      "sha256": "b0e24493af0af8a263bcbd3a96a0ed782fa50986c53c06282af80e08a9000695",
+      "bytes": 2168
     },
     {
       "origin": "Independent Workbench research-selection implementation; existing application rights retained",
@@ -207,6 +237,12 @@
       "origin": "corpus-transfer/extracted/july-1914-evidence/validation/native/peace.context.json",
       "origin_sha256": "db66dc39092669574ac527e95a8fd570508c26401d6f3f943e7aa7fdc411a51e",
       "identical_to_origin": true
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "public/examples/syria-policy-workflow.json",
+      "sha256": "cddbc5647e92a294d499bacef45fe4813e8110be9155331e12d71e203afad48c",
+      "bytes": 21235
     },
     {
       "path": "public/notices/expanded-RIGHTS.md",
@@ -1439,6 +1475,12 @@
       "integration_note": "Updated for the static context explorer; prior provenance and rights retained"
     },
     {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "scripts/verify-policy-workflow.py",
+      "sha256": "08a1968acc5d1dc215e69caad6dbc413044b4ba8ccfdef36501fe577d286a641",
+      "bytes": 2803
+    },
+    {
       "path": "server/index.mjs",
       "sha256": "77b04551a2bedb591ba3bbaa176e4244a109898b425f2a6806b08fa06e44414c",
       "bytes": 5663,
@@ -1689,6 +1731,24 @@
       "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "src/policyWorkflow.css",
+      "sha256": "fc17b9719af2c38f386c5964a799e04fdfe6c9ff9fa777caa6db022a73c9b8fa",
+      "bytes": 2696
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "src/policyWorkflow.mjs",
+      "sha256": "94c5bf0ff0c13db478452308a8088502a6d207f60e95204b9f6341a896691340",
+      "bytes": 3778
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "src/PolicyWorkflow.tsx",
+      "sha256": "3c0ffcccbf4939942c68a7382f8ed51782a5528c650754dadf702981511e6534",
+      "bytes": 5988
+    },
+    {
       "path": "src/ProductGuide.css",
       "origin": "Independently authored onboarding component or regression test; existing reserved-rights boundary retained",
       "sha256": "cf25735161e3de337cbf5dd36ecb4f9f977764f7d261dc84010e33058f0db7c4",
@@ -1749,8 +1809,8 @@
     {
       "path": "src/showcase.tsx",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
-      "sha256": "b99fc4428c8ed1b09841ba8df02c8d318bf2b0b7771035652212d417823610c5",
-      "bytes": 13095,
+      "sha256": "dcb471e9c8bed26a93bc72b5dbe609954f8b75108fdaaea6ff29a49d6e429031",
+      "bytes": 13987,
       "research_selection_previous_sha256": "7260b2ba1b9a8859508b1096f5ec735c5a2dfb792cc2587fb28a010e6ba8d321",
       "research_selection_note": "Updated for the separate bounded research-selection reader and documented setup",
       "semantic_exploration_previous_sha256": "b063608e328f0715e4c99c6dd57be653dcf0582bfa59218dd8b5b19692a56eec",
@@ -1874,6 +1934,12 @@
       "origin": "Independently authored onboarding component or regression test; existing reserved-rights boundary retained",
       "sha256": "9bf513bdc21fba79675a34e34fb07004bb93ea6bb61a3bf0043c88f05dde4614",
       "bytes": 2039
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "tests/policy-workflow.test.mjs",
+      "sha256": "12432b8c50610dcbfdb6fe4636697da2e66a8d158865920d3274eb9e36c7aada",
+      "bytes": 1703
     },
     {
       "path": "tests/query-contract.test.mjs",
