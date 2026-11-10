@@ -11,6 +11,7 @@ const ignored = new Set([
   "node_modules",
   "dist",
   "showcase-dist",
+  "policy-dist",
   "output",
   ".git",
   ".wrangler",

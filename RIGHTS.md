@@ -10,3 +10,9 @@ This notice does not revoke or narrow existing third-party permissions:
 - Any future source collection must retain its specific RIGHTS and source notices. This repository's commercial policy cannot make underlying public-domain material exclusive.
 
 No paid license, purchase, subscription, trademark permission or legal agreement is created by downloading this scaffold. Do not represent these provisional boundaries as counsel-reviewed terms or a guarantee of exclusive ownership.
+
+## Recorded policy workflow
+
+The Syria policy-workflow example is an actual, unreviewed Cloudflare-generated draft from the public TACITUS Knowledge Pipeline, recorded on 10 November 2026. It retains the source attribution, normalized text version, scope and qualifications of Security Council resolution 2254 (2015). It is a historical source exercise, not an implementation finding or UN endorsement. Model output and screenshots do not create a new license grant over source documents or this application.
+
+GitHub destination mark: Octicons mark-github, MIT (https://github.com/primer/octicons/blob/main/LICENSE). LinkedIn destination silhouette: Simple Icons v11, CC0 (https://github.com/simple-icons/simple-icons/tree/11.15.0). Marks identify external destinations and imply no partnership.

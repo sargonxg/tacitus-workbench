@@ -31,3 +31,7 @@ npm run preview:showcase
 ```
 
 Open `http://127.0.0.1:8767/?mode=workflow`. The static output can be served without credentials; generation is performed separately through the explicitly configured pipeline provider. Source and application rights remain as documented in this repository.
+
+## Serve only this reader
+
+`npm run build:policy` creates the self-contained `policy-dist/` static reader and its one public recording. It includes no native ZIP downloads, historical research corpus or model credentials. Serve that directory under any fixed base path with trailing-slash routing. Source and model-receipt limitations above still apply.

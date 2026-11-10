@@ -128,8 +128,10 @@
     {
       "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
       "path": "docs/policy-workflow.md",
-      "sha256": "b0e24493af0af8a263bcbd3a96a0ed782fa50986c53c06282af80e08a9000695",
-      "bytes": 2168
+      "sha256": "1de12c4b36c5f2c4f2b8843766f35ad5b59c87a979a421527222a42745c6fbc3",
+      "bytes": 2523,
+      "semantic_exploration_previous_sha256": "b0e24493af0af8a263bcbd3a96a0ed782fa50986c53c06282af80e08a9000695",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "origin": "Independent Workbench research-selection implementation; existing application rights retained",
@@ -195,14 +197,22 @@
     },
     {
       "path": "package.json",
-      "sha256": "5c07c9000e2695f3a34db5ac7244545c147727e267a76c9872cf6fe24572af35",
-      "bytes": 768,
+      "sha256": "6f83e90292de22b0450ff327d92240a73e8fffe0e31c9b87488e20ac4d024ab0",
+      "bytes": 821,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "13454bd5207e3ad225a802ad4a3f24fe1c09120602901fb57dc0065ad62a9985",
       "context_explorer_previous_sha256": "8c4ec6f4988e0844677f5bc68923a395a20450824078a9b234a50e394794c9df",
       "integration_note": "Updated for the static context explorer; prior provenance and rights retained",
       "readiness_2026_11_05_previous_sha256": "3005da7c1bf996c139807ded358de9a448c379e56f621b94edb068cb5bfad09c",
-      "readiness_2026_11_05_note": "Quickstart and static preview command; existing provenance and rights retained."
+      "readiness_2026_11_05_note": "Quickstart and static preview command; existing provenance and rights retained.",
+      "semantic_exploration_previous_sha256": "5c07c9000e2695f3a34db5ac7244545c147727e267a76c9872cf6fe24572af35",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "policy.html",
+      "sha256": "96dfef627d2435a13da65b6e034ccf32c3cce6de0d3c44a6bcd52d7faa591c64",
+      "bytes": 417
     },
     {
       "path": "public/examples/expanded-cases.native-v2.zip",
@@ -243,6 +253,18 @@
       "path": "public/examples/syria-policy-workflow.json",
       "sha256": "cddbc5647e92a294d499bacef45fe4813e8110be9155331e12d71e203afad48c",
       "bytes": 21235
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "public/icons/github.svg",
+      "sha256": "92904476c78b2722395a464de51f6b05ed653fc0ac98fcf115d6f4440ec01b34",
+      "bytes": 659
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "public/icons/linkedin.svg",
+      "sha256": "e8553769de01973fc3d26d23757bcf0056e8368826f9f5d181d876d2ba4978db",
+      "bytes": 540
     },
     {
       "path": "public/notices/expanded-RIGHTS.md",
@@ -1447,6 +1469,14 @@
       "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "scripts/build-policy.mjs",
+      "sha256": "1c3f3314fb410c6b70f9ba0c68e6a7a798f06bdd92b06bcfa57a164f6c3dfe80",
+      "bytes": 555,
+      "semantic_exploration_previous_sha256": "7d53584d07321d2385096532f24bdaec5b2fe51b16baabe15842bbb89b23ec3b",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
+    },
+    {
       "path": "scripts/build-showcase.mjs",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
       "sha256": "0c4f3200e550a6f10e95dd630caf0a8928be4b36a5e41a1936eaed2bee8f7680",
@@ -1461,18 +1491,20 @@
     {
       "origin": "Independent Workbench research-selection implementation; existing application rights retained",
       "path": "scripts/update-inventory.mjs",
-      "sha256": "1063faef163cbcbd622e842293e1fca8146f8aab0b56e4971163b1e481cce282",
-      "bytes": 2337,
+      "sha256": "17bfa189c3cb4cc2aae86fd7dd7c2d29d4274e7fb53c016a4ec3f470a8fd1157",
+      "bytes": 2354,
       "semantic_exploration_previous_sha256": "3428fa524c84a2a7fcf22386ed8623dcf2a68d461eef2bd5d3d64d3ceedfcf55",
       "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "path": "scripts/verify-inventory.mjs",
       "origin": "Independently authored in task-owned standalone directory",
-      "sha256": "1d4b4e99de85823133c90e4949377d87e109f08f26efdd31780aab4b1ce889af",
-      "bytes": 1479,
+      "sha256": "8896fa60e8cce1efd86796cbc0bccac80470a9632016ef733e99486b23ff643d",
+      "bytes": 1493,
       "context_explorer_previous_sha256": "ddda6a4d2d2a3344cdfb7a86273893050346867eb80705e6436d289884825658",
-      "integration_note": "Updated for the static context explorer; prior provenance and rights retained"
+      "integration_note": "Updated for the static context explorer; prior provenance and rights retained",
+      "semantic_exploration_previous_sha256": "1d4b4e99de85823133c90e4949377d87e109f08f26efdd31780aab4b1ce889af",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
       "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
@@ -1728,6 +1760,20 @@
       "onboarding_change": "Product start guide, focus target, or native sample static MIME support",
       "context_explorer_previous_sha256": "544bb4c8865ff0b32fd99309047ef33e7e474ee2b1915b8720b33b7383091b95",
       "semantic_exploration_previous_sha256": "2b07de71d86b8621012f0879ecdba4d62e2d6c0d0b714923a19bf799a714fba7",
+      "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "src/policy-entry.css",
+      "sha256": "044652a29d89f02f4f3498fa2034d64aa7304b6330579ee3c4ae404fccb81262",
+      "bytes": 322
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "src/policy-entry.tsx",
+      "sha256": "29169b556586a7b706d8e2e2f080cf8b6165b78e4d9ae262d3ab401a79b24fb2",
+      "bytes": 1739,
+      "semantic_exploration_previous_sha256": "5c750fa52e850a6b76c5a090acbb68feade48efcdcf87e7b44d891abb369574d",
       "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
     {
@@ -2018,6 +2064,12 @@
       "sha256": "860395a734db4ed97efd9a21775b594eaaa23fd7db0edf3e3a08a7dd407b5487",
       "bytes": 145,
       "origin": "Independently authored in task-owned standalone directory"
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "vite.policy.config.mjs",
+      "sha256": "0df188386774eff666905624f63f019380a67944dd93a0060970195d4639a238",
+      "bytes": 158
     },
     {
       "path": "vite.showcase.config.mjs",
