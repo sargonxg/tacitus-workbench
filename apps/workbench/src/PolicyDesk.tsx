@@ -1,0 +1,4 @@
+import {useEffect,useState} from 'react';
+import PolicyWorkflow from './PolicyWorkflow';
+import LanguageReview from './LanguageReview';
+export default function PolicyDesk(){const[mode,setMode]=useState(location.hash==='#language'?'language':'workflow');useEffect(()=>{const change=()=>setMode(location.hash==='#language'?'language':'workflow');addEventListener('hashchange',change);return()=>removeEventListener('hashchange',change);},[]);function choose(value:string){setMode(value);history.replaceState(null,'',location.pathname+location.search+(value==='language'?'#language':''));}return <><div className="policy-desk-tabs" role="group" aria-label="Choose a public policy tool"><button aria-pressed={mode==='workflow'} onClick={()=>choose('workflow')}>Recorded AI briefing</button><button aria-pressed={mode==='language'} onClick={()=>choose('language')}>Diplomatic language desk</button></div>{mode==='language'?<LanguageReview/>:<PolicyWorkflow/>}</>}

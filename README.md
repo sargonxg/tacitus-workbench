@@ -183,3 +183,7 @@ The server binds loopback only and live operations require explicit opt-in. Nati
 The onboarding fact fixture and downloadable ZIP copies are derived from the already shipped, checksum-verified source bundles. Regenerate them with `python3 scripts/prepare-onboarding.py`; use `--check` to verify without writing. Data tests bind displayed counts and download identities to the actual archived corpus/captures. See [onboarding verification](docs/ONBOARDING_VERIFICATION.md) for branch-specific checks.
 
 The beginner path above is recorded demo → live sample → explicit local authoring. Batch importing and collection queries remain advanced CLI workflows. The [local collection explorer](docs/LOCAL_COLLECTION_EXPLORER.md) opens their validated output directories and optional saved receipts in the browser, with separate raw-source, authored-assertion and native-membership views. It performs no new native query. [Release readiness](docs/RELEASE_READINESS.md) separates local verification, unsupported hosting, held external integrations and unrun model evaluation.
+
+## Diplomatic language desk
+
+[Run the public language-review tool](apps/workbench/docs/diplomatic-language.md) to inspect exact historical wording, conditions, proposed draft revisions and discussion linked through a graph. Add a local proposal/comment and export the review record. The exercise uses public attributed evidence and synthetic editorial history; it makes no model call or semantic approval. It extends this workbench rather than copying the separate private product.

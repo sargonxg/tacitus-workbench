@@ -8,7 +8,7 @@ import ContextLayers from "./context/ContextLayers.tsx";
 import { validateLayerInput } from "./context/contextLayers.mjs";
 import ResearchSelection from "./ResearchSelection.tsx";
 import "./showcase.css";
-const PolicyWorkflow = lazy(() => import("./PolicyWorkflow"));
+const PolicyWorkflow = lazy(() => import("./PolicyDesk"));
 const SemanticExplorer = lazy(() => import("./SemanticExplorer"));
 
 type Loaded = {
