@@ -27,6 +27,8 @@ Published main includes the reviewed standalone interface from PR3 `5766d1cb3472
 
 See [operational architecture and release readiness](docs/OPERATIONAL_ARCHITECTURE.md) for the implemented flow, independent review responsibilities, release gates and proposed matched evaluation.
 
+[Evidence-format compatibility and reader boundaries](docs/FORMAT_COMPATIBILITY.md).
+
 ## Inspect a real model-assisted policy draft
 
 The new [Policy briefing reader](apps/workbench/docs/policy-workflow.md) opens results from the [public policy pipeline](https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open/tree/main/reference-pipeline). Inspect a recorded two-step evidence-inspection agent, follow each draft item to its exact quotations, and review qualifications the draft does not repeat. Model usage and the review boundary remain visible.
