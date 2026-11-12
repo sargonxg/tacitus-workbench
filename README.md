@@ -9,7 +9,9 @@ Reopen a research selection or Context export and inspect the exact passages, qu
 
 [Setup, code walkthrough, research & verification](TACITUS_GUIDE.md) · [Play the original 8-bit teaching adventure](tacitus-demo/index.html) · [Demo credits](tacitus-demo/CREDITS.md)
 
-![The original House of Evidence teaching adventure; synthetic case, separate from this project’s runtime](tacitus-demo/mansion.png)
+![Original TACITUS Source Workshop: saved sources, typed structure, bounded context and human review](https://raw.githubusercontent.com/sargonxg/sargonxg/a91027079c8ff8ebbd3623898a5e03a13cd80df5/assets/tacitus-source-workshop-8bit.png)
+
+*Original concept illustration; the scene and documents are fictional. [Artwork and reuse](https://github.com/sargonxg/sargonxg/blob/a91027079c8ff8ebbd3623898a5e03a13cd80df5/docs/VISUAL_IDENTITY.md).*
 
 Research: [RAG](https://arxiv.org/abs/2005.11401), [long-context evidence use](https://arxiv.org/abs/2307.03172), [GraphRAG](https://arxiv.org/abs/2404.16130). [What TACITUS borrows, adds and still needs to measure](https://github.com/sargonxg/sargonxg/blob/main/docs/RESEARCH_AND_DESIGN.md).
 <!-- /tacitus-practical-entry -->
