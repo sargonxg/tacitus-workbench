@@ -205,3 +205,5 @@ The beginner path above is recorded demo → live sample → explicit local auth
 ## Diplomatic language desk
 
 [Run the public language-review tool](apps/workbench/docs/diplomatic-language.md) to inspect exact historical wording, conditions, proposed draft revisions and discussion linked through a graph. Add a local proposal/comment and export the review record. The exercise uses public attributed evidence and synthetic editorial history; it makes no model call or semantic approval. It extends this workbench rather than copying the separate private product.
+
+[Full configured local checkpoint: 113 tests, zero skips; 14 importer tests](docs/LOCAL_VERIFICATION_2026-11-12.md).
