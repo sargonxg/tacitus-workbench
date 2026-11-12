@@ -46,6 +46,12 @@
       "bytes": 2267
     },
     {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "docs/diplomatic-language.md",
+      "sha256": "6dfe43ca3ae4efb977ccbacbe14fc1e2853d17f4a4e783263155b1037a47c73e",
+      "bytes": 4405
+    },
+    {
       "path": "docs/images/context-desktop.png",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
       "sha256": "ddb4cd7a127ae5109d07c10a6f2e2d4a546858a3e5e5589240f5d42e083db9ed",
@@ -56,6 +62,12 @@
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
       "sha256": "fd41d185da451dca0e22cf33b60cef6dd84c07594531363917c695e3bb097d52",
       "bytes": 75266
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "docs/images/diplomatic-language-desktop.png",
+      "sha256": "2b6d9e53ffc516e755cf9062029846aaff16a6c1e1dac6d33feb36aae5ec6f12",
+      "bytes": 178029
     },
     {
       "path": "docs/images/layers-desktop.png",
@@ -197,8 +209,8 @@
     },
     {
       "path": "package.json",
-      "sha256": "6f83e90292de22b0450ff327d92240a73e8fffe0e31c9b87488e20ac4d024ab0",
-      "bytes": 821,
+      "sha256": "e242aa5ce58b8b38b73c89ebefb5400a57cae4c5f7b9f3ad292e486a65b7d577",
+      "bytes": 903,
       "origin": "Independently authored in task-owned standalone directory",
       "v2_changed_from_sha256": "13454bd5207e3ad225a802ad4a3f24fe1c09120602901fb57dc0065ad62a9985",
       "context_explorer_previous_sha256": "8c4ec6f4988e0844677f5bc68923a395a20450824078a9b234a50e394794c9df",
@@ -215,6 +227,12 @@
       "bytes": 486,
       "semantic_exploration_previous_sha256": "96dfef627d2435a13da65b6e034ccf32c3cce6de0d3c44a6bcd52d7faa591c64",
       "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "public/examples/diplomatic-language-review.json",
+      "sha256": "d74140a496fe5491b873763f1a89ec5db3d66d40c1e1bc956cabdea2b7eadb95",
+      "bytes": 32142
     },
     {
       "path": "public/examples/expanded-cases.native-v2.zip",
@@ -1473,8 +1491,8 @@
     {
       "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
       "path": "scripts/build-policy.mjs",
-      "sha256": "1c3f3314fb410c6b70f9ba0c68e6a7a798f06bdd92b06bcfa57a164f6c3dfe80",
-      "bytes": 555,
+      "sha256": "80d1413b0cf76987f73670d3b81c5aad4f47570a360f989c25d2f7afcde3841f",
+      "bytes": 942,
       "semantic_exploration_previous_sha256": "7d53584d07321d2385096532f24bdaec5b2fe51b16baabe15842bbb89b23ec3b",
       "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
@@ -1717,6 +1735,24 @@
       "identical_to_origin": true
     },
     {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "src/languageReview.css",
+      "sha256": "c8218ee82dec702aa913ae3c43a0f8cbb16ab0526b9a148e5f1c70adef1d4420",
+      "bytes": 3861
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "src/languageReview.mjs",
+      "sha256": "424ec8e7f1d64192d6ea150e047435198ceec745a4ec653b6aa329beb3c801cb",
+      "bytes": 10505
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "src/LanguageReview.tsx",
+      "sha256": "47b9253f4b3c3ca51f785408980d5455d7779a011a433e4a77ea6d9e48755fc7",
+      "bytes": 9489
+    },
+    {
       "path": "src/live-comparison.mjs",
       "sha256": "ed0d62e41bd3b3f75dd54b91bd403604c1abf3accd76fece6872b7e53c29c8bf",
       "bytes": 5952,
@@ -1773,8 +1809,8 @@
     {
       "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
       "path": "src/policy-entry.tsx",
-      "sha256": "29169b556586a7b706d8e2e2f080cf8b6165b78e4d9ae262d3ab401a79b24fb2",
-      "bytes": 1739,
+      "sha256": "877c8b3db907b7d38a387f17273d3f128db501236c50d2663994aeb454e0e957",
+      "bytes": 1722,
       "semantic_exploration_previous_sha256": "5c750fa52e850a6b76c5a090acbb68feade48efcdcf87e7b44d891abb369574d",
       "semantic_exploration_note": "Updated for source-derived semantic exploration and bounded Context Capsule preparation; previous provenance and rights retained"
     },
@@ -1783,6 +1819,12 @@
       "path": "src/policy-favicon.svg",
       "sha256": "58c7a620c892e607e677d976caaf32e02542762ee68f0b1bd012424011fcee77",
       "bytes": 368
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "src/PolicyDesk.tsx",
+      "sha256": "230a9dd8c666bd49ad4efc4d1cd36fda273c3574ac34c4889db123b81b7f8d92",
+      "bytes": 958
     },
     {
       "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
@@ -1863,8 +1905,8 @@
     {
       "path": "src/showcase.tsx",
       "origin": "Original TACITUS context explorer, documentation or verification authored for this project",
-      "sha256": "dcb471e9c8bed26a93bc72b5dbe609954f8b75108fdaaea6ff29a49d6e429031",
-      "bytes": 13987,
+      "sha256": "875bd2511a12df904dd4ab1499da59a2cb935f5ef9032abc8176ff9d7d5e0cd0",
+      "bytes": 13983,
       "research_selection_previous_sha256": "7260b2ba1b9a8859508b1096f5ec735c5a2dfb792cc2587fb28a010e6ba8d321",
       "research_selection_note": "Updated for the separate bounded research-selection reader and documented setup",
       "semantic_exploration_previous_sha256": "b063608e328f0715e4c99c6dd57be653dcf0582bfa59218dd8b5b19692a56eec",
@@ -1940,6 +1982,18 @@
       "integration_note": "Updated in local reproducibility integration; original provenance retained",
       "reviewed_baseline_sha256": "173b5399f2f79a9c563077184d9362a34e5fab199e7079255e26e4dba802d266",
       "review_correction": "Pinned native budget validation and explicit acceptance/boundary coverage"
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "tests/language-review-browser.test.mjs",
+      "sha256": "e96fd5b6b7a2312cd30752511f34534b07511fb9dcc905bc217ea5b54cc24f3f",
+      "bytes": 4717
+    },
+    {
+      "origin": "Independent Workbench semantic exploration implementation or actual UI verification; existing application rights retained",
+      "path": "tests/language-review.test.mjs",
+      "sha256": "c21fae8860214cf617a775ee021c1eba4bd48cb2549d84dfb8b9ce9fd0876803",
+      "bytes": 3870
     },
     {
       "path": "tests/live-comparison-browser.test.mjs",
