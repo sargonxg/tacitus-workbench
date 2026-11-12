@@ -1,5 +1,20 @@
 # TACITUS Workbench
 
+<!-- tacitus-practical-entry -->
+## Purpose, code and a playable introduction
+
+Reopen a research selection or Context export and inspect the exact passages, qualifications and omissions behind it.
+
+**Local evidence inspector.** Static readers, recorded local UI and opt-in native execution are separate modes. Hosted multiuser operation is unsupported.
+
+[Setup, code walkthrough, research & verification](TACITUS_GUIDE.md) · [Play the original 8-bit teaching adventure](tacitus-demo/index.html) · [Demo credits](tacitus-demo/CREDITS.md)
+
+![The original House of Evidence teaching adventure; synthetic case, separate from this project’s runtime](tacitus-demo/mansion.png)
+
+Research: [RAG](https://arxiv.org/abs/2005.11401), [long-context evidence use](https://arxiv.org/abs/2307.03172), [GraphRAG](https://arxiv.org/abs/2404.16130). [What TACITUS borrows, adds and still needs to measure](https://github.com/sargonxg/sargonxg/blob/main/docs/RESEARCH_AND_DESIGN.md).
+<!-- /tacitus-practical-entry -->
+
+
 Inspect a policy context without losing the passages, qualifications and omissions behind it. This repository provides a static browser viewer and a separate local workbench. The viewer opens Context JSON; the local workbench can inspect/query native ZIP capsules after a pinned Rust build and explicit opt-in. Recorded examples are labelled and never replace a failed live request.
 
 The static viewer also has a separate **[Research selection](apps/workbench/docs/research-selection-reader.md)** mode. Open a bounded packet from the [Middle East historical atlas](https://github.com/sargonxg/Syria-political-analysis/blob/main/docs/historical-atlas.md), inspect original event fields or annual country values, and export the imported bytes unchanged. Source-kit selections and native Context JSON remain different formats; opening either performs no model generation.
@@ -67,8 +82,7 @@ npm run preview:showcase
 ```
 
 Run these npm commands from `apps/workbench`; the repository root has no
-`package.json`. Build both `npm run build` and `npm run build:showcase` before
-running the full `npm test` suite. The two builds produce separate artifacts.
+`package.json`. The `npm test` pretest builds the local interface, static viewer and policy/language desk (`build`, `build:showcase`, `build:policy`) before running the suite. These are separate artifacts.
 Component imports include `.tsx` where model modules differ only in letter case,
 so Windows resolves the component rather than the similarly named data module.
 
@@ -142,7 +156,7 @@ Save one successful live query as run A, change only native checkpoints and quer
 
 ## Acceptance
 
-Build both interfaces before running the complete default suite: its browser tests serve the built local interface and `showcase-dist/`. Python 3.11+ and a working Chromium installation are required. The default suite can pass while explicitly skipping configured native/collection tests; this is not full native acceptance.
+The default `npm test` command builds all three interface artifacts before running the complete suite: its browser tests serve the built local interface and `showcase-dist/`. Python 3.11+ and a working Chromium installation are required. The default suite can pass while explicitly skipping configured native/collection tests; this is not full native acceptance.
 
 ```sh
 cd "$TACITUS_WORKBENCH_ROOT/apps/workbench"
